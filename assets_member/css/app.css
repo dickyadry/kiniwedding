@@ -1,0 +1,29 @@
+.container_image_snapshot{
+	width: 100%;
+	margin-top: 15px;
+}
+
+#content_video_media_video{
+	margin-top: 15px;
+}
+
+.loader {
+  border: 8px solid #0C0B21;
+  border-radius: 50%;
+  border-top: 8px solid #FF1744;
+  border-bottom: 8px solid #FF9D00;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
