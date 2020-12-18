@@ -13,6 +13,7 @@ class MemberPesananSayaController extends MY_Controller {
 		$this->bucketName = "eventstack-storage";
 
 		$this->product_model = new GeneralModel("product");
+		$this->product_images_model = new GeneralModel("product_images");
 		$this->member_model = new GeneralModel("member");
 		$this->buku_tamu_model = new GeneralModel("buku_tamu");
 		$this->sales_order_model = new GeneralModel("sales_order");
@@ -193,6 +194,14 @@ class MemberPesananSayaController extends MY_Controller {
 		$id = strip_tags($id);
 		$id = encrypt_decrypt('decrypt',$id);
 
+		$sales_order_detail = $this->sales_order_detail_model->find($id,'sales_order_id');
+
+		$query = $this->product_images_model->source();
+		$query->select('type, count(type) as total');
+		$query->where('product_id',$sales_order_detail->product_id);
+		$query->group_by('type');
+		$data['product_images'] = $query->get()->result();
+
 		$data["title"] = "Lengkapi Data";
 		$data["title_small"] = "Lengkapi Data page layout";
 
@@ -218,6 +227,38 @@ class MemberPesananSayaController extends MY_Controller {
 			redirect("404");
 		}
 
+	}
+
+	public function cek_link($id){
+
+		$id = strip_tags($id);
+		$id = encrypt_decrypt('decrypt',$id);
+
+		$param_data = $this->input_data;
+
+		$query = $this->sales_order_form_model->source();
+		$query->where('link_web',strtolower($param_data['link_web']));
+		$query->where('sales_order_id !=',$id);
+		$total_data = $query->count_all_results();
+
+		if($total_data<1){
+
+			$jsonData = array(
+	            'status'=>'success',
+	            'msg'=>'Success',
+	        );
+	        echo json_encode($jsonData);
+
+		}else{
+
+			$jsonData = array(
+	            'status'=>'error',
+	            'msg'=>'Link sudah terpakai, silahkan gunakan link lain',
+	        );
+	        echo json_encode($jsonData);
+
+		}
+		
 	}
 
 	public function save_lengkapi_data($id=0){
@@ -458,6 +499,8 @@ class MemberPesananSayaController extends MY_Controller {
 		redirect(base_url('member/pesanan-saya/buku-tamu/'.encrypt_decrypt('encrypt', $buku_tamu->sales_order_id)));
 		
 	}
+
+
 
 
 

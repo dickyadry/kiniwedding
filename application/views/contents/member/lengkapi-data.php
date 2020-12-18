@@ -1,5 +1,5 @@
 <!-- Profile grid -->
-<form role="form" method="POST" action="<?php echo base_url(); ?>member/pesanan-saya/save-lengkapi-data/<?php echo $sales_order_id; ?>" onsubmit="return validateForm()">
+<form role="form" method="POST" id="target" action="<?php echo base_url(); ?>member/pesanan-saya/save-lengkapi-data/<?php echo $sales_order_id; ?>">
 <div class="row">
     
     <div class="container" style="max-width: 800px;  padding-top:0">
@@ -286,7 +286,12 @@
                                                 <label>Link Google Drive<span class="label_danger">*</span></label>
                                                 <input type="text" class="form-control" value="<?php echo isset($data->link_google_drive)?$data->link_google_drive:''; ?>" name="link_google_drive" id="link_google_drive" onkeyup="cekForm('link_google_drive')">
                                                 <b>Contoh:</b> Upload file kamu ke google drive dan masukan link google drive kamu pada form di atas<br>
-                                                Total Gambar yang di perlukan berjumalah 12
+                                                Total Gambar yang di perlukan berjumalah <?php echo count($product_images); ?> terdiri dari:
+                                                <ul>
+                                                    <?php foreach ($product_images as $key => $value) { ?>
+                                                        <li><?php echo $value->total; ?> Foto Untuk <?php echo $value->type; ?></li>
+                                                    <?php } ?>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +310,7 @@
 
                         <div class="row">
                             <div class="col-md-12 text-right">
-                                <button type="submit" class="btn btn-right-icon btn-warning btn-lg"><i class="icon-disk"></i> Simpan</button>
+                                <button class="btn btn-right-icon btn-warning btn-lg" type="button" onclick="validateForm()"><i class="icon-disk"></i> Simpan</button>
                             </div>
                         </div>
                         <br>

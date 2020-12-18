@@ -24,9 +24,9 @@
                                                     <div class="thumb">
                                                         <div class="loader hidden" id="loader-icon"></div> 
                                                         <?php if(isset($data->icon) && $data->icon!=null && $data->icon!=" " && $data->icon!=""){?>
-                                                            <img  id="gambar_icon" alt="Event Stack" src="<?php echo isset($data->icon)?$data->icon:'';?>" style="border-radius:50%; width: 50%;">
+                                                            <img  id="gambar_icon" alt="Event Stack" src="<?php echo isset($data->icon)?$data->icon:'';?>" style="border-radius:50%; width: 100%;">
                                                         <?php }else{ ?>
-                                                            <img id="gambar_icon" alt="Evenst Stack" src="<?php echo ASSETS?>img/icon-blank.jpg" style="border-radius:50%; width: 50%;">
+                                                            <img id="gambar_icon" alt="Evenst Stack" src="<?php echo ASSETS?>img/icon-blank.jpg" style="border-radius:50%; width: 100%;">
                                                         <?php } ?>
                                                         <div class="thumb-options">
                                                             <span>

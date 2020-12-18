@@ -140,16 +140,48 @@
             
         }
 
-        if(status_data==false){
-            Swal.fire(
-              'Oopps!',
-              msg,
-              'error'
-            );
-            return false;
-        }
+        var param = {
+            'link_web':$('#link_web').val(),
+        };
 
-        return true;   
+        
+
+        $.ajax({
+            type: "POST",
+            url: '<?php echo base_url(); ?>member/pesanan-saya/cek-link/<?php echo $sales_order_id; ?>',
+            data: JSON.stringify(param),
+            contentType: "application/json",
+            dataType: "json",
+            success: function(result){
+                
+                if(result.status == 'success'){ 
+
+                    $( "#target" ).submit();
+                    return true;   
+
+                }else{ 
+
+                    if(status_data==false){
+                        Swal.fire(
+                          'Oopps!',
+                          msg,
+                          'error'
+                        );
+                        return false;
+                    }else{
+
+                        Swal.fire(
+                          'Oopps!',
+                          result.msg,
+                          'error'
+                        );
+                        return false;
+                    }
+                } 
+
+            }
+        });
+ 
     }
 
     function cekForm(param){

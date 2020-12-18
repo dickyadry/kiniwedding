@@ -18,6 +18,7 @@ $route['member/pesanan-saya/pending'] = 'MemberPesananSayaController/order/pendi
 $route['member/pesanan-saya/detail-tiket/(:any)'] = 'MemberPesananSayaController/detail/$1';
 $route['member/pesanan-saya/invoice/(:any)'] = 'MemberPesananSayaController/invoice/$1';
 $route['member/pesanan-saya/lengkapi-data/(:any)'] = 'MemberPesananSayaController/lengkapi_data/$1';
+$route['member/pesanan-saya/cek-link/(:any)'] = 'MemberPesananSayaController/cek_link/$1';
 $route['member/pesanan-saya/save-lengkapi-data/(:any)'] = 'MemberPesananSayaController/save_lengkapi_data/$1';
 $route['member/pesanan-saya/buku-tamu/(:any)'] = 'MemberPesananSayaController/buku_tamu/$1';
 $route['member/pesanan-saya/buku-tamu/delete/(:any)'] = 'MemberPesananSayaController/buku_tamu_delete/$1';
@@ -130,3 +131,4 @@ $route['panduan/esertifikat'] = "PanduanController/esertifikat";
 ######## WEDDING INVITATION ###########
 $route['inv/(:any)'] = 'WeddingController/wedding/$1';
 $route['inv/(:any)'] = 'WeddingController/wedding/$1';
+$route['product/demo/(:any)'] = 'WeddingController/demo/$1';

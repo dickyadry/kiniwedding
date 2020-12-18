@@ -60,5 +60,54 @@ class WeddingController extends MY_Controller {
 
 	}
 
+	public function demo($product_id){
+
+		$id = strip_tags($product_id);
+		$id = encrypt_decrypt('decrypt',$id);
+		
+		$data = $this->sales_order_form_model->find(0);
+		$product = $this->product_model->find($id);
+		$data->product = $product;
+
+		$query = $this->product_images_model->source();
+		$query->select('*, sample_image as image');
+		$query->where('product_id',$id);
+		$query->where('type','SLIDER');
+		$query->order_by('order','ASC');
+		$data->slider = $query->get()->result();
+
+		$query = $this->product_images_model->source();
+		$query->select('*, sample_image as image');
+		$query->where('product_id',$id);
+		$query->where('type','GALERI');
+		$query->order_by('order','ASC');
+		$data->galeri = $query->get()->result();
+
+		$query = $this->product_images_model->source();
+		$query->select('*, sample_image as image');
+		$query->where('product_id',$id);
+		$query->where('type','PENGANTIN');
+		$query->order_by('order','ASC');
+		$data->pengantin = $query->get()->result();
+
+		$query = $this->product_images_model->source();
+		$query->select('*, sample_image as image');
+		$query->where('product_id',$id);
+		$query->where('type','BACKGROUND');
+		$query->order_by('order','ASC');
+		$data->background = $query->get()->result();
+
+		$query = $this->product_images_model->source();
+		$query->select('*, sample_image as image');
+		$query->where('product_id',$id);
+		$query->where('type','LAINNYA');
+		$query->order_by('order','ASC');
+		$data->lainnya = $query->get()->result();
+
+
+		$this->load->view("product/theme-".$product->code, $data);
+
+	}
+
   
 }
