@@ -2,15 +2,6 @@
 	<div class="page-title">
 		<h3><?php echo $title; ?><small><?php echo $title_small; ?></small></h3>
 	</div>
-
-	<?php if($this->uri->segment(3)!='buat-event'){ ?>
-	<div class="range">
-		 <a href="<?php echo base_url();?>member/event/buat-event" >
-            <button type="button" class="btn btn-right-icon btn-warning  btn-block" style="padding: 10px 20px; margin-bottom: 0px; font-size: 18px;"><i class="icon-plus-circle" style="font-size: 22px;"></i> BUAT EVENT </button>
-        </a>
-	</div>
-	<?php } ?>
-
 </div>
 
 

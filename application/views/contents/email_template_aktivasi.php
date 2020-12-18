@@ -21,7 +21,7 @@
 
                 <p>Terima Kasih telah mendaftar di Event Stack, <br/>Silahkan klik link di bawah ini untuk aktivasi akun anda.</p>
                 <br/><br/>
-                <a style="background:#ff1744; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>verification/<?php echo $data['token']; ?>" target="_blank">Aktivasi</a>
+                <a style="background:#DDD35D; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>verification/<?php echo $data['token']; ?>" target="_blank">Aktivasi</a>
                 <br/><br/><br/>
                 <p>Jika anda tidak merasa melakukan pendaftaran di <br/>Event Stack, silahkan abaikan pesan ini</p>
                 <br/>

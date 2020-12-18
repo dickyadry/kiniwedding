@@ -13,19 +13,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="event stack, eventstack, event, webinar, kegiatan, event online, workshop online">
-    <meta name="keywords" content="event stack, eventstack, event, webinar, kegiatan, event online, workshop online">
-    <meta name="author" content="eventstack.id">
+    <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="author" content="kiniwedding.com">
     <meta name="google-signin-client_id" content="361252480770-hh4a48rho35utt3fa8imn0g5muadqme6.apps.googleusercontent.com"> <!-- PROD -->
 
     <?php if(isset($detail)){ ?>
       <?php if($type=="detail"){ ?>
 
-    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
-    <meta content="http//www.eventstack.id/" itemprop="url" />
+    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo-only-hitam.png";?>" itemprop="thumbnailUrl" />
+    <meta content="http//www.kiniwedding.com/" itemprop="url" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
-    <meta name="apple-mobile-web-app-title" content="eventstack">
+    <meta name="apple-mobile-web-app-title" content="kiniwedding">
 
     <link rel="apple-touch-icon" href="<?php echo str_replace("medium", "small", $detail->cover); ?>" sizes="152x152">
     <meta name="msapplication-TitleImage" content="<?php echo str_replace("medium", "small", $detail->cover); ?>">
@@ -37,7 +37,7 @@
     <meta property="og:type" content="event" />
     <meta property="fb:app_id" content="597752600925275" />
     <meta property="event:start_time" content="<?php echo date('Y-m-d',strtotime($detail->start_date)).'T'.date('H:i+07:00',strtotime($detail->start_date)); ?>" />
-    <meta property="og:site_name" content="EVENT STACK" />
+    <meta property="og:site_name" content="kiniwedding" />
     <meta name="ROBOTS" content="NOODP, NOYDIR" />
     <meta property="og:title" content="<?php echo $detail->title; ?>" />
     <meta property="og:url" content="<?php echo base_url(); ?>event/<?php echo $detail->code; ?>/<?php echo $detail->slug; ?>" />
@@ -54,8 +54,8 @@
     <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
     <meta itemprop="articleSection" content="Webinar" />
 
-    <meta name="twitter:site" content="@eventstack.id" />
-    <meta name="twitter:creator" content="@eventstack.id" />
+    <meta name="twitter:site" content="@kiniwedding.com" />
+    <meta name="twitter:creator" content="@kiniwedding.com" />
     <meta name="twitter:title" content="<?php echo $detail->title; ?>" />
     <meta name="twitter:description" content="<?php echo strip_tags($detail->description); ?>" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -63,46 +63,8 @@
     <?php }} ?>
 
     <title><?php echo $title_page; ?></title>
-    <?php if(isset($detail) && $type=="detail"){ ?>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "<?php echo $detail->title; ?>",
-      "startDate": "<?php echo date('Y-m-d',strtotime($detail->start_date)).'T'.date('H:i+07:00',strtotime($detail->start_date)); ?>",
-      "endDate": "<?php echo date('Y-m-d',strtotime($detail->end_date)).'T'.date('H:i+07:00',strtotime($detail->end_date)); ?>",
-      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": [{
-        "@type": "VirtualLocation",
-        "url": "<?php echo base_url(); ?>event/<?php echo $detail->code; ?>/<?php echo $detail->slug; ?>"
-      }],
-      "image": [
-        "<?php echo $detail->cover; ?>"
-       ],
-      "description": "<?php echo preg_replace("/\"/","'",preg_replace('/[^a-zA-Z0-9_ -.,\/:?!*]/s',' ',strip_tags($detail->description))); ?>",
-      "offers": {
-        "@type": "Offer",
-        "url": "<?php echo base_url(); ?>event/<?php echo $detail->code; ?>/<?php echo $detail->slug; ?>",
-        "price": "<?php echo $detail->price; ?>",
-        "priceCurrency": "IDR",
-        "availability": "https://schema.org/InStock",
-        "validFrom": "<?php echo date('Y-m-d'); ?>"
-      },
-      "performer": {
-        "@type": "PerformingGroup",
-        "name": "<?php echo $detail->speaker; ?>"
-      },
-      "organizer": {
-        "@type": "Organization",
-        "name": "Event Stack",
-        "url": "https://eventstack.id"
-      }
-    }
-    </script>
-    <?php } ?>
 
-    <link rel="shortcut icon" href="<?php echo ASSETS . "img/icon.png";?>">
+    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
     <link rel="stylesheet" href="<?php echo ASSETS . "css/es_iconpack.min.css?v=4";?>">
     <link rel="stylesheet" href="<?php echo ASSETS . "css/es_style.min.css?v=11";?>">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:500,700&display=swap" rel="stylesheet"> -->
@@ -230,10 +192,6 @@
     <script src="<?php echo ASSETS . "js/main.js?v=1";?>"></script>
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 
-    <script type="text/javascript" src="<?php echo ASSETS; ?>ckeditor/ckeditor.js"></script>
-    <script type="text/javascript" src="<?php echo ASSETS; ?>ckeditor/config.js"></script>
-
-    <!-- Scripts -->
     <!-- <script src="<?php echo ASSETS; ?>event-stack/js/jquery-3.2.0.min.js"></script> -->
     <script src="<?php echo ASSETS; ?>event-stack/js/jquery-ui.js"></script>
     <script src="<?php echo ASSETS; ?>event-stack/js/owl.carousel.min.js"></script>

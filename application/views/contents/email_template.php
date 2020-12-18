@@ -23,7 +23,7 @@
                 <?php } ?>
 
                 <p>Terimakasih <?php echo $data->member; ?><br/>telah melakukan pembelian tiket di Event Stack</p>
-                <h3 style="color: #ff1744; font-size: 24px;">
+                <h3 style="color: #DDD35D; font-size: 24px;">
                     #<?php echo $data->sales_order_no; ?><br/>
                 </h3>
 

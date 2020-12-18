@@ -180,7 +180,7 @@
 
                         <div class="form-group hidden" id="button-answer">
                             <div class="col-sm-12 text-right">
-                                <button onclick="addAnswer()" type="button" class="btn btn-right-icon btn-xs"><i style="color:#ff1744;" class="icon-plus-circle"></i> <span style="color:#ff1744;">Tambah Jawaban</span></button>
+                                <button onclick="addAnswer()" type="button" class="btn btn-right-icon btn-xs"><i style="color:#DDD35D;" class="icon-plus-circle"></i> <span style="color:#DDD35D;">Tambah Jawaban</span></button>
                             </div>
                         </div>
 

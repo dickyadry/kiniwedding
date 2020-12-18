@@ -181,7 +181,7 @@ body {
     /*font-weight: normal;*/
     font-size: 15px;
     /*letter-spacing: 1.5px;*/
-    color: #ffffff;
+    color: #000;
     /*line-height: 30px;*/
     /*-webkit-font-smoothing: antialiased;*/
     /* Fix for webkit rendering */
@@ -217,7 +217,7 @@ Table Of Contents
 */
 
 body {
-    background: #0c0b21 none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     font-family: "Roboto", sans-serif;
 }
 
@@ -230,7 +230,7 @@ h6 {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #000;
     letter-spacing: 0;
 }
 
@@ -390,7 +390,7 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #ff1744;
+    color: #ddd35d;
     text-decoration: none;
     outline: 0;
 }
@@ -571,7 +571,8 @@ button {
 header {}
 
 .header-top-area {
-    border-bottom: 1px solid #252438;
+    border-bottom: 4px solid #ddd35d;
+    background: #000;
     padding: 0;
 }
 
@@ -609,14 +610,15 @@ header {}
     letter-spacing: 0;
     line-height: 20px;
     padding: 33px 0;
+    color: #FFF;
 }
 
 .menu ul li:hover>a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .menu ul li.active a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .menu ul li .drop {
@@ -662,7 +664,7 @@ header {}
 }
 
 .menu ul li .drop li:hover>a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .menu ul li .drop li .third {
@@ -741,7 +743,7 @@ header {}
 }
 
 .menu ul li .mega-menu li:hover>a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .menu ul li .mega-menu li ul {}
@@ -760,7 +762,7 @@ header {}
 }
 
 .menu ul li .mega-menu li ul li:hover a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .responsive-menu {
@@ -799,7 +801,7 @@ header {}
 .slicknav_nav a:hover,
 .slicknav_nav .slicknav_row:hover {
     background: transparent none repeat scroll 0 0;
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .slicknav_nav .slicknav_arrow {
@@ -819,7 +821,7 @@ header {}
 }
 
 .account a span {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 100%;
     display: inline-block;
     font-size: 16px;
@@ -867,7 +869,7 @@ header {}
 }
 
 .buat-event .button-buat-event a {
-    /*background: #ff1744 none repeat scroll 0 0;*/
+    /*background: #ddd35d none repeat scroll 0 0;*/
     border:1px solid #FE9D00;
     border-radius: 25px;
     display: inline-block;
@@ -914,7 +916,7 @@ header {}
     border-color: transparent #3d3c4d transparent transparent;
     border-style: solid;
     border-width: 1px;
-    color: #ffffff;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -926,13 +928,13 @@ header {}
 
 .search-input-box select option {
     background: #0c0b21 none repeat scroll 0 0;
-    color: #ffffff;
+    color: #000;
 }
 
 .search-input-box input[type="text"] {
     background: transparent none repeat scroll 0 0;
     border: 0 none;
-    color: #ffffff;
+    color: #000;
     min-width: 502px;
 }
 
@@ -941,7 +943,7 @@ header {}
     border-color: transparent transparent transparent #3d3c4d;
     border-style: solid;
     border-width: 1px;
-    color: #ffffff;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -956,7 +958,7 @@ header {}
 }
 
 .search-signup .signup a {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 25px;
     display: inline-block;
     font-size: 14px;
@@ -967,7 +969,7 @@ header {}
 }
 
 .search-signup .signup a:hover {
-    color: #ffffff;
+    color: #000;
 }
 
 /* Slider */
@@ -1014,7 +1016,7 @@ header {}
 }
 
 .sb-content-box .intro {
-    color: #ff1744;
+    color: #ddd35d;
     font-size: 36px;
     font-weight: 300;
     line-height: 40px;
@@ -1061,7 +1063,7 @@ header {}
 }
 
 .sb-content-box .buttons .button {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 25px;
     display: inline-block;
     font-size: 14px;
@@ -1109,7 +1111,7 @@ header {}
 }
 
 .slider-carousel .owl-dots .owl-dot.active {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 /* Top Movie */
@@ -1124,6 +1126,7 @@ header {}
     font-weight: 500;
     line-height: 40px;
     padding: 0 0 30px;
+    color: #000;
 }
 
 .top-movie-area {
@@ -1136,7 +1139,7 @@ header {}
 .top-movie-carousel {}
 
 .single-top-movie {
-    border:1px solid #333;
+    border:1px solid #ccc;
     /*border-radius: 5px;*/
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
@@ -1209,7 +1212,7 @@ header {}
 
 
 .single-top-movie .view-counter {
-    color: #FFF;
+    color: #000;
     display: block;
     font-size: 11px;
     letter-spacing: 0;
@@ -1226,7 +1229,7 @@ header {}
 }
 
 .single-top-movie:hover .view-counter {
-    color: #fff;
+    color: #000;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -1318,6 +1321,7 @@ header {}
     line-height: 22px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    color: #000;
 }
 
 .single-top-movie .content .name {
@@ -1350,7 +1354,7 @@ header {}
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
-    color: #FF1744;
+    color: #ddd35d;
     height: 22px;
     margin: 0 1px 0 0;
     overflow: hidden;
@@ -1400,7 +1404,7 @@ header {}
 }
 
 .single-top-movie .content .duration {
-    border: 1px solid #ff1744;
+    border: 1px solid #ddd35d;
     border-radius: 25px;
     display: inline-block;
     font-weight: 300;
@@ -1411,6 +1415,7 @@ header {}
     transform-origin: center bottom 0;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
+    color: #ddd35d;
 }
 
 .single-top-movie:hover .content .duration {
@@ -1519,7 +1524,7 @@ header {}
 }
 
 .ums-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .ums-carousel .owl-nav .owl-prev {}
@@ -1574,7 +1579,7 @@ header {}
 
 .movie-tab .nav-tabs .nav-item .nav-link.active {
     background: transparent none repeat scroll 0 0;
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .tab-carousel .owl-nav {
@@ -1596,7 +1601,7 @@ header {}
 }
 
 .tab-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .tab-carousel .owl-nav .owl-prev {}
@@ -1619,7 +1624,7 @@ header {}
 
 .coming .intro {
     bottom: 34%;
-    color: #ff1744;
+    color: #ddd35d;
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
@@ -1666,7 +1671,7 @@ header {}
 }
 
 .single-about-movie .content .more {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 25px;
     display: inline-block;
     font-size: 16px;
@@ -1704,7 +1709,7 @@ header {}
 }
 
 .about-movie-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 /* newsletter */
@@ -1723,7 +1728,7 @@ header {}
 }
 
 .newsletter .title {
-    color: #ff1744;
+    color: #ddd35d;
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
@@ -1764,12 +1769,12 @@ header {}
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background: transparent none repeat scroll 0 0;
-    border-color: currentcolor currentcolor currentcolor #ff1744;
+    border-color: currentcolor currentcolor currentcolor #ddd35d;
     -o-border-image: none;
     border-image: none;
     border-style: none none none solid;
     border-width: 0 0 0 1px;
-    color: #ff1744;
+    color: #ddd35d;
     cursor: pointer;
     font-size: 14px;
     line-height: 22px;
@@ -1813,7 +1818,7 @@ header {}
 }
 
 .news-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .single-news {
@@ -1877,7 +1882,7 @@ header {}
 }
 
 .single-news .content .date {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 3px;
     display: inline-block;
     font-size: 15px;
@@ -1925,8 +1930,8 @@ header {}
 }
 
 .single-news .content .meta-more .more:hover {
-    background: #ff1744 none repeat scroll 0 0;
-    border-color: #ff1744;
+    background: #ddd35d none repeat scroll 0 0;
+    border-color: #ddd35d;
     color: #ffffff;
 }
 
@@ -2114,7 +2119,7 @@ footer {
 }
 
 .fw-twitter .tweet-feed li .name span {
-    color: #ff1744;
+    color: #ddd35d;
     text-decoration: underline;
 }
 
@@ -2154,7 +2159,7 @@ footer {
 .fba-right .copyright {}
 
 .fba-right .copyright a {
-    color: #ff1744;
+    color: #ddd35d;
     display: inline-block;
     font-size: 14px;
 }
@@ -2190,7 +2195,7 @@ body.home-2 {
 
 .h2-movie-tab-area .movie-tab .nav-tabs .nav-item .nav-link.active {
     background: transparent none repeat scroll 0 0;
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .h2-movie-tab-area .movie-tab .nav-tabs .nav-item::after {
@@ -2240,7 +2245,7 @@ body.home-2 {
 }
 
 .h2hta-social .social li.twitter a {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .h2hta-social .social li.pinterest a {
@@ -2261,7 +2266,7 @@ body.home-2 {
 
 .h2-header-bottom-area .menu ul li a:hover,
 .h2-header-bottom-area .menu ul li:hover>a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .h2-header-bottom-area {
@@ -2311,7 +2316,7 @@ body.home-2 {
 }
 
 .h2-sb-content-box .intro {
-    color: #ff1744;
+    color: #ddd35d;
     display: inline-block;
     font-size: 30px;
     font-style: italic;
@@ -2329,7 +2334,7 @@ body.home-2 {
 }
 
 .h2-sb-content-box .intro .top {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border: 3px solid #ffffff;
     border-radius: 100%;
     color: #ffffff;
@@ -2373,7 +2378,7 @@ body.home-2 {
 }
 
 .h2-sb-content-box .more {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 25px;
     display: inline-block;
     font-size: 14px;
@@ -2415,7 +2420,7 @@ body.home-2 {
 }
 
 .h2-slider-carousel .owl-dots .owl-dot.active {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 /* H2 About */
@@ -2941,7 +2946,7 @@ body.home-3 a:hover {
 }
 
 .album-art-block .song-name {
-    color: #fff;
+    color: #000;
     font-size: 18px;
     letter-spacing: 0;
     line-height: 22px;
@@ -2951,7 +2956,7 @@ body.home-3 a:hover {
 .album-art-block .song-artist-album {
     background-color: transparent;
     background-image: none;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0;
@@ -3064,7 +3069,7 @@ body.home-3 a:hover {
 }
 
 .controller-common::before {
-    color: #fff;
+    color: #000;
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
     font-weight: 900;
@@ -3549,19 +3554,19 @@ body.home-3 a:hover {
 }
 
 .h3-newsletter .title {
-    color: #fff;
+    color: #000;
     font-size: 50px;
     line-height: 50px;
 }
 
 .h3-newsletter .newsleter-input-box input[type="text"] {
     background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
-    color: #fff;
+    color: #000;
 }
 
 .h3-newsletter .newsleter-input-box button {
     border-color: transparent transparent transparent #6a6a70;
-    color: #fff;
+    color: #000;
 }
 
 .h3n-twitter-feed {
@@ -3712,7 +3717,7 @@ body.home-3 a:hover {
 }
 
 .op-breadcumb ul li a {
-    color: #fff;
+    color: #000;
     display: block;
     font-size: 14px;
     font-weight: 700;
@@ -3724,7 +3729,7 @@ body.home-3 a:hover {
 }
 
 .op-breadcumb ul li:last-child a {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 .op-breadcumb ul li a::after {
@@ -3748,7 +3753,7 @@ body.home-3 a:hover {
 }
 
 .op-back>a {
-    color: #fff;
+    color: #000;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 18px;
@@ -3777,7 +3782,7 @@ body.home-3 a:hover {
 }
 
 .dba-left-single .content .duration {
-    border-color: #fff;
+    border-color: #000;
 }
 
 .dba-right {
@@ -3837,7 +3842,7 @@ body.home-3 a:hover {
 }
 
 .dba-right-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 /* Details */
@@ -3875,7 +3880,7 @@ body.home-3 a:hover {
 
 
 .details-movie .content .name {
-    color: #ff1744;
+    color: #ddd35d;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -3993,7 +3998,7 @@ body.home-3 a:hover {
     letter-spacing: 0;
     /*line-height: 24px;*/
     /*background: #FF9A17;*/
-    border:1px solid #FF1744;
+    border:1px solid #ddd35d;
     padding: 4px 15px;
     margin: 20px 0 10px;
     font-weight: bold;
@@ -4005,7 +4010,7 @@ body.home-3 a:hover {
 }
 
 .details-movie .content .share .label {
-    color: #ff1744;
+    color: #ddd35d;
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
@@ -4051,9 +4056,9 @@ body.home-3 a:hover {
 }
 
 .details-movie .content .all {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 25px;
-    color: #fff;
+    color: #000;
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
@@ -4084,7 +4089,7 @@ body.home-3 a:hover {
     background: #18172c none repeat scroll 0 0;
     border: 0 none;
     border-radius: 5px 5px 0 0;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0;
@@ -4095,7 +4100,7 @@ body.home-3 a:hover {
 }
 
 .details-tab .nav-item .nav-link.active {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .details-tab .tab-content {}
@@ -4120,7 +4125,7 @@ body.home-3 a:hover {
 }
 
 .grid-menu {
-    background: #18172c none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border-radius: 5px;
     margin: 0 0 30px;
     padding: 20px 28px;
@@ -4142,7 +4147,7 @@ body.home-3 a:hover {
     background: #0c0b21 none repeat scroll 0 0;
     border: 1px solid #0c0b21;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     height: 30px;
     line-height: 30px;
@@ -4153,9 +4158,9 @@ body.home-3 a:hover {
 }
 
 .grid-menu nav .nav-tabs .nav-link.active {
-    background: #ff1744 none repeat scroll 0 0;
-    border-color: #ff1744;
-    color: #fff;
+    background: #ddd35d none repeat scroll 0 0;
+    border-color: #ddd35d;
+    color: #000;
 }
 
 .grid-menu nav .nav-tabs .nav-link:last-chlid {
@@ -4165,10 +4170,10 @@ body.home-3 a:hover {
 .grid-menu .sort-show {}
 
 .grid-menu .sort-show select {
-    background: #0c0b21 none repeat scroll 0 0;
+    /*background: #0c0b21 none repeat scroll 0 0;*/
     border: 1px solid #0c0b21;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
@@ -4180,7 +4185,7 @@ body.home-3 a:hover {
 .grid-menu .sort-show select option {}
 
 .grid-menu .sort-show p {
-    color: #fff;
+    color: #000;
     display: inline-block;
     line-height: 24px;
     margin: 0 8px;
@@ -4217,7 +4222,7 @@ body.home-3 a:hover {
 .grid-menu .pages ul li:last-child a {
     background: #0c0b21 none repeat scroll 0 0;
     border-color: #333333;
-    color: #fff;
+    color: #000;
 }
 
 .grid-menu .pages ul li:first-child a {}
@@ -4226,8 +4231,8 @@ body.home-3 a:hover {
 
 .grid-menu .pages ul li a:hover,
 .grid-menu .pages ul li a.active {
-    background: #ff1744 none repeat scroll 0 0;
-    border-color: #ff1744;
+    background: #ddd35d none repeat scroll 0 0;
+    border-color: #ddd35d;
     color: #fff
 }
 
@@ -4263,7 +4268,7 @@ body.home-3 a:hover {
 }
 
 .single-list-movie .content .name {
-    color: #fff;
+    color: #000;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -4345,7 +4350,7 @@ body.home-3 a:hover {
 }
 
 .single-list-movie .content .share .label {
-    color: #ff1744;
+    color: #ddd35d;
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
@@ -4393,7 +4398,7 @@ body.home-3 a:hover {
 .single-list-movie .content .all {
     background: #18172c none repeat scroll 0 0;
     border-radius: 25px;
-    color: #fff;
+    color: #000;
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
@@ -4403,7 +4408,7 @@ body.home-3 a:hover {
 }
 
 .single-list-movie .content .all:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 /*----------------------------------------*/
@@ -4487,7 +4492,7 @@ body.home-3 a:hover {
 .single-celebrety .content .social li.facebook a:hover {
     background: #3e5799 none repeat scroll 0 0;
     border-color: #3e5799;
-    color: #fff;
+    color: #000;
 }
 
 .single-celebrety .content .social li.pinterest a {
@@ -4497,7 +4502,7 @@ body.home-3 a:hover {
 .single-celebrety .content .social li.pinterest a:hover {
     background: #c6141e none repeat scroll 0 0;
     border-color: #c6141e;
-    color: #fff;
+    color: #000;
 }
 
 .single-celebrety .content .social li.twitter a {
@@ -4507,7 +4512,7 @@ body.home-3 a:hover {
 .single-celebrety .content .social li.twitter a:hover {
     background: #009fee none repeat scroll 0 0;
     border-color: #009fee;
-    color: #fff;
+    color: #000;
 }
 
 .single-celebrety .content .name {
@@ -4546,7 +4551,7 @@ body.home-3 a:hover {
 }
 
 .about-all-album-area .all-album-carousel .owl-nav>div:hover {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
 }
 
 .about-newsletter-area {
@@ -4554,7 +4559,7 @@ body.home-3 a:hover {
 }
 
 .about-newsletter-area .fw-twitter .tweet-feed li .name span {
-    color: #ff1744;
+    color: #ddd35d;
 }
 
 /*----------------------------------------*/
@@ -4707,7 +4712,7 @@ body.home-3 a:hover {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #494859;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     height: 50px;
     letter-spacing: 0;
@@ -4732,7 +4737,7 @@ body.home-3 a:hover {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #494859;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     height: 220px;
     letter-spacing: 0;
@@ -4741,9 +4746,9 @@ body.home-3 a:hover {
 }
 
 .leave-reply-input-box input[type="submit"] {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border: 0 none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 15px;
     letter-spacing: 0;
@@ -4785,7 +4790,7 @@ body.home-3 a:hover {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
-    color: #fff;
+    color: #000;
     text-transform: capitalize;
 }contact-us
 
@@ -4818,7 +4823,7 @@ body.home-3 a:hover {
     border: 0px solid #494859;
     border: 1px solid #494859;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     height: 35px;
     width: 100%;
 }
@@ -4831,15 +4836,15 @@ body.home-3 a:hover {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #494859;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     height: 200px;
     width: 100%;
 }
 
 .contact-us form .cf-input-box button {
-    background: #ff1744 none repeat scroll 0 0;
+    background: #ddd35d none repeat scroll 0 0;
     border: 0 none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;

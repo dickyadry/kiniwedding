@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-md-6 col-xs-6 text-right">
                             <?php if(isset($data->status_legal) && $data->status_legal==2){?>
-                            <h2 style="color:#FF1744;">Belum Terverifikasi<br></h2>
+                            <h2 style="color:#DDD35D;">Belum Terverifikasi<br></h2>
                             <?php }else if(isset($data->status_legal) && $data->status_legal==1){ ?>
                             <h2 style="color:#3ce83f;">Terverifikasi<br></h2>
                             <?php } ?>

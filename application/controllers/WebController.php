@@ -50,7 +50,7 @@ class WebController extends MY_Controller {
 		$data["event_terbaru"] = $datas;
 		
 		$query = $this->product_model->source();
-		$query->select('product.*');
+		$query ->select('product.*');
 		// $query->order_by("RAND()");
 		// $query->where('type','Public');
 		$query->where('product.status','aktif');
@@ -117,7 +117,7 @@ class WebController extends MY_Controller {
 
 	}
 
-	public function event(){
+	public function product(){
 
 		$data = array();
 		$data["title_page"] = "Event Stack";
@@ -132,7 +132,7 @@ class WebController extends MY_Controller {
 		}
 
 		$query = $this->product_model->source();
-		$query->select('product.code, product.simple_link, product.title, product.speaker, product.platform, product.start_date, product.end_date, product.description, product.tnc, product.pageview, product.cover, product.slug, product.note, product.is_blast, product.status, product.type, product.member_id, product.is_online, product.is_selection, product.is_free, product.link, product.place, product.provinsi, product.kota, product.address, product.max_order_ticket, product.is_one_only, product.category_name, product.position, product.is_custom_form, product.deleted_at, product.deleted_by, product.id');
+		$query->select('product.code, product.name, product.description, product.price, product.cover, product.status, product.member_id, product.category_name, product.is_custom_form, product.deleted_at, product.deleted_by, product.id');
 		$query->join('category_product cp', 'product.id = cp.product_id');
 		$query->join('category c', 'cp.category_id = c.id');
 		$query->where('type','Public');
@@ -147,10 +147,10 @@ class WebController extends MY_Controller {
 		}
 
 		$query->group_by("cp.product_id,product.id,product.code");
-		$query->group_by("product.code, product.simple_link, product.title, product.speaker, product.platform, product.start_date, product.end_date, product.description, product.tnc, product.pageview, product.cover, product.slug, product.note, product.is_blast, product.status, product.type, product.member_id, product.is_online, product.is_selection, product.is_free, product.link, product.place, product.provinsi, product.kota, product.address, product.max_order_ticket, product.is_one_only, product.category_name, product.position, product.is_custom_form, product.deleted_at, product.deleted_by, product.id");
+		$query->group_by("product.code, product.name, product.description, product.price, product.cover, product.status, product.member_id, product.category_name, product.is_custom_form, product.deleted_at, product.deleted_by, product.id");
 
 		if(isset($_GET['order_by']) && $_GET['order_by']=="Event Terdekat"){	
-			$query->where(" DATE(end_date) >=",$today);
+			// $query->where(" DATE(end_date) >=",$today);
 			$query->order_by("start_date", "ASC");
 		}else{
 			$query->order_by("product.created_at", "DESC");
@@ -159,7 +159,7 @@ class WebController extends MY_Controller {
 		$total_data = $query->count_all_results();
 
 		$query = $this->product_model->source();
-		$query->select('product.code, product.simple_link, product.title, product.speaker, product.platform, product.start_date, product.end_date, product.description, product.tnc, product.pageview, product.cover, product.slug, product.note, product.is_blast, product.status, product.type, product.member_id, product.is_online, product.is_selection, product.is_free, product.link, product.place, product.provinsi, product.kota, product.address, product.max_order_ticket, product.is_one_only, product.category_name, product.position, product.is_custom_form, product.deleted_at, product.deleted_by, product.id');
+		$query->select('product.code, product.name, product.description, product.price, product.cover, product.status, product.member_id, product.category_name, product.is_custom_form, product.deleted_at, product.deleted_by, product.id');
 		$query->join('category_product cp', 'product.id = cp.product_id');
 		$query->join('category c', 'cp.category_id = c.id');
 		$query->where('type','Public');
@@ -174,10 +174,10 @@ class WebController extends MY_Controller {
 		}
 
 		$query->group_by("cp.product_id,product.id");
-		$query->group_by("product.code, product.simple_link, product.title, product.speaker, product.platform, product.start_date, product.end_date, product.description, product.tnc, product.pageview, product.cover, product.slug, product.note, product.is_blast, product.status, product.type, product.member_id, product.is_online, product.is_selection, product.is_free, product.link, product.place, product.provinsi, product.kota, product.address, product.max_order_ticket, product.is_one_only, product.category_name, product.position, product.is_custom_form, product.deleted_at, product.deleted_by, product.id");
+		$query->group_by("product.code, product.name, product.description, product.price, product.cover, product.status, product.member_id, product.category_name, product.is_custom_form, product.deleted_at, product.deleted_by, product.id");
 
 		if(isset($_GET['order_by']) && $_GET['order_by']=="Event Terdekat"){	
-			$query->where(" DATE(end_date) >=",$today);
+			// $query->where(" DATE(end_date) >=",$today);
 			$query->order_by("start_date", "ASC");
 		}else{
 			$query->order_by("product.created_at", "DESC");
@@ -190,7 +190,7 @@ class WebController extends MY_Controller {
 		$category = $query->get()->result();
 		$data["category"] = $category;
 
-		$data['pagination'] = $this->paging_page_frontend('event',$limit,$total_data);
+		$data['pagination'] = $this->paging_page_frontend('product',$limit,$total_data);
 
 		$data["total_data"] = $total_data;
 		$data['total_page'] = ceil($total_data/$limit);
@@ -216,12 +216,11 @@ class WebController extends MY_Controller {
 
 	}
 
-	public function detail($code,$slug){
+	public function detail($code){
 
 		$code = strip_tags($code);
-		$slug = strip_tags($slug);
 
-		if($slug != ""){
+		if($code != ""){
 
 			$product = $this->product_model->find($code,'code');
 			if(isset($product->id) && $product->status=='aktif' && $product->deleted_at==null){
@@ -231,65 +230,15 @@ class WebController extends MY_Controller {
 				$query = $this->product_model->source();
 				$query->where('id <>',$product->id);
 				$query->where('product.status','aktif');
-				$query->where('type','Public');
+				// $query->where('type','Public');
 				$query->where('deleted_at',null);
 				$query->order_by("created_at", "DESC");
 				$query->limit(9,0);
 				$datas = $query->get()->result();
-				$data["other_webminar"] = $datas;
+				$data["other_product"] = $datas;
 
-				$data["title_page"] = $product->title . " | " . "Event Stack ";
+				$data["title_page"] = $product->name . " | " . "Kini Wedding";
 
-				$query = $this->ticket_model->source();
-				$query->where('product_id',$product->id);
-				$ticket = $query->get()->result();
-
-				$ticket_arr = array();
-				foreach ($ticket as $key => $value) {
-
-					$query = $this->peserta_model->source();
-					$query->join('sales_order so','so.id=peserta.sales_order_id');
-					$query->where('ticket_id',$value->id);
-					$query->group_start();
-	                    $query->where('so.status_order',1);   
-	                    $query->or_group_start();
-	                    	$query->where('so.status_order',4);   
-	                    	$query->where('payment_method IS NOT NULL'); 
-					        $query->group_start();
-					        	$query->or_group_start();
-						            $query->where('payment_method','manual_transfer');   
-						            $query->where('so.created_at >=',expiry_time_format(60));   
-						        $query->group_end();
-
-						        $query->or_group_start();
-						            $query->where('payment_method','bank_transfer');   
-						            $query->where('so.created_at >=',expiry_time_format(60));   
-						        $query->group_end();
-
-					        	$query->or_group_start();
-						            $query->where('payment_method','ewallet');   
-						            $query->where('so.created_at >=',expiry_time_format(5)); 
-						        $query->group_end();  
-
-						        $query->or_group_start();
-						            $query->where('payment_method','qris');   
-						            $query->where('so.created_at >=',expiry_time_format(15));   
-						        $query->group_end();
-					        $query->group_end();
-					    $query->group_end();
-	                $query->group_end();
-					$total_peserta = $query->count_all_results();
-
-					$value->sisa_slot = $value->slot-$total_peserta;
-					$ticket_arr[] = $value;
-				}
-				$data['ticket'] = $ticket_arr;
-
-				$product->price = $ticket_arr[0]->price;
-				
-				$member = $this->member_model->find($product->member_id);
-				$data['member'] = $member;
-				
 				$c = $this->load->view("contents/detail", $data, true);
 				$js = $this->load->view("js/js_detail", "", true);
 				$this->load_layout($c, $js, $product, 'detail');

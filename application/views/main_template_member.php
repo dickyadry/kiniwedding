@@ -13,18 +13,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="event stack, eventstack, event, webinar, kegiatan, event online, workshop online">
-    <meta name="keywords" content="event stack, eventstack, event, webinar, kegiatan, event online, workshop online">
-    <meta name="author" content="eventstack.id">
+    <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="author" content="kiniwedding.com">
 
     <?php if(isset($detail)){ ?>
       <?php if($type=="detail"){ ?>
 
-    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
-    <meta content="http//www.eventstack.id/" itemprop="url" />
+    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo-only-hitam.png";?>" itemprop="thumbnailUrl" />
+    <meta content="http//www.kiniwedding.com/" itemprop="url" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
-    <meta name="apple-mobile-web-app-title" content="eventstack">
+    <meta name="apple-mobile-web-app-title" content="kiniwedding">
 
     <link rel="apple-touch-icon" href="<?php echo str_replace("medium", "small", $detail->cover); ?>" sizes="152x152">
     <meta name="msapplication-TitleImage" content="<?php echo str_replace("medium", "small", $detail->cover); ?>">
@@ -51,8 +51,8 @@
     <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
     <meta itemprop="articleSection" content="Webinar" />
 
-    <meta name="twitter:site" content="@eventstack.id" />
-    <meta name="twitter:creator" content="@eventstack.id" />
+    <meta name="twitter:site" content="@kiniwedding.com" />
+    <meta name="twitter:creator" content="@kiniwedding.com" />
     <meta name="twitter:title" content="<?php echo $detail->title; ?>" />
     <meta name="twitter:description" content="<?php echo strip_tags($detail->description); ?>" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -93,12 +93,12 @@
       "organizer": {
         "@type": "Organization",
         "name": "Event Stack",
-        "url": "https://eventstack.id"
+        "url": "https://kiniwedding.com"
       }
     }
     </script>
     <?php } ?>
-	<link rel="icon" href="<?php echo base_url(); ?>assets_member/images/icon.png" type="images/png" />
+	<link rel="icon" href="<?php echo base_url(); ?>assets_member/images/logo-only-hitam.png" type="images/png" />
 
 	<link href="<?php echo base_url('assets_member/'); ?>css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url('assets_member/'); ?>css/londinium-theme.css" rel="stylesheet" type="text/css">
@@ -152,7 +152,7 @@
 		<div class="navbar navbar-inverse" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="<?php echo base_url(); ?>">
-					<img src="<?php echo ASSETS; ?>img/dashboard-logo.png" alt="" style="max-width: 195px; margin-top: -5px;">
+					<img src="<?php echo ASSETS; ?>img/logo-with-text-putih" alt="" style="max-width: 150px; margin-top: -5px;">
 					<a></a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons">
 						<span class="sr-only">Toggle navbar</span>

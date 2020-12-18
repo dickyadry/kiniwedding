@@ -26,7 +26,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <div class="logo">
                         <a href="<?php echo base_url(); ?>">
-                            <img src="<?php echo ASSETS; ?>img/logo.png" alt="">
+                            <img src="<?php echo ASSETS; ?>img/logo-with-text-putih" alt="">
                         </a>
                     </div>
                 </div>
@@ -169,25 +169,10 @@
             <a href="<?php echo base_url(); ?>member/dashboard" class="board__link">Dahsboard</a>
         </li>
         <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/tiket-aktif" class="board__link">Tiket Saya</a>
-        </li>
-        <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/event" class="board__link">Event Saya</a>
-        </li>
-        <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/sales-order" class="board__link">Sales Order</a>
-        </li>
-        <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/esertifikat" class="board__link">E-Sertifikat</a>
-        </li>
-        <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/materi" class="board__link">Materi</a>
+            <a href="<?php echo base_url(); ?>member/pesanan-saya/aktif" class="board__link">Pesanan Saya</a>
         </li>
         <li class="board__item">
             <a href="<?php echo base_url(); ?>member/profile" class="board__link">Profil</a>
-        </li>
-        <li class="board__item">
-            <a href="<?php echo base_url(); ?>member/rekening" class="board__link">Rekening</a>
         </li>
         <li class="board__item">
             <a href="<?php echo base_url(); ?>member/ubah-password" class="board__link">Ubah Password</a>

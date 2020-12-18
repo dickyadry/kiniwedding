@@ -57,8 +57,8 @@
                     <ul class="info">
                         <li>Mobile: 0898-3024-016</li>
                         <!-- <li>Email Address: admin@eventstack.id</li> -->
-                        <li>Gmail: eventstack215@gmail.com</li>
-                        <li>Website: www.eventstack.id</li>
+                        <li>Gmail: kiniwedding@gmail.com</li>
+                        <li>Website: www.kiniwedding.com</li>
                     </ul>
                 </div>
             </div>

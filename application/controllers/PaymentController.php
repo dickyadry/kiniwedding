@@ -46,54 +46,9 @@ class PaymentController extends MY_Controller {
                 $amount = $sales_order->sub_total;
 
                 $sales_order_detail = $this->sales_order_detail_model->find($sales_order->id,'sales_order_id');
-                $product =$this->product_model->find($sales_order_detail->product_id);
 
-                $saldo = $this->saldo_model->find($product->member_id,'member_id');
-                if(isset($saldo->id)){
-
-                    $transaction_data = array(
-                        'status'=>'IN',
-                        'amount'=>$amount,
-                        'member_id'=>$product->member_id,
-                        'customer_name'=>$sales_order->customer_name,
-                        'type'=>'DANA MASUK',
-                        'product_id'=>$sales_order_detail->product_id,
-                        'sales_order_id'=>$sales_order->id,
-                        'note'=>'Pembayaran Tiket'
-                    );
-                    $this->transaction_model->insert($transaction_data);
-
-                    $saldo_data = array(
-                        'pending_saldo'=>$saldo->pending_saldo + $amount,
-                    );
-                    $this->saldo_model->update($saldo_data,$product->member_id,'member_id');
-
-                }else{
-
-                    $transaction_data = array(
-                        'status'=>'IN',
-                        'amount'=>$amount,
-                        'member_id'=>$product->member_id,
-                        'customer_name'=>$sales_order->customer_name,
-                        'type'=>'DANA MASUK',
-                        'product_id'=>$sales_order_detail->product_id,
-                        'sales_order_id'=>$sales_order->id,
-                        'note'=>'Pembayaran Tiket'
-                    );
-                    $this->transaction_model->insert($transaction_data);
-
-                    $saldo_data = array(
-                        'pending_saldo'=>$amount,
-                        'proses_saldo'=>0,
-                        'saldo'=>0,
-                        'member_id'=>$product->member_id,
-                    );
-                    $this->saldo_model->insert($saldo_data);
-
-                }
-
-                $this->_sendEmailPaymentSuccess($sales_order->id);
-                $this->_sendEmailTicket($sales_order->id);
+                // $this->_sendEmailPaymentSuccess($sales_order->id);
+                // $this->_sendEmailTicket($sales_order->id);
 
                 echo json_encode(['success' => true, 'status' => $data['transaction_status']]);
 
@@ -115,52 +70,8 @@ class PaymentController extends MY_Controller {
                 $sales_order_detail = $this->sales_order_detail_model->find($sales_order->id,'sales_order_id');
                 $product = $this->product_model->find($sales_order_detail->product_id);
 
-                $saldo = $this->saldo_model->find($product->member_id,'member_id');
-                if(isset($saldo->id)){
-
-                    $transaction_data = array(
-                        'status'=>'IN',
-                        'amount'=>$amount,
-                        'member_id'=>$product->member_id,
-                        'customer_name'=>$sales_order->customer_name,
-                        'type'=>'DANA MASUK',
-                        'product_id'=>$sales_order_detail->product_id,
-                        'sales_order_id'=>$sales_order->id,
-                        'note'=>'Pembayaran Tiket'
-                    );
-                    $this->transaction_model->insert($transaction_data);
-
-                    $saldo_data = array(
-                        'pending_saldo'=>$saldo->pending_saldo + $amount,
-                    );
-                    $this->saldo_model->update($saldo_data,$product->member_id,'member_id');
-
-                }else{
-
-                    $transaction_data = array(
-                        'status'=>'IN',
-                        'amount'=>$amount,
-                        'member_id'=>$product->member_id,
-                        'customer_name'=>$sales_order->customer_name,
-                        'type'=>'DANA MASUK',
-                        'product_id'=>$sales_order_detail->product_id,
-                        'sales_order_id'=>$sales_order->id,
-                        'note'=>'Pembayaran Tiket'
-                    );
-                    $this->transaction_model->insert($transaction_data);
-
-                    $saldo_data = array(
-                        'pending_saldo'=>$amount,
-                        'proses_saldo'=>0,
-                        'saldo'=>0,
-                        'member_id'=>$product->member_id,
-                    );
-                    $this->saldo_model->insert($saldo_data);
-
-                }
-
-                $this->_sendEmailPaymentSuccess($sales_order->id);
-                $this->_sendEmailTicket($sales_order->id);
+                // $this->_sendEmailPaymentSuccess($sales_order->id);
+                // $this->_sendEmailTicket($sales_order->id);
                 
                 echo json_encode(['success' => true, 'status' => $data['transaction_status']]);
 

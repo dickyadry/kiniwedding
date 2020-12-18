@@ -12,6 +12,23 @@ $route['translate_uri_dashes'] = FALSE;
 $route['member/dashboard'] = 'MemberDashboardController/dashboard';
 
 /* page tiket*/
+$route['member/pesanan-saya'] = 'MemberPesananSayaController/order/aktif';
+$route['member/pesanan-saya/aktif'] = 'MemberPesananSayaController/order/aktif';
+$route['member/pesanan-saya/pending'] = 'MemberPesananSayaController/order/pending';
+$route['member/pesanan-saya/detail-tiket/(:any)'] = 'MemberPesananSayaController/detail/$1';
+$route['member/pesanan-saya/invoice/(:any)'] = 'MemberPesananSayaController/invoice/$1';
+$route['member/pesanan-saya/lengkapi-data/(:any)'] = 'MemberPesananSayaController/lengkapi_data/$1';
+$route['member/pesanan-saya/save-lengkapi-data/(:any)'] = 'MemberPesananSayaController/save_lengkapi_data/$1';
+$route['member/pesanan-saya/buku-tamu/(:any)'] = 'MemberPesananSayaController/buku_tamu/$1';
+$route['member/pesanan-saya/buku-tamu/delete/(:any)'] = 'MemberPesananSayaController/buku_tamu_delete/$1';
+$route['member/pesanan-saya/buku-tamu/restore/(:any)'] = 'MemberPesananSayaController/buku_tamu_restore/$1';
+
+$route['member/pesanan-saya/delete/(:any)'] = 'MemberPesananSayaController/delete/$1';
+$route['member/pesanan-saya/(:any)'] = 'MemberPesananSayaController/myticket/$1';
+$route['generate-barcode'] = "MemberPesananSayaController/generate_barcode";
+
+
+/* page tiket*/
 $route['member/tiket'] = 'MemberTiketController/tiket/pending';
 $route['member/tiket-aktif'] = 'MemberTiketController/tiket/aktif';
 $route['member/tiket-pending'] = 'MemberTiketController/tiket/pending';
@@ -40,15 +57,6 @@ $route['member/save-profile'] = 'MemberController/save_profile';
 $route['member/ubah-password'] = 'MemberController/change_password';
 $route['member/save-ubah-password'] = 'MemberController/save_change_password';
 
-/* PAGE LEGAL */
-$route['member/legal'] = 'MemberController/legal';
-$route['member/save-legal'] = 'MemberController/save_legal';
-
-
-/* PAGE SALDO */
-$route['member/saldo'] = 'MemberSaldoController/saldo';
-$route['member/saldo/pencairan'] = 'MemberSaldoController/pencairan';
-########### END MEMBER ###########
 
 ########### START FRONEND ##########
 $route['home'] = 'WebController/website';
@@ -63,13 +71,20 @@ $route['completeorder/(:any)'] = 'CartController/completeorder/$1';
 $route['gen_qr_code/(:any)'] = 'CartController/gen_qr_code/$1';
 $route['event/save-data-tambahan/(:any)'] = 'CartController/save_data_tambahan/$1';
 
-$route['event'] = 'WebController/event';
+$route['product'] = 'WebController/product';
+
 $route['kolaborasi'] = 'WebController/kolaborasi';
 $route['narasumber'] = 'WebController/narasumber';
 $route['event/index/(:any)'] = 'WebController/event';
 $route['r/(:any)'] = 'WebController/detail_simple_link/$1';
 $route['event/(:any)/(:any)'] = 'WebController/detail/$1/$2';
 $route['event/category/(:any)'] = 'WebController/category/$1';
+
+$route['product/(:any)'] = 'WebController/detail/$1';
+$route['cart/addcart'] = 'CartController/addcart';
+$route['cart/checkout'] = 'CartController/checkout';
+$route['cart/set-order'] = 'CartController/setorder';
+$route['cart/upload-bukti-transfer'] = "FrontEndController/bukti_transfer_upload";
 
 $route['page/services'] = 'StaticPageController/services';
 $route['page/panduan'] = 'StaticPageController/panduan';
@@ -96,6 +111,10 @@ $route['verification/(:any)'] = 'AuthController/verification/$1';
 $route['login-with-google'] = 'AuthController/login_google/$1';
 $route['login-using-google'] = 'AuthController/login_using_google/$1';
 $route['login-with-facebook'] = 'AuthController/login_facebook/$1';
+
+######## UPLOAD ###########
+$route['member/upload-icon'] = "FrontEndController/icon_upload";
+
 
 ######## PANDUAN ###########
 $route['panduan'] = "PanduanController/registrasi";

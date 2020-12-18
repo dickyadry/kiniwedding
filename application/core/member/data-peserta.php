@@ -284,7 +284,7 @@
 
                 <div class="modal-body with-padding">
                     <!-- div class="block-inner text-danger">
-                        <h6 class="heading-hr">Form Email <small class="display-block" id="notes" style="color:#FF1744;">Kamu hanya dapat menggukan fitur email blast  satu kali </small></h6>
+                        <h6 class="heading-hr">Form Email <small class="display-block" id="notes" style="color:#DDD35D;">Kamu hanya dapat menggukan fitur email blast  satu kali </small></h6>
                     </div> -->
                     <div class="form-group">
                         <h6>Tujuan</h6>

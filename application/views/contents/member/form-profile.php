@@ -17,41 +17,16 @@
                             <div class="tab-content with-padding">
                                 <div class="tab-pane fade in active" id="justified-tab1">
                                     
-                                    <div class="block">
-                                        <div class="thumbnail">
-                                            <div class="caption text-center">
-                                                <h6>UPLOAD GAMBAR/POSTER/BANNER</h6>
-                                                <span>Direkomendasikan 1500 x 500 dan tidak lebih dari 2Mb</span>
-                                            </div>
-                                            <br>
-                                            <div class="thumb">
-                                                <div class="loader hidden" id="loader-banner"></div> 
-                                                <?php if(isset($data->cover) && $data->cover!=null && $data->cover!=" " && $data->cover!=""){?>
-                                                    <img  id="gambar" alt="Event Stack" src="<?php echo $data->cover; ?>" style="border-radius:5px">
-                                                <?php }else{ ?>
-                                                    <img id="gambar" alt="Event Stack" src="<?php echo ASSETS?>img/banner-blank.jpg" style="border-radius:5px">
-                                                <?php } ?>
-                                                <div class="thumb-options">
-                                                    <span>
-                                                        <a data-toggle="modal" data-target="#crop_modal" class="btn btn-icon btn-danger"><i class="icon-upload"></i></a>
-                                                        <input type="hidden" id="cover" name="cover"value="<?php echo isset($data->cover)?$data->cover:''; ?>">
-                                                        <!-- <a href="#" class="btn btn-icon btn-success"><i class="icon-remove"></i></a> -->
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <div class="row">
-                                        <div class="col-md-2 col-xs-4">
+                                        <div class="col-md-12 col-xs-12">
                                             <div class="block">
                                                 <div class="thumbnail">
                                                     <div class="thumb">
                                                         <div class="loader hidden" id="loader-icon"></div> 
                                                         <?php if(isset($data->icon) && $data->icon!=null && $data->icon!=" " && $data->icon!=""){?>
-                                                            <img  id="gambar_icon" alt="Event Stack" src="<?php echo isset($data->icon)?$data->icon:'';?>" style="border-radius:50%; width: 100%;">
+                                                            <img  id="gambar_icon" alt="Event Stack" src="<?php echo isset($data->icon)?$data->icon:'';?>" style="border-radius:50%; width: 50%;">
                                                         <?php }else{ ?>
-                                                            <img id="gambar_icon" alt="Evenst Stack" src="<?php echo ASSETS?>img/icon-blank.jpg" style="border-radius:50%; width: 100%;">
+                                                            <img id="gambar_icon" alt="Evenst Stack" src="<?php echo ASSETS?>img/icon-blank.jpg" style="border-radius:50%; width: 50%;">
                                                         <?php } ?>
                                                         <div class="thumb-options">
                                                             <span>
@@ -62,23 +37,17 @@
                                                     </div>
                                                 
                                                     <div class="caption text-center">
-                                                        <span>Upload Icon</span>
+                                                        <span>Upload Foto Profile</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-10 col-xs-12">
-                                            <div class="form-group" id="group-organization">
-                                                <label>Penyelenggara<span class="label_danger">*</span></label>
-                                                <input type="text" class="form-control" value="<?php echo isset($data->organization)?$data->organization:''; ?>" name="organization" id="organization" onkeyup="cekForm('organization')">
-                                                <i id="alert-organization" class="icon icon-warning form-control-feedback hidden"></i>
-                                                <span class="help-block">Nama Penyelenggara bisa menggunakan nama Organisasi atau Pribadi</span>
-                                            </div>
-                                            <div class="form-group" id="group-organization">
-                                                <label>Email</label>
-                                                <input type="text" class="form-control" value="<?php echo isset($data->email)?$data->email:''; ?>" readonly>
-                                            </div>
-                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group" id="group-organization">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" value="<?php echo isset($data->email)?$data->email:''; ?>" readonly>
                                     </div>
 
                                     <div class="form-group" id="group-name">
@@ -93,58 +62,6 @@
                                         <i id="alert-phone" class="icon icon-warning form-control-feedback hidden"></i>
                                     </div>
 
-                                    <div class="form-group" id="group-address">
-                                        <label>Alamat</label>
-                                        <textarea class="form-control" value="<?php echo isset($data->address)?$data->address:''; ?>" name="address" id="address"><?php echo isset($data->address)?$data->address:''; ?></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Tentang Kami</label>
-                                        <textarea class="form-control" value="<?php echo isset($data->about_us)?$data->about_us:''; ?>" name="about_us" id="about_us"><?php echo isset($data->about_us)?$data->about_us:''; ?></textarea>
-                                    </div>
-
-                                    <div class="form-horizontal" >
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <label>Instagram Username</label>
-                                                <div class="row">
-                                                    <div class="col-sm-12 has-feedback has-feedback-left" id="group-instagram">
-                                                        <input type="text" class="form-control" id="instagram" value="<?php echo isset($data->instagram)?$data->instagram:''; ?>" name="instagram" placeholder="@eventstack.id">
-                                                        <i class="icon-camera2 form-control-feedback"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-horizontal" >
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <label>Twitter Username</label>
-                                                <div class="row">
-                                                    <div class="col-sm-12 has-feedback has-feedback-left">
-                                                        <input type="text" class="form-control" id="twitter" value="<?php echo isset($data->twitter)?$data->twitter:''; ?>" name="twitter" placeholder="@eventstack.id">
-                                                        <i class="icon-twitter form-control-feedback"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-horizontal" >
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <label>Faceboook URL</label>
-                                                <div class="row">
-                                                    <div class="col-sm-12 has-feedback has-feedback-left" id="group-facebook">
-                                                        <input type="text" class="form-control" id="facebook" value="<?php echo isset($data->facebook)?$data->facebook:''; ?>" name="facebook" placeholder="https://facebook.com/EventStack2020">
-                                                        <i class="icon-facebook form-control-feedback"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>

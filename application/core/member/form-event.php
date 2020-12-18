@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="info-buttons block row">
-                    <a data-toggle="modal" role="button" onclick="openModal('berbayar')" class="col-sm-6" style="background: #FF1744; color: #FFF;"><i class="icon-ticket"></i> <span>Event Berbayar</span></a>
+                    <a data-toggle="modal" role="button" onclick="openModal('berbayar')" class="col-sm-6" style="background: #DDD35D; color: #FFF;"><i class="icon-ticket"></i> <span>Event Berbayar</span></a>
                     <a data-toggle="modal" role="button" onclick="openModal('gratis')" class="col-sm-6" style="background: #FFA000; color: #FFF;"><i class="icon-ticket"></i> <span>Event Gratis</span></a>
                 </div>
 

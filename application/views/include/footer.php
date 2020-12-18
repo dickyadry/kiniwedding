@@ -81,7 +81,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 text-center">
                 <div class="footer__copyright">
-                    &copy; <?php echo date("Y") ?> Event Stack All Rights Reserved
+                    &copy; <?php echo date("Y") ?> KiniWedding All Rights Reserved
                 </div>
             </div>
         </div>

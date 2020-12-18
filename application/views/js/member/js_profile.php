@@ -1,5 +1,5 @@
 <script type="text/javascript" src="<?php echo base_url('assets_member/'); ?>js/moment.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/'); ?>crop/js/cropper.js"></script>
+<script type="text/javascript" src="<?php echo base_url('assets_member/'); ?>crop/js/cropper.js"></script>
 
 <script>
 
@@ -8,14 +8,7 @@
         var status_data = true;
         var msg = '';
 
-        if ($("#organization").val() == '') {
-
-            $("#group-organization").addClass("has-warning has-feedback");
-            $("#alert-organization").removeClass( "hidden" );
-            msg = 'Silahkan isi nama penyelenggara';
-            status_data = false;
-
-        }else if($("#name").val() == ''){
+         if($("#name").val() == ''){
 
             $("#group-name").addClass("has-warning has-feedback");
             $("#alert-name").removeClass( "hidden" );
@@ -59,89 +52,6 @@
 
         }
 
-    }
-
-    //CROP BANNER
-    function uploadCropper(input){
-
-        var reader;
-        var imageFile = input.files[0];
-
-        if (imageFile != null) {
-            if (imageFile.size > 2000000) {
-                Swal.fire(
-                  'Oopps!',
-                  'File Size More than 2 MB',
-                  'error'
-                )
-                $('#gambar').removeAttr('src');
-                $('#gambar').hide();
-                $('#cover').val('');
-            }else{
-
-                var url = URL.createObjectURL(imageFile);
-                var img = $('<img src="' + url + '">');
-                $('.avatar-wrapper').empty().html(img);
-                img.cropper({
-                  aspectRatio: 15 / 5,
-                  dragMode: 'none',
-                  cropBoxMovable: true,
-                  cropBoxResizable: true,
-                  crop: function (e) {
-                    var json = [
-                          '{"x":' + e.x,
-                          '"y":' + e.y,
-                          '"height":' + e.height,
-                          '"width":' + e.width,
-                          '"rotate":' + e.rotate + '}'
-                        ].join();
-
-                    $('.avatar-data').val(json);
-                  }
-                });
-            }
-        }
-    }
-
-    function submitCrop(){
-
-        $("#loader-banner").removeClass( "hidden" );
-        $("#gambar").addClass( "hidden" );
-
-        var files = $("#cover_file").prop('files')[0];
-        var cropping = $('.avatar-data').val();
-        var form_data = new FormData();                  
-        form_data.append('file', files);
-        form_data.append('avatar-data', cropping);
-
-        $.ajax({ 
-            url: "<?php echo base_url(); ?>member/upload-banner", 
-            type: 'post', 
-            data: form_data, 
-            dataType: 'json',
-            type: 'POST',
-            contentType: false, 
-            processData: false, 
-            success: function(response){
-                if(response.status == 'success'){ 
-
-                  $('#gambar').attr('src',response.thumbPath);
-                  $('#gambar').show();
-                  $('#cover').val(response.thumbPath);
-
-                  $("#loader-banner").addClass( "hidden" );
-                  setTimeout(() => {  $("#gambar").removeClass( "hidden" ); }, 200);
-
-                } 
-                else{ 
-                    Swal.fire(
-                      'Oopps!',
-                      'ile not uploaded',
-                      'error'
-                    )
-                } 
-            }, 
-        }); 
     }
 
     //CROP ICON

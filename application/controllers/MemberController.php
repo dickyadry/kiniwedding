@@ -16,7 +16,7 @@ class MemberController extends MY_Controller {
 		// $this->category_model = new GeneralModel("category");
 		// $this->category_product_model = new GeneralModel("category_product");
 		// $this->transaction_model = new GeneralModel("transaction");
-		$this->account_model = new GeneralModel("account");
+		// $this->account_model = new GeneralModel("account");
 		// $this->saldo_model = new GeneralModel("saldo");
 		$this->legal_model = new GeneralModel("legal");
 
@@ -97,12 +97,10 @@ class MemberController extends MY_Controller {
 			"member_id" => $this->userpubliclog['member_id'],
 			"login" =>true,
 			"name" => $data->name,
-			"organization" => $data->organization,
 			"email" => $data->email,
 			"phone" => $data->phone,
 			"icon" => $data->icon,
 			"username" => $data->username,
-			"level" => $data->level,
 		);
 		$this->session->set_userdata("userpubliclog", $userlog);
 
@@ -111,157 +109,7 @@ class MemberController extends MY_Controller {
 		
 	}
 
-	public function legal(){
 
-		$data["title_page"] = "Informasi Legal | " . "Event Stack";
-		$data["title"] = "Informasi Legal";
-		$data["title_small"] = "Legal information page layout";
-
-		$data['data'] = $this->member_model->find($this->userpubliclog['member_id']);
-		
-		$query = $this->legal_model->source();
-		$query->where('member_id',$this->userpubliclog['member_id']);
-		$data['legal'] = $query->get()->result();
-
-		$c = $this->load->view("contents/member/form-legal", $data, true);
-		$js = $this->load->view("js/member/js_legal", "", true);
-		$this->load_layout_member($c,$js);
-
-		
-	}
-
-	public function save_legal(){
-
-		$this->cek_user_session();
-		
-		$this->legal_model->delete($this->userpubliclog["member_id"],'member_id');
-		
-		$param_data = $this->input_data;
-		foreach ($param_data['type_doc'] as $key => $value) {
-
-			$legal_data = array(
-				'member_id'=>$this->userpubliclog["member_id"],
-				'nomor'=>$param_data['nomor'][$key],
-				'name'=>$param_data['name'][$key],
-				'file_doc'=>$param_data['cover'][$key],
-				'type_doc'=>$value,
-				'address'=>$param_data['address'][$key],
-
-			);
-			$this->legal_model->insert($legal_data);
-			
-		}
-
-		$data_member = array(
-			'type'=>$param_data['type'],
-			'status_legal'=>2
-		);
-		$this->member_model->update($data_member,$this->userpubliclog["member_id"]);
-
-		$this->session->set_flashdata("success", "Dokumen berhasil disimpan");
-		redirect(base_url('member/legal'));
-		
-	}
-
-
-	public function rekening(){
-
-		$this->cek_user_session();
-
-		$data = array();
-		$data["title_page"] = "Rekening | " . "Event Stack";
-		$data["title"] = "Rekening";
-		$data["title_small"] = "Rekening page layout";
-
-		$query = $this->account_model->source();
-		$query->where('member_id',$this->userpubliclog['member_id']);
-		$data['datas'] = $query->get()->result();
-
-		$c = $this->load->view("contents/member/rekening", $data, true);
-		$js = $this->load->view("js/member/js_rekening", "", true);
-		$this->load_layout_member($c,$js);
-
-		
-	}
-
-	public function add_rekening(){
-
-
-		$this->cek_user_session();
-		$data = array();
-		$data["title_page"] = "Rekening | " . "Event Stack";
-		$data["title"] = "Form Rekening";
-		$data["title_small"] = "Account Form page layout";
-
-		$c = $this->load->view("contents/member/form-rekening", $data, true);
-		$js = $this->load->view("js/member/js_rekening", "", true);
-		$this->load_layout_member($c,$js);
-
-		
-	}
-
-	public function save_rekening(){
-
-		$this->cek_user_session();
-		
-		$param_data = $this->input_data;
-		$param_data['member_id'] =  $this->userpubliclog["member_id"];
-		$this->account_model->insert($param_data);
-
-		$this->session->set_flashdata("success", "Rekening berhasil disimpan");
-		redirect(base_url('member/rekening'));
-		
-	}
-
-	public function edit_rekening($id){
-
-
-		$this->cek_user_session();
-
-		$id = encrypt_decrypt('decrypt', $id);
-
-		$data = array();
-		$data["title_page"] = "Rekening | " . "Event Stack";
-		$data["title"] = "Form Rekening";
-		$data["title_small"] = "Account Form page layout";
-
-		$account = $this->account_model->find($id);
-		$data['data'] = $account;
-
-		$c = $this->load->view("contents/member/form-rekening", $data, true);
-		$js = $this->load->view("js/member/js_rekening", "", true);
-		$this->load_layout_member($c,$js);
-
-		
-	}
-
-	public function update_rekening($id){
-
-
-		$this->cek_user_session();
-		
-		$id = encrypt_decrypt('decrypt', $id);
-
-		$param_data = $this->input_data;
-		$this->account_model->update($param_data,$id);
-
-		$this->session->set_flashdata("success", "Rekening berhasil diupdate");
-		redirect(base_url('member/rekening'));
-
-		
-	}
-
-	public function delete_rekening($id){
-
-		$this->cek_user_session();
-
-		$id = encrypt_decrypt('decrypt', $id);
-		$this->account_model->delete($id);
-
-		$this->session->set_flashdata("success", "Rekening berhasil dihapus");
-		redirect(base_url('member/rekening'));
-		
-	}
 
 
 }

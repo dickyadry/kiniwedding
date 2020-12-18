@@ -23,7 +23,7 @@
 
                 <p>Klik link di bawah untuk menyetel ulang password yang menggunakan server kami:</p><br/>
 
-                <a style="background:#ff1744; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>change-password/<?php echo $token; ?>" target="_blank">Ubah Password</a>
+                <a style="background:#DDD35D; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>change-password/<?php echo $token; ?>" target="_blank">Ubah Password</a>
 
         <!--         <br/><br/>atau <br/>
                 <a href="<?php echo base_url(); ?>change-password/<?php echo $token; ?>" target="_blank"><?php echo base_url(); ?>change-password/<?php echo $token; ?></a> -->

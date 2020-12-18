@@ -22,7 +22,7 @@
                                 <div class="caption text-center" style="height: 300px;">
                                     <h6><?php echo $value->sales_order_no; ?>
                                         <small><?php echo date('d/m/Y H:i',strtotime($value->created_at)); ?></small>
-                                        <small style="font-size: 20px; color: #FF1744; margin-top: 10px;"><?php echo rupiah($value->grand_total); ?></small>
+                                        <small style="font-size: 20px; color: #DDD35D; margin-top: 10px;"><?php echo rupiah($value->grand_total); ?></small>
                                     </h6>
 
                                     <?php if($value->payment_method!=null && $value->payment_method!=null && $value->status_order==4){ ?>

@@ -149,17 +149,17 @@
         line-height: 35px;
         text-align: center;
         width: 35px;
-        color: #FF1744;
+        color: #DDD35D;
     }
     .fw-info .social li a i{
         margin-top: 9px;
     }
     .fw-info .social li a:hover {
-        background: #FF1744 none repeat scroll 0 0;
+        background: #DDD35D none repeat scroll 0 0;
         color: #ffffff;
     }
     .footer-bottom-area {
-        border-top: 5px solid #FF1744;
+        border-top: 5px solid #DDD35D;
         padding: 20px;
     }
 

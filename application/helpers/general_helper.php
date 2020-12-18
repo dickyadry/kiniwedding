@@ -336,20 +336,17 @@ function pending_ticket(){
     return $total_data;
 }
 
-function cart_contents_tiket($where=''){
+function cart_contents($where=''){
 
     $ci =& get_instance(); 
     $ci->load->database();
     $ci->cart_model = new GeneralModel("shopping_cart");
     $ci->product_model = new GeneralModel("product");
-    $ci->ticket_model = new GeneralModel("ticket");
 
     $ci->userpubliclog = $ci->session->userdata('userpubliclog');
 
-    $data_peserta = $ci->session->userdata('data_peserta');
-    
     $query = $ci->cart_model->source();
-    $query->select('shopping_cart.*, p.cover, p.title, p.description, p.speaker, p.start_date, p.end_date, p.platform, p.is_one_only');
+    $query->select('shopping_cart.*, p.cover, p.name, p.description, p.price');
     $query->join('product p','p.id=shopping_cart.product_id');
     $query->where('shopping_cart.member_id',$ci->userpubliclog["member_id"]);
     $cart_contents_tiket = $query->get()->result();
@@ -363,12 +360,9 @@ function cart_contents_tiket($where=''){
 
     foreach ($cart_contents_tiket as $key => $value) {
 
-        $ticket = $ci->ticket_model->find($value->ticket_id);
-        $value->ticket_name = $ticket->ticket_name;
 
         $detail = array();
         for($i=0; $i<$value->quantity; $i++){ 
-
             
             $name = ($i==0)?$ci->userpubliclog["name"]:"";
             $email = ($i==0)?$ci->userpubliclog["email"]:"";
@@ -377,11 +371,10 @@ function cart_contents_tiket($where=''){
             $detail[] = array(
                 'id'=>$value->ticket_id,
                 'product_id'=>$value->product_id,
-                'is_one_only'=>$value->is_one_only,
-                'ticket_name'=>$ticket->ticket_name,
-                'name'=>isset($data_peserta[$value->id][$i]['name'])?$data_peserta[$value->id][$i]['name']:$name,
-                'email'=>isset($data_peserta[$value->id][$i]['email'])?$data_peserta[$value->id][$i]['email']:$email,
-                'phone'=>isset($data_peserta[$value->id][$i]['phone'])?$data_peserta[$value->id][$i]['phone']:$phone,
+                'product_name'=>$value->name,
+                'name'=>$name,
+                'email'=>$email,
+                'phone'=>$phone,
             );
 
         }

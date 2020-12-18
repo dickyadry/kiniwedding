@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="login__footer">
-                        Belum punya akun? <a href="<?php echo base_url(); ?>register">Daftar</a>
+                        Belum punya akun? <a href="<?php echo base_url(); ?>register" style="color: #ddd35d; font-weight: bold;">Daftar</a>
                     </div>
                 </form>
             </div>

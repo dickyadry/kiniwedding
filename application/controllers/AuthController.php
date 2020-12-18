@@ -52,12 +52,10 @@ class AuthController extends MY_Controller {
 							"member_id" => $row[0]->id,
 							"login" =>true,
 							"name" => $row[0]->name,
-							"organization" => $row[0]->organization,
 							"email" => strtolower($row[0]->email),
 							"phone" => $row[0]->phone,
 							"icon" => $row[0]->icon,
 							"username" => strtolower($row[0]->username),
-							"level" => $row[0]->level,
 						);
 						$this->session->set_userdata("userpubliclog", $userlog);
 						

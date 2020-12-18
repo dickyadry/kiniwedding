@@ -376,7 +376,7 @@
                                     </div>
                                     <div class="details">
                                         <h3>Keterikatan</h3>
-                                        <span class="date"><?php echo tanggal_resepsi($tanggal_akad); ?></span>
+                                        <span class="date"><?php echo tanggal_resepsi($tanggal_akad_story); ?></span>
                                         <p><?php echo $resume_akad; ?></p>
                                     </div>
                                 </li>

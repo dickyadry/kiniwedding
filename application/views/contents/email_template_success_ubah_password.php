@@ -21,7 +21,7 @@
 
                 <p>Perubahan password telah berhasil, Klik link di bawah untuk masuk ke halaman login Event Stack.</p>
                 <br/><br/>
-                <a style="background:#ff1744; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>login" target="_blank">Event Stack</a>
+                <a style="background:#DDD35D; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>login" target="_blank">Event Stack</a>
                 <br/><br/><br/>
                 <p>Selamat menjelajah event-event terbaik disekitar anda dan selamat berkontribusi.</p>
                 <br/>

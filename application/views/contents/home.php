@@ -43,12 +43,12 @@
     </div>
     <div>
         <div class="img">
-            <a href="<?php echo base_url(); ?>event">
+            <a href="<?php echo base_url(); ?>product">
                 <img src="<?php echo ASSETS_IMAGES; ?>slide/banner-4.jpg" alt="Kolaborasi">
             </a>
         </div>
         <div style="position: absolute; top: 10px; right: 10px; border: 0px;">
-            <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>event">Lihat Selengkapnya</a>
+            <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>product">Lihat Selengkapnya</a>
         </div>
     </div>
 </div>
@@ -61,18 +61,18 @@
             <?php foreach ($event_selection as $key => $value) { ?>
                 <div class="single-top-movie">
                     <div class="img">
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
-                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->title); ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
+                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->name); ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
                         </a>
                     </div>
                     <span class="view-counter"><?php echo $value->code; ?></span>
                     <div class="content">
                         <h2 class="name">
-                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><?php echo $value->name; ?></a>
+                            <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><?php echo $value->name; ?></a>
                         </h2>
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
                         <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
                     </div>
                 </div>
             <?php } ?>
@@ -95,18 +95,18 @@
             <?php foreach ($event_terbaru as $key => $value) { ?>
                 <div class="single-top-movie">
                     <div class="img">
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
-                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->title); ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
+                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->name); ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
                         </a>
                     </div>
-                    <span class="view-counter"><?php echo ($value->is_online==1)?'Event Online':'Event Offline'; ?></span>
+                    <span class="view-counter"><?php echo $value->code; ?></span>
                     <div class="content">
                         <h2 class="name">
-                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><?php echo $value->title; ?></a>
+                            <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><?php echo $value->name; ?></a>
                         </h2>
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
-                        <p class="date"><?php echo isset($value->start_date)?convert_start_date($value->start_date):''; ?></p>
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
+                        <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
                     </div>
                 </div>
             <?php } ?>
@@ -129,18 +129,18 @@
             <?php foreach ($event_terdekat as $key => $value) { ?>
                 <div class="single-top-movie">
                     <div class="img">
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
-                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->title); ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
+                            <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->name); ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
                         </a>
                     </div>
-                    <span class="view-counter"><?php echo ($value->is_online==1)?'Event Online':'Event Offline'; ?></span>
+                    <span class="view-counter"><?php echo $value->code; ?></span>
                     <div class="content">
                         <h2 class="name">
-                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><?php echo $value->title; ?></a>
+                            <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><?php echo $value->name; ?></a>
                         </h2>
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
-                        <p class="date"><?php echo isset($value->start_date)?convert_start_date($value->start_date):''; ?></p>
-                        <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
+                        <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
+                        <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
                     </div>
                 </div>
             <?php } ?>

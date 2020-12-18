@@ -1698,7 +1698,7 @@ input[type=file] {
     background: #FFF !important; 
     padding: 0px 5px !important;
     border-radius: 50%;
-    color: #FF1744;
+    color: #DDD35D;
     margin-top: -6px;
     margin-left: -4px;
     height: 20px;
@@ -4691,7 +4691,7 @@ input[type=file] {
     padding: 5px 0 0px;
     font-size: 20px;
     font-family: Gotham-Book, serif;
-    color: #FF1744;
+    color: #DDD35D;
 }
 
 @media (min-width:767px) {
@@ -4771,7 +4771,7 @@ input[type=file] {
 
 .step__bar {
     position: relative;
-    background: #ff1744;
+    background: #DDD35D;
     margin: 0 0 20px;
     margin-bottom: 40px;
 }
@@ -5563,7 +5563,7 @@ input[type=file] {
     padding: 0;
     margin: 0 -10px 20px;
     /*background: #000;*/
-    /*border: 2px solid #ff1744*/
+    /*border: 2px solid #DDD35D*/
 }
 
 @media (max-width:766px) {
@@ -5607,7 +5607,7 @@ input[type=file] {
 }
 
 .dash__menu__link:hover {
-    color: #ff1744
+    color: #DDD35D
 }
 
 .dash__menu__item {
@@ -5623,7 +5623,7 @@ input[type=file] {
 
 .dash__menu__item.active .dash__menu__link {
     font-weight: 500;
-    color: #ff1744
+    color: #DDD35D
 }
 
 .dash__menu__item.active:after {
@@ -5633,7 +5633,7 @@ input[type=file] {
     z-index: 1;
     width: 100%;
     left: 0;
-    border-bottom: 3px solid #ff1744
+    border-bottom: 3px solid #DDD35D
 }
 
 @media (min-width:767px) {
@@ -6026,7 +6026,7 @@ input[type=file] {
 
 @media (min-width:1119px) {
     .tab__menu__link {
-        border-bottom: 1px solid #ff1744
+        border-bottom: 1px solid #DDD35D
     }
 }
 
@@ -6056,11 +6056,11 @@ input[type=file] {
 .tab__menu__item .tab__menu__link:hover,
 .tab__menu__item.active .tab__menu__link {
     color: #FFF;
-    background: #ff1744;
-    border-top: 1px solid #ff1744;
-    border-left: 1px solid #ff1744;
-    border-right: 1px solid #ff1744;
-    border-bottom: 1px solid #ff1744
+    background: #DDD35D;
+    border-top: 1px solid #DDD35D;
+    border-left: 1px solid #DDD35D;
+    border-right: 1px solid #DDD35D;
+    border-bottom: 1px solid #DDD35D
 }
 
 @media (min-width:767px) {
@@ -6072,7 +6072,7 @@ input[type=file] {
 
 .tab__box {
     position: relative;
-    border: 1px solid #ff1744;
+    border: 1px solid #DDD35D;
     border-radius: 8px;
     margin: 10px 0 0
 }
@@ -6206,7 +6206,7 @@ input[type=file] {
     position: relative;
     padding: 30px 0;
     text-align: center;
-    border-top: 5px solid #ff1744;
+    border-top: 5px solid #DDD35D;
 }
 
 @media (min-width:767px) {
@@ -7022,11 +7022,11 @@ body.scroll .nav__bar {
 
 .bg--primary-gradient {
     background: #000;
-    background: -moz-linear-gradient(180deg, #FF1744 0, #FF9A17 100%);
-    background: -webkit-linear-gradient(180deg, #FF1744 0, #FF9A17 100%);
-    background: -o-linear-gradient(180deg, #FF1744 0, #FF9A17 100%);
-    background: -ms-linear-gradient(180deg, #FF1744 0, #FF9A17 100%);
-    background: linear-gradient(180deg, #FF1744 0, #FF9A17 100%)
+    background: -moz-linear-gradient(180deg, #DDD35D 0, #FF9A17 100%);
+    background: -webkit-linear-gradient(180deg, #DDD35D 0, #FF9A17 100%);
+    background: -o-linear-gradient(180deg, #DDD35D 0, #FF9A17 100%);
+    background: -ms-linear-gradient(180deg, #DDD35D 0, #FF9A17 100%);
+    background: linear-gradient(180deg, #DDD35D 0, #FF9A17 100%)
 }
 
 .bg--red {

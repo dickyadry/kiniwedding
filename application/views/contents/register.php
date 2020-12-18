@@ -11,7 +11,7 @@
             <div class="login__title"><b>Daftar Sekarang</b></div>
             <form action="<?php echo site_url("register"); ?>" method="post" onsubmit="return validateForm()">
                 <div class="login__header">
-                    Sudah punya akun EventStack? <a href="<?php echo base_url(); ?>login">Masuk</a>
+                    Sudah punya akun KiniWedding? <a href="<?php echo base_url(); ?>login" style="color: #ddd35d; font-weight: bold;">Masuk</a>
                 </div>
 
                 <div class="text-center" style="color: #FA6868">

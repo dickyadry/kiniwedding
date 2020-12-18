@@ -59,34 +59,6 @@
 
     }
 
-    function validateForm(){ 
-
-        var qty_ticket_arr =  document.getElementsByName("qty_ticket[]");
-        var qty_ticket_length = qty_ticket_arr.length;
-        
-        var msg = 'Minimal pesan 1 Tiket untuk dapat melanjut ke tahap registrasi';
-        var status_data = false;
-
-        for(i=0;i<qty_ticket_length;i++)
-        {
-
-            if(qty_ticket_arr[i].value>0){
-                status_data = true;
-            }
-
-        }    
-
-        if(status_data==false){
-            Swal.fire(
-              'Oopps!',
-              msg,
-              'error'
-            );
-            return false;
-        }    
-
-    }
-
     function link(link) {
         window.location.href = link;
     }

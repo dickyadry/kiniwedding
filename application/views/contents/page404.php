@@ -45,7 +45,7 @@
                     <div class="payment__status">
 
                         <div>
-                            <a href="<?php echo base_url();?>"><img src="<?php echo ASSETS; ?>img/logo.png" ></a>
+                            <a href="<?php echo base_url();?>"><img src="<?php echo ASSETS; ?>img/logo-hitam.png" ></a>
                         </div>
                         <br><br>
                         <div class="payment__status__title">PAGE NOT FOUND</div>

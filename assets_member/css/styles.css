@@ -19,7 +19,7 @@
   font-size: 14px;
 }
 .label_danger{
-  color: #FF1744;
+  color: #DDD35D;
 }
 /* Demo list */
 .demo-list { 
@@ -491,7 +491,7 @@ label.error {
 
 .info-buttons-report .text-danger {
   color: #FFF;
-  background-color: #FF1744;
+  background-color: #DDD35D;
 }
 
 .info-buttons-report .block-report + .block-report {
@@ -560,7 +560,7 @@ label.error {
 
 .info-buttons-report-header .text-danger {
   color: #FFF;
-  background-color: #FF1744;
+  background-color: #DDD35D;
 }
 
 .info-buttons-report-header .block-report-header + .block-report-header {
@@ -910,7 +910,7 @@ label.error {
   margin-top: 6px;
   margin-bottom: 0;
   color: #fff;
-  background-color: #FF1744;
+  background-color: #DDD35D;
   display: table;
   padding: 5px 8px;
   font-size: 11px;
@@ -1101,7 +1101,7 @@ ul.list-justified li {
 }
 
 .task-high {
-  border-left-color: #FF1744;
+  border-left-color: #DDD35D;
 }
 .task-normal {
   border-left-color: #65B688;
@@ -1324,7 +1324,7 @@ ul.list-justified li {
   background-color: #F5FFFB;
 }
 .popup-messages > li > a:hover > strong {
-  color: #FF1744;
+  color: #DDD35D;
 }
 .popup-messages > li > a > div {
   margin-left: 52px;
@@ -1383,7 +1383,7 @@ ul.list-justified li {
   background-color: #F5FFFB;
 }
 .activity > li:hover a {
-  color: #FF1744;
+  color: #DDD35D;
 }
 .activity > li > i {
   float: left;
@@ -1488,7 +1488,7 @@ ul.list-justified li {
 }
 
 .status-danger {
-  background-color: #FF1744;
+  background-color: #DDD35D;
 }
 
 .status-warning {
@@ -2797,7 +2797,7 @@ body.boxed {
 }
 .daterangepicker td.active, 
 .daterangepicker td.active:hover {
-  background-color: #FF1744;
+  background-color: #DDD35D;
   color: #fff;
 }
 .daterangepicker td.week, .daterangepicker th.week {
@@ -2999,7 +2999,7 @@ body > .jGrowl {
 }
 
 .jGrowl-notification.growl-error {
-  background-color: #FF1744;
+  background-color: #DDD35D;
 }
 .jGrowl-notification.growl-success {
   background-color: #65B688;
@@ -3173,13 +3173,13 @@ body > .jGrowl {
   background-image: url(../images/forms/check_white.png);
 }
 .checkbox-danger .checker span:hover {
-  border-color: #FF1744;
+  border-color: #DDD35D;
 }
 .checkbox-danger .checker:active span, 
 .checkbox-danger .checker.active span, 
 .checkbox-danger .checker span.checked {
-  border-color: #FF1744;
-  background-color: #FF1744;
+  border-color: #DDD35D;
+  background-color: #DDD35D;
 }
 
 .checkbox-success .checker span:after {
@@ -3342,13 +3342,13 @@ body > .jGrowl {
   background-image: url(../images/forms/choice_white.png);
 }
 .radio-danger .choice span:hover {
-  border-color: #FF1744;
+  border-color: #DDD35D;
 }
 .radio-danger .choice:active span, 
 .radio-danger .choice.active span, 
 .radio-danger .choice span.checked {
-  border-color: #FF1744;
-  background-color: #FF1744;
+  border-color: #DDD35D;
+  background-color: #DDD35D;
 }
 
 .radio-success .choice span:after {
@@ -3532,7 +3532,7 @@ body > .jGrowl {
   margin: 0!important;
 }
 .multiselect-group {
-  color: #FF1744;
+  color: #DDD35D;
   padding: 11px 12px 12px 12px;
   margin: 0;
 }
@@ -3750,7 +3750,7 @@ body > .jGrowl {
 }
 .select2-results li.select2-result-with-children > .select2-result-label {
   font-weight: bold;
-  color: #FF1744;
+  color: #DDD35D;
 }
 
 .select2-results .select2-result-label {
@@ -4568,14 +4568,14 @@ tr.shown td.details-control {
   cursor: pointer;
 }
 .ui-datepicker-trigger:hover {
-  background-color: #FF1744;
+  background-color: #DDD35D;
 }
 .ui-datepicker .ui-state-hover {
   background-color: #65B688;
   color: #fff;
 }
 .ui-datepicker .ui-datepicker-current-day .ui-state-active {
-  background-color: #FF1744;
+  background-color: #DDD35D;
   color: #fff;
 }
 .ui-datepicker .ui-state-disabled {
@@ -4799,7 +4799,7 @@ tr.shown td.details-control {
   margin-top: 6px;
 }
 .slider-controls input[type=text] {
-  color: #FF1744;
+  color: #DDD35D;
   background: none;
   border-color: transparent;
   font-weight: 600;
@@ -5200,7 +5200,7 @@ ol.linenums li {
 .fc-state-hover,
 .fc-state-down,
 .fc-state-active {
-  color: #FF1744;
+  color: #DDD35D;
 }
 .fc-state-disabled {
   color: #999;
@@ -5210,7 +5210,7 @@ ol.linenums li {
   outline: 0;
 }
 .fc-state-active {
-  background-color: #FF1744;
+  background-color: #DDD35D;
   color: #fff;
 }
 .fc-state-disabled {
@@ -5746,8 +5746,8 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] { background: or
 }
 .has-switch span.switch-danger {
   color: #fff;
-  background: #FF1744;
-  border-color: #FF1744;
+  background: #DDD35D;
+  border-color: #DDD35D;
 }
 .has-switch span.switch-default {
   color: #333;
@@ -6355,7 +6355,7 @@ li.plupload_droptext {
   margin-bottom: 0; 
 }
 .chosen-payment span { 
-  color: #FF1744; 
+  color: #DDD35D; 
   text-decoration: underline; 
   font-weight: 600; 
 }

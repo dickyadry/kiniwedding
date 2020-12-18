@@ -2,8 +2,8 @@
 <div>
     <div class="content text-center">
         <div class="sb-content-box">
-            <h2 class="title animated">PORTAL EVENT ONLINE</h2>
-            <h3 class="intro animated">Menghadirkan berbagain event-event online terbaik<br> Webinar, Workshop, Training dan lain-lain</h3>
+            <h2 class="title animated">LIST PRODUK</h2>
+            <h3 class="intro animated">Menghadirkan berbagain desain undangan website yang<br> Trendi, Elegant, dan Kekinian</h3>
         </div>
     </div>
 </div>
@@ -26,8 +26,8 @@
                             <i class="fas fa-long-arrow-alt-up"></i>
                             <i class="fas fa-long-arrow-alt-down"></i>
                             <select name="order_by" onchange="selectOrder()">
-                                <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Event Terbaru'){?> selected <?php } ?>>Event Terbaru</option>
-                                <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Event Terdekat'){?> selected <?php } ?>>Event Terdekat</option>
+                                <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Terbaru'){?> selected <?php } ?>>Terbaru</option>
+                                <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Terpopuler'){?> selected <?php } ?>>Terpopuler</option>
                             </select>
                         </form>
                     </div>
@@ -49,21 +49,21 @@
                                 <?php if(count($datas)>0){ ?>
                                 <?php foreach ($datas as $key => $value) { ?>
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                     <div class="single-top-movie" onclick='link("<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>")'>
+                                     <div class="single-top-movie" onclick='link("<?php echo base_url(); ?>event/<?php echo $value->code; ?>")'>
                                         <div class="img" >
-                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>">
-                                                <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->title); ?>">
+                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
+                                                <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->name); ?>">
                                             </a>
                                         </div>
-                                        <span class="view-counter"><?php echo ($value->is_online==1)?'Event Online':'Event Offline'; ?></span>
+                                        <span class="view-counter"><?php echo $value->code; ?></span>
                                         <div class="content">
                                             <h2 class="name">
-                                                <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><?php echo $value->title; ?></a>
+                                                <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><?php echo $value->name; ?></a>
                                             </h2>
                                             <br>
                                             <div class="price clearfix"><?php echo $value->category_name; ?></div>
-                                            <p class="date"><?php echo isset($value->start_date)?convert_start_date($value->start_date):''; ?></p>
-                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>/<?php echo $value->slug; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
+                                            <p class="date"><?php echo isset($value->price)?rupiah($value->price):''; ?></p>
+                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
                                         </div>
                                     </div>
                                 </div>
