@@ -7,6 +7,7 @@ class WeddingController extends MY_Controller {
 		parent::__construct();
 		
 		$this->load->library('form_validation');
+		$this->buku_tamu_model = new GeneralModel("buku_tamu");
 		$this->sales_order_model = new GeneralModel("sales_order");
 		$this->sales_order_detail_model = new GeneralModel("sales_order_detail");
 		$this->sales_order_images_model = new GeneralModel("sales_order_images");
@@ -69,6 +70,10 @@ class WeddingController extends MY_Controller {
 		$product = $this->product_model->find($id);
 		$data->product = $product;
 
+		$query = $this->buku_tamu_model->source();
+		$query->where('sales_order_id',0);
+		$data->buku_tamu = $query->get()->result();
+
 		$query = $this->product_images_model->source();
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
@@ -103,10 +108,36 @@ class WeddingController extends MY_Controller {
 		$query->where('type','LAINNYA');
 		$query->order_by('order','ASC');
 		$data->lainnya = $query->get()->result();
-
-
+		
 		$this->load->view("product/theme-".$product->code, $data);
 
+	}
+
+	public function buku_tamu($sales_order_id){
+
+		$sales_order_id = strip_tags($sales_order_id);
+		$sales_order_id = encrypt_decrypt('decrypt',$sales_order_id);
+
+		$param_data = $this->input_data;
+		$param_data['sales_order_id'] = $sales_order_id;
+		$id = $this->buku_tamu_model->insert($param_data);
+		if($id){
+
+			$jsonData = array(
+	            'status'=>'success',
+	            'msg'=>'Success',
+	        );
+	        echo json_encode($jsonData);
+
+		}else{
+
+			$jsonData = array(
+	            'status'=>'error',
+	            'msg'=>'Gagal menyimpan data',
+	        );
+	        echo json_encode($jsonData);
+
+		}
 	}
 
   

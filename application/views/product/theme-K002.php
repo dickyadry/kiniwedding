@@ -77,7 +77,6 @@
                             <li><a href="#couple">Couple</a></li>
                             <li><a href="#story">Story</a></li>
                             <li><a href="#events">Events</a></li>
-                            <li><a href="#people">People</a></li>
                             <li><a href="#gallery">Gallery</a></li>
                             <li><a href="#gift">Gift</a></li>
                             <li><a href="#rsvp">Rsvp</a></li>
@@ -106,9 +105,9 @@
         <!-- start of hero -->   
         <section class="hero hero-slider-wrapper">
             <div class="hero-slider">
-                <div class="slide"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/slider/slide-1.jpg" alt></div>
-                <div class="slide"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/slider/slide-2.jpg" alt></div>
-                <div class="slide"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/slider/slide-3.jpg" alt></div>
+                <?php foreach ($slider as $key => $value) { ?>
+                <div class="slide"><img src="<?php echo str_replace('thumbs/', '', $value->image); ?>" alt></div>
+                <?php } ?>
             </div>
 
             <div class="announcement-wrapper">
@@ -180,7 +179,9 @@
                 <div class="row groom">
                     <div class="col col-md-4 col-sm-5 wow fadeInLeftSlow" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div class="pic">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groom.jpg" class="img img-responsive" alt>
+                            <?php if(isset($pengantin[0]->image)){?>
+                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>" class="img img-responsive" alt>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="col col-md-8 col-sm-7 wow fadeInLeftSlow" data-wow-duration="2s">
@@ -222,7 +223,9 @@
                 <div class="row bride">
                     <div class="col col-md-4 col-md-push-8 col-sm-5 col-sm-push-7 wow fadeInRightSlow" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div class="pic">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bride.jpg" class="img img-responsive" alt>
+                            <?php if(isset($pengantin[1]->image)){?>
+                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>" class="img img-responsive" alt>
+                            <?php } ?>
                         </div>
                     </div>
 
@@ -310,7 +313,9 @@
                                 <div class="tab-content">
                                     <div role="tabpanel" class="row tab-pane fade in active" id="first-meet">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
-                                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/img-1.jpg" class="img img-responsive" alt>
+                                            <?php if(isset($lainnya[0]->image)){?>
+                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>" class="img img-responsive" alt>
+                                            <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
                                             <h3>Pertemuan Pertama Kitat</h3>
@@ -321,7 +326,9 @@
 
                                     <div role="tabpanel" class="row tab-pane fade" id="first-date">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
-                                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/img-2.jpg" class="img img-responsive" alt>
+                                            <?php if(isset($lainnya[1]->image)){?>
+                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[1]->image); ?>" class="img img-responsive" alt>
+                                            <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
                                             <h3>Kencan Pertama Kita</h3>
@@ -332,7 +339,9 @@
 
                                     <div role="tabpanel" class="row tab-pane fade" id="proposal">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
-                                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/img-3.jpg" class="img img-responsive" alt>
+                                            <?php if(isset($lainnya[2]->image)){?>
+                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[2]->image); ?>" class="img img-responsive" alt>
+                                            <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
                                             <h3>Hari Lamaran</h3>
@@ -343,7 +352,9 @@
 
                                     <div role="tabpanel" class="row tab-pane fade" id="engagement">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
-                                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/img-4.jpg" class="img img-responsive" alt>
+                                            <?php if(isset($lainnya[3]->image)){?>
+                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[3]->image); ?>" class="img img-responsive" alt>
+                                            <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
                                             <h3>Hari Perayaan</h3>
@@ -358,7 +369,9 @@
 
                     <div class="col col-lg-4">
                         <div class="pic-holder">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/img-5.jpg" class="img img-responsive" alt>
+                            <?php if(isset($lainnya[4]->image)){?>
+                                <img src="<?php echo str_replace('thumbs/', '',$lainnya[4]->image); ?>" class="img img-responsive" alt>
+                            <?php } ?>
                             <h3>And, We’re Getting Married</h3>
                         </div>
                     </div>
@@ -448,285 +461,6 @@
         <!-- end of bquotes -->
 
 
-        <!-- start of important-people -->
-        <section class="important-people section-padding" id="people">
-            <div class="container">
-                <div class="row section-title">
-                    <div class="title-box">
-                        <div class="double-line double-line-top">
-                            <i class="fi flaticon-social"></i>
-                            <i class="fi flaticon-social"></i>
-                        </div>
-                        <h2>Important people</h2>
-                        <div class="double-line double-line-bottom"></div>
-                    </div>
-                </div> <!-- end of section-title -->
-
-                <div class="row">
-                    <div class="col col-md-6 wow fadeInLeftSlow" data-wow-duration="2s">
-                        <div class="groomsmen">
-                            <h3>Groomsmen</h3>
-                            <div class="groomsmen-slider">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-1.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-1.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-2.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-2.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-3.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-3.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-4.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-4.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-5.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-5.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-6.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-6.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-7.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-7.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/big-photo/img-8.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/groomsmen/img-8.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Abul Nicman</h5>
-                                                            <span>Best man</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div> <!-- end of groomsmen -->
-                    </div> <!-- end of col -->
-
-
-                    <div class="col col-md-6 wow fadeInRightSlow" data-wow-duration="2s">
-                        <div class="bridesmaids">
-                            <h3>Bridesmaids</h3>
-                            <div class="bridesmaids-slider">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-1.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-1.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Julien Leve</h5>
-                                                            <span>Maid of honor</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-2.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-2.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Greene smeith</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-3.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-3.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Lovely bird</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-4.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-4.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Swity sweet</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-5.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-5.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Nil avail</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-6.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-6.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Pern luicy</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-7.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-7.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Winel bela</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col col-xs-6">
-                                            <div class="box">
-                                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/big-photo/img-8.jpg" class="fancybox" data-fancybox-group="gall-2">
-                                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/bridesmaids/img-8.jpg" class="img img-responsive" alt>
-                                                    <div class="details">
-                                                        <div>
-                                                            <h5>Bueity bela</h5>
-                                                            <span>Bridesmaid</span>
-                                                            <span class="icon"><i class="fa fa-search"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end of bridesmaids -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </section>
-        <!-- end of important-people -->
-
-
         <!-- start gallery -->
         <section class="gallery section-padding parallax-flower" data-bg-image-top="images/big-flower.png"  data-bg-image-bottom="images/big-flower-bt.png" id="gallery">
             <div class="container">
@@ -742,126 +476,18 @@
                 </div> <!-- end of section-title -->
 
                 <div class="row gallery-boxes">
+                    <?php foreach ($galeri as $key => $value) { ?>
                     <div class="col col-md-3 col-xs-6 wow fadeIn">
                         <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-1.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-1.jpg" class="img img-responsive" alt>
+                            <a href="<?php echo str_replace('thumbs/', '',$value->image); ?>" class="fancybox" data-fancybox-group="gallery">
+                                <img src="<?php echo $value->image; ?>" class="img img-responsive" alt>
                                 <div class="fade-icon">
                                     <span class="icon"><i class="fa fa-search"></i></span>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.2s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-2.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-2.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-3.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-3.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-4.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-4.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-5.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-5.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.2s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-6.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-6.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-7.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-7.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-8.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-8.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.8s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-9.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-9.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="1s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-10.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-10.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="1.2s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-11.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-11.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col col-md-3 col-xs-6 wow fadeIn" data-wow-delay="1.4s">
-                        <div class="box">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/big-photo/img-12.jpg" class="fancybox" data-fancybox-group="gallery">
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-12.jpg" class="img img-responsive" alt>
-                                <div class="fade-icon">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div> <!-- end of container -->
         </section>

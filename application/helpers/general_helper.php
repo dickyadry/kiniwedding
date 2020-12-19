@@ -593,6 +593,19 @@ function pukul($date){
 
 }
 
+function initial($fullname){
+
+    $arr_name = explode(" ", $fullname);
+    if(count($arr_name)>1){
+        $initial = substr($arr_name[0], 0,1).''.substr($arr_name[1], 0,1);
+    }else{
+        $initial = substr($arr_name[0], 0,2);
+    }
+
+    return $initial;
+
+}
+
 function encrypt_decrypt($action, $string) {
     $output = false;
     $encrypt_method = "AES-256-CBC";

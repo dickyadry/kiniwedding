@@ -28,7 +28,6 @@ $route['member/pesanan-saya/delete/(:any)'] = 'MemberPesananSayaController/delet
 $route['member/pesanan-saya/(:any)'] = 'MemberPesananSayaController/myticket/$1';
 $route['generate-barcode'] = "MemberPesananSayaController/generate_barcode";
 
-
 /* page tiket*/
 $route['member/tiket'] = 'MemberTiketController/tiket/pending';
 $route['member/tiket-aktif'] = 'MemberTiketController/tiket/aktif';
@@ -49,7 +48,6 @@ $route['member/tiket/delete/(:any)'] = 'MemberTiketController/delete/$1';
 $route['member/tiket-saya/(:any)'] = 'MemberTiketController/myticket/$1';
 $route['generate-barcode'] = "MemberTiketController/generate_barcode";
 
-
 /* PAGE PROFILE*/
 $route['member/profile'] = 'MemberController/profile';
 $route['member/save-profile'] = 'MemberController/save_profile';
@@ -57,7 +55,6 @@ $route['member/save-profile'] = 'MemberController/save_profile';
 /* PAGE UBAH _PASSWORD */
 $route['member/ubah-password'] = 'MemberController/change_password';
 $route['member/save-ubah-password'] = 'MemberController/save_change_password';
-
 
 ########### START FRONEND ##########
 $route['home'] = 'WebController/website';
@@ -116,7 +113,6 @@ $route['login-with-facebook'] = 'AuthController/login_facebook/$1';
 ######## UPLOAD ###########
 $route['member/upload-icon'] = "FrontEndController/icon_upload";
 
-
 ######## PANDUAN ###########
 $route['panduan'] = "PanduanController/registrasi";
 $route['panduan/registrasi'] = "PanduanController/registrasi";
@@ -129,6 +125,6 @@ $route['panduan/data-peserta'] = "PanduanController/data_peserta";
 $route['panduan/esertifikat'] = "PanduanController/esertifikat";
 
 ######## WEDDING INVITATION ###########
-$route['inv/(:any)'] = 'WeddingController/wedding/$1';
+$route['inv/buku-tamu/(:any)'] = 'WeddingController/buku_tamu/$1';
 $route['inv/(:any)'] = 'WeddingController/wedding/$1';
 $route['product/demo/(:any)'] = 'WeddingController/demo/$1';

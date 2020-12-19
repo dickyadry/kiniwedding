@@ -480,13 +480,21 @@
                         <div class="contact-form">
                             <form id="rsvp-form" class="form validate-rsvp-form row" method="post">
                                 <div class="col col-sm-12">
-                                    <input type="text" name="name" class="form-control" placeholder="Nama*">
+                                    <input type="text" name="nama" class="form-control" placeholder="Nama*" id="nama">
                                 </div>
                                 <div class="col col-sm-12">
-                                    <textarea class="form-control" name="notes" placeholder="Pesan*"></textarea>
+                                    <select class="form-control" name="status" id="status">
+                                        <option value="">Apakah Kamu akan Hadir?</option>
+                                        <option>Ya, Saya Akan hadir</option>
+                                        <option>Ya, Mungkin Saya akan hadir</option>
+                                        <option>Maaf Seperti Saya Belum bisa hadir</option>
+                                    </select>
+                                </div>
+                                <div class="col col-sm-12">
+                                    <textarea class="form-control" name="pesan" placeholder="Pesan*" id="pesan"></textarea>
                                 </div>
                                 <div class="col col-sm-12 submit-btn">
-                                    <button type="submit" class="theme-btn">Send</button>
+                                    <button type="button" class="theme-btn" onclick="buku_tamu()">Send</button>
                                     <div id="loader">
                                         <i class="ti-reload"></i>
                                     </div>
@@ -546,49 +554,22 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="testimoni-carousel">
+                            <?php foreach ($buku_tamu as $key => $value) { ?>
                             <div class="grid">
                                 <div class="quote">
-                                    <p>Seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dre</p>
+                                    <p><?php echo $value->pesan; ?></p>
                                 </div>
                                 <div class="client-info">
                                     <div class="img-holder">
-                                        <div style="padding:14px 16px; background: #FFF; border:2px solid #A2BECA;  border-radius: 50%;">ES</div>
+                                        <div style="padding:14px 0px; width: 55px; text-align: center; background: #FFF; border:2px solid #A2BECA;  border-radius: 50%;"><?php echo initial($value->nama); ?></div>
                                     </div>
                                     <div class="details">
-                                        <h5>Work Fela</h5>
-                                        <p>Bride vender wedding</p>
+                                        <h5><?php echo $value->nama; ?></h5>
+                                        <p><?php echo $value->status; ?></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid">
-                                <div class="quote">
-                                    <p>Seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dre</p>
-                                </div>
-                                <div class="client-info">
-                                    <div class="img-holder">
-                                        <!-- <img src="assets/images/testimonials/img-2.jpg" alt> -->
-                                        <div style="padding:14px 16px; background: #FFF; border:2px solid #A2BECA;  border-radius: 50%;">ES</div>
-                                    </div>
-                                    <div class="details">
-                                        <h5>Sweet Taz</h5>
-                                        <p>Beauty Bride</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="quote">
-                                    <p>Seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dre</p>
-                                </div>
-                                <div class="client-info">
-                                    <div class="img-holder">
-                                        <div style="padding:14px 16px; background: #FFF; border:2px solid #A2BECA;  border-radius: 50%;">ES</div>
-                                    </div>
-                                    <div class="details">
-                                        <h5>Norial Dico</h5>
-                                        <p>Bride vender wedding</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -706,6 +687,69 @@
             });
         }
         testimoni_carousel();
+
+        function buku_tamu() {
+
+            var param = {
+                'nama':$('#nama').val(),
+                'status':$('#status').val(),
+                'pesan':$('#pesan').val(),
+            };
+
+            if($('#nama').val()=="" || $('#nama').val()==" "){
+                Swal.fire(
+                  'Oopps!',
+                  'Nama harus diisi',
+                  'error'
+                );
+                return false;
+            }else if($('#status').val()=="" || $('#status').val()==" "){
+                Swal.fire(
+                  'Oopps!',
+                  'Status harus diisi',
+                  'error'
+                );
+                return false;
+            }else if($('#pesan').val()=="" || $('#pesan').val()==" "){
+
+                Swal.fire(
+                  'Oopps!',
+                  'Pesan arus diisi',
+                  'error'
+                );
+                return false;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: '<?php echo base_url(); ?>inv/buku-tamu/<?php echo $sales_order_id; ?>',
+                data: JSON.stringify(param),
+                contentType: "application/json",
+                dataType: "json",
+                success: function(result){
+                    
+                    if(result.status == 'success'){ 
+
+                        Swal.fire(
+                          'Success',
+                          'Data Berhasil disimpan',
+                          'success'
+                        );
+                        return false; 
+
+                    }else{ 
+
+                        Swal.fire(
+                          'Oopps!',
+                          'Gagal Menyimpan Data',
+                          'error'
+                        );
+                        return false;
+                    } 
+
+                }
+            }); 
+        }
 
     </script>
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/script.js"></script>
