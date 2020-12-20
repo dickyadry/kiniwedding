@@ -203,18 +203,7 @@
     });
 
 
-    /*------------------------------------------
-        = BIGDAY COUNTDOWN
-    -------------------------------------------*/
-    if ($("#clock").length) {
-        $('#clock').countdown('2019/12/31', function(event) {
-            var $this = $(this).html(event.strftime(''
-            + '<div class="box"><div>%D</div> <span>Days</span> </div>'
-            + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
-            + '<div class="box"><div>%M</div> <span>Minutes</span> </div>'
-            + '<div class="box"><div>%S</div> <span>Seconds</span> </div>'));
-        });
-    }
+    
 
 
     /*------------------------------------------
@@ -273,12 +262,12 @@
     /*------------------------------------------
         = ACTIVE BQUOTE SLIDER
     -------------------------------------------*/
-    if ($(".bquotes-slider").length) {
-        $(".bquotes-slider").owlCarousel({
-            items: 1,
-            loop: true
-        });
-    }
+    // if ($(".bquotes-slider").length) {
+    //     $(".bquotes-slider").owlCarousel({
+    //         items: 1,
+    //         loop: true
+    //     });
+    // }
 
 
     /*------------------------------------------

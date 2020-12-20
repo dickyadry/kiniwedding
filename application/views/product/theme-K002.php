@@ -12,13 +12,11 @@
 
     <!-- Page Title -->
     <title> <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?> </title>
+    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+
 
     <!-- Favicon and Touch Icons -->
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/favicon.png" rel="shortcut icon" type="image/png">
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 
     <!-- Icon fonts -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/font-awesome.min.css" rel="stylesheet">
@@ -34,11 +32,33 @@
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.transitions.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.fancybox.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
 </head>
 
 <body id="home">
+
+    <div onclick="playAudio()" type="button" id="over-lay">
+        <div style="margin:0 auto;">
+            <div class="tapfp">TAP TO CONTINUE</div>
+            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+        </div>
+    </div>
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
 
     <!-- start page-wrapper -->
     <div class="page-wrapper">
@@ -74,20 +94,11 @@
                         <ul class="nav navbar-nav">
                             <li class="mobile-menu-logo"><?php echo $nama_panggilan_pengantin_pria; ?> <i class="fa fa-heart"></i> <?php echo $nama_panggilan_pengantin_wanita; ?></li>
                             <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#couple">Couple</a></li>
-                            <li><a href="#story">Story</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#gift">Gift</a></li>
-                            <li><a href="#rsvp">Rsvp</a></li>
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="mob-icon"><i class="fa fa-angle-down"></i></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#couple">Pasangan</a></li>
+                            <li><a href="#story">Kisah Kita</a></li>
+                            <li><a href="#events">Akad & Resepsi</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                            <li><a href="#rsvp">Buku Tamu</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -232,7 +243,7 @@
                     <div class="col col-md-8 col-md-pull-4 col-sm-7 col-sm-pull-5">
                         <div class="details wow fadeInRightSlow" data-wow-duration="2s">
                             <span>The bride</span>
-                            <h4>Nevela wilson</h4>
+                            <h4><?php echo $nama_pengantin_wanita; ?></h4>
                             <div class="table-responsive">
                                 <table class="table">
                                     <colgroup>
@@ -318,7 +329,7 @@
                                             <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
-                                            <h3>Pertemuan Pertama Kitat</h3>
+                                            <h3>Pertemuan Pertama Kita</h3>
                                             <span class="date"><?php echo tanggal_resepsi($tanggal_pertemuan_pertama); ?></span>
                                             <p><?php echo $resume_pertemuan_pertama; ?></p>
                                         </div>
@@ -406,7 +417,7 @@
                                 <div class="main-ceromony">
                                     <h3>Akad Nikah</h3>
                                     <ul>
-                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB/li>
+                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</li>
                                         <li><i class="fa fa-location-arrow"></i> <?php echo $tempat_akad; ?></li>
                                     </ul>
                                 </div>
@@ -422,7 +433,7 @@
                     </div>
 
                     <div class="col col-md-6">
-                        <div id="map" class="map"></div>
+                        <div id="map" class="map" style="height: 345px;"></div>
                     </div>
                 </div>
             </div> <!-- end of container -->
@@ -431,7 +442,8 @@
 
 
         <!-- start of bquotes -->
-        <section class="bquotes">
+        <?php $background_quotes = isset($background[1]->image)?$background[1]->image:''; ?>
+        <section class="bquotes" style='background: url("<?php echo str_replace('thumbs/', '',$background_quotes); ?>") center center/cover no-repeat fixed;'>
             <h2 class="hidden">Wishes</h2>
             <div class="container">
                 <div class="row">
@@ -439,18 +451,7 @@
                         <div class="bquotes-slider">
                             <div class="item">
                                 <div class="text">
-                                    <p>The good time and treasure of the present become golden memories of tomorrow. Wish your love continue to grow.</p>
-                                </div>
-                                <div class="footer">
-                                    <p>Muche dul <span>Friend</span></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="text">
-                                    <p>The good time and treasure of the present become golden memories of tomorrow. Wish your love continue to grow.</p>
-                                </div>
-                                <div class="footer">
-                                    <p>Muche dul <span>Friend</span></p>
+                                    <p><?php echo $kata_mutiara; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -493,56 +494,6 @@
         </section>
         <!-- end of gallery -->
 
-
-        <!-- start gift-registry -->
-        <section class="gift-registry section-padding" id="gift">
-            <div class="container">
-                <div class="row section-title">
-                    <div class="title-box">
-                        <div class="double-line double-line-top">
-                            <i class="fi flaticon-social"></i>
-                            <i class="fi flaticon-social"></i>
-                        </div>
-                        <h2>Gift registry</h2>
-                        <div class="double-line double-line-bottom"></div>
-                    </div>
-                </div> <!-- end of section-title -->
-
-                <div class="row text">
-                    <div class="col col-md-6 col-md-offset-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cupiditate, repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic, deleniti maiores rem iste labore commodi perferendis cumque.</p>
-                    </div>
-                </div>
-            
-                <div class="row">
-                    <div class="clearfix">
-                        <div class="col col-sm-3 col-xs-6">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gift-registry/img-1.jpg" class="img img-responsive" alt>
-                            </div>
-                        </div>
-                        <div class="col col-sm-3 col-xs-6">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gift-registry/img-2.jpg" class="img img-responsive" alt>
-                            </div>
-                        </div>
-                        <div class="col col-sm-3 col-xs-6">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gift-registry/img-3.jpg" class="img img-responsive" alt>
-                            </div>
-                        </div>
-                        <div class="col col-sm-3 col-xs-6">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gift-registry/img-4.jpg" class="img img-responsive" alt>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end of container -->
-        </section>
-        <!-- end of gift-registry -->
-
-
         <!-- start rsvp -->
         <section class="rsvp section-padding parallax" data-bg-image="images/rsvp-bg.jpg" id="rsvp">
             <div class="container">
@@ -569,35 +520,23 @@
                             <form id="rsvp-form" class="form form-inline" method="post">
                                 <div class="row">
                                     <div class="form-group col col-sm-6">
-                                        <input type="text" class="form-control"  name="name" placeholder="Your Name" required>
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama*"  id="nama" required>
                                     </div>
                                     <div class="form-group col col-sm-6">
-                                        <input type="email" class="form-control"  name="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="form-group col col-sm-6">
-                                        <select name="guest" class="form-control">
-                                            <option disabled="disabled" selected>Number of Guest</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col col-sm-6">
-                                        <select name="events" class="form-control">
-                                            <option disabled="disabled" selected>I am attending</option>
-                                            <option>Al events</option>
-                                            <option>Wedding ceremony</option>
-                                            <option>Reception party</option>
+                                        <select class="form-control" name="status" id="status">
+                                            <option value="">Apakah Kamu akan Hadir?</option>
+                                            <option>Ya, Saya Akan hadir</option>
+                                            <option>Ya, Mungkin Saya akan hadir</option>
+                                            <option>Maaf Seperti Saya Belum bisa hadir</option>
                                         </select>
                                     </div>      
 
                                     <div class="form-group col col-sm-12">
-                                        <textarea name="notes" class="form-control" placeholder="Your Message" ></textarea>
+                                        <textarea name="notes" class="form-control" placeholder="Pesan*" id="pesan"></textarea>
                                     </div>      
 
                                     <div class="form-group col col-sm-12">
-                                        <button type="submit" class="btn btn-default theme-btn">Send invitation</button>
+                                        <button type="button" class="btn btn-default theme-btn" onclick="buku_tamu()">Send</button>
                                         <span id="loader"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/rsvp-ajax-loader.gif" alt="Loader"></span>
                                     </div>      
                                     <div id="success">Thank you</div>
@@ -611,146 +550,49 @@
         </section>
         <!-- end of rsvp -->
 
-
-        <!-- start journal -->
-        <section class="journal section-padding flower-pattern">
+        <!-- start testimonials-section -->
+        <section class="testimonials-section section-padding">
             <div class="container">
-                <div class="row section-title">
-                    <div class="title-box">
-                        <div class="double-line double-line-top">
-                            <i class="fi flaticon-social"></i>
-                            <i class="fi flaticon-social"></i>
-                        </div>
-                        <h2>From our journal</h2>
-                        <div class="double-line double-line-bottom"></div>
-                    </div>
-                </div> <!-- end of section-title -->
-
-
                 <div class="row">
-                    <div class="col col-md-10 col-md-offset-1">
-                        <div class="row journal-content">
-                            <div class="col col-xs-6">
-                                <a href="#" data-toggle="modal" data-target="#modal-1">
-                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-1.jpg" class="img img-responsive" alt>
-                                </a>
-                                <h4><a href="#" data-toggle="modal" data-target="#modal-1">Forever our love!</a></h4>
-                                <span>29 Nov 2016</span>
-
-                                <div class="modal fade bs-example-modal-lg" id="modal-1">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title">Forever our love! Never stop</h4>
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-1.jpg" class="img img-responsive" alt>
-                                                <span>29 Nov 2016</span>
-                                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-                                                <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col col-xs-6">
-                                <a href="#" data-toggle="modal" data-target="#modal-2">
-                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-2.jpg" class="img img-responsive" alt>
-                                </a>
-                                <h4><a href="#" data-toggle="modal" data-target="#modal-2">Plan For Honeymoon Trip.</a></h4>
-                                <span>05 Dec 2016</span>
-
-                                <div class="modal fade bs-example-modal-lg" id="modal-2">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title">Plan for honeymoon trip</h4>
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-2.jpg" class="img img-responsive" alt>
-                                                <span>05 Dec 2016</span>
-                                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-                                                <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col col-xs-6">
-                                <a href="#" data-toggle="modal" data-target="#modal-3">
-                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-3.jpg" class="img img-responsive" alt>
-                                </a>
-                                <h4><a href="#" data-toggle="modal" data-target="#modal-3">Wedding day tour plan.</a></h4>
-                                <span>10 Dec 2016</span>
-
-                                <div class="modal fade bs-example-modal-lg" id="modal-3">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title">Wedding day tour plan.</h4>
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-3.jpg" class="img img-responsive" alt>
-                                                <span>10 Dec 2016</span>
-                                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-                                                <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col col-xs-6">
-                                <a href="#" data-toggle="modal" data-target="#modal-4">
-                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-4.jpg" class="img img-responsive" alt>
-                                </a>
-                                <h4><a href="#" data-toggle="modal" data-target="#modal-4">Bachelor Party!</a></h4>
-                                <span>11 dec 2016</span>
-
-                                <div class="modal fade bs-example-modal-lg" id="modal-4">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title">Bachelor Party!</h4>
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/journal/img-4.jpg" class="img img-responsive" alt>
-                                                <span>11 dec 2016</span>
-                                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-                                                <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="section-title">
+                            <h2>Clients openion</h2>
+                            <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat</p>
                         </div>
                     </div>
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </section>
-        <!-- end of journal -->
+                </div>
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="testimoni-carousel">
+                            <?php foreach ($buku_tamu as $key => $value) { ?>
+                            <div class="grid">
+                                <div class="quote">
+                                    <p><?php echo $value->pesan; ?></p>
+                                </div>
+                                <div class="client-info">
+                                    <div class="img-holder">
+                                        <div style="padding:14px 0px; width: 53px; text-align: center; background: #FFF; border:2px solid #A2BECA;  border-radius: 50%;"><?php echo initial($value->nama); ?></div>
+                                    </div>
+                                    <div class="details">
+                                        <h5><?php echo $value->nama; ?></h5>
+                                        <p><?php echo $value->status; ?></p>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
 
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end testimonials-section -->
 
         <!-- start footer -->
-        <footer class="section-padding">
+        <?php $background_footer = isset($background[0]->image)?$background[0]->image:''; ?>
+        <footer class="section-padding finish" style='background: url("<?php echo str_replace('thumbs/', '',$background_footer); ?>") center center/cover no-repeat fixed;'>
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
@@ -764,10 +606,10 @@
 
                             <div class="love-birds wow fadeInSlow"><i class="fi flaticon-birds-in-love"></i></div>
                             <h2 class="wow fadeInSlow">We are getting married</h2>
-                            <p class="wow fadeInSlow">Michel &amp; Nevela</p>
-                            <span class="wow fadeInSlow">30 Jun 2017</span>
+                            <p class="wow fadeInSlow"><?php echo $nama_panggilan_pengantin_pria; ?> &amp; <?php echo $nama_panggilan_pengantin_wanita; ?></p>
+                            <span class="wow fadeInSlow"><?php echo tanggal_resepsi($tanggal_resepsi); ?></span>
                         </div>
-                        <p class="copyright">&copy; Copyright 2016. All rights reserved.</p>
+                        <p class="copyright">&copy; Copyright 2021, Made with love by <a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a></p>
                     </div>
                 </div>
             </div>
@@ -789,7 +631,9 @@
 
     <!-- Custom script for this template -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/script.js"></script>
+
+    <?php echo $js; ?>
+    
 </body>
 
-<!-- Mirrored from astheme.ourdreamit.com/sweetheart/p-s-t/grid-gallery/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Nov 2020 11:36:43 GMT -->
 </html>

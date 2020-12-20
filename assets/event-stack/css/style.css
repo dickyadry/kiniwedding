@@ -1423,6 +1423,11 @@ header {}
     transform: scaleY(1);
 }
 
+.single-top-movie .content .duration:hover {
+    color: #FFF;
+    background: #ddd35d;
+}
+
 .top-movie-carousel .owl-nav {
     position: absolute;
     right: 8px;

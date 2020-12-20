@@ -8,7 +8,8 @@
     <meta name="author" content="irstheme">
 
     <title> <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?> </title>
-    
+    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/themify-icons.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flaticon.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" rel="stylesheet">
@@ -22,102 +23,10 @@
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.fancybox.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/magnific-popup.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
-    <style type="text/css">
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .fixed {
-            bottom: 0;
-            position: fixed;
-            left: 0;
-            z-index: 999999999999999999999999999999999999999999999;
-            width: 100%;
-            height: 62px;
-            background: rgba(25, 25, 25, 0.2);
-            cursor: pointer;
-        }
-
-        .fixed-music {
-            cursor: pointer;
-            position: fixed;
-            background: #ff847e;
-            height: 40px;
-            width: 40px;
-            z-index: 999999999999999999999999999999999999999999999;
-            bottom: 67px;
-            right: 22px;
-            border-radius: 26px;
-            text-align: center;
-            color: white;
-            padding: 10px;
-
-        }
-
-        @media screen and (max-width: 768px) {
-            .bismi {
-                font-size: 36px !important;
-            }
-
-            #qbootstrap-couple span {
-                font-size: 12px !important;
-                letter-spacing: 3px;
-            }
-
-            .bg-image {
-                background-position:  !important;
-                /*background-size: 249%;*/
-            }
-            .bg-image2{
-                background-position: !important;
-            }
-            .bg-image3{
-                background-position: !important;
-            }
-        }
-
-        #over-lay {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.75);
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            font-size: 16px;
-            margin: 0px;
-            cursor: pointer;
-            z-index: 999999999999999999999999999999999999999999999;
-            /* display: none; */
-            padding-top: 352px;
-        }
-
-        .tapfp {
-            text-align: center;
-            font-size: 40px;
-            line-height: 45px;
-        }
-
-        @media screen and (max-width: 769px) {
-            #over-lay {
-                display: -webkit-flex;
-                /* Safari */
-                -webkit-align-items: center;
-                /* Safari 7.0+ */
-                display: flex;
-                align-items: center;
-                padding-top: 0px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
 </head>
 
@@ -130,12 +39,15 @@
         </div>
     </div>
 
-    <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
     <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
     <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
 
     <audio loop id="myAudio">
-        <source src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/audio/lagu.mp3" type="audio/mpeg">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
     </audio>
 
     <!-- start page-wrapper -->
@@ -363,7 +275,7 @@
                                 <li>
                                     <div class="details">
                                         <h3>Lamaran</h3>
-                                        <span class="date"><?php echo tanggal_resepsi($tanggal_akad); ?></span>
+                                        <span class="date"><?php echo tanggal_resepsi($tanggal_lamaran); ?></span>
                                         <p><?php echo $resemu_lamaran; ?></p>
                                     </div>
                                     <div class="img-holder">
@@ -578,7 +490,7 @@
         <!-- end testimonials-section -->
 
         <!-- start site-footer -->
-        <footer class="site-footer footer-style-1 terimakasih">
+        <footer class="site-footer footer-style-1 finish">
             <div class="inner">
                 <div class="couple-pic">
                     <?php if(isset($lainnya[0]->image)){ ?>
@@ -592,7 +504,7 @@
                     <li><a href="#"><i class="ti-linkedin"></i></a></li>
                     <li><a href="#"><i class="ti-pinterest"></i></a></li>
                 </ul>
-                <p>Copyright 2020, Made with love by <a href="https://eventstack.id">kiniwedding.com</a></p>
+                <p>&copy; Copyright 2021, Made with love by <a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a></p>
             </div>
         </footer>
         <!-- end site-footer -->
@@ -612,146 +524,8 @@
     <!-- Plugins for this template -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery-plugin-collection.js"></script>
 
-    <script type="text/javascript">
-
-        var x = document.getElementById("myAudio");
-        var audio = 1;
-        var xAudio = 1;
-
-        function playAudio() {
-            x.play();
-            audio = 1
-        }
-
-        function togleAudio() {
-            if (audio == 1) {
-                x.pause()
-                $(".play").show();
-                $(".pause").hide();
-                audio = 2
-            } else {
-                x.play()
-                $(".pause").show();
-                $(".play").hide();
-                audio = 1
-            }
-
-        }
-
-        $(document).ready(function() {
-            $("#over-lay").click(function() {
-                $("#over-lay").fadeOut(650);
-                 $("html, body").delay(2000).animate({scrollTop: parseInt($('.terimakasih').offset().top)+1000 }, 400000);
-            });
-        });
-
-        function goTo(param) {
-            $("html,body").animate({
-                scrollTop: parseInt($('.'+param).offset().top)
-            }, 700);
-            return false;
-        }
-
-        function stopScrolling(){
-            $('html, body').stop();
-            $('html, body').animate({scrollTop: 0}, 1000);
-            $('.stop-scrolling').fadeOut("slow")
-        }
-
-        function testimoni_carousel() {
-            var owl = $(".testimoni-carousel");
-            owl.owlCarousel({
-                loop: true,
-                navigation: false,
-                items: 2,
-                smartSpeed: 1000,
-                dots: false,
-                autoplay: true,
-                autoplayHoverPause: true,
-                stagePadding: 40,
-                margin:10,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    480: {
-                        items: 2
-                    },
-                    760: {
-                        items: 3
-                    },
-                    992: {
-                        items: 3
-                    },
-                }
-            });
-        }
-        testimoni_carousel();
-
-        function buku_tamu() {
-
-            var param = {
-                'nama':$('#nama').val(),
-                'status':$('#status').val(),
-                'pesan':$('#pesan').val(),
-            };
-
-            if($('#nama').val()=="" || $('#nama').val()==" "){
-                Swal.fire(
-                  'Oopps!',
-                  'Nama harus diisi',
-                  'error'
-                );
-                return false;
-            }else if($('#status').val()=="" || $('#status').val()==" "){
-                Swal.fire(
-                  'Oopps!',
-                  'Status harus diisi',
-                  'error'
-                );
-                return false;
-            }else if($('#pesan').val()=="" || $('#pesan').val()==" "){
-
-                Swal.fire(
-                  'Oopps!',
-                  'Pesan arus diisi',
-                  'error'
-                );
-                return false;
-            }
-
-            $.ajax({
-                type: "POST",
-                url: '<?php echo base_url(); ?>inv/buku-tamu/<?php echo $sales_order_id; ?>',
-                data: JSON.stringify(param),
-                contentType: "application/json",
-                dataType: "json",
-                success: function(result){
-                    
-                    if(result.status == 'success'){ 
-
-                        Swal.fire(
-                          'Success',
-                          'Data Berhasil disimpan',
-                          'success'
-                        );
-                        return false; 
-
-                    }else{ 
-
-                        Swal.fire(
-                          'Oopps!',
-                          'Gagal Menyimpan Data',
-                          'error'
-                        );
-                        return false;
-                    } 
-
-                }
-            }); 
-        }
-
-    </script>
+    <?php echo $js; ?>
+    
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/script.js"></script>
 
 

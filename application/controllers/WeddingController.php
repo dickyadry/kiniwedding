@@ -18,14 +18,17 @@ class WeddingController extends MY_Controller {
 
 	public function wedding($param="dicky-dan-ricka"){
 
-		$data = array();
-
 		$data = $this->sales_order_form_model->find($param,'link_web');
 		$sales_order = $this->sales_order_model->find($data->sales_order_id);
 		$sales_order_detail = $this->sales_order_detail_model->find($data->sales_order_id,'sales_order_id');
 		$sales_order_images = $this->sales_order_images_model->find($data->sales_order_id,'sales_order_id');
 		$product = $this->product_model->find($sales_order_detail->product_id);
 		
+		$query = $this->buku_tamu_model->source();
+		$query->where('sales_order_id',$data->sales_order_id);
+		$query->order_by('id','DESC');
+		$data->buku_tamu = $query->get()->result();
+
 		$query = $this->sales_order_images_model->source();
 		$query->where('sales_order_id',$data->sales_order_id);
 		$query->where('type','SLIDER');
@@ -57,6 +60,7 @@ class WeddingController extends MY_Controller {
 		$data->lainnya = $query->get()->result();
 
 		$data->product = $product; 
+		$data->js = $this->load->view("js/product/js_custom_".$product->code, $data, true);
 		$this->load->view("product/theme-".$product->code, $data);
 
 	}
@@ -72,6 +76,7 @@ class WeddingController extends MY_Controller {
 
 		$query = $this->buku_tamu_model->source();
 		$query->where('sales_order_id',0);
+		$query->order_by('id','DESC');
 		$data->buku_tamu = $query->get()->result();
 
 		$query = $this->product_images_model->source();
@@ -109,6 +114,7 @@ class WeddingController extends MY_Controller {
 		$query->order_by('order','ASC');
 		$data->lainnya = $query->get()->result();
 		
+		$data->js = $this->load->view("js/product/js_custom_".$product->code, $data, true);
 		$this->load->view("product/theme-".$product->code, $data);
 
 	}
