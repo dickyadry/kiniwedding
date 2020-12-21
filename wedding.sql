@@ -11,7 +11,7 @@
  Target Server Version : 50732
  File Encoding         : 65001
 
- Date: 21/12/2020 01:02:31
+ Date: 21/12/2020 23:19:11
 */
 
 SET NAMES utf8mb4;
@@ -694,7 +694,7 @@ INSERT INTO `ci_sessions` VALUES ('0qnu4mj7bbc131p9m207jmamadr4l0v5', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('0qnumo3u64ps3qf4n1vtgv0916h1e8nd', '127.0.0.1', '__ci_last_regenerate|i:1598413031;', 1598413031);
 INSERT INTO `ci_sessions` VALUES ('0qo8n85vve24hsdre525lh1g3kn0dfbv', '127.0.0.1', '__ci_last_regenerate|i:1599562165;', 1599562165);
 INSERT INTO `ci_sessions` VALUES ('0qq85pqko9rdh75dh5a37nlsb6doqe3b', '127.0.0.1', '__ci_last_regenerate|i:1597733981;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"61\";s:5:\"login\";b:1;s:4:\"name\";s:9:\"Ais Clara\";s:12:\"organization\";N;s:5:\"email\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"phone\";N;s:4:\"icon\";N;s:8:\"username\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"level\";N;}', 1597733981);
-INSERT INTO `ci_sessions` VALUES ('0qrip5as0rt6apat0lvsn0h9bf6agb2d', '127.0.0.1', '__ci_last_regenerate|i:1608487184;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608487326);
+INSERT INTO `ci_sessions` VALUES ('0qrip5as0rt6apat0lvsn0h9bf6agb2d', '127.0.0.1', '__ci_last_regenerate|i:1608517894;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608517894);
 INSERT INTO `ci_sessions` VALUES ('0qsevha4lqme2ta704cpgav9qprki64r', '127.0.0.1', '__ci_last_regenerate|i:1598267009;', 1598267009);
 INSERT INTO `ci_sessions` VALUES ('0qtu3l6s32nkliu2d23pbomc2e1smlul', '127.0.0.1', '__ci_last_regenerate|i:1598413513;', 1598413513);
 INSERT INTO `ci_sessions` VALUES ('0r07csaucku9ndopsgis490ph83m5inu', '127.0.0.1', '__ci_last_regenerate|i:1596914197;', 1596914197);
@@ -766,6 +766,7 @@ INSERT INTO `ci_sessions` VALUES ('0tr7v5iulkavf67o8h4av1vvq2s2gsgb', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('0trc5pttlr3tabin56pedhfa3redpr0h', '127.0.0.1', '__ci_last_regenerate|i:1597582986;', 1597582986);
 INSERT INTO `ci_sessions` VALUES ('0tu2n86ho5ij52st64evs41g06vplhm3', '127.0.0.1', '__ci_last_regenerate|i:1598562106;', 1598562106);
 INSERT INTO `ci_sessions` VALUES ('0u0h9j21rrdcv5bobp9ndfulc8v3qfs0', '127.0.0.1', '__ci_last_regenerate|i:1598559588;', 1598559588);
+INSERT INTO `ci_sessions` VALUES ('0u2g8fjuudl2k8e9kcsam9f9csqohdri', '127.0.0.1', '__ci_last_regenerate|i:1608519143;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608519143);
 INSERT INTO `ci_sessions` VALUES ('0u2t21ggiv9cve7an8g6k556dind4iip', '127.0.0.1', '__ci_last_regenerate|i:1598407690;', 1598407690);
 INSERT INTO `ci_sessions` VALUES ('0u30j45agkj3bn1iraq495a3nto51lko', '127.0.0.1', '__ci_last_regenerate|i:1599131927;', 1599131927);
 INSERT INTO `ci_sessions` VALUES ('0u51e2ulekbue8qppcmi482t7tem73p6', '127.0.0.1', '__ci_last_regenerate|i:1596865004;', 1596865004);
@@ -784,6 +785,7 @@ INSERT INTO `ci_sessions` VALUES ('0urg9jup0e2kf5nrspa3e3i4qubb4qmv', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('0usbe37n60uu76uqvggo603mq4jrjl4l', '127.0.0.1', '__ci_last_regenerate|i:1598413693;', 1598413693);
 INSERT INTO `ci_sessions` VALUES ('0v29sdinvk3nc4dd1jf5t20fdm15mnhh', '127.0.0.1', '__ci_last_regenerate|i:1598267594;', 1598267594);
 INSERT INTO `ci_sessions` VALUES ('0v5j7dcoueatu3lmd3s83ve7smrlggr7', '127.0.0.1', '__ci_last_regenerate|i:1596801848;', 1596801848);
+INSERT INTO `ci_sessions` VALUES ('0v63ml9vjgaclugqu13hg2q4t6104p9p', '::1', '__ci_last_regenerate|i:1608565396;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608565396);
 INSERT INTO `ci_sessions` VALUES ('0v88p9b2eibdgujlmfq68omrd1rl02i5', '127.0.0.1', '__ci_last_regenerate|i:1599174443;', 1599174443);
 INSERT INTO `ci_sessions` VALUES ('0v9ghqojhthnit8u1ck4e5ot63cndj56', '127.0.0.1', '__ci_last_regenerate|i:1597485634;', 1597485634);
 INSERT INTO `ci_sessions` VALUES ('0v9oq4c8pfqbaq746iove02vvt5l7rsb', '127.0.0.1', '__ci_last_regenerate|i:1598576839;', 1598576839);
@@ -1110,6 +1112,7 @@ INSERT INTO `ci_sessions` VALUES ('1fslvp2mn27hd1dr8kuhlg6i73bvldal', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('1ftlid6ots2vv5a69navcs1i5cgbrgvv', '127.0.0.1', '__ci_last_regenerate|i:1598408031;', 1598408031);
 INSERT INTO `ci_sessions` VALUES ('1g01p6m52e2bbtspbn9faf9r06nu9at0', '127.0.0.1', '__ci_last_regenerate|i:1598406834;', 1598406834);
 INSERT INTO `ci_sessions` VALUES ('1g08efgpsl1f7fla8ee0ik91s4q3hmsr', '127.0.0.1', '__ci_last_regenerate|i:1598414807;', 1598414807);
+INSERT INTO `ci_sessions` VALUES ('1g3cf6vsri70e84gr7po08vvt7tad9vb', '::1', '__ci_last_regenerate|i:1608524845;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}success|s:7:\"Success\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}', 1608524845);
 INSERT INTO `ci_sessions` VALUES ('1g4m7jcn9j24m8dmoms2clhu5ohrsvku', '127.0.0.1', '__ci_last_regenerate|i:1598410252;', 1598410252);
 INSERT INTO `ci_sessions` VALUES ('1g4qnisu9rqbm3rbjhmk5rkcr86lmre3', '127.0.0.1', '__ci_last_regenerate|i:1597749116;userpubliclog|a:9:{s:9:\"member_id\";i:61;s:5:\"login\";b:1;s:4:\"name\";s:9:\"Ais Clara\";s:12:\"organization\";N;s:5:\"email\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"phone\";s:0:\"\";s:4:\"icon\";N;s:8:\"username\";s:0:\"\";s:5:\"level\";i:1;}', 1597749116);
 INSERT INTO `ci_sessions` VALUES ('1g60p8av39kknapqbto8n3eb5nnqung8', '127.0.0.1', '__ci_last_regenerate|i:1597520561;', 1597520561);
@@ -1224,6 +1227,7 @@ INSERT INTO `ci_sessions` VALUES ('1kjg6gjkf7lu6r5ta1ni24p3cccsi7i0', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('1kjrbk2ht7jgu2vaaijh2pokjme4kvvn', '127.0.0.1', '__ci_last_regenerate|i:1598405792;', 1598405792);
 INSERT INTO `ci_sessions` VALUES ('1kkdue6ggmruo7ldp7t2bp18slihpanm', '127.0.0.1', '__ci_last_regenerate|i:1599152929;', 1599152929);
 INSERT INTO `ci_sessions` VALUES ('1klu3kctd1ptujit8eusgkqvug8tmv30', '127.0.0.1', '__ci_last_regenerate|i:1599531455;error|s:42:\"Mohon maaf account anda sudah tidak aktif.\";__ci_vars|a:1:{s:5:\"error\";s:3:\"old\";}', 1599531455);
+INSERT INTO `ci_sessions` VALUES ('1kn42nk4i40ohf9nmkl8josk3f74805j', '127.0.0.1', '__ci_last_regenerate|i:1608521315;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608521315);
 INSERT INTO `ci_sessions` VALUES ('1kotb97qhq2hmh0u59t5lfmpurh3ipij', '127.0.0.1', '__ci_last_regenerate|i:1598411024;', 1598411024);
 INSERT INTO `ci_sessions` VALUES ('1kp58j0feoufa6svbrhogmet1g85tskd', '127.0.0.1', '__ci_last_regenerate|i:1599248970;', 1599248970);
 INSERT INTO `ci_sessions` VALUES ('1kphh54u1nknlbal1jrsj4c1abjisht8', '127.0.0.1', '__ci_last_regenerate|i:1599447092;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"61\";s:5:\"login\";b:1;s:4:\"name\";s:9:\"Ais Clara\";s:12:\"organization\";N;s:5:\"email\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"phone\";s:12:\"088227121103\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20200902175743.jpg\";s:8:\"username\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"level\";N;}', 1599447212);
@@ -1502,6 +1506,7 @@ INSERT INTO `ci_sessions` VALUES ('21scfuamclogr5fg6s05o6us1jsc31cn', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('22253kf077nitkv6p312inefm4oqq3if', '127.0.0.1', '__ci_last_regenerate|i:1598560401;', 1598560401);
 INSERT INTO `ci_sessions` VALUES ('222dqrnj9nv7980q9mrbqaf3s1g0qm1l', '127.0.0.1', '__ci_last_regenerate|i:1598409517;', 1598409517);
 INSERT INTO `ci_sessions` VALUES ('225b616bc52ca9ee743fbdef581d01cf7206705e', '114.122.196.111', '__ci_last_regenerate|i:1599639286;', 1599639286);
+INSERT INTO `ci_sessions` VALUES ('225i8060q9cpt8e9jrk3p2iecfu0d6g3', '::1', '__ci_last_regenerate|i:1608565092;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608565092);
 INSERT INTO `ci_sessions` VALUES ('225shp700ki2rtlpoo2fs827qs7udi80', '127.0.0.1', '__ci_last_regenerate|i:1599237181;userpubliclog|a:9:{s:9:\"member_id\";i:96;s:5:\"login\";b:1;s:4:\"name\";s:14:\"your tomodachi\";s:12:\"organization\";N;s:5:\"email\";s:26:\"yourtomodachi.co@gmail.com\";s:5:\"phone\";s:0:\"\";s:4:\"icon\";N;s:8:\"username\";s:0:\"\";s:5:\"level\";i:1;}', 1599237181);
 INSERT INTO `ci_sessions` VALUES ('227qpub2i5jil0pr31bl2bgn158cvgm9', '127.0.0.1', '__ci_last_regenerate|i:1598360367;', 1598360367);
 INSERT INTO `ci_sessions` VALUES ('227vgks45eq9i05har2s4hnn1addn9a6', '127.0.0.1', '__ci_last_regenerate|i:1598370398;', 1598370398);
@@ -1726,6 +1731,7 @@ INSERT INTO `ci_sessions` VALUES ('2cacapesetd1ee26nrcdavd1etksho3m', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('2cbv7knerahsfscanrvijf3vp6hhm46o', '127.0.0.1', '__ci_last_regenerate|i:1598247312;', 1598247312);
 INSERT INTO `ci_sessions` VALUES ('2cc0cpbkh23kn700ar271g7a6s6bc53r', '127.0.0.1', '__ci_last_regenerate|i:1598250278;', 1598250278);
 INSERT INTO `ci_sessions` VALUES ('2cc8ocjt2aai42hhia6qkjerb8koirgu', '127.0.0.1', '__ci_last_regenerate|i:1598408504;', 1598408504);
+INSERT INTO `ci_sessions` VALUES ('2cfas4eggk5i1ctefvpm6a6sjfd6lpfn', '127.0.0.1', '__ci_last_regenerate|i:1608541077;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608541077);
 INSERT INTO `ci_sessions` VALUES ('2chefj0p71tsrvqe0vecf9moricfpmmg', '127.0.0.1', '__ci_last_regenerate|i:1598939268;', 1598939268);
 INSERT INTO `ci_sessions` VALUES ('2cig4akjehnuficvgks8fvg3rt485stg', '127.0.0.1', '__ci_last_regenerate|i:1598251677;', 1598251677);
 INSERT INTO `ci_sessions` VALUES ('2cjmj8cl9rgb1qddl2bgequauihpd3do', '127.0.0.1', '__ci_last_regenerate|i:1598560516;', 1598560516);
@@ -1755,6 +1761,7 @@ INSERT INTO `ci_sessions` VALUES ('2e7oo5made2o5vs4oq79570471ltelb2', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('2eaqmjeccvfh298tdhggt24aaraetqpj', '127.0.0.1', '__ci_last_regenerate|i:1598413418;', 1598413418);
 INSERT INTO `ci_sessions` VALUES ('2edphqqhml86u80v0k423kpl6apidprh', '127.0.0.1', '__ci_last_regenerate|i:1598414115;', 1598414115);
 INSERT INTO `ci_sessions` VALUES ('2ee574jba48f9hqscc79otr94977ii52', '127.0.0.1', '__ci_last_regenerate|i:1599119067;', 1599119067);
+INSERT INTO `ci_sessions` VALUES ('2eguk5aa36tjcqla15r1d76gb609i325', '127.0.0.1', '__ci_last_regenerate|i:1608561956;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608561956);
 INSERT INTO `ci_sessions` VALUES ('2eh5hb7ugqih5dcg6bogps19lmiitqau', '127.0.0.1', '__ci_last_regenerate|i:1608255547;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608255547);
 INSERT INTO `ci_sessions` VALUES ('2eiedqli77rra6o0qv9olcnt49l7o9e2', '127.0.0.1', '__ci_last_regenerate|i:1598407941;', 1598407941);
 INSERT INTO `ci_sessions` VALUES ('2eijijrndju36fa08hppqj842q1ood8o', '127.0.0.1', '__ci_last_regenerate|i:1597743358;', 1597743358);
@@ -2016,6 +2023,7 @@ INSERT INTO `ci_sessions` VALUES ('2pnbqs57srou6443nf26k6pe8fbees7b', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('2pni88n8c3ijcjm0idb6jim979lhkus7', '127.0.0.1', '__ci_last_regenerate|i:1599115168;', 1599115168);
 INSERT INTO `ci_sessions` VALUES ('2pno9mciqfcl7ufr772qopkh43ojkfu3', '127.0.0.1', '__ci_last_regenerate|i:1598060505;', 1598060505);
 INSERT INTO `ci_sessions` VALUES ('2potvivql0imuj68flbncojlr1kq8ldn', '127.0.0.1', '__ci_last_regenerate|i:1597547470;', 1597547470);
+INSERT INTO `ci_sessions` VALUES ('2pq5ek485blkctdsfjoln72ag9q8gjce', '::1', '__ci_last_regenerate|i:1608557398;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608557398);
 INSERT INTO `ci_sessions` VALUES ('2pr4v0biv4unf0hlv19r4fvomfh80b3j', '127.0.0.1', '__ci_last_regenerate|i:1597134925;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"39\";s:5:\"login\";b:1;s:4:\"name\";s:21:\"aLPRo Event Organizer\";s:12:\"organization\";s:21:\"aLPRo Event Organizer\";s:5:\"email\";s:17:\"alproeo@gmail.com\";s:5:\"phone\";s:12:\"089655516595\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20200811151107.jpg\";s:8:\"username\";s:8:\"alpro.eo\";s:5:\"level\";s:1:\"1\";}', 1597134925);
 INSERT INTO `ci_sessions` VALUES ('2puduei3ndctcpbgecu9r9tdakufc7nj', '127.0.0.1', '__ci_last_regenerate|i:1599193413;', 1599193413);
 INSERT INTO `ci_sessions` VALUES ('2pudunojdmg1i57fbubfm6tuji7ts9at', '127.0.0.1', '__ci_last_regenerate|i:1598408604;', 1598408604);
@@ -2104,6 +2112,7 @@ INSERT INTO `ci_sessions` VALUES ('2tu061v1fo6or05usnp15ggakgsffuun', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('2tun1eipemv25c63krc2l2cgc1748sf1', '127.0.0.1', '__ci_last_regenerate|i:1598413253;', 1598413253);
 INSERT INTO `ci_sessions` VALUES ('2u4q4luj2mt4g85rdnraj686h433ca61', '127.0.0.1', '__ci_last_regenerate|i:1598402347;', 1598402347);
 INSERT INTO `ci_sessions` VALUES ('2ua6nq8h5qe0bkucgoninc01qpbsudvb', '127.0.0.1', '__ci_last_regenerate|i:1598413881;', 1598413881);
+INSERT INTO `ci_sessions` VALUES ('2ub0teudmk2k3pm7j7v4ujd2gds4n6vh', '::1', '__ci_last_regenerate|i:1608565739;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608565739);
 INSERT INTO `ci_sessions` VALUES ('2ucfj6a5boug1dacaglbk6rcmssr83hk', '127.0.0.1', '__ci_last_regenerate|i:1598366019;', 1598366019);
 INSERT INTO `ci_sessions` VALUES ('2ucnfrbc8k5j2s611gm3cue4tb51e8o2', '127.0.0.1', '__ci_last_regenerate|i:1598055650;', 1598055650);
 INSERT INTO `ci_sessions` VALUES ('2uenjej6eca4h5c2s3qgd6jcghaj6se9', '127.0.0.1', '__ci_last_regenerate|i:1598405639;', 1598405639);
@@ -2906,6 +2915,7 @@ INSERT INTO `ci_sessions` VALUES ('447pjc5btd6f2s5uti3a2e8jtjl83478', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('44a3biqann1sudhjsipf5cun8e9vgajg', '127.0.0.1', '__ci_last_regenerate|i:1598488231;', 1598488231);
 INSERT INTO `ci_sessions` VALUES ('44b33gaa4ec9l5p1m70qod3u9lp4i4gv', '127.0.0.1', '__ci_last_regenerate|i:1598373356;', 1598373356);
 INSERT INTO `ci_sessions` VALUES ('44c66rrtgkknded3tesve5ok10lahuv0', '127.0.0.1', '__ci_last_regenerate|i:1598034513;error|s:30:\"Silahkan login terlebih dahulu\";__ci_vars|a:1:{s:5:\"error\";s:3:\"new\";}', 1598034513);
+INSERT INTO `ci_sessions` VALUES ('44clvdp7m8ocb2v6tnetj2l6ocshg9li', '::1', '__ci_last_regenerate|i:1608564490;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608564490);
 INSERT INTO `ci_sessions` VALUES ('44dj2v5fke9uc63286hvhamdra5rsins', '127.0.0.1', '__ci_last_regenerate|i:1598637913;', 1598637913);
 INSERT INTO `ci_sessions` VALUES ('44gtbulq5n07trh1ktppti8pbvvbfklk', '127.0.0.1', '__ci_last_regenerate|i:1596803618;', 1596803618);
 INSERT INTO `ci_sessions` VALUES ('44guf1gkjtpvvph7u7p0mvp0co42vqlc', '127.0.0.1', '__ci_last_regenerate|i:1599157656;', 1599157656);
@@ -3511,6 +3521,7 @@ INSERT INTO `ci_sessions` VALUES ('50gkjuqp1lars1li9idf59l0fj28qaou', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('50gnj2fpqf04qs3ra1mnnlchhndltr8b', '127.0.0.1', '__ci_last_regenerate|i:1598413330;', 1598413330);
 INSERT INTO `ci_sessions` VALUES ('50h29b021jqj9emj3ib00nektdu386n1', '127.0.0.1', '__ci_last_regenerate|i:1599126145;', 1599126145);
 INSERT INTO `ci_sessions` VALUES ('50hbq1oim7cikv4qksjjgssu9n94slif', '127.0.0.1', '__ci_last_regenerate|i:1598415248;', 1598415248);
+INSERT INTO `ci_sessions` VALUES ('50knfbvvcu97h2r8ubja6p3defl35o5q', '::1', '__ci_last_regenerate|i:1608563776;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608563776);
 INSERT INTO `ci_sessions` VALUES ('50lu31lsm73lbclk3t3b9jaih61def11', '127.0.0.1', '__ci_last_regenerate|i:1598372522;', 1598372522);
 INSERT INTO `ci_sessions` VALUES ('50m9g1i6rjtreb5pharg75r88bup94tv', '127.0.0.1', '__ci_last_regenerate|i:1598369672;', 1598369672);
 INSERT INTO `ci_sessions` VALUES ('50njuf4g2lfrihhkdp9v9l16r7k0sjpi', '127.0.0.1', '__ci_last_regenerate|i:1603072767;userpubliclog|a:9:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:11:\"Event Stack\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:11:\"dickyadry25\";s:5:\"level\";s:1:\"1\";}', 1603072767);
@@ -4026,6 +4037,7 @@ INSERT INTO `ci_sessions` VALUES ('5orrl6tcippbokqvrt4k5si60if1apfi', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('5otfiug171rrla0u6tvbe0t9rhjt2o5s', '127.0.0.1', '__ci_last_regenerate|i:1598414251;', 1598414251);
 INSERT INTO `ci_sessions` VALUES ('5p10631gd4ot6jndu8ptgikiind05od5', '127.0.0.1', '__ci_last_regenerate|i:1598609393;', 1598609393);
 INSERT INTO `ci_sessions` VALUES ('5p5rgbcm66u7qj7ta1tq1teihhj2tj77', '127.0.0.1', '__ci_last_regenerate|i:1598415310;', 1598415310);
+INSERT INTO `ci_sessions` VALUES ('5pb0agr3i9csjep4cb3845iv24370ph1', '::1', '__ci_last_regenerate|i:1608555573;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608555573);
 INSERT INTO `ci_sessions` VALUES ('5pc6cscbjal66pm0688b80fvebv3vqn3', '127.0.0.1', '__ci_last_regenerate|i:1599499652;', 1599499652);
 INSERT INTO `ci_sessions` VALUES ('5pdqu7opm37fuv8bo5gi1lhqbg4d134o', '127.0.0.1', '__ci_last_regenerate|i:1599169243;', 1599169243);
 INSERT INTO `ci_sessions` VALUES ('5pem2kh2sc2scbiv783t6vq3h8h579kt', '127.0.0.1', '__ci_last_regenerate|i:1598264508;', 1598264508);
@@ -4402,6 +4414,7 @@ INSERT INTO `ci_sessions` VALUES ('6bt5f6f3t27o5kg1d09vhtusrqva8oes', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('6btd0deohhnbrf6ardsgi81i541b9acf', '127.0.0.1', '__ci_last_regenerate|i:1598410081;', 1598410081);
 INSERT INTO `ci_sessions` VALUES ('6bv0pegufohbeise4fv195j1782uidre', '127.0.0.1', '__ci_last_regenerate|i:1598412814;', 1598412814);
 INSERT INTO `ci_sessions` VALUES ('6c0o88d9d1m5tcfooamvrgt6dqra865k', '127.0.0.1', '__ci_last_regenerate|i:1608188757;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:9:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:11:\"Event Stack\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:11:\"dickyadry25\";s:5:\"level\";s:1:\"1\";}', 1608188757);
+INSERT INTO `ci_sessions` VALUES ('6c1lttb8ttftql8cqddca75d2bu30v15', '127.0.0.1', '__ci_last_regenerate|i:1608562495;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608562495);
 INSERT INTO `ci_sessions` VALUES ('6c1otse3dlvhjt5j2g35omncetsjn32t', '127.0.0.1', '__ci_last_regenerate|i:1598947531;', 1598947531);
 INSERT INTO `ci_sessions` VALUES ('6c1qgh8ftstp19fhsf7i87k7l3f7pmes', '127.0.0.1', '__ci_last_regenerate|i:1598568319;', 1598568319);
 INSERT INTO `ci_sessions` VALUES ('6c2ocju1gnp7v8l9mvmm7g57b0rr5e78', '127.0.0.1', '__ci_last_regenerate|i:1598413884;', 1598413884);
@@ -4472,6 +4485,7 @@ INSERT INTO `ci_sessions` VALUES ('6ek5nvon8kai12ikaa38r9bp7k58una4', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('6ekkqs9kg2g5rcutsk8rerjupjtllp4m', '127.0.0.1', '__ci_last_regenerate|i:1599155701;', 1599155701);
 INSERT INTO `ci_sessions` VALUES ('6el0ushqhqfa7voh8ht12ondk3e78r8c', '127.0.0.1', '__ci_last_regenerate|i:1598414747;', 1598414747);
 INSERT INTO `ci_sessions` VALUES ('6em2haq8vvb953be6ak22phpkefjc0mf', '127.0.0.1', '__ci_last_regenerate|i:1599065295;', 1599065295);
+INSERT INTO `ci_sessions` VALUES ('6enhte3s8o7mdm8kavvu45ggaj983r77', '127.0.0.1', '__ci_last_regenerate|i:1608527650;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608527650);
 INSERT INTO `ci_sessions` VALUES ('6eplh6rktkdrce1gcf5t5tuphaont3c3', '127.0.0.1', '__ci_last_regenerate|i:1598360878;', 1598360878);
 INSERT INTO `ci_sessions` VALUES ('6eqb8230vrl96pl6qn7bropgkoht8jl0', '127.0.0.1', '__ci_last_regenerate|i:1598249875;', 1598249875);
 INSERT INTO `ci_sessions` VALUES ('6f1rpcd5bfs4na8lnp76bhg62k2su259', '127.0.0.1', '__ci_last_regenerate|i:1597068927;userpubliclog|a:9:{s:9:\"member_id\";i:47;s:5:\"login\";b:1;s:4:\"name\";s:14:\"Sapi Qurban CG\";s:12:\"organization\";N;s:5:\"email\";s:22:\"sapiqurbancg@gmail.com\";s:5:\"phone\";s:0:\"\";s:4:\"icon\";N;s:8:\"username\";s:0:\"\";s:5:\"level\";i:1;}', 1597068927);
@@ -4696,6 +4710,7 @@ INSERT INTO `ci_sessions` VALUES ('6pai40sjdorpk7a0m7vthdcgfjpcd8fa', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('6pam9hjgktrsvm5osanfmnqa0chpe3ev', '127.0.0.1', '__ci_last_regenerate|i:1598407544;', 1598407544);
 INSERT INTO `ci_sessions` VALUES ('6pe9l3q5hdnsrdhi2gmejil3kr5f6t54', '127.0.0.1', '__ci_last_regenerate|i:1599166423;', 1599166423);
 INSERT INTO `ci_sessions` VALUES ('6ph1rk5vpm8j6pqco3sip0ie9s00i8vu', '127.0.0.1', '__ci_last_regenerate|i:1598250443;', 1598250443);
+INSERT INTO `ci_sessions` VALUES ('6pknvevkv853m9eaaol8j4aj11kd67pc', '::1', '__ci_last_regenerate|i:1608557728;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608557728);
 INSERT INTO `ci_sessions` VALUES ('6pm78h73sno5a6uevitcfdv238eka4dk', '127.0.0.1', '__ci_last_regenerate|i:1597185338;', 1597185338);
 INSERT INTO `ci_sessions` VALUES ('6pmfo2h2l9hchrcpbk4fiqtnu1lfaa0r', '127.0.0.1', '__ci_last_regenerate|i:1599265026;', 1599265026);
 INSERT INTO `ci_sessions` VALUES ('6pngsh7hc6d3dh9j0j1kfgc5dkhsekes', '127.0.0.1', '__ci_last_regenerate|i:1598407543;', 1598407543);
@@ -4752,6 +4767,7 @@ INSERT INTO `ci_sessions` VALUES ('6s5oghitce36hark8hmjhba7bb450cbg', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('6s7891spvb50353r1qo7gtdq8vj54uts', '127.0.0.1', '__ci_last_regenerate|i:1598357087;', 1598357087);
 INSERT INTO `ci_sessions` VALUES ('6s7u186imk20esuqtl9b3ugq6d57hb7s', '127.0.0.1', '__ci_last_regenerate|i:1599575548;', 1599575548);
 INSERT INTO `ci_sessions` VALUES ('6s9sjhrl0d2tp42uiscbfl7p22nimr6j', '127.0.0.1', '__ci_last_regenerate|i:1599493344;', 1599493344);
+INSERT INTO `ci_sessions` VALUES ('6sc8fqut11as9ihkl8rg5ii8e8l2j0et', '127.0.0.1', '__ci_last_regenerate|i:1608520274;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608520274);
 INSERT INTO `ci_sessions` VALUES ('6sci49eec19ljger4cfcb42bhh37tp3m', '127.0.0.1', '__ci_last_regenerate|i:1598408327;', 1598408327);
 INSERT INTO `ci_sessions` VALUES ('6sjlqosicol4ijo1on64arsva8iebpc3', '127.0.0.1', '__ci_last_regenerate|i:1598559196;', 1598559196);
 INSERT INTO `ci_sessions` VALUES ('6skdq6u6gbb6ub7h0n95rp4i89vfrla4', '127.0.0.1', '__ci_last_regenerate|i:1598360663;', 1598360663);
@@ -5145,6 +5161,7 @@ INSERT INTO `ci_sessions` VALUES ('7dqpq5i3mvhkh9ltj1odb2qivku9e66q', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('7dr7u57dvqmnhc9ok04jbvmvmgqon3oi', '127.0.0.1', '__ci_last_regenerate|i:1598407690;', 1598407690);
 INSERT INTO `ci_sessions` VALUES ('7ds4rlvq91qtvu2csvrjdtj7f9vhl56r', '127.0.0.1', '__ci_last_regenerate|i:1598247122;', 1598247122);
 INSERT INTO `ci_sessions` VALUES ('7dsrqdkeset5ltpk64jv6o9utdh3ckd5', '127.0.0.1', '__ci_last_regenerate|i:1598414186;', 1598414186);
+INSERT INTO `ci_sessions` VALUES ('7dt2p2o6c8kdlnu36lc2b3pjnftmjhmu', '::1', '__ci_last_regenerate|i:1608553588;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608553588);
 INSERT INTO `ci_sessions` VALUES ('7dv0lhpn73fld9so3t11n8v97oen47i5', '127.0.0.1', '__ci_last_regenerate|i:1599190618;', 1599190618);
 INSERT INTO `ci_sessions` VALUES ('7e0m11t7n639v5853i57tl3vfeos4fba', '127.0.0.1', '__ci_last_regenerate|i:1598411799;', 1598411799);
 INSERT INTO `ci_sessions` VALUES ('7e2e113egn71vk4o600v8v298pblkbat', '127.0.0.1', '__ci_last_regenerate|i:1598247104;', 1598247104);
@@ -5788,9 +5805,11 @@ INSERT INTO `ci_sessions` VALUES ('8b0il6q5ilbkqoul84drbg0rh784alre', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('8b0pie39937ao0igolbujitm8vknjc2l', '127.0.0.1', '__ci_last_regenerate|i:1598258604;', 1598258604);
 INSERT INTO `ci_sessions` VALUES ('8b21m4jgu2lsrok9rsmkb4lrh93vljf2', '127.0.0.1', '__ci_last_regenerate|i:1598415217;', 1598415217);
 INSERT INTO `ci_sessions` VALUES ('8b4in436tlnffqug8veltqlllbr2mblg', '127.0.0.1', '__ci_last_regenerate|i:1598782476;', 1598782476);
+INSERT INTO `ci_sessions` VALUES ('8b5fs1kg58gtv1vvhkv6tordjb4qebmt', '127.0.0.1', '__ci_last_regenerate|i:1608531550;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608531550);
 INSERT INTO `ci_sessions` VALUES ('8b8aloaje2s96hh77jtivcnae50nru8h', '127.0.0.1', '__ci_last_regenerate|i:1598413256;', 1598413256);
 INSERT INTO `ci_sessions` VALUES ('8b90bgulbdabejmn3tebng5nhd97pedq', '127.0.0.1', '__ci_last_regenerate|i:1599109302;', 1599109302);
 INSERT INTO `ci_sessions` VALUES ('8bb0h7l48fse17kj9eurlt7nel4tfl3m', '127.0.0.1', '__ci_last_regenerate|i:1598247902;', 1598247902);
+INSERT INTO `ci_sessions` VALUES ('8bcu0dg8ubv6mdc9e54u1bmsld5s1qnp', '::1', '__ci_last_regenerate|i:1608552969;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608552969);
 INSERT INTO `ci_sessions` VALUES ('8be83vm0vr65ibnrcp5c1gct4cvjhibs', '127.0.0.1', '__ci_last_regenerate|i:1598815757;', 1598815757);
 INSERT INTO `ci_sessions` VALUES ('8bf62cnbo9738187ejn535i710n524gf', '127.0.0.1', '__ci_last_regenerate|i:1598247565;', 1598247565);
 INSERT INTO `ci_sessions` VALUES ('8bftme3kk0midsgrdjrjo9g2aofd6uav', '127.0.0.1', '__ci_last_regenerate|i:1598263086;', 1598263086);
@@ -6795,6 +6814,7 @@ INSERT INTO `ci_sessions` VALUES ('9pqelhufi9ef5p8gft4juh3pgdkp3m0q', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('9pqnrfov1u6uaf178lonf7fme66njm2d', '127.0.0.1', '__ci_last_regenerate|i:1599015012;', 1599015012);
 INSERT INTO `ci_sessions` VALUES ('9ps50e5p8bg36msbfhifa2knkc394ps0', '127.0.0.1', '__ci_last_regenerate|i:1599067567;', 1599067567);
 INSERT INTO `ci_sessions` VALUES ('9pso6o8t3jak6m53kvk5as9s5u0f0cga', '127.0.0.1', '__ci_last_regenerate|i:1598373834;', 1598373834);
+INSERT INTO `ci_sessions` VALUES ('9pst45nus434f48fbce2qa5f28sbu390', '::1', '__ci_last_regenerate|i:1608556980;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608556980);
 INSERT INTO `ci_sessions` VALUES ('9pt14lpp6vr46hpdq6hjanplhevlkghs', '127.0.0.1', '__ci_last_regenerate|i:1598248429;', 1598248429);
 INSERT INTO `ci_sessions` VALUES ('9pthukgo1daqcoqn1ojautb3r03r9adu', '127.0.0.1', '__ci_last_regenerate|i:1599475398;error|s:30:\"Silahkan login terlebih dahulu\";__ci_vars|a:1:{s:5:\"error\";s:3:\"old\";}', 1599475399);
 INSERT INTO `ci_sessions` VALUES ('9ptkma1otku5u94lib1pjp6oo27t7j5o', '127.0.0.1', '__ci_last_regenerate|i:1598357858;', 1598357858);
@@ -6915,6 +6935,7 @@ INSERT INTO `ci_sessions` VALUES ('9uni4caosm022eivrlbl44fel81dj515', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('9uq5sglggbf6bjgh9fq3ue3hhrp99b9n', '127.0.0.1', '__ci_last_regenerate|i:1598365557;', 1598365557);
 INSERT INTO `ci_sessions` VALUES ('9uq7sa7hcob7gca3bmf74a2glfdcqdrl', '127.0.0.1', '__ci_last_regenerate|i:1598254025;', 1598254025);
 INSERT INTO `ci_sessions` VALUES ('9uqb7of17ptdkrb3n5kf15paohc885ej', '127.0.0.1', '__ci_last_regenerate|i:1598414528;', 1598414528);
+INSERT INTO `ci_sessions` VALUES ('9ur2me7p73h7a7378j2am6oqqjmskrjt', '127.0.0.1', '__ci_last_regenerate|i:1608522270;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608522270);
 INSERT INTO `ci_sessions` VALUES ('9urjijv3fboli90ll80t7nkbf812hvcn', '127.0.0.1', '__ci_last_regenerate|i:1598956009;', 1598956009);
 INSERT INTO `ci_sessions` VALUES ('9usip25iq02e2tobbhfhntatvrcp30t5', '127.0.0.1', '__ci_last_regenerate|i:1598800100;', 1598800100);
 INSERT INTO `ci_sessions` VALUES ('9utqe3i0qr3fh5kjn85ldontqca3k7c6', '127.0.0.1', '__ci_last_regenerate|i:1599382084;', 1599382084);
@@ -7317,6 +7338,7 @@ INSERT INTO `ci_sessions` VALUES ('ahaqhkhsnjedehlphsbdic82ce7naglk', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('ahb8ckc88estbrvtvfp4erpr3c7ceh9l', '127.0.0.1', '__ci_last_regenerate|i:1598372112;', 1598372112);
 INSERT INTO `ci_sessions` VALUES ('ahc4ghs7tumqtjq9vd5lve1j2ch7gt9t', '127.0.0.1', '__ci_last_regenerate|i:1598264578;', 1598264578);
 INSERT INTO `ci_sessions` VALUES ('ahilh855u43jli1usq6qhqh9upn3cbsu', '127.0.0.1', '__ci_last_regenerate|i:1598358839;', 1598358839);
+INSERT INTO `ci_sessions` VALUES ('ahlc2n8vse81ebdk5qipkgjk8thk1kmt', '127.0.0.1', '__ci_last_regenerate|i:1608521929;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608521929);
 INSERT INTO `ci_sessions` VALUES ('ahnms7qhog90hdkafi1pvrjk5qdautgl', '127.0.0.1', '__ci_last_regenerate|i:1596807652;', 1596807652);
 INSERT INTO `ci_sessions` VALUES ('ahnpprmvipe1rstv1t149i4melqb3g6l', '127.0.0.1', '__ci_last_regenerate|i:1598412762;', 1598412762);
 INSERT INTO `ci_sessions` VALUES ('ahopjfr353g5rq5pa2j4cep2jju2fe13', '127.0.0.1', '__ci_last_regenerate|i:1598844283;', 1598844283);
@@ -7613,6 +7635,7 @@ INSERT INTO `ci_sessions` VALUES ('atgncggg8u6qik07dff7efm6fa2laeqb', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('atit2ijlp0lo1c36hr41l5a0c1ffmevf', '127.0.0.1', '__ci_last_regenerate|i:1597018352;', 1597018352);
 INSERT INTO `ci_sessions` VALUES ('atltsniithplhjqbub0qtmqtjuhjarhe', '127.0.0.1', '__ci_last_regenerate|i:1599162036;', 1599162036);
 INSERT INTO `ci_sessions` VALUES ('atmtsqrg5rgr4emv20fbmmokaacev44f', '127.0.0.1', '__ci_last_regenerate|i:1598409477;', 1598409477);
+INSERT INTO `ci_sessions` VALUES ('ato921628br0ute7tlv1o5jq43rtsstc', '127.0.0.1', '__ci_last_regenerate|i:1608566458;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608566525);
 INSERT INTO `ci_sessions` VALUES ('atphbo08urcfvbd0afenj5epgchum6b7', '127.0.0.1', '__ci_last_regenerate|i:1598256950;', 1598256950);
 INSERT INTO `ci_sessions` VALUES ('atq0i9d094crfer9le0sluqdrrn1u7f7', '127.0.0.1', '__ci_last_regenerate|i:1597785448;', 1597785448);
 INSERT INTO `ci_sessions` VALUES ('atr05el1ajvs74qn3h4prc3nf0atcoqd', '127.0.0.1', '__ci_last_regenerate|i:1599102821;', 1599102821);
@@ -7873,7 +7896,7 @@ INSERT INTO `ci_sessions` VALUES ('b9k26q46g2kcq8k49b35puq46lg98uba', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('b9lb9r1269lugdlssfenlcqpgkrn1r3m', '127.0.0.1', '__ci_last_regenerate|i:1598411638;', 1598411638);
 INSERT INTO `ci_sessions` VALUES ('b9m1f2g2ue8k26h9mj5adacdlgkgvrkq', '127.0.0.1', '__ci_last_regenerate|i:1598255917;', 1598255917);
 INSERT INTO `ci_sessions` VALUES ('b9n8hi7mmcnq7p1035spsefe3s43f7m1', '127.0.0.1', '__ci_last_regenerate|i:1599605053;', 1599605053);
-INSERT INTO `ci_sessions` VALUES ('b9p35utlnmqovp4io4q0ft9ngs9g90j4', '::1', '__ci_last_regenerate|i:1608485698;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608485828);
+INSERT INTO `ci_sessions` VALUES ('b9p35utlnmqovp4io4q0ft9ngs9g90j4', '::1', '__ci_last_regenerate|i:1608519216;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608519216);
 INSERT INTO `ci_sessions` VALUES ('b9qlccqp3vno2r81m4gm5ujkojrckabu', '127.0.0.1', '__ci_last_regenerate|i:1598517769;', 1598517769);
 INSERT INTO `ci_sessions` VALUES ('b9rivjjiqpnluls03fbvhhmd4f5gcl8u', '127.0.0.1', '__ci_last_regenerate|i:1598362962;', 1598362962);
 INSERT INTO `ci_sessions` VALUES ('b9sefs9ltvjt3lbkfnhj67gbdqcdrvce', '127.0.0.1', '__ci_last_regenerate|i:1598409542;', 1598409542);
@@ -8136,6 +8159,7 @@ INSERT INTO `ci_sessions` VALUES ('bklcs12ji2dm8fsu5beg9ba95piedom8', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('bkmve7auno76sm2irdb2otgpbv8e6agm', '127.0.0.1', '__ci_last_regenerate|i:1598414361;', 1598414361);
 INSERT INTO `ci_sessions` VALUES ('bkoft6ns6evq58n1s8u1facvostlb6t3', '127.0.0.1', '__ci_last_regenerate|i:1598253806;', 1598253806);
 INSERT INTO `ci_sessions` VALUES ('bl0r12e25v0kblgpm83c247arlspum38', '127.0.0.1', '__ci_last_regenerate|i:1597138838;', 1597138838);
+INSERT INTO `ci_sessions` VALUES ('bl1iband6b4guql344egftjm9n9iftod', '127.0.0.1', '__ci_last_regenerate|i:1608521620;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608521620);
 INSERT INTO `ci_sessions` VALUES ('bl2fjnu5j6v77llj57sr44vrl2qd48va', '127.0.0.1', '__ci_last_regenerate|i:1603463673;userpubliclog|a:9:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:11:\"Event Stack\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:11:\"dickyadry25\";s:5:\"level\";s:1:\"1\";}', 1603463673);
 INSERT INTO `ci_sessions` VALUES ('bl32v969fn6r7a0phpbvulj9gqadubgm', '127.0.0.1', '__ci_last_regenerate|i:1598410478;', 1598410478);
 INSERT INTO `ci_sessions` VALUES ('bl5i7n336glasldnja95cflvrt2esbhh', '127.0.0.1', '__ci_last_regenerate|i:1608356921;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608356921);
@@ -8165,6 +8189,7 @@ INSERT INTO `ci_sessions` VALUES ('bm4vhget9ilbi8tic3jm1s9mjclhpvrk', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('bm5lqc48al1jp1tae7h1638dbvkgapdp', '127.0.0.1', '__ci_last_regenerate|i:1598374142;', 1598374142);
 INSERT INTO `ci_sessions` VALUES ('bm5vc1ns3ae03hg6g2a13jbtrk3f4m7e', '127.0.0.1', '__ci_last_regenerate|i:1598357195;', 1598357195);
 INSERT INTO `ci_sessions` VALUES ('bm70d1fdlf51l2vgqssdevvk1h6t5pgt', '127.0.0.1', '__ci_last_regenerate|i:1598412479;', 1598412479);
+INSERT INTO `ci_sessions` VALUES ('bm9davh26v3f555ag4e7ok37ep22kslf', '127.0.0.1', '__ci_last_regenerate|i:1608523272;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608523272);
 INSERT INTO `ci_sessions` VALUES ('bm9ru6i1shdauktvolccrd7mr6jqjg9l', '127.0.0.1', '__ci_last_regenerate|i:1598373536;', 1598373536);
 INSERT INTO `ci_sessions` VALUES ('bmb722vqg9ehtobbds93ipdaqdlklfv1', '127.0.0.1', '__ci_last_regenerate|i:1598366326;', 1598366326);
 INSERT INTO `ci_sessions` VALUES ('bmbp8pgeni9lc8brbe2fvqvclj5jb647', '127.0.0.1', '__ci_last_regenerate|i:1598558338;', 1598558338);
@@ -8482,6 +8507,7 @@ INSERT INTO `ci_sessions` VALUES ('c4k8sbfc1q5srad59ffgnmqpcsga8o75', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('c4l56ubgufqcjb01dpn1rbp0acn55r47', '127.0.0.1', '__ci_last_regenerate|i:1598411469;', 1598411469);
 INSERT INTO `ci_sessions` VALUES ('c4lmo9cvl229g443pdm112elg0f65n5u', '127.0.0.1', '__ci_last_regenerate|i:1597064500;', 1597064500);
 INSERT INTO `ci_sessions` VALUES ('c4o0eudbg26ujv2intr7grsve4mcise4', '127.0.0.1', '__ci_last_regenerate|i:1598663584;', 1598663584);
+INSERT INTO `ci_sessions` VALUES ('c4ofhvn1hiflunr368iaakpj83927rj8', '::1', '__ci_last_regenerate|i:1608553891;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608553891);
 INSERT INTO `ci_sessions` VALUES ('c4pqtg5gaqqtjp524dpk9jhlec26gul2', '127.0.0.1', '__ci_last_regenerate|i:1598410374;', 1598410374);
 INSERT INTO `ci_sessions` VALUES ('c4s6thk9a5hphvg1isosdbehse56k8j9', '127.0.0.1', '__ci_last_regenerate|i:1598253438;', 1598253438);
 INSERT INTO `ci_sessions` VALUES ('c4v6pjtptmija1dmhof4ckej4gf3haoh', '127.0.0.1', '__ci_last_regenerate|i:1598367287;', 1598367287);
@@ -8692,6 +8718,7 @@ INSERT INTO `ci_sessions` VALUES ('cesrs29j00luca4aqicq4csddi57n4h1', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('cevc585hoda16q2j7cthpabenkbig2ri', '127.0.0.1', '__ci_last_regenerate|i:1598414023;', 1598414023);
 INSERT INTO `ci_sessions` VALUES ('cf2q5983onli13ko978rlc4r8nbipnah', '127.0.0.1', '__ci_last_regenerate|i:1598567284;', 1598567284);
 INSERT INTO `ci_sessions` VALUES ('cf4dkcdl8fcdc7rpnvnhpa0bs2np34nd', '127.0.0.1', '__ci_last_regenerate|i:1599209281;', 1599209281);
+INSERT INTO `ci_sessions` VALUES ('cf60dg7gm9cjiantkhpv5ujcj5jc26b4', '127.0.0.1', '__ci_last_regenerate|i:1608520630;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608520630);
 INSERT INTO `ci_sessions` VALUES ('cf76mrhuejp0u46pnr2f9ipd7b50pur1', '127.0.0.1', '__ci_last_regenerate|i:1598358661;', 1598358661);
 INSERT INTO `ci_sessions` VALUES ('cf7e3pl7mkmme9qb5fa4duu5abb6kbht', '127.0.0.1', '__ci_last_regenerate|i:1602564209;userpubliclog|a:9:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:11:\"Event Stack\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:12:\"085710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:11:\"dickyadry25\";s:5:\"level\";s:1:\"1\";}', 1602564209);
 INSERT INTO `ci_sessions` VALUES ('cf86of478bec3leat17u5r5hc07qnces', '127.0.0.1', '__ci_last_regenerate|i:1598267678;', 1598267678);
@@ -8725,6 +8752,7 @@ INSERT INTO `ci_sessions` VALUES ('cg9kvl2c970p8noe9muea5q5kq83nj96', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('cgacgcstl0fbjle7e47jm7mf369fo1ll', '127.0.0.1', '__ci_last_regenerate|i:1598373016;', 1598373016);
 INSERT INTO `ci_sessions` VALUES ('cgbhfst9ngcp3vvlne6immd6kr2p98ce', '127.0.0.1', '__ci_last_regenerate|i:1598414751;', 1598414751);
 INSERT INTO `ci_sessions` VALUES ('cgd5kpm5j8lgsqa61hdh9p2omie98jou', '127.0.0.1', '__ci_last_regenerate|i:1597030099;userpubliclog|a:9:{s:9:\"member_id\";i:44;s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@ymail.com\";s:5:\"phone\";s:0:\"\";s:4:\"icon\";N;s:8:\"username\";s:0:\"\";s:5:\"level\";i:1;}', 1597030099);
+INSERT INTO `ci_sessions` VALUES ('cgd6aa0q1k068s8ie4l0fn55h63gbp78', '::1', '__ci_last_regenerate|i:1608553281;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608553281);
 INSERT INTO `ci_sessions` VALUES ('cgdn7304de8bk0qf2f6mo390mlpjsmfo', '127.0.0.1', '__ci_last_regenerate|i:1598266676;', 1598266676);
 INSERT INTO `ci_sessions` VALUES ('cge0rhn2u8m670o5tiu9c8623c9fmlkg', '127.0.0.1', '__ci_last_regenerate|i:1597258751;', 1597258751);
 INSERT INTO `ci_sessions` VALUES ('cgffpvu5i06c77qi52tgmlb3v0mbmga5', '127.0.0.1', '__ci_last_regenerate|i:1598265072;', 1598265072);
@@ -9049,6 +9077,7 @@ INSERT INTO `ci_sessions` VALUES ('cvhetq50s2qhdbffabpfj7rtgscor776', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('cvka6i6kndgm7m7und3159kibsrudm9b', '127.0.0.1', '__ci_last_regenerate|i:1598361320;', 1598361320);
 INSERT INTO `ci_sessions` VALUES ('cvle485v1rasf3n035pmumf5fthnun7g', '127.0.0.1', '__ci_last_regenerate|i:1598408705;', 1598408705);
 INSERT INTO `ci_sessions` VALUES ('cvlidddfft75sgd0tiqrdqmgemblngeh', '127.0.0.1', '__ci_last_regenerate|i:1598408507;', 1598408507);
+INSERT INTO `ci_sessions` VALUES ('cvo7840g38am6m9k6u101o7f2ap7r3fp', '::1', '__ci_last_regenerate|i:1608558030;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608558030);
 INSERT INTO `ci_sessions` VALUES ('cvq35k1mdcoqan056uu66gf50f7bh2j6', '127.0.0.1', '__ci_last_regenerate|i:1598009773;', 1598009773);
 INSERT INTO `ci_sessions` VALUES ('cvshlate2rdqf483utm8pulko3g93394', '127.0.0.1', '__ci_last_regenerate|i:1599162566;', 1599162566);
 INSERT INTO `ci_sessions` VALUES ('cvssa1gi9988d42khq52ka0hdgrsmoc7', '127.0.0.1', '__ci_last_regenerate|i:1598355432;', 1598355432);
@@ -10176,6 +10205,7 @@ INSERT INTO `ci_sessions` VALUES ('ek8eql4po7vo119nt534f5ptqiq25dsh', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('ek9skphq564v3g8piv45oh07ge76tj93', '127.0.0.1', '__ci_last_regenerate|i:1599422237;', 1599422237);
 INSERT INTO `ci_sessions` VALUES ('ekcdrcjft55ekpsab14om2rm2n522tjt', '127.0.0.1', '__ci_last_regenerate|i:1599112939;', 1599112939);
 INSERT INTO `ci_sessions` VALUES ('ekd2u4crfenio5pg611ssmgmmri2rkp4', '127.0.0.1', '__ci_last_regenerate|i:1599285771;', 1599285771);
+INSERT INTO `ci_sessions` VALUES ('ekeq577ffkkuiq8f4236nj1jhn9ircti', '::1', '__ci_last_regenerate|i:1608555170;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608555170);
 INSERT INTO `ci_sessions` VALUES ('ekijv3k1r28gacosgau9thcckuk67mgv', '127.0.0.1', '__ci_last_regenerate|i:1598247327;', 1598247327);
 INSERT INTO `ci_sessions` VALUES ('ekj2c1ogi2k6f17l4sfben1knmtao4gj', '127.0.0.1', '__ci_last_regenerate|i:1598411753;', 1598411753);
 INSERT INTO `ci_sessions` VALUES ('ekjcep2c4lfhkg8nls1p1n0sfearvg0d', '127.0.0.1', '__ci_last_regenerate|i:1598253339;', 1598253339);
@@ -10237,6 +10267,7 @@ INSERT INTO `ci_sessions` VALUES ('en6hms80figu8k56crnq5darb99c4b8p', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('encc65dt7hb9qvsne7jkip66vnr7kl08', '127.0.0.1', '__ci_last_regenerate|i:1598739663;', 1598739663);
 INSERT INTO `ci_sessions` VALUES ('end7reojbmjite2un907f3o68d9n8g3q', '127.0.0.1', '__ci_last_regenerate|i:1598408607;', 1598408607);
 INSERT INTO `ci_sessions` VALUES ('enda0qgrris9s23cvipovq7a07139h78', '127.0.0.1', '__ci_last_regenerate|i:1598412845;', 1598412845);
+INSERT INTO `ci_sessions` VALUES ('endi6reo9jhqa90f7209rojgs9bulm78', '127.0.0.1', '__ci_last_regenerate|i:1608561560;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608561560);
 INSERT INTO `ci_sessions` VALUES ('endmffcpvs6ra2h4dckgbkpsh986btql', '127.0.0.1', '__ci_last_regenerate|i:1599258924;', 1599258924);
 INSERT INTO `ci_sessions` VALUES ('enie0fnad49p8vauu2h4e8qqtfn54vlt', '127.0.0.1', '__ci_last_regenerate|i:1598359799;', 1598359799);
 INSERT INTO `ci_sessions` VALUES ('enivl3tc7alepac973of6468garn9pn2', '127.0.0.1', '__ci_last_regenerate|i:1599163537;', 1599163537);
@@ -10310,6 +10341,7 @@ INSERT INTO `ci_sessions` VALUES ('er4la8g6kipppkvl9c8gs0tnosapv3hk', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('er5lcpfhdtbo5kgbtu9voi2fqnifiino', '127.0.0.1', '__ci_last_regenerate|i:1598408102;', 1598408102);
 INSERT INTO `ci_sessions` VALUES ('er6d7de31kntu9aku86ebnm98d4j3ssb', '127.0.0.1', '__ci_last_regenerate|i:1597996766;', 1597996766);
 INSERT INTO `ci_sessions` VALUES ('er7kt8s177o90nkrsfutem5go1kve8ce', '127.0.0.1', '__ci_last_regenerate|i:1598413883;', 1598413883);
+INSERT INTO `ci_sessions` VALUES ('er7q3cdn4q4irhcef174htm2dsccaedo', '127.0.0.1', '__ci_last_regenerate|i:1608566458;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608566458);
 INSERT INTO `ci_sessions` VALUES ('er9hlh6c8bo0pvc0sjdd3rkg279t5323', '127.0.0.1', '__ci_last_regenerate|i:1598559757;', 1598559757);
 INSERT INTO `ci_sessions` VALUES ('erbqbitonp1v1m7busuvp904joekk3ba', '127.0.0.1', '__ci_last_regenerate|i:1598409876;', 1598409876);
 INSERT INTO `ci_sessions` VALUES ('erej5blqpgk6h02cucfu5bctvabuau5n', '127.0.0.1', '__ci_last_regenerate|i:1598932459;', 1598932459);
@@ -10494,6 +10526,7 @@ INSERT INTO `ci_sessions` VALUES ('f3eidc93e86krb0e4b2jr3m8fv4q3e2l', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('f3gfu28c8mvolhjn62kpps90jca038pn', '127.0.0.1', '__ci_last_regenerate|i:1598412769;', 1598412769);
 INSERT INTO `ci_sessions` VALUES ('f3i1c28h3c2f5ns7f1urteoqku4ij7p7', '127.0.0.1', '__ci_last_regenerate|i:1597040644;', 1597040644);
 INSERT INTO `ci_sessions` VALUES ('f3itg6ui835vt83houdlamsurvokfp3t', '127.0.0.1', '__ci_last_regenerate|i:1596971115;', 1596971115);
+INSERT INTO `ci_sessions` VALUES ('f3ivqc1bskf2iorcj8uupo29d10ckc77', '127.0.0.1', '__ci_last_regenerate|i:1608519504;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608519504);
 INSERT INTO `ci_sessions` VALUES ('f3jhm008ca81rat5lhm7qlr2aq8cr89o', '127.0.0.1', '__ci_last_regenerate|i:1598219278;', 1598219278);
 INSERT INTO `ci_sessions` VALUES ('f3olquh3q4fm62inuloi5708a5c8tege', '127.0.0.1', '__ci_last_regenerate|i:1598249978;', 1598249978);
 INSERT INTO `ci_sessions` VALUES ('f3sv9pblikh8s0fi0h1eteikjlckg923', '127.0.0.1', '__ci_last_regenerate|i:1598251797;', 1598251797);
@@ -10523,6 +10556,7 @@ INSERT INTO `ci_sessions` VALUES ('f563oeuo2cfoq04jgok590jgj63pc6tm', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('f564rh7e2b4bgiseimup00ip5ktjbl1r', '127.0.0.1', '__ci_last_regenerate|i:1598407370;', 1598407370);
 INSERT INTO `ci_sessions` VALUES ('f567hqacgv39ittmj5hjuecad511cu3k', '127.0.0.1', '__ci_last_regenerate|i:1598408324;', 1598408324);
 INSERT INTO `ci_sessions` VALUES ('f568e7f3r24nprro1b4gg89tnn43f54i', '127.0.0.1', '__ci_last_regenerate|i:1598361509;', 1598361509);
+INSERT INTO `ci_sessions` VALUES ('f59h8mk1et2qfc59c9ibct669r6mn5tc', '::1', '__ci_last_regenerate|i:1608563442;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608563442);
 INSERT INTO `ci_sessions` VALUES ('f5b2c6d97f585b6q7g5gdcd8t0qk4bsk', '127.0.0.1', '__ci_last_regenerate|i:1599050099;', 1599050099);
 INSERT INTO `ci_sessions` VALUES ('f5c59v556j975pvnbvkntbfk11jpqqfi', '127.0.0.1', '__ci_last_regenerate|i:1598407646;', 1598407646);
 INSERT INTO `ci_sessions` VALUES ('f5e0k797785ugiaqo004btahcshbgvu4', '127.0.0.1', '__ci_last_regenerate|i:1598973791;', 1598973791);
@@ -10571,6 +10605,7 @@ INSERT INTO `ci_sessions` VALUES ('f7d1m9citv47udjcvkh7utbmpuqbj5kg', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('f7dafn3eea9d1nhsul8p1odgchf33ipg', '127.0.0.1', '__ci_last_regenerate|i:1598557823;', 1598557823);
 INSERT INTO `ci_sessions` VALUES ('f7dh85sg24gsrg041a1c2luo3o24596a', '127.0.0.1', '__ci_last_regenerate|i:1598255490;', 1598255490);
 INSERT INTO `ci_sessions` VALUES ('f7hcq3o602tippem973n5ssk9obua83c', '127.0.0.1', '__ci_last_regenerate|i:1598407939;', 1598407939);
+INSERT INTO `ci_sessions` VALUES ('f7kf3enl4gejkno1qgfohq5l37khbhhg', '::1', '__ci_last_regenerate|i:1608526165;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}success|s:7:\"Success\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}', 1608526165);
 INSERT INTO `ci_sessions` VALUES ('f7kfsb3bpnp3fat70aim7r6f34b8idbk', '127.0.0.1', '__ci_last_regenerate|i:1598407703;', 1598407703);
 INSERT INTO `ci_sessions` VALUES ('f7otr9cr4p7k09tqannqke0jjv3rohae', '127.0.0.1', '__ci_last_regenerate|i:1608348497;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608348497);
 INSERT INTO `ci_sessions` VALUES ('f7rrr07oau4n2h7rrgltb6hrtofhdij2', '127.0.0.1', '__ci_last_regenerate|i:1598267771;', 1598267771);
@@ -10709,6 +10744,7 @@ INSERT INTO `ci_sessions` VALUES ('fdrj2g84c1cgtj4gcq1jbgvuqheuikqr', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('fdu0j87ql8qgt2sgmr99kjc2curpek4o', '127.0.0.1', '__ci_last_regenerate|i:1598366080;', 1598366080);
 INSERT INTO `ci_sessions` VALUES ('fdvb6i0fmkroaid9nsg58rsfv431o529', '127.0.0.1', '__ci_last_regenerate|i:1598412536;', 1598412536);
 INSERT INTO `ci_sessions` VALUES ('fdvpv9kpe6lr5l5aaebkj6st7fri17k6', '127.0.0.1', '__ci_last_regenerate|i:1598411793;', 1598411793);
+INSERT INTO `ci_sessions` VALUES ('fe0hq78ft6g3e17ejgoejsr6m08ocm72', '127.0.0.1', '__ci_last_regenerate|i:1608528070;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608528070);
 INSERT INTO `ci_sessions` VALUES ('fe3u24ohv0tegrgiv1b9vbr8s318ttnv', '127.0.0.1', '__ci_last_regenerate|i:1598402437;', 1598402437);
 INSERT INTO `ci_sessions` VALUES ('fe4vv53pctfi19i1vfi3l0l7fl1qqpmj', '127.0.0.1', '__ci_last_regenerate|i:1598412244;', 1598412244);
 INSERT INTO `ci_sessions` VALUES ('fe7106i2b5pnq7gro21uds71hjnkchj7', '127.0.0.1', '__ci_last_regenerate|i:1598259232;', 1598259232);
@@ -11230,6 +11266,7 @@ INSERT INTO `ci_sessions` VALUES ('g7qtajaak6t3119bfn122shb5msnml3a', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('g7s4o9rkep7d9fu2kj66fvjqb6au7jvq', '127.0.0.1', '__ci_last_regenerate|i:1598558393;', 1598558393);
 INSERT INTO `ci_sessions` VALUES ('g7shrrrg53053u7s4c9u4bu1u06hbmdn', '127.0.0.1', '__ci_last_regenerate|i:1598252837;', 1598252837);
 INSERT INTO `ci_sessions` VALUES ('g7t6980p8io3ga7paqfls55qnuc0aus1', '127.0.0.1', '__ci_last_regenerate|i:1598249556;', 1598249556);
+INSERT INTO `ci_sessions` VALUES ('g7tu712h0t58r1cttg1qtge4jib5nbun', '::1', '__ci_last_regenerate|i:1608524543;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608524543);
 INSERT INTO `ci_sessions` VALUES ('g7udpulpjbvr2af9a5sq7nmipdhchova', '127.0.0.1', '__ci_last_regenerate|i:1598408329;', 1598408329);
 INSERT INTO `ci_sessions` VALUES ('g7vjb9ee6u7930rhvl7pafeaa64h5vq3', '127.0.0.1', '__ci_last_regenerate|i:1599196534;', 1599196534);
 INSERT INTO `ci_sessions` VALUES ('g7vus57qet1shl2vhrtlbdngusae6en1', '127.0.0.1', '__ci_last_regenerate|i:1599012571;session_cart|a:1:{i:0;a:5:{s:8:\"quantity\";s:1:\"1\";s:9:\"ticket_id\";s:3:\"191\";s:10:\"product_id\";s:3:\"176\";s:5:\"price\";s:4:\"0.00\";s:5:\"total\";d:0;}}', 1599012571);
@@ -11522,6 +11559,7 @@ INSERT INTO `ci_sessions` VALUES ('gmt4udbd0gsbmqbonbmco9k7v7g22272', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('gmt5l00u3v71pkksvgpvpq8j83c5osjq', '127.0.0.1', '__ci_last_regenerate|i:1597842208;', 1597842208);
 INSERT INTO `ci_sessions` VALUES ('gmtnphsjbjlp39t1gukmkg2ch824cqf9', '127.0.0.1', '__ci_last_regenerate|i:1598265385;', 1598265385);
 INSERT INTO `ci_sessions` VALUES ('gmur6v6e3sl6csvd665hl75qajsmv1j3', '127.0.0.1', '__ci_last_regenerate|i:1598669037;', 1598669037);
+INSERT INTO `ci_sessions` VALUES ('gn0t38kfnb2caruo31bdrrc14a91qvqb', '::1', '__ci_last_regenerate|i:1608559289;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608559289);
 INSERT INTO `ci_sessions` VALUES ('gn0tg11ijj5kvoqf3tgtoqk6t6hpb5a9', '127.0.0.1', '__ci_last_regenerate|i:1598407937;', 1598407937);
 INSERT INTO `ci_sessions` VALUES ('gn17g5tvtam8tij0mkpketporit7pusi', '127.0.0.1', '__ci_last_regenerate|i:1598405656;', 1598405656);
 INSERT INTO `ci_sessions` VALUES ('gn20ltgf7d5gsm48quguceradvjhhv7t', '127.0.0.1', '__ci_last_regenerate|i:1598366769;', 1598366769);
@@ -11584,6 +11622,7 @@ INSERT INTO `ci_sessions` VALUES ('gp9o8hcd62nlj7orkdfv470rrlbmut83', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('gpaiv6j7ekf7529rpe7j0at1ebiuah14', '127.0.0.1', '__ci_last_regenerate|i:1598257476;', 1598257476);
 INSERT INTO `ci_sessions` VALUES ('gpcpuu9u1c7tfasd8m051a0t0qffg884', '127.0.0.1', '__ci_last_regenerate|i:1598358395;', 1598358395);
 INSERT INTO `ci_sessions` VALUES ('gpeg0raee8o1buvbj94btdfifnviq6dp', '127.0.0.1', '__ci_last_regenerate|i:1598414420;', 1598414420);
+INSERT INTO `ci_sessions` VALUES ('gpf1uco003e510balmifht80al92ht01', '::1', '__ci_last_regenerate|i:1608525852;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608525852);
 INSERT INTO `ci_sessions` VALUES ('gpfusgb30rihdlt2hadaeu7lm2kgnmbj', '127.0.0.1', '__ci_last_regenerate|i:1598369681;', 1598369681);
 INSERT INTO `ci_sessions` VALUES ('gpgdmc10ee5n0fu8a7td456utp5cs21j', '127.0.0.1', '__ci_last_regenerate|i:1598263443;', 1598263443);
 INSERT INTO `ci_sessions` VALUES ('gpgi434g4cnevlnqkrf4id259rghenn1', '127.0.0.1', '__ci_last_regenerate|i:1599475274;', 1599475274);
@@ -11675,6 +11714,7 @@ INSERT INTO `ci_sessions` VALUES ('gttarlgr3ar05vdi5u0ltomqi8s45p9f', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('gtveebiaktg9m09mfcve3l3u2le4hu6l', '127.0.0.1', '__ci_last_regenerate|i:1596881588;', 1596881588);
 INSERT INTO `ci_sessions` VALUES ('gu077ulkg18etkcb1aqrm8tppfdpjohd', '127.0.0.1', '__ci_last_regenerate|i:1599078617;', 1599078617);
 INSERT INTO `ci_sessions` VALUES ('gu0v2s4215gorc4cp8d56rtglvichfpi', '127.0.0.1', '__ci_last_regenerate|i:1598411353;', 1598411353);
+INSERT INTO `ci_sessions` VALUES ('gu3krid6tknk95j12p7ag4fjt9638j1k', '::1', '__ci_last_regenerate|i:1608566048;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608566048);
 INSERT INTO `ci_sessions` VALUES ('gu3okpt867r3snompfsoi1b7280o10u0', '127.0.0.1', '__ci_last_regenerate|i:1598251467;', 1598251467);
 INSERT INTO `ci_sessions` VALUES ('gu8r9mrsgrfpdfjdv94ttidteilcr3ql', '127.0.0.1', '__ci_last_regenerate|i:1598410262;', 1598410262);
 INSERT INTO `ci_sessions` VALUES ('gu9sd4mem8h2jl7976esbg1c87qdtrl4', '127.0.0.1', '__ci_last_regenerate|i:1598263972;', 1598263972);
@@ -11826,6 +11866,7 @@ INSERT INTO `ci_sessions` VALUES ('h5g61c8ttprm5c0uvsg45fbgohelegc3', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('h5ihu0ibimf6ugr0nsvdbkqbv4d2aghi', '127.0.0.1', '__ci_last_regenerate|i:1608265604;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608265604);
 INSERT INTO `ci_sessions` VALUES ('h5n8ev17hiso6nr2ifltq3u03gr6qric', '127.0.0.1', '__ci_last_regenerate|i:1599114062;', 1599114062);
 INSERT INTO `ci_sessions` VALUES ('h5njpi8mp9i8anbmecg96jurjjvarpeq', '127.0.0.1', '__ci_last_regenerate|i:1598862757;', 1598862757);
+INSERT INTO `ci_sessions` VALUES ('h5scch036229sv8f0ochevqqrtsll9nj', '127.0.0.1', '__ci_last_regenerate|i:1608522571;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608522571);
 INSERT INTO `ci_sessions` VALUES ('h5uhtjhvbhetu0glcnlrec44mebeh6f4', '127.0.0.1', '__ci_last_regenerate|i:1597556284;', 1597556284);
 INSERT INTO `ci_sessions` VALUES ('h5vhoaie74r8eg47d5cjdbndv3ivkn8t', '127.0.0.1', '__ci_last_regenerate|i:1598372761;', 1598372761);
 INSERT INTO `ci_sessions` VALUES ('h60eqpblhrb7kv2hb51hvntqk5udua9e', '127.0.0.1', '__ci_last_regenerate|i:1599104134;', 1599104134);
@@ -12194,6 +12235,7 @@ INSERT INTO `ci_sessions` VALUES ('hlikdk07frm6s21b9sojk35vj36jjn3e', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('hljo4p9srp294bfkaa6c645jggs79nn5', '127.0.0.1', '__ci_last_regenerate|i:1599530889;', 1599530889);
 INSERT INTO `ci_sessions` VALUES ('hlnk5mms13nlet84v17duir64nfahkhk', '127.0.0.1', '__ci_last_regenerate|i:1599120348;', 1599120348);
 INSERT INTO `ci_sessions` VALUES ('hlp267j6jhoishkkuvqcs3cnauqh2hqm', '127.0.0.1', '__ci_last_regenerate|i:1598413706;', 1598413706);
+INSERT INTO `ci_sessions` VALUES ('hlpj6bjd53o68okjepp9df0078cv1t8j', '127.0.0.1', '__ci_last_regenerate|i:1608519921;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608519921);
 INSERT INTO `ci_sessions` VALUES ('hlqsvgltlik2bcla1r6npgi5ddk1inl2', '127.0.0.1', '__ci_last_regenerate|i:1598267151;', 1598267151);
 INSERT INTO `ci_sessions` VALUES ('hls4a8jbr19dmvk16a8h4gkt6ec950s3', '127.0.0.1', '__ci_last_regenerate|i:1597064442;', 1597064442);
 INSERT INTO `ci_sessions` VALUES ('hlvsek3p639jv754mhkkd205leg9dprs', '127.0.0.1', '__ci_last_regenerate|i:1597620828;', 1597620828);
@@ -12206,6 +12248,7 @@ INSERT INTO `ci_sessions` VALUES ('hm8deqddsasb3vilhsrk7jrvgf95ikar', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('hm8e3r79v51jp8cjll6heatfe0qr2c6t', '127.0.0.1', '__ci_last_regenerate|i:1608273882;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}success|s:22:\"Data berhasil disimpan\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}', 1608273882);
 INSERT INTO `ci_sessions` VALUES ('hmbeuphq24no599dm5ph59nrdcmshosq', '127.0.0.1', '__ci_last_regenerate|i:1598413088;', 1598413088);
 INSERT INTO `ci_sessions` VALUES ('hmcj4aq6ha5lcd4g9ij62it52lemesjk', '127.0.0.1', '__ci_last_regenerate|i:1598251030;', 1598251030);
+INSERT INTO `ci_sessions` VALUES ('hmemb37s5aomanalklulltncgpeej8o9', '::1', '__ci_last_regenerate|i:1608566588;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608566588);
 INSERT INTO `ci_sessions` VALUES ('hmf9fsccull4bp4cmce621fagr54srk8', '127.0.0.1', '__ci_last_regenerate|i:1598249917;', 1598249917);
 INSERT INTO `ci_sessions` VALUES ('hmhhgpieub3ds7ucup36p1r0nde5vpn3', '127.0.0.1', '__ci_last_regenerate|i:1599060172;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"61\";s:5:\"login\";b:1;s:4:\"name\";s:9:\"Ais Clara\";s:12:\"organization\";N;s:5:\"email\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"phone\";N;s:4:\"icon\";N;s:8:\"username\";s:36:\"aisclara.brightinternships@gmail.com\";s:5:\"level\";N;}', 1599060172);
 INSERT INTO `ci_sessions` VALUES ('hmj7kujnan2jcfpdsepf8btqft0oud8t', '127.0.0.1', '__ci_last_regenerate|i:1598412991;', 1598412991);
@@ -12681,6 +12724,7 @@ INSERT INTO `ci_sessions` VALUES ('ieiouhdnhncb38p1vcss4sbb1o1a7dcg', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('ieit0pfqeq71cv5cf1pl0i6g08hqtr7b', '127.0.0.1', '__ci_last_regenerate|i:1598409885;', 1598409885);
 INSERT INTO `ci_sessions` VALUES ('iejhqkjmt3g33svh5os0n2kvqbkfbgf6', '127.0.0.1', '__ci_last_regenerate|i:1599499647;', 1599499647);
 INSERT INTO `ci_sessions` VALUES ('iek6ua9p2ravcneav1sho03omqt50h2e', '127.0.0.1', '__ci_last_regenerate|i:1598411157;', 1598411157);
+INSERT INTO `ci_sessions` VALUES ('iektq4of5sj37ftgl4uq344qvhium4d8', '::1', '__ci_last_regenerate|i:1608555882;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608555882);
 INSERT INTO `ci_sessions` VALUES ('iekukjrveal19lbp1i2dk1ja6p7hs45d', '127.0.0.1', '__ci_last_regenerate|i:1598409949;', 1598409949);
 INSERT INTO `ci_sessions` VALUES ('iel3qqvqdardb599k6ercuvdrcggdgfn', '127.0.0.1', '__ci_last_regenerate|i:1598407342;', 1598407342);
 INSERT INTO `ci_sessions` VALUES ('iembk4ltissnk1ch2c0vdl5pdqc9qck9', '127.0.0.1', '__ci_last_regenerate|i:1598412244;', 1598412244);
@@ -12897,6 +12941,7 @@ INSERT INTO `ci_sessions` VALUES ('iofchs44u96vol0cksdg3q09349mkn4g', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('iofirni9th554h35i8v3e9vpblcsg2s4', '127.0.0.1', '__ci_last_regenerate|i:1598248768;', 1598248768);
 INSERT INTO `ci_sessions` VALUES ('iog8u6iquop6asj2v84clcnsbc0qhuah', '127.0.0.1', '__ci_last_regenerate|i:1598068343;', 1598068343);
 INSERT INTO `ci_sessions` VALUES ('iogql3mava27461ca9qbq3if9g37cblj', '127.0.0.1', '__ci_last_regenerate|i:1597944917;', 1597944917);
+INSERT INTO `ci_sessions` VALUES ('ioj9romef7j88g2e9lovs8f2kdmn8oge', '::1', '__ci_last_regenerate|i:1608562705;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608562705);
 INSERT INTO `ci_sessions` VALUES ('iooqsbuaqh3m0r4atiptsk5ghufba5oc', '127.0.0.1', '__ci_last_regenerate|i:1598413687;', 1598413687);
 INSERT INTO `ci_sessions` VALUES ('iorm3hr0l8k5v4fpkhnv170frl47h0t2', '127.0.0.1', '__ci_last_regenerate|i:1598414564;', 1598414564);
 INSERT INTO `ci_sessions` VALUES ('ioruq2621eiopvultktc4vu164se276m', '127.0.0.1', '__ci_last_regenerate|i:1598412110;', 1598412110);
@@ -13084,6 +13129,7 @@ INSERT INTO `ci_sessions` VALUES ('j20h77l8g2ugnudehnkoaef2vupivo16', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('j20tscmldguucrbu0i0bdeaqcip1v8e6', '127.0.0.1', '__ci_last_regenerate|i:1598557841;', 1598557841);
 INSERT INTO `ci_sessions` VALUES ('j24e0u7vd59bg11hh52kj9qjp5a1pgbg', '127.0.0.1', '__ci_last_regenerate|i:1598363228;', 1598363228);
 INSERT INTO `ci_sessions` VALUES ('j24hfj4rkennsjr8u3o0qc867mosim7t', '127.0.0.1', '__ci_last_regenerate|i:1597032049;', 1597032049);
+INSERT INTO `ci_sessions` VALUES ('j26023tg21v21e53pnitfj1a6cf1q6t4', '::1', '__ci_last_regenerate|i:1608560469;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608560469);
 INSERT INTO `ci_sessions` VALUES ('j291gk1798eribjueqvsh0drfvhv7c0o', '127.0.0.1', '__ci_last_regenerate|i:1598367441;', 1598367441);
 INSERT INTO `ci_sessions` VALUES ('j2a75vadlo2o4libnha77ngndjker1js', '127.0.0.1', '__ci_last_regenerate|i:1598368305;', 1598368305);
 INSERT INTO `ci_sessions` VALUES ('j2bri5k9jpb8dud8d1eqk0of4uqc5h9i', '127.0.0.1', '__ci_last_regenerate|i:1598415011;', 1598415011);
@@ -14316,6 +14362,7 @@ INSERT INTO `ci_sessions` VALUES ('kq3ib5a8il933itrtrq8hnqh3om4crjf', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('kq684hbcq9clovdc84vagk4sj2mqas5m', '127.0.0.1', '__ci_last_regenerate|i:1597064531;error|s:30:\"Silahkan login terlebih dahulu\";__ci_vars|a:1:{s:5:\"error\";s:3:\"new\";}', 1597064531);
 INSERT INTO `ci_sessions` VALUES ('kq6asi7gr42fc17seju8rqj98sb2d37k', '127.0.0.1', '__ci_last_regenerate|i:1598362683;', 1598362683);
 INSERT INTO `ci_sessions` VALUES ('kq7hrto4p6k09pq40c9epbp5jbihdebv', '127.0.0.1', '__ci_last_regenerate|i:1598371961;', 1598371961);
+INSERT INTO `ci_sessions` VALUES ('kq8gqmab25aklcesceh152icd16h10sl', '127.0.0.1', '__ci_last_regenerate|i:1608540776;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608540776);
 INSERT INTO `ci_sessions` VALUES ('kq99d1od354q9n29lr7ueo2chjpkn32q', '127.0.0.1', '__ci_last_regenerate|i:1599170184;', 1599170184);
 INSERT INTO `ci_sessions` VALUES ('kqacijpj06pl43ta1v6leliq4m307kdk', '127.0.0.1', '__ci_last_regenerate|i:1598598005;', 1598598005);
 INSERT INTO `ci_sessions` VALUES ('kqaip6pjl19uk77dv4e0or2lrh02ma4f', '127.0.0.1', '__ci_last_regenerate|i:1598410275;', 1598410275);
@@ -15015,6 +15062,7 @@ INSERT INTO `ci_sessions` VALUES ('lpo52eahs2c6l5lsrls6brsjjn64rhan', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('lpqeqn459dlndjl1hdv2j1b9ejdr1c3p', '127.0.0.1', '__ci_last_regenerate|i:1599106413;', 1599106413);
 INSERT INTO `ci_sessions` VALUES ('lpqlt94tdbs774iee5dsg4foikqfmugk', '127.0.0.1', '__ci_last_regenerate|i:1597303591;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"25\";s:5:\"login\";b:1;s:4:\"name\";s:11:\"Event Stack\";s:12:\"organization\";s:7:\"special\";s:5:\"email\";s:25:\"admin@stackadminpower.com\";s:5:\"phone\";s:12:\"085710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:15:\"admineventstack\";s:5:\"level\";s:1:\"1\";}', 1597303591);
 INSERT INTO `ci_sessions` VALUES ('lprmvmtvesec5l7sjc05a851d1pa44vc', '127.0.0.1', '__ci_last_regenerate|i:1599293426;', 1599293426);
+INSERT INTO `ci_sessions` VALUES ('lpruueej6u2doe2lbatai5akv9lmnq52', '::1', '__ci_last_regenerate|i:1608551133;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}success|s:7:\"Success\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}', 1608551133);
 INSERT INTO `ci_sessions` VALUES ('lpscgeo7446o7u1lqme1c4boo3mdlpa9', '127.0.0.1', '__ci_last_regenerate|i:1599113076;', 1599113076);
 INSERT INTO `ci_sessions` VALUES ('lptbdlnc041p0gjdronmkap9nrpvu8f2', '127.0.0.1', '__ci_last_regenerate|i:1598250060;', 1598250060);
 INSERT INTO `ci_sessions` VALUES ('lq1hblavgpo8a1qjt359f5vumj6qq5ve', '127.0.0.1', '__ci_last_regenerate|i:1598370104;', 1598370104);
@@ -15547,6 +15595,7 @@ INSERT INTO `ci_sessions` VALUES ('mhjk4sursrsuvnl71o8oeq42r66u6hg5', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('mhl10ecmmqt8lktlu74gktbk3t27cic6', '127.0.0.1', '__ci_last_regenerate|i:1598259097;', 1598259097);
 INSERT INTO `ci_sessions` VALUES ('mhn7r75r2h5c206662m8os57tnn7mh66', '127.0.0.1', '__ci_last_regenerate|i:1598071812;userpubliclog|a:9:{s:9:\"member_id\";s:2:\"25\";s:5:\"login\";b:1;s:4:\"name\";s:11:\"Event Stack\";s:12:\"organization\";s:7:\"special\";s:5:\"email\";s:25:\"admin@stackadminpower.com\";s:5:\"phone\";s:12:\"085710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:15:\"admineventstack\";s:5:\"level\";s:1:\"1\";}', 1598071812);
 INSERT INTO `ci_sessions` VALUES ('mhogbl8evqab7ckqnn0na1gb1ci6d3fn', '127.0.0.1', '__ci_last_regenerate|i:1598095616;', 1598095616);
+INSERT INTO `ci_sessions` VALUES ('mhvd5ofcf6vurcl532f9gk7a6v34427e', '::1', '__ci_last_regenerate|i:1608523923;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608523923);
 INSERT INTO `ci_sessions` VALUES ('mi09tpglu4jdrhe20ldnvs6n8beu56e8', '127.0.0.1', '__ci_last_regenerate|i:1598411304;', 1598411304);
 INSERT INTO `ci_sessions` VALUES ('mi0s2vb74r7ntl4116nv6bajfg067dmv', '127.0.0.1', '__ci_last_regenerate|i:1598410291;', 1598410291);
 INSERT INTO `ci_sessions` VALUES ('mi109c7r78ucu9br3uv2fo8el4g92l1j', '127.0.0.1', '__ci_last_regenerate|i:1599039401;', 1599039401);
@@ -15588,6 +15637,7 @@ INSERT INTO `ci_sessions` VALUES ('mjbigm8tpdklih24v25gkq1hd64642mt', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('mjd2se5jc1eef0177tidf1763k9r6poh', '127.0.0.1', '__ci_last_regenerate|i:1598407223;', 1598407223);
 INSERT INTO `ci_sessions` VALUES ('mjeu3i7drggucmc5mdc5cd5pq1qk5rcb', '127.0.0.1', '__ci_last_regenerate|i:1598415274;', 1598415274);
 INSERT INTO `ci_sessions` VALUES ('mjh6ksvoks7uuh0hgcdfamed1vp86ne7', '127.0.0.1', '__ci_last_regenerate|i:1598556481;', 1598556481);
+INSERT INTO `ci_sessions` VALUES ('mjjkskufmgjceurv1tn80s8ej6p403au', '::1', '__ci_last_regenerate|i:1608524236;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}success|s:7:\"Success\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}', 1608524236);
 INSERT INTO `ci_sessions` VALUES ('mjmn90lnfnj7k6iv7si5m5sk3nbjqn14', '127.0.0.1', '__ci_last_regenerate|i:1599044284;', 1599044284);
 INSERT INTO `ci_sessions` VALUES ('mjqho62i6ctr5tjg8ginnd06gksgc9s1', '127.0.0.1', '__ci_last_regenerate|i:1598263421;', 1598263421);
 INSERT INTO `ci_sessions` VALUES ('mjrrtl30jfik2kicc2jcgdob784ppn45', '127.0.0.1', '__ci_last_regenerate|i:1598561196;', 1598561196);
@@ -15612,6 +15662,7 @@ INSERT INTO `ci_sessions` VALUES ('mkskft8dufo5u8u9nurqpedma01hvog4', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('mkt3o175a4h5v2p3t6her69b38r4h5n3', '127.0.0.1', '__ci_last_regenerate|i:1599097745;', 1599097745);
 INSERT INTO `ci_sessions` VALUES ('mkt4gi7jq02b3ngl53tdaf18lnvo65ks', '127.0.0.1', '__ci_last_regenerate|i:1598358255;', 1598358255);
 INSERT INTO `ci_sessions` VALUES ('mktblr3arkscekhnvcela0j25r3ddrlo', '127.0.0.1', '__ci_last_regenerate|i:1597326445;', 1597326445);
+INSERT INTO `ci_sessions` VALUES ('mkv387aq9ddncchfeis1kqic9ponu190', '::1', '__ci_last_regenerate|i:1608556610;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608556610);
 INSERT INTO `ci_sessions` VALUES ('mkvvn5cnovkc9bphbn6omottnmjjut49', '127.0.0.1', '__ci_last_regenerate|i:1598666481;', 1598666481);
 INSERT INTO `ci_sessions` VALUES ('ml2jf467jqnsmv520dgotttacqtnqc16', '127.0.0.1', '__ci_last_regenerate|i:1598256914;', 1598256914);
 INSERT INTO `ci_sessions` VALUES ('ml4tps3htijpc3djcgkluubcql5evrl0', '127.0.0.1', '__ci_last_regenerate|i:1599196774;', 1599196774);
@@ -16072,6 +16123,7 @@ INSERT INTO `ci_sessions` VALUES ('nan41o4coad8hv70n8avtkhics1kca07', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('nansou7k17pbrvdho1fhpusv30elgbp1', '127.0.0.1', '__ci_last_regenerate|i:1599605053;', 1599605053);
 INSERT INTO `ci_sessions` VALUES ('nardjalgphua7a9fabe4f8ffe49suqbm', '127.0.0.1', '__ci_last_regenerate|i:1598560514;', 1598560514);
 INSERT INTO `ci_sessions` VALUES ('narran520vgat400ecjpt8u53l2dpuo0', '127.0.0.1', '__ci_last_regenerate|i:1598435675;', 1598435675);
+INSERT INTO `ci_sessions` VALUES ('nat46p5cvaeart60v5qsl256n7unris0', '::1', '__ci_last_regenerate|i:1608556295;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608556295);
 INSERT INTO `ci_sessions` VALUES ('nau06ftqkj73nsp07fhmvjlpp7t12msh', '127.0.0.1', '__ci_last_regenerate|i:1598911404;', 1598911404);
 INSERT INTO `ci_sessions` VALUES ('naue1gm2tcdlqfq7q8qq4d7v98jlf54l', '127.0.0.1', '__ci_last_regenerate|i:1598414409;', 1598414409);
 INSERT INTO `ci_sessions` VALUES ('nauvf2eo0f1mp9ngg8os588ih0544nba', '127.0.0.1', '__ci_last_regenerate|i:1597615840;', 1597615840);
@@ -16659,6 +16711,7 @@ INSERT INTO `ci_sessions` VALUES ('o5h5ln58t16lsh3qqncmvicbv3qvhgim', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('o5jit1sp6qltsfeogsjio0jri9u10b7v', '127.0.0.1', '__ci_last_regenerate|i:1599122028;', 1599122028);
 INSERT INTO `ci_sessions` VALUES ('o5jmiabfhmkaen5718t5vaqfqsdtcan1', '127.0.0.1', '__ci_last_regenerate|i:1597064439;', 1597064439);
 INSERT INTO `ci_sessions` VALUES ('o5lpj3jqm9nanf7r2avecdvpkekqg1kb', '127.0.0.1', '__ci_last_regenerate|i:1598413412;', 1598413412);
+INSERT INTO `ci_sessions` VALUES ('o5mltgj3g77amgdg7rtspbl7u4u72vhv', '::1', '__ci_last_regenerate|i:1608526466;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608526466);
 INSERT INTO `ci_sessions` VALUES ('o5mom1qumqhojngt5up0eajl4ho9amq1', '127.0.0.1', '__ci_last_regenerate|i:1598871329;', 1598871329);
 INSERT INTO `ci_sessions` VALUES ('o5ms3gssc1n7madlte71qqj5o6bb3duf', '127.0.0.1', '__ci_last_regenerate|i:1598407650;', 1598407650);
 INSERT INTO `ci_sessions` VALUES ('o5naa1k8o5c0a85urq0f7fkrm4fie5pn', '127.0.0.1', '__ci_last_regenerate|i:1599122543;', 1599122543);
@@ -17196,6 +17249,7 @@ INSERT INTO `ci_sessions` VALUES ('p17niibo3sildn77krkselqtgn6jpr2n', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('p188pcrgu8dq842asgom0540mrkkquqr', '127.0.0.1', '__ci_last_regenerate|i:1597321957;', 1597321957);
 INSERT INTO `ci_sessions` VALUES ('p18lcsm7b6hr88n2nesm759jbico1f7f', '127.0.0.1', '__ci_last_regenerate|i:1599130470;', 1599130470);
 INSERT INTO `ci_sessions` VALUES ('p19hhdt8g08rtv25iv862ta3afvj1uv2', '127.0.0.1', '__ci_last_regenerate|i:1598246406;', 1598246406);
+INSERT INTO `ci_sessions` VALUES ('p1af3vlrp8s0eq9vvug7ba2q8c4hv8ej', '::1', '__ci_last_regenerate|i:1608560783;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608560783);
 INSERT INTO `ci_sessions` VALUES ('p1c75b1k66rvn6challjns0om8l3ef6u', '127.0.0.1', '__ci_last_regenerate|i:1598998699;', 1598998699);
 INSERT INTO `ci_sessions` VALUES ('p1clvlir38vv1kd4bsf2s16vfqfajh3r', '127.0.0.1', '__ci_last_regenerate|i:1598409578;', 1598409578);
 INSERT INTO `ci_sessions` VALUES ('p1egfkr6gikf6ecgv2drnueh14m18e3e', '127.0.0.1', '__ci_last_regenerate|i:1598415117;', 1598415117);
@@ -17325,6 +17379,7 @@ INSERT INTO `ci_sessions` VALUES ('p6d4db1a484vniphtl06i50r33vco41n', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('p6dcvaeue9lndhamn768tdslqf8ksupe', '127.0.0.1', '__ci_last_regenerate|i:1598408359;', 1598408359);
 INSERT INTO `ci_sessions` VALUES ('p6e38oks3ofls0pgcu1buprl3jrd7j6o', '127.0.0.1', '__ci_last_regenerate|i:1598415133;', 1598415133);
 INSERT INTO `ci_sessions` VALUES ('p6fmevd58899hnbvo3tmc0r019bnfbai', '127.0.0.1', '__ci_last_regenerate|i:1598409209;', 1598409209);
+INSERT INTO `ci_sessions` VALUES ('p6gg03n2uvim6beu4af1t58t0vdlgqpk', '::1', '__ci_last_regenerate|i:1608561478;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608561478);
 INSERT INTO `ci_sessions` VALUES ('p6ibunertvevnib9nnkddiv5gl1j5e9h', '127.0.0.1', '__ci_last_regenerate|i:1596989991;', 1596989991);
 INSERT INTO `ci_sessions` VALUES ('p6m586i802rrlj88eeikvr5r8pns6hh4', '127.0.0.1', '__ci_last_regenerate|i:1599119495;', 1599119495);
 INSERT INTO `ci_sessions` VALUES ('p6mqhfjq9376roovlj1tg5v98hrj0n0e', '127.0.0.1', '__ci_last_regenerate|i:1598259996;', 1598259996);
@@ -17628,6 +17683,7 @@ INSERT INTO `ci_sessions` VALUES ('pj0a96vtljoab2vdf0b1kfsgk0rbpc9b', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('pj4d4om9hj7vm927tn0dr3dpv1b3uais', '127.0.0.1', '__ci_last_regenerate|i:1598251046;', 1598251046);
 INSERT INTO `ci_sessions` VALUES ('pj4rvu6c62tuqhp5ulrttlr726fis0v4', '127.0.0.1', '__ci_last_regenerate|i:1598559080;', 1598559080);
 INSERT INTO `ci_sessions` VALUES ('pj5lkprecbp5nsvkkbe957m6jr9en60g', '127.0.0.1', '__ci_last_regenerate|i:1598410290;', 1598410290);
+INSERT INTO `ci_sessions` VALUES ('pj6cghinjt6rl7c72tf36t73f8lq9rni', '::1', '__ci_last_regenerate|i:1608559913;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608559913);
 INSERT INTO `ci_sessions` VALUES ('pj7t9fnau3qq1r3o1gbsmjaqq4hk5b61', '127.0.0.1', '__ci_last_regenerate|i:1598260090;', 1598260090);
 INSERT INTO `ci_sessions` VALUES ('pj8o5bh3vtanvghfn09fo78q9hel380o', '127.0.0.1', '__ci_last_regenerate|i:1599032707;', 1599032707);
 INSERT INTO `ci_sessions` VALUES ('pj95glscn1k2mgt930v2t1186k4ferqo', '127.0.0.1', '__ci_last_regenerate|i:1599168335;', 1599168335);
@@ -17769,6 +17825,7 @@ INSERT INTO `ci_sessions` VALUES ('pp3at18kkop6rr5bcc85icft40atkrvb', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('pp3oti6po2ch6f8sd2b8pno8kc5gs4eb', '127.0.0.1', '__ci_last_regenerate|i:1602692460;userpubliclog|a:9:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:12:\"organization\";s:11:\"Event Stack\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:0:\"\";s:8:\"username\";s:11:\"dickyadry25\";s:5:\"level\";s:1:\"1\";}', 1602692460);
 INSERT INTO `ci_sessions` VALUES ('pp7u6ngvjcdgppgfk3et29lukoivv746', '127.0.0.1', '__ci_last_regenerate|i:1598408197;', 1598408197);
 INSERT INTO `ci_sessions` VALUES ('pp847agdr42vifbsrc6afcd4kmr94lpc', '127.0.0.1', '__ci_last_regenerate|i:1598410539;', 1598410539);
+INSERT INTO `ci_sessions` VALUES ('pp8gceu5bjab0lg5cg5mg07il2gdnqn2', '::1', '__ci_last_regenerate|i:1608561165;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608561165);
 INSERT INTO `ci_sessions` VALUES ('pp8gkms37kbu4br64t4mcbv4j975245o', '127.0.0.1', '__ci_last_regenerate|i:1598372020;', 1598372020);
 INSERT INTO `ci_sessions` VALUES ('pp8ksnq9749spshrv9cq07i2ksnerjsu', '127.0.0.1', '__ci_last_regenerate|i:1599116695;', 1599116695);
 INSERT INTO `ci_sessions` VALUES ('pp8q3fk60dj126qn2kspi73glovlbjqh', '127.0.0.1', '__ci_last_regenerate|i:1599276763;', 1599276763);
@@ -18191,6 +18248,7 @@ INSERT INTO `ci_sessions` VALUES ('qdpd8csht3t6k71l8d91n2dtvtq61sgb', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('qdpfg217m7ak9thiuv0st4aq2168u6ri', '127.0.0.1', '__ci_last_regenerate|i:1599088168;', 1599088168);
 INSERT INTO `ci_sessions` VALUES ('qdpnli1p4nfcg0jtfuv7ol3ngi72kidu', '127.0.0.1', '__ci_last_regenerate|i:1599283042;', 1599283042);
 INSERT INTO `ci_sessions` VALUES ('qdpr47tji7ae8uegk2ikertpfdmg9ugh', '127.0.0.1', '__ci_last_regenerate|i:1598267034;', 1598267034);
+INSERT INTO `ci_sessions` VALUES ('qdsoe191jogcgvndaj7526tqckv2dhoe', '::1', '__ci_last_regenerate|i:1608564791;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608564791);
 INSERT INTO `ci_sessions` VALUES ('qdtf976latlik0l3dss3sk601ku84qf0', '127.0.0.1', '__ci_last_regenerate|i:1598413401;', 1598413401);
 INSERT INTO `ci_sessions` VALUES ('qduao8p0bkq4hsmvpkcqpus9sgr6eff5', '127.0.0.1', '__ci_last_regenerate|i:1599171065;', 1599171065);
 INSERT INTO `ci_sessions` VALUES ('qe3c2glg3qc0c1j61bnl82mmpc833i1e', '127.0.0.1', '__ci_last_regenerate|i:1598406789;', 1598406789);
@@ -18908,6 +18966,7 @@ INSERT INTO `ci_sessions` VALUES ('rg6nr936rdu9deaj0p4gt9dr762dftjs', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('rg73l8c8hb3mi9hj48fkoca670hkeudu', '127.0.0.1', '__ci_last_regenerate|i:1598413999;', 1598413999);
 INSERT INTO `ci_sessions` VALUES ('rg869is6vhvggv30lc73tm9tdnkid1th', '127.0.0.1', '__ci_last_regenerate|i:1598410284;', 1598410284);
 INSERT INTO `ci_sessions` VALUES ('rga9pmq5s8ikj76vj3gtv7hhcm21rj5s', '127.0.0.1', '__ci_last_regenerate|i:1599175450;', 1599175450);
+INSERT INTO `ci_sessions` VALUES ('rgar5lmbts4rig5a3kvaon2hm0fhglbk', '::1', '__ci_last_regenerate|i:1608564148;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608564148);
 INSERT INTO `ci_sessions` VALUES ('rgcpde6i0lpcdm3alcchiisj7pop5ss2', '127.0.0.1', '__ci_last_regenerate|i:1598262692;', 1598262692);
 INSERT INTO `ci_sessions` VALUES ('rgd5l4d5o0jnkgvo4mv6ffscdjvn8je1', '127.0.0.1', '__ci_last_regenerate|i:1599003559;', 1599003559);
 INSERT INTO `ci_sessions` VALUES ('rgdngb0pg3oj4mqqtolgbs8i4q3iumn1', '127.0.0.1', '__ci_last_regenerate|i:1599405035;', 1599405035);
@@ -19571,6 +19630,7 @@ INSERT INTO `ci_sessions` VALUES ('sh06f84vmc7gkpel5ikun5b76jpj3i2f', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('sh0ndnbmetoe8pqvqoov268fukun3ibb', '127.0.0.1', '__ci_last_regenerate|i:1598261932;', 1598261932);
 INSERT INTO `ci_sessions` VALUES ('sh2qkjs4vdrj0hbfmdqpf5vdh2sq0b0a', '127.0.0.1', '__ci_last_regenerate|i:1598562900;', 1598562900);
 INSERT INTO `ci_sessions` VALUES ('sh30ijk37hnrsrqmqjqn02ajjk1l6hmt', '127.0.0.1', '__ci_last_regenerate|i:1598258305;', 1598258305);
+INSERT INTO `ci_sessions` VALUES ('sh33in8qb24q857g9e85tshc1tjto3h0', '::1', '__ci_last_regenerate|i:1608559608;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608559608);
 INSERT INTO `ci_sessions` VALUES ('sh504qeal8l2q3add3b7djjk2hgvssr3', '127.0.0.1', '__ci_last_regenerate|i:1599265227;', 1599265227);
 INSERT INTO `ci_sessions` VALUES ('sh50eldcqrsj4r9dmr0iq2q0oo71qta9', '127.0.0.1', '__ci_last_regenerate|i:1599357774;', 1599357774);
 INSERT INTO `ci_sessions` VALUES ('sh63lilkg383tem3nq4icsugfnei49en', '127.0.0.1', '__ci_last_regenerate|i:1598364799;', 1598364799);
@@ -20145,6 +20205,7 @@ INSERT INTO `ci_sessions` VALUES ('tcpdrfv06vn8f3m299qdtcn5a1r4o89r', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('td11vf4qaq8a6qsimnma3bj6gpv0v5t9', '127.0.0.1', '__ci_last_regenerate|i:1598233528;', 1598233528);
 INSERT INTO `ci_sessions` VALUES ('td1atkkvv6988stmi3oi54p0lbpumh7i', '127.0.0.1', '__ci_last_regenerate|i:1598369456;', 1598369456);
 INSERT INTO `ci_sessions` VALUES ('td2su87fg5gdmos26k0a62ubgncvv83b', '127.0.0.1', '__ci_last_regenerate|i:1608470945;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608470945);
+INSERT INTO `ci_sessions` VALUES ('td4j8lire5qh5shgfdk0uovd8van8teh', '::1', '__ci_last_regenerate|i:1608554853;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608554853);
 INSERT INTO `ci_sessions` VALUES ('td5vvn0ej5ej82isvuq7fnvpt772iip4', '127.0.0.1', '__ci_last_regenerate|i:1598579059;', 1598579059);
 INSERT INTO `ci_sessions` VALUES ('td878u7stlmb1pjeemkb99dt6raj275b', '127.0.0.1', '__ci_last_regenerate|i:1598409142;', 1598409142);
 INSERT INTO `ci_sessions` VALUES ('td897ic9093tmsm6sttu5gk9f3qimvbl', '127.0.0.1', '__ci_last_regenerate|i:1598360369;', 1598360369);
@@ -20154,6 +20215,7 @@ INSERT INTO `ci_sessions` VALUES ('td9p8u23ggiknnfed0elpran9mkrpekq', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('tdbueu149vlmtgsqs124tbqrmfrisf8f', '127.0.0.1', '__ci_last_regenerate|i:1598248470;', 1598248470);
 INSERT INTO `ci_sessions` VALUES ('tdc3vln1vsvl3jgj3jc9t2m8td5vjidb', '127.0.0.1', '__ci_last_regenerate|i:1598360883;', 1598360883);
 INSERT INTO `ci_sessions` VALUES ('tdftq6behr0ko66qobt5pgr6q356vo5g', '127.0.0.1', '__ci_last_regenerate|i:1598369671;', 1598369671);
+INSERT INTO `ci_sessions` VALUES ('tdfu7v6eb4qj3lr9v4q6nro8ng6v8bct', '::1', '__ci_last_regenerate|i:1608562337;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608562337);
 INSERT INTO `ci_sessions` VALUES ('tdhb2g33q1g4a1gfg6pr69bad77aifun', '127.0.0.1', '__ci_last_regenerate|i:1599270224;', 1599270224);
 INSERT INTO `ci_sessions` VALUES ('tdhrd9sm5d0giavt7gpcf78dtnbf4rqk', '127.0.0.1', '__ci_last_regenerate|i:1598415220;', 1598415220);
 INSERT INTO `ci_sessions` VALUES ('tdikhkb1ncqmcbopllndfb8i3q6dph3c', '127.0.0.1', '__ci_last_regenerate|i:1598248022;', 1598248022);
@@ -20248,6 +20310,7 @@ INSERT INTO `ci_sessions` VALUES ('th7umg858clp889d9bc27vselha4g814', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('th924a6dhbg28pqabgsto10qvrclcqkq', '127.0.0.1', '__ci_last_regenerate|i:1598413879;', 1598413879);
 INSERT INTO `ci_sessions` VALUES ('th9i22kb3lvikt7p58ai5qarje7kgmre', '127.0.0.1', '__ci_last_regenerate|i:1598359195;', 1598359195);
 INSERT INTO `ci_sessions` VALUES ('thchihuhluu9n1iki3rgtm7bo5q3cb10', '127.0.0.1', '__ci_last_regenerate|i:1599124514;', 1599124514);
+INSERT INTO `ci_sessions` VALUES ('thfkklur9ffsoeigcefnic7hll4hc9oj', '::1', '__ci_last_regenerate|i:1608566588;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608566862);
 INSERT INTO `ci_sessions` VALUES ('thh7ot0o4jgetaatprigreler71rd8hu', '127.0.0.1', '__ci_last_regenerate|i:1598361141;', 1598361141);
 INSERT INTO `ci_sessions` VALUES ('thhaidhh2l49qbao35sk5n8jeppbf9pn', '127.0.0.1', '__ci_last_regenerate|i:1598089635;', 1598089635);
 INSERT INTO `ci_sessions` VALUES ('thj52ot5kup61j956oufu2h5jtq5ican', '127.0.0.1', '__ci_last_regenerate|i:1598408604;', 1598408604);
@@ -20646,9 +20709,11 @@ INSERT INTO `ci_sessions` VALUES ('u3iud5co9hcad0jlc2r6lqtpith266hk', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('u3jj4nb5u6m9f8d40loikvc9fqlsrfo8', '127.0.0.1', '__ci_last_regenerate|i:1598413091;', 1598413091);
 INSERT INTO `ci_sessions` VALUES ('u3lgrt7h53iqsfmuq58l3bu3m7j92gj7', '127.0.0.1', '__ci_last_regenerate|i:1598968476;', 1598968476);
 INSERT INTO `ci_sessions` VALUES ('u3lr98qjl4evuk55tci6d7gquvkm5kun', '127.0.0.1', '__ci_last_regenerate|i:1597026554;', 1597026554);
+INSERT INTO `ci_sessions` VALUES ('u3me0jq4ec22a1pkajt0u4hfq6vijho6', '127.0.0.1', '__ci_last_regenerate|i:1608520989;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608520989);
 INSERT INTO `ci_sessions` VALUES ('u3ojfsm78bhc9p71beduurfhlng1a1gl', '127.0.0.1', '__ci_last_regenerate|i:1597252458;', 1597252458);
 INSERT INTO `ci_sessions` VALUES ('u3qil2ae0a2hmam1cmg1su1rsd92533r', '127.0.0.1', '__ci_last_regenerate|i:1598414728;', 1598414728);
 INSERT INTO `ci_sessions` VALUES ('u3s10ccmevgco5qlnd1qas2nqegh9l3j', '127.0.0.1', '__ci_last_regenerate|i:1598370339;', 1598370339);
+INSERT INTO `ci_sessions` VALUES ('u3t87a30ppole46kq01jt7r2i0s29o5g', '127.0.0.1', '__ci_last_regenerate|i:1608535770;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}userpubliclog|a:7:{s:9:\"member_id\";s:1:\"4\";s:5:\"login\";b:1;s:4:\"name\";s:16:\"Dicky Adryanzyah\";s:5:\"email\";s:25:\"adryanzyahdicky@gmail.com\";s:5:\"phone\";s:14:\"+6285710118027\";s:4:\"icon\";s:73:\"https://storage.googleapis.com/eventstack-storage/icon/20201217210800.jpg\";s:8:\"username\";s:11:\"dickyadry25\";}', 1608535770);
 INSERT INTO `ci_sessions` VALUES ('u3uefpg9c5bnf9lige014p1ii09ccg04', '127.0.0.1', '__ci_last_regenerate|i:1598407281;', 1598407281);
 INSERT INTO `ci_sessions` VALUES ('u3vdi8dp5gsovmen4kmpmtna0rlb8qla', '127.0.0.1', '__ci_last_regenerate|i:1597459707;', 1597459707);
 INSERT INTO `ci_sessions` VALUES ('u43bdcrddmujdh17ppreubejkosh3j0t', '127.0.0.1', '__ci_last_regenerate|i:1598373893;', 1598373893);
@@ -21532,6 +21597,7 @@ INSERT INTO `ci_sessions` VALUES ('vd9a7nqgb6jhkfnvtrms8dt1m8dji9kj', '127.0.0.1
 INSERT INTO `ci_sessions` VALUES ('vdbfueh660otci6psecgqeiuoghuhut8', '127.0.0.1', '__ci_last_regenerate|i:1598358606;', 1598358606);
 INSERT INTO `ci_sessions` VALUES ('vdbku98f649stcs8pmlancr9jaf7fe0q', '127.0.0.1', '__ci_last_regenerate|i:1599078729;', 1599078729);
 INSERT INTO `ci_sessions` VALUES ('vdc94h0cpv65n71fl6lcpeh3cql410k5', '127.0.0.1', '__ci_last_regenerate|i:1599497156;', 1599497156);
+INSERT INTO `ci_sessions` VALUES ('vdeb8gqng3ep3g5irh7btdkpl4n210dm', '::1', '__ci_last_regenerate|i:1608563065;adminData|a:7:{s:2:\"id\";s:1:\"2\";s:8:\"username\";s:15:\"admineventstack\";s:6:\"images\";N;s:4:\"name\";s:13:\"Administrator\";s:5:\"level\";s:5:\"Admin\";s:9:\"id_bagian\";N;s:6:\"bagian\";s:13:\"Administrator\";}', 1608563065);
 INSERT INTO `ci_sessions` VALUES ('vdgjc7ddajh0g5faqq5gbijtndlljloe', '127.0.0.1', '__ci_last_regenerate|i:1598361055;', 1598361055);
 INSERT INTO `ci_sessions` VALUES ('vdh9vdrel9so55uefisenp58emanvb2s', '127.0.0.1', '__ci_last_regenerate|i:1599124680;', 1599124680);
 INSERT INTO `ci_sessions` VALUES ('vdieoca0i0pr5bk7jgvbvejhnsd5of7c', '127.0.0.1', '__ci_last_regenerate|i:1598254785;', 1598254785);
@@ -22140,15 +22206,32 @@ CREATE TABLE `product`  (
   `approved_at` datetime(0) NULL DEFAULT NULL,
   `approved_by` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of product
 -- ----------------------------
 INSERT INTO `product` VALUES (1, 'K001', 'Undangan Pernikahan E001', 100000.00, NULL, NULL, NULL, NULL, NULL, NULL, '<div><span>Website berbentuk dalam satu halaman saja membuat pengguna mudah untuk membaca informasi yang ada. <br></span></div><div>Ada Apa Saja?:</div><div><span>\r\n- Tombol Halaman <br></span></div><div><span>- Tombol Musik <br></span></div><div><span>- Tampilan Responsif bisa di HP atau Komputer <br></span></div><div><span>- Tampilan Utama <br></span></div><div><span>- Tampilan Salam Pembuka, Mempelai <br></span></div><div>- Tampilan Countdown (hitung mundur ke har pernikahan)</div><div><span>\r\n- Tampilan Akad dan reseppsi (Tanggal, Waktu, Loasi dan Map Lokasi (gmap)) <br></span></div><div><span>- Tampilan Ucapan &amp; Do\'a\r\n- Tampilan Galeri Foto <br></span></div><div>- Scroll Otomatis (optional)</div>', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/a212789.jpg', NULL, NULL, NULL, 1, 'aktif', 'Public', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Modern, Elegant, Trendi', NULL, NULL, NULL, NULL, '2020-12-16 14:19:55', 2, '2020-12-12 09:50:09', 2, NULL, NULL, NULL, NULL);
 INSERT INTO `product` VALUES (2, 'K002', 'Undangan Pernikahan K002', 350000.00, NULL, NULL, NULL, NULL, NULL, NULL, '<div><span>Website berbentuk dalam satu halaman saja membuat pengguna mudah untuk membaca informasi yang ada. <br></span></div><div>Ada Apa Saja?:</div><div><span>\r\n- Tombol Halaman <br></span></div><div><span>- Tombol Musik <br></span></div><div><span>- Tampilan Responsif bisa di HP atau Komputer <br></span></div><div><span>- Tampilan Utama <br></span></div><div><span>- Tampilan Salam Pembuka, Mempelai <br></span></div><div>- Tampilan Countdown (hitung mundur ke har pernikahan)</div><div><span>\r\n- Tampilan Akad dan reseppsi (Tanggal, Waktu, Loasi dan Map Lokasi (gmap)) <br></span></div><div><span>- Tampilan Ucapan &amp; Do\'a\r\n- Tampilan Galeri Foto <br></span></div><div>- Scroll Otomatis (optional)</div><br>', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/fa2edcb.jpg', NULL, NULL, NULL, 1, 'aktif', 'Public', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Modern, Elegant, Trendi', NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-18 19:27:57', 2, NULL, NULL, NULL, NULL);
-INSERT INTO `product` VALUES (3, 'K003', 'Undangan Pernikahan K003', 5000000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/f88214a.jpg', NULL, NULL, NULL, 1, 'aktif', 'Public', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-19 12:24:36', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (3, 'K003', 'Undangan Pernikahan K003', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '<div>Website berbentuk dalam satu halaman saja membuat pengguna mudah untuk membaca informasi yang ada.&nbsp;<br></div><div>Ada Apa Saja?:</div><div>- Tombol Halaman&nbsp;<br></div><div>- Tombol Musik&nbsp;<br></div><div>- Tampilan Responsif bisa di HP atau Komputer&nbsp;<br></div><div>- Tampilan Utama&nbsp;<br></div><div>- Tampilan Salam Pembuka, Mempelai&nbsp;<br></div><div>- Tampilan Countdown (hitung mundur ke har pernikahan)</div><div>- Tampilan Akad dan reseppsi (Tanggal, Waktu, Loasi dan Map Lokasi (gmap))&nbsp;<br></div><div>- Tampilan Ucapan &amp; Do\'a - Tampilan Galeri Foto&nbsp;<br></div><div>- Scroll Otomatis (optional)</div><div><br></div>', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/f88214a.jpg', NULL, NULL, NULL, 1, 'aktif', 'Public', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:57:50', 2, '2020-12-19 12:24:36', 2, NULL, NULL, NULL, NULL);
 INSERT INTO `product` VALUES (4, 'K004', 'Undangan Pernikahan K004', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '<div>Website berbentuk dalam satu halaman saja membuat pengguna mudah untuk membaca informasi yang ada.&nbsp;<br></div><div>Ada Apa Saja?:</div><div>- Tombol Halaman&nbsp;<br></div><div>- Tombol Musik&nbsp;<br></div><div>- Tampilan Responsif bisa di HP atau Komputer&nbsp;<br></div><div>- Tampilan Utama&nbsp;<br></div><div>- Tampilan Salam Pembuka, Mempelai&nbsp;<br></div><div>- Tampilan Countdown (hitung mundur ke har pernikahan)</div><div>- Tampilan Akad dan reseppsi (Tanggal, Waktu, Loasi dan Map Lokasi (gmap))&nbsp;<br></div><div>- Tampilan Ucapan &amp; Do\'a - Tampilan Galeri Foto&nbsp;<br></div><div>- Scroll Otomatis (optional)</div><div><br></div>', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/36f3965.jpg', NULL, NULL, NULL, 1, 'aktif', 'Public', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-20 22:01:18', 2, '2020-12-20 21:52:26', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (5, 'K005', 'Undangan Pernikahan K005', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '<div><span>Website berbentuk dalam satu halaman saja membuat pengguna mudah untuk membaca informasi yang ada.&nbsp;<br></span></div><div>Ada Apa Saja?:</div><div><span>- Tombol Halaman&nbsp;<br></span></div><div><span>- Tombol Musik&nbsp;<br></span></div><div><span>- Tampilan Responsif bisa di HP atau Komputer&nbsp;<br></span></div><div><span>- Tampilan Utama&nbsp;<br></span></div><div><span>- Tampilan Salam Pembuka, Mempelai&nbsp;<br></span></div><div>- Tampilan Countdown (hitung mundur ke har pernikahan)</div><div><span>- Tampilan Akad dan reseppsi (Tanggal, Waktu, Loasi dan Map Lokasi (gmap))&nbsp;<br></span></div><div><span>- Tampilan Ucapan &amp; Do\'a - Tampilan Galeri Foto&nbsp;<br></span></div><div>- Scroll Otomatis (optional)</div><br><br><br>', NULL, NULL, 'https://storage.googleapis.com/eventstack-storage/images/medium/25a38a7.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 09:58:24', 2, '2020-12-21 09:54:11', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (6, 'K006', 'Undangan Pernikahan K006', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:53:16', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (7, 'K007', 'Undangan Pernikahan K007', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:53:35', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (8, 'K008', 'Undangan Pernikahan K008', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:53:52', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (9, 'K009', 'Undangan Pernikahan K009', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:54:13', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (10, 'K010', 'Undangan Pernikahan K010', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:54:39', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (11, 'K011', 'Undangan Pernikahan K011', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:55:05', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (12, 'K012', 'Undangan Pernikahan K012', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:55:42', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (13, 'K013', 'Undangan Pernikahan K013', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:56:01', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (14, 'K014', 'Undangan Pernikahan K014', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:56:21', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (15, 'K015', 'Undangan Pernikahan K015', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:56:51', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (16, 'K016', 'Undangan Pernikahan K016', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:57:40', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (17, 'K017', 'Undangan Pernikahan K017', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:58:30', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (18, 'K018', 'Undangan Pernikahan K018', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:58:58', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (19, 'K019', 'Undangan Pernikahan K019', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:59:23', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (20, 'K020', 'Undangan Pernikahan K020', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 15:59:47', 2, NULL, NULL, NULL, NULL);
+INSERT INTO `product` VALUES (21, 'K021', 'Undangan Pernikahan K021', 500000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-12-21 16:00:10', 2, NULL, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for product_images
@@ -22165,7 +22248,7 @@ CREATE TABLE `product_images`  (
   `sample_image` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `file_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 74 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 95 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of product_images
@@ -22240,6 +22323,27 @@ INSERT INTO `product_images` VALUES (70, 4, 'GALERI', '-', 450, 300, 6, 'https:/
 INSERT INTO `product_images` VALUES (71, 4, 'GALERI', '-', 450, 300, 7, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/0_20201220232537.jpg', '0_20201220232537.jpg');
 INSERT INTO `product_images` VALUES (72, 4, 'GALERI', '-', 450, 300, 8, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/0_20201220232617.jpg', '0_20201220232617.jpg');
 INSERT INTO `product_images` VALUES (73, 4, 'GALERI', '-', 450, 300, 9, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/0_20201220232718.jpg', '0_20201220232718.jpg');
+INSERT INTO `product_images` VALUES (74, 5, 'SLIDER', '-', 1920, 972, 1, 'https://storage.googleapis.com/eventstack-storage/product_images/SLIDER/thumbs/ZkJOVUc3Y3hIS2I5aVNwalRUSjZpdz09_20201221115911.jpg', 'ZkJOVUc3Y3hIS2I5aVNwalRUSjZpdz09_20201221115911.jpg');
+INSERT INTO `product_images` VALUES (75, 5, 'SLIDER', '-', 1920, 972, 2, 'https://storage.googleapis.com/eventstack-storage/product_images/SLIDER/thumbs/RDJhL0pBUXF4elRjcnlESlF5bDg1Zz09_20201221115830.jpg', 'RDJhL0pBUXF4elRjcnlESlF5bDg1Zz09_20201221115830.jpg');
+INSERT INTO `product_images` VALUES (76, 5, 'SLIDER', '-', 1920, 972, 3, 'https://storage.googleapis.com/eventstack-storage/product_images/SLIDER/thumbs/ZWpRZGgrNTUyeEtuMUE2MitYaFFSQT09_20201221115755.jpg', 'ZWpRZGgrNTUyeEtuMUE2MitYaFFSQT09_20201221115755.jpg');
+INSERT INTO `product_images` VALUES (77, 5, 'PENGANTIN', '-', 570, 455, 1, 'https://storage.googleapis.com/eventstack-storage/product_images/PENGANTIN/thumbs/dHJRQzFqWVNzQThTUzBaVElnNWQyQT09_20201221115726.jpg', 'dHJRQzFqWVNzQThTUzBaVElnNWQyQT09_20201221115726.jpg');
+INSERT INTO `product_images` VALUES (78, 5, 'PENGANTIN', '-', 570, 455, 2, 'https://storage.googleapis.com/eventstack-storage/product_images/PENGANTIN/thumbs/ZEJHSWdERGFMWFN2S3JuOWZJVG8wdz09_20201221115655.jpg', 'ZEJHSWdERGFMWFN2S3JuOWZJVG8wdz09_20201221115655.jpg');
+INSERT INTO `product_images` VALUES (79, 5, 'LAINNYA', '-', 720, 490, 1, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/Q2FEcUpNL1pzNkRkMENEOEdUaS9vdz09_20201221115601.jpg', 'Q2FEcUpNL1pzNkRkMENEOEdUaS9vdz09_20201221115601.jpg');
+INSERT INTO `product_images` VALUES (80, 5, 'LAINNYA', '-', 720, 490, 2, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/enlkR0RZZFNFZ1dTL3R1UVJOd0ZwZz09_20201221115525.jpg', 'enlkR0RZZFNFZ1dTL3R1UVJOd0ZwZz09_20201221115525.jpg');
+INSERT INTO `product_images` VALUES (81, 5, 'LAINNYA', '-', 720, 490, 3, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/WThrSFBSUHBsWkNOSFZVNFBpZFZqZz09_20201221115450.jpg', 'WThrSFBSUHBsWkNOSFZVNFBpZFZqZz09_20201221115450.jpg');
+INSERT INTO `product_images` VALUES (82, 5, 'LAINNYA', '-', 720, 490, 4, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/OEdDQ0lVdE1yWTBnYmNpL2pDb0c0QT09_20201221115359.jpg', 'OEdDQ0lVdE1yWTBnYmNpL2pDb0c0QT09_20201221115359.jpg');
+INSERT INTO `product_images` VALUES (83, 5, 'LAINNYA', '-', 360, 260, 5, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/bDluZ3p3TjJWazRFczhEeFpuZ0RaUT09_20201221115315.jpg', 'bDluZ3p3TjJWazRFczhEeFpuZ0RaUT09_20201221115315.jpg');
+INSERT INTO `product_images` VALUES (84, 5, 'LAINNYA', '-', 360, 260, 6, 'https://storage.googleapis.com/eventstack-storage/product_images/LAINNYA/thumbs/VGJudmFjMnBVSHNBSy9UVzE0R21CZz09_20201221115158.jpg', 'VGJudmFjMnBVSHNBSy9UVzE0R21CZz09_20201221115158.jpg');
+INSERT INTO `product_images` VALUES (85, 5, 'BACKGROUND', '-', 1920, 1079, 1, 'https://storage.googleapis.com/eventstack-storage/product_images/BACKGROUND/thumbs/cnpuOHRvK1Y5OU9OMTl3RDlUd2ZyZz09_20201221115040.jpg', 'cnpuOHRvK1Y5OU9OMTl3RDlUd2ZyZz09_20201221115040.jpg');
+INSERT INTO `product_images` VALUES (86, 5, 'GALERI', '-', 1200, 800, 1, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/WUpPYkh1ckcrcWVPOHhmWjR2VWF6Zz09_20201221114838.jpg', 'WUpPYkh1ckcrcWVPOHhmWjR2VWF6Zz09_20201221114838.jpg');
+INSERT INTO `product_images` VALUES (87, 5, 'GALERI', '-', 1000, 751, 2, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/ZWRLaWhoMms0NW44ZDh2TlZXajlndz09_20201221114751.jpg', 'ZWRLaWhoMms0NW44ZDh2TlZXajlndz09_20201221114751.jpg');
+INSERT INTO `product_images` VALUES (88, 5, 'GALERI', '-', 1000, 967, 3, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/K2U5Vm1XcEpTZGNqNVJyWm81M2R0dz09_20201221114720.jpg', 'K2U5Vm1XcEpTZGNqNVJyWm81M2R0dz09_20201221114720.jpg');
+INSERT INTO `product_images` VALUES (89, 5, 'GALERI', '-', 1000, 1171, 4, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/TFF5WTU4YmRxd2JQQ1BiL1pwOFFsUT09_20201221114642.jpg', 'TFF5WTU4YmRxd2JQQ1BiL1pwOFFsUT09_20201221114642.jpg');
+INSERT INTO `product_images` VALUES (90, 5, 'GALERI', '-', 1000, 866, 5, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/d3ZLOUdsNHl1Vks1UjFJZVRFcFEyUT09_20201221114548.jpg', 'd3ZLOUdsNHl1Vks1UjFJZVRFcFEyUT09_20201221114548.jpg');
+INSERT INTO `product_images` VALUES (91, 5, 'GALERI', '-', 1000, 667, 6, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/ZUF3OFFWMGpmRFpaWGphL29QVHhKQT09_20201221114516.jpg', 'ZUF3OFFWMGpmRFpaWGphL29QVHhKQT09_20201221114516.jpg');
+INSERT INTO `product_images` VALUES (92, 5, 'GALERI', '-', 1000, 1086, 7, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/dkFSVGluRUJodVVDa2krTWlia1AyZz09_20201221114435.jpg', 'dkFSVGluRUJodVVDa2krTWlia1AyZz09_20201221114435.jpg');
+INSERT INTO `product_images` VALUES (93, 5, 'GALERI', '-', 897, 962, 8, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/c2pVakZ3RDIyZjN1U2lOWi9QVit5UT09_20201221112824.jpg', 'c2pVakZ3RDIyZjN1U2lOWi9QVit5UT09_20201221112824.jpg');
+INSERT INTO `product_images` VALUES (94, 5, 'GALERI', '-', 772, 667, 9, 'https://storage.googleapis.com/eventstack-storage/product_images/GALERI/thumbs/MHlYYjFxcUNPSlZrSVRpamdKek1iQT09_20201221112736.jpg', 'MHlYYjFxcUNPSlZrSVRpamdKek1iQT09_20201221112736.jpg');
 
 -- ----------------------------
 -- Table structure for sales_order
