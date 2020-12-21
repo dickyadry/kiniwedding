@@ -159,7 +159,7 @@
                 <div class="row gla_auto_height">
                     <div class="col-md-6 col-md-push-6 gla_image_bck" data-color="#eee">
                         <div class="gla_simple_block">
-                            <h2><?php echo $nama_panggilan_pengantin_pria; ?></h2>
+                            <h2><?php echo $nama_pengantin_pria; ?></h2>
                             <p><?php echo $resume_pengantin_pria; ?></p>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                     </div>
                     <div class="col-md-6 gla_image_bck" data-color="#eee">
                         <div class="gla_simple_block">
-                            <h2><?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                            <h2><?php echo $nama_pengantin_wanita; ?></h2>
                             <p><?php echo $resume_pengantin_wanita; ?></p>
                         </div>
                         

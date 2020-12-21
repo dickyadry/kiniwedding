@@ -532,7 +532,7 @@
                                     </div>      
 
                                     <div class="form-group col col-sm-12">
-                                        <textarea name="notes" class="form-control" placeholder="Pesan*" id="pesan"></textarea>
+                                        <textarea name="notes" class="form-control" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
                                     </div>      
 
                                     <div class="form-group col col-sm-12">

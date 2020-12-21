@@ -403,7 +403,7 @@
                                     </select>
                                 </div>
                                 <div class="col col-sm-12">
-                                    <textarea class="form-control" name="pesan" placeholder="Pesan*" id="pesan"></textarea>
+                                    <textarea class="form-control" name="pesan" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
                                 </div>
                                 <div class="col col-sm-12 submit-btn">
                                     <button type="button" class="theme-btn" onclick="buku_tamu()">Send</button>
