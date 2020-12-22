@@ -1,0 +1,147 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class MY_Controller extends CI_Controller {
+
+	public function __construct() {
+		parent::__construct();
+		$this->load->helper("url");
+		$this->tujuan_model = new GeneralModel("tujuan");
+
+		if($_POST){
+            $this->input_data = $this->input->post();
+        }   
+        else if($_GET){
+            $this->input_data = $this->input->get();
+        } else {
+            $this->input_data = json_decode(file_get_contents("php://input"), true);
+        }
+
+        $this->session_admin_only();
+        
+	}
+
+	public function session(){
+
+		$userlog = $this->session->userdata('adminData');
+		if(empty($userlog)){
+			$this->session->set_flashdata('error','Anda tidak memiliki akses');
+			redirect(base_url('login'));
+		}
+
+	}
+
+	public function session_admin_only(){
+
+		$userlog = $this->session->userdata('adminData');
+		if(empty($userlog) || $userlog['level']=='User'){
+			$this->session->set_flashdata('error','Anda tidak memiliki akses');
+			redirect(base_url('login'));
+		}
+
+	}
+
+	public function load_layout($data, $view_script_js = "") {
+		$js["page_js"] = $view_script_js;
+
+		$tp["sidebar"] = $this->load->view("include/main_sidebar", "", true);
+		$tp["page_header"] = $this->load->view("include/main_page_header_breadcrumb", "", true);
+		$tp["page_content"] = $data;
+		$tp["footer"] = $this->load->view("include/main_footer", $js, true);
+		$this->load->view("main_template", $tp);
+		
+	}
+
+	public function paging_page($url, $perpage, $total_rows) {
+
+		$this->load->library('pagination');
+		$base_url = base_url($url);
+		$base_url .= get_query_string('page');
+		$config['base_url'] = $base_url;
+		$config['total_rows'] = $total_rows;
+		$config['per_page'] = $perpage;
+		$config['enable_query_strings'] = TRUE;
+		$config['page_query_string'] = TRUE;
+		$config['query_string_segment'] = 'page';
+		$config["use_page_numbers"] = TRUE;
+
+		$config['first_link']       = '<<';
+        $config['last_link']        = '>>';
+        $config['next_link']        = '&rarr;';
+        $config['prev_link']        = '&larr;';
+        $config['full_tag_open']    = '<div class="pagging text-center"><nav><ul class="pagination justify-content-center">';
+        $config['full_tag_close']   = '</ul></nav></div>';
+        $config['num_tag_open']     = '<li class="page-item"><span class="page-link">';
+        $config['num_tag_close']    = '</span></li>';
+        $config['cur_tag_open']     = '<li class="page-item active"><span class="page-link">';
+        $config['cur_tag_close']    = '<span class="sr-only">(current)</span></span></li>';
+        $config['next_tag_open']    = '<li class="page-item"><span class="page-link">';
+        $config['next_tagl_close']  = '<span aria-hidden="true">&raquo;</span></span></li>';
+        $config['prev_tag_open']    = '<li class="page-item"><span class="page-link">';
+        $config['prev_tagl_close']  = '</span>Next</li>';
+        $config['first_tag_open']   = '<li class="page-item"><span class="page-link">';
+        $config['first_tagl_close'] = '</span></li>';
+        $config['last_tag_open']    = '<li class="page-item"><span class="page-link">';
+        $config['last_tagl_close']  = '</span></li>';
+
+		$this->pagination->initialize($config);
+		return $this->pagination->create_links();
+
+	}
+
+    public function username_check($str=""){
+
+        $this->member_model = new GeneralModel("member");
+
+        $query = $this->member_model->source();
+        $query->select('count(id) as count');
+        $query->where('username',$str);
+        $query->where('is_active !=','2');
+        $row = $query->get()->result();
+
+        if($row[0]->count > 0){
+            $this->form_validation->set_message('username_check', '%s "'.$str.'" sudah terdaftar sebagai member.');
+            return false;
+        }
+        return true;
+    }
+
+    public function email_check($str=""){
+
+        $this->member_model = new GeneralModel("member");
+
+        $query = $this->member_model->source();
+        $query->select('count(id) as count');
+        $query->where('email',$str);
+        $query->where('is_active !=','2');
+        $row = $query->get()->result();
+
+        if($row[0]->count > 0){
+            $this->form_validation->set_message('email_check', '%s "'.$str.'" sudah terdaftar sebagai member.');
+            return false;
+        }
+        return true;
+    }
+
+    public function _generate_sales_order() {
+
+        $this->sales_order_model = new GeneralModel('sales_order');
+
+        $query = $this->sales_order_model->source();
+        $query->select('sales_order_no');
+        $query->order_by('id','DESC');
+        $query->limit(1);
+        $row = $query->get()->result();
+        if (count($row) > 0) {
+            if ($row[0]->sales_order_no != "") {
+                $temp = explode("-", $row[0]->sales_order_no);
+                $pattern = "TRANS-" . time() . "-" . ($temp[2] + 1);
+            }
+        } else {
+            $pattern = "TRANS-" . time() . "-1";
+        }
+        return $pattern;
+    }
+}
+
+?>
