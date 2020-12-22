@@ -10,7 +10,7 @@
         <tr>
             <td align="center" bgcolor="#0C0B21" style="padding: 20px 0;">
                 <a href="<?php echo base_url(); ?>" target="_blank">
-                    <img border="0" src="<?php echo ASSETS. "img/logo.png"; ?>" alt="Logo Event Stack"/> 
+                    <img border="0" src="<?php echo ASSETS. "img/logo-with-text-putih.png"; ?>" alt="Logo Event Stack"/> 
                 </a>
             </td>
         </tr>
@@ -21,12 +21,12 @@
 
                 <p>Perubahan password telah berhasil, Klik link di bawah untuk masuk ke halaman login Event Stack.</p>
                 <br/><br/>
-                <a style="background:#DDD35D; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>login" target="_blank">Event Stack</a>
+                <a style="background:#DDD35D; margin-top: 10px; font-size: 17px; color: #FFF; border: none; border-radius: 50px; padding: 10px 20px; text-decoration: none;" href="<?php echo base_url(); ?>login" target="_blank">KiniWedding</a>
                 <br/><br/><br/>
                 <p>Selamat menjelajah event-event terbaik disekitar anda dan selamat berkontribusi.</p>
                 <br/>
                 <p><b>Terima Kasih</b></p>
-                <p><b>Event Stack</b></p>
+                <p><b>KiniWedding</b></p>
 
 
             </td>
@@ -37,23 +37,23 @@
                 <table align="center" cellpadding="0" cellspacing="0" >
                     <tr>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://facebook.com/eventstack.id" target="_blank">
+                            <a href="https://facebook.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-fb.jpg" alt="logo facebook"/>
                             </a>
                         </td>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://twitter.com/eventstackid" target="_blank">
+                            <a href="https://twitter.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-tw.jpg" alt="logo twitter"/>
                             </a>
                         </td>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://www.instagram.com/eventstack.id" target="_blank">
+                            <a href="https://www.instagram.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-ig.jpg" alt="logo instagram"/>
                             </a>
                         </td>
                     </tr>
                 </table>
-                <p class="copyright">CopyRight 2020 <a href="<?php echo base_url(); ?>">eventstack.id</a>. All Rights Reserved.</p>
+                <p class="copyright">CopyRight 2021 <a href="<?php echo base_url(); ?>">kiniwedding.com</a>. All Rights Reserved.</p>
             </td>
         </tr>
     </table>

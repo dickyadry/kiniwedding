@@ -12,36 +12,27 @@
 <div class="slider-area slider-carousel owl-carousel">
     <div>
         <div class="img" >
-            <a href="<?php echo base_url(); ?>kolaborasi">
-                <img src="<?php echo ASSETS_IMAGES; ?>slide/banner-1.jpg" alt="Kolaborasi">
+            <a href="<?php echo base_url(); ?>product">
+                <img src="<?php echo ASSETS_IMAGES; ?>slide/slider-1.png" alt="KiniWedding">
             </a>
             
         </div>
-        <div style="position: absolute; top: 10px; left: 10px; border: 0px;">
-            <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>kolaborasi">Lihat Selengkapnya</a>
+    </div>
+    <div>
+        <div class="img">
+            <a href="<?php echo base_url(); ?>product">
+                <img src="<?php echo ASSETS_IMAGES; ?>slide/slider-2.png" alt="KiniWedding">
+            </a>
         </div>
     </div>
     <div>
         <div class="img">
-            <a href="<?php echo base_url(); ?>kolaborasi">
-                <img src="<?php echo ASSETS_IMAGES; ?>slide/banner-2.jpg" alt="Kolaborasi">
+            <a href="<?php echo base_url(); ?>product">
+                <img src="<?php echo ASSETS_IMAGES; ?>slide/slider-3.png" alt="KiniWedding">
             </a>
         </div>
-        <div style="position: absolute; top: 10px; right: 10px; border: 0px;">
-            <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>kolaborasi">Lihat Selengkapnya</a>
-        </div>
     </div>
-    <div>
-        <div class="img">
-            <a href="<?php echo base_url(); ?>narasumber">
-                <img src="<?php echo ASSETS_IMAGES; ?>slide/banner-3.jpg" alt="Kolaborasi">
-            </a>
-        </div>
-        <div style="position: absolute; top: 10px; left: 10px; border: 0px;">
-            <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>narasumber">Lihat Selengkapnya</a>
-        </div>
-    </div>
-    <div>
+    <!-- <div>
         <div class="img">
             <a href="<?php echo base_url(); ?>product">
                 <img src="<?php echo ASSETS_IMAGES; ?>slide/banner-4.jpg" alt="Kolaborasi">
@@ -50,7 +41,7 @@
         <div style="position: absolute; top: 10px; right: 10px; border: 0px;">
             <a class="button hvr-bs animated" style="border: 0px solid #ccc; font-weight: bold; color: #FFF !important; background:rgba(255,0,60,0.9); border-radius: 15px;"  href="<?php echo base_url(); ?>product">Lihat Selengkapnya</a>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- slider-area-end -->
 

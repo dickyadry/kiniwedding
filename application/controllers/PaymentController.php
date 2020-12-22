@@ -230,7 +230,7 @@ class PaymentController extends MY_Controller {
             $product = $this->product_model->find($data['datas'][0]->product_id);
 
             $this->_sendEmailPaymentSuccess($sales_order->id);
-            $this->_sendEmailTicket($sales_order->id);
+            // $this->_sendEmailTicket($sales_order->id);
             $this->_sendWaTicket($sales_order->id,$product->link);
 
             echo json_encode(['success' => true, 'status' => 'Complete']);

@@ -273,7 +273,7 @@ class MY_Controller extends CI_Controller {
             $subject ="Perubahan Password";
             $this->email->set_newline("\r\n");
             $this->email->to($email);
-            $this->email->from('support@eventstack.id', 'Event Stack');
+            $this->email->from('support@eventstack.id', 'KiniWedding');
 
             $data['token'] = $token;
             $message = $this->load->view("contents/email_template_lupa_password", $data,true);
@@ -299,7 +299,7 @@ class MY_Controller extends CI_Controller {
             $subject ="Perubahan Password";
             $this->email->set_newline("\r\n");
             $this->email->to($email);
-            $this->email->from('support@eventstack.id', 'Event Stack');
+            $this->email->from('support@eventstack.id', 'KiniWedding');
 
             $message = $this->load->view("contents/email_template_success_ubah_password");
 
@@ -324,7 +324,7 @@ class MY_Controller extends CI_Controller {
         $subject ="Aktivasi member";
         $this->email->set_newline("\r\n");
         $this->email->to($data_member["email"]);
-        $this->email->from('support@eventstack.id', 'Event Stack');
+        $this->email->from('support@eventstack.id', 'KiniWedding');
 
         $data['data'] = $data_member;
         $message = $this->load->view("contents/email_template_aktivasi", $data,true);
@@ -350,7 +350,7 @@ class MY_Controller extends CI_Controller {
         $this->load->library('email');
 
         $query = $this->sales_order_detail_model->source();
-        $query->select('sales_order_detail.*,p.title, p.cover, p.slug, p.speaker');
+        $query->select('sales_order_detail.*,p.name, p.cover, p.code');
         $query->join('product p','p.id = sales_order_detail.product_id');
         $query->where('sales_order_id',$id);
         $data['datas'] = $query->get()->result();
@@ -375,7 +375,7 @@ class MY_Controller extends CI_Controller {
 
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'Event Stack');
+        $this->email->from('support@eventstack.id', 'KiniWedding');
 
         $message = $this->load->view("contents/email_template", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -470,7 +470,7 @@ class MY_Controller extends CI_Controller {
 
             $this->email->set_newline("\r\n");
             $this->email->to($value->email);
-            $this->email->from('support@eventstack.id', 'Event Stack');
+            $this->email->from('support@eventstack.id', 'KiniWedding');
 
             $message = $this->load->view("contents/email_ticket", $data,true);
             $this->email->subject("E-Ticket");
@@ -503,7 +503,7 @@ class MY_Controller extends CI_Controller {
 
         $this->email->set_newline("\r\n");
         $this->email->to($member->email);
-        $this->email->from('support@eventstack.id', 'Event Stack');
+        $this->email->from('support@eventstack.id', 'KiniWedding');
 
         $message = $this->load->view("contents/email_notification", $data,true);
         $this->email->subject("Notification");
@@ -532,7 +532,7 @@ class MY_Controller extends CI_Controller {
         $data['data'] = $sales_order;
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'Event Stack');
+        $this->email->from('support@eventstack.id', 'KiniWedding');
 
         $message = $this->load->view("contents/email_payment_success", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -565,7 +565,7 @@ class MY_Controller extends CI_Controller {
         $data['data'] = $sales_order;
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'Event Stack');
+        $this->email->from('support@eventstack.id', 'KiniWedding');
 
         $message = $this->load->view("contents/email_template", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -600,7 +600,7 @@ class MY_Controller extends CI_Controller {
     //     }
 
     //     $link = "Silahkna kunjungi link berikut untuk melihat detail data\n".base_url()."member/event/data-peserta/".encrypt_decrypt('encrypt',$data->id);
-    //     $msg = "Pemberitahuan, telah melakukan registrasi melalui Event Stack (www.eventstack.id) untuk mengikuti event ".$data->title." dengan biodata sebagai berikut:\n\n".$data_peserta.$link;
+    //     $msg = "Pemberitahuan, telah melakukan registrasi melalui KiniWedding (www.eventstack.id) untuk mengikuti event ".$data->title." dengan biodata sebagai berikut:\n\n".$data_peserta.$link;
 
     //     $params = array();
     //     $params['phone'] = $member->phone;
@@ -641,40 +641,16 @@ class MY_Controller extends CI_Controller {
 
         $this->member_model = new GeneralModel("member");
         $this->product_model = new GeneralModel("product");
-        $this->peserta_model = new GeneralModel("peserta");
+        $this->sales_order_detail_model = new GeneralModel("sales_order_detail");
 
-        $query = $this->peserta_model->source();
+        $query = $this->sales_order_detail_model->source();
         $query->where('sales_order_id',$id);
-        $peserta = $query->get()->result();
+        $sales_order_detail = $query->get()->result();
         
-        $data = $this->product_model->find($peserta[0]->product_id);
-        $member = $this->member_model->find($data->member_id);
-        if ($member->phone=="" || $member->phone==" " || $member->phone==null) {
-            return true;
-        }
+        $data = $this->product_model->find($sales_order_detail[0]->product_id);
 
-        $data_peserta = "";
-        foreach ($peserta as $key => $value) {
-            $data_peserta .= "Order No.:".$transaksi_id."\nNama:".$value->name."\nEmail:".$value->email."\nPhone:".$value->phone."\n\n";
-        }
+        $msg = "*NOTIFIKASI:*\n\nTelah melakukan pembelian product ".$data->name." dengan nomor transaksi ".$transaksi_id.' atas nama '.$member->name."\n\nTerimakasih,\n*Admin KiniWedding*.\n\n------------------------------------------------\n_Informasi dalam pesan ini digenerate dan dikirim otomatis oleh Sistem KiniWedding. Mohon untuk tidak membalas pesan ini karena tidak akan direspon oleh sistem, jika ada pertanyaan lebih lanjut dapat hubungi nomor berikut 0898-3024-016._";
 
-        $link = "Silahkan kunjungi link berikut untuk melihat detail data\n".base_url()."member/event/data-peserta/".encrypt_decrypt('encrypt',$data->id);
-
-        
-        $bukti_pembayaran = "";
-        $konfirmasi_pembayaran = "";
-        if(isset($param_data["payment_type"]) && $param_data["payment_type"]=='manual_transfer'){
-            $bukti_transfer = isset($param_data["bukti_transfer"])?$param_data["bukti_transfer"]:null;
-            if($bukti_transfer!=null){
-                $bukti_pembayaran.= "\n\nLink bukti pembayaran \n".$bukti_transfer;
-                $konfirmasi_pembayaran.= "\n\n\n\nLink konfirmasi pembayaran \n".base_url().'member/sales-order/update-status-pembayaran/'.encrypt_decrypt('encrypt',$id).'/'.encrypt_decrypt('encrypt','eventstack');
-            }
-        }
-
-
-        $msg = "Automatic Message from Event Stack | noreply\n\nPemberitahuan, telah melakukan registrasi melalui Event Stack (www.eventstack.id) untuk mengikuti event ".$data->title." dengan biodata sebagai berikut:\n\n".$data_peserta.$link.$bukti_pembayaran.$konfirmasi_pembayaran."\n\nJika kamu tidak bisa meng klik link di atas silahkan save terlebih dahulu nomor kami";
-
-        
         $ip_ssh      = '150.107.142.35';
         $username    = 'nodejs';
         $password    = '<?phpopen?>';
@@ -689,7 +665,7 @@ class MY_Controller extends CI_Controller {
             if ($tunnel = ssh2_tunnel($connection, $addr, 4000)) {
                 
                 $params = array();
-                $params['phone'] = $member->phone;
+                $params['phone'] = "6285710118027";
                 $params['msg'] = $msg;
                 $params = json_encode($params);
 
@@ -722,64 +698,70 @@ class MY_Controller extends CI_Controller {
 
     public function _sendWaTicket($id="",$link="") {
 
-        $this->peserta_model = new GeneralModel("peserta");
+        $this->member_model = new GeneralModel("member");
+        $this->product_model = new GeneralModel("product");
+        $this->sales_order_model = new GeneralModel("sales_order");
+        $this->sales_order_detail_model = new GeneralModel("sales_order_detail");
 
-        $query = $this->peserta_model->source();
-        $query->join('sales_order so','so.id=peserta.sales_order_id');
-        $query->where('so.status_order',1);
+        $sales_order = $this->sales_order_model->find($id);
+
+        $query = $this->sales_order_detail_model->source();
         $query->where('sales_order_id',$id);
-        $peserta = $query->get()->result();
+        $sales_order_detail = $query->get()->result();
+        
+        $data = $this->product_model->find($sales_order_detail[0]->product_id);
+        $member = $this->member_model->find($data->member_id);
+        if ($member->phone=="" || $member->phone==" " || $member->phone==null) {
+            return true;
+        }
 
-        foreach ($peserta as $key => $value) {
-            
-            $code = encrypt_decrypt('encrypt',$value->code);
+        $link = base_url().'member/pesanan-saya/lengkapi-data/'. encrypt_decrypt('encrypt',$sales_order->id);
 
-            $msg = "Automatic Message from Event Stack | noreply\n\nE-TICKET\n\nTerimakasih telah melalakukan pemesanan tiket melalui Event Stack, anda dapat mendownload E-Ticket melalui link berikut\n\n".base_url()."member/tiket-saya/".$code."\n\nSilahkan klik link berikut untuk mengikuti event/masuk kedalam group:\n".$link."\n\nJika kamu tidak bisa meng klik link di atas silahkan save terlebih dahulu nomor kami";
+        $msg = "*NOTIFIKASI:*\n\nSelamat pembayaran kamu sebesar ".$sales_order->grand_total." untuk pembayaran dengan kode pemesanan ".$sales_order->sales_order_no." telah kami terima\n\nSilahkan lanjutkan ketahap lengkapi data undangan pernikahan pada link berikut:\n\n".$link."\n\nTerimakasih,\n*Admin KiniWedding*.\n\n------------------------------------------------\n_Informasi dalam pesan ini digenerate dan dikirim otomatis oleh Sistem KiniWedding. Mohon untuk tidak membalas pesan ini karena tidak akan direspon oleh sistem, jika ada pertanyaan lebih lanjut dapat hubungi nomor berikut 0898-3024-016._";
 
-            $ip_ssh      = '150.107.142.35';
-            $username    = 'nodejs';
-            $password    = '<?phpopen?>';
-            $remote_host = 'localhost';
-            $path        = '/send_message';
+        $ip_ssh      = '150.107.142.35';
+        $username    = 'nodejs';
+        $password    = '<?phpopen?>';
+        $remote_host = 'localhost';
+        $path        = '/send_message';
 
-            $connection = ssh2_connect($ip_ssh, 22);
+        $connection = ssh2_connect($ip_ssh, 22);
 
-            $addr = gethostbyname($remote_host);
+        $addr = gethostbyname($remote_host);
 
-            if (ssh2_auth_password($connection,$username, $password)) {
-                if ($tunnel = ssh2_tunnel($connection, $addr, 4000)) {
-                    
-                    $params = array();
-                    $params['phone'] = $value->phone;
-                    $params['msg'] = $msg;
-                    $params = json_encode($params);
+        if (ssh2_auth_password($connection,$username, $password)) {
+            if ($tunnel = ssh2_tunnel($connection, $addr, 4000)) {
+                
+                $params = array();
+                $params['phone'] = $value->phone;
+                $params['msg'] = $msg;
+                $params = json_encode($params);
 
-                    $content = $params;
-                    $request  = "POST $path HTTP/1.1\r\n";
-                    $request .= "Host: $remote_host\r\n";
-                    // $request .= "Referer: yourClass (v.".version() .")\r\n";
-                    $request .= "accept: application/json\r\n";
-                    $request .= "Content-type: application/json\r\n";
-                    $request .= "Content-Length: ".strlen($content)."\r\n";
-                    $request .= "Connection: Close\r\n\r\n";
-                    $request .= "$content";
+                $content = $params;
+                $request  = "POST $path HTTP/1.1\r\n";
+                $request .= "Host: $remote_host\r\n";
+                // $request .= "Referer: yourClass (v.".version() .")\r\n";
+                $request .= "accept: application/json\r\n";
+                $request .= "Content-type: application/json\r\n";
+                $request .= "Content-Length: ".strlen($content)."\r\n";
+                $request .= "Connection: Close\r\n\r\n";
+                $request .= "$content";
 
-                    fwrite($tunnel, $request);
-                    $result = '';
+                fwrite($tunnel, $request);
+                $result = '';
 
-                    while (!feof($tunnel)) {
-                        $result .= fgets($tunnel);
-                    }
-
-                    return true;
-                } else {
-                    return true;
+                while (!feof($tunnel)) {
+                    $result .= fgets($tunnel);
                 }
+
+                return true;
             } else {
                 return true;
             }
-
+        } else {
+            return true;
         }
+
     }
 
     public function cek_user_session() {

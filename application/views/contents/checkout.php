@@ -21,7 +21,7 @@
     }
     table[border="1"] th {
     /*background:#ccc;*/
-    color:#FFF;
+    color:#000;
     /*font-size: 12px;*/
     text-align: left;
     padding: 15px 10px;
@@ -202,32 +202,6 @@ if(count($cart['datas'])>0 ){ ?>
                 </div>
             </div>
             <br><br>
-        <?php }else if($cart['grand_total']>0 && $data->is_manual_payment==1){ ?>
-            <input type="hidden" name="number_payment" value="">
-            <div class="row box-manual-payment">
-                <div class="col-lg-12">
-                    <div style="background: #333; padding: 20px; border-radius: 10px;">
-                        <div class="col-lg-12">  
-                            <h2>Silahkan Lakukan Pembayaran Melalui Nomor Rekening Berikut:</h2>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row" style="margin-top: 10px;"> 
-                                <?php foreach ($account as $key => $value) { ?>
-                                <div class="col-md-6 col-12">
-                                    <div class="box-payment" style="font-size:20px;">
-                                        <b><?php echo $value->bank_name; ?></b> : <?php echo $value->account_number; ?>, a/n : <?php echo $value->account_name; ?>
-                                    </div>
-                                </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">  
-                            <label>Upload bukti pembayaran kamu disini:</label><br>
-                            <input type="file" name="bukti_transfer_org" onchange='uploadBuktiTransfer()'>
-                        </div>
-                    </div>
-                </div>
-            </div>
         <?php }else{ ?>
             <input type="hidden" name="number_payment" value="">
         <?php } ?>

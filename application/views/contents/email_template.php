@@ -10,7 +10,7 @@
         <tr>
             <td align="center" bgcolor="#0C0B21" style="padding: 20px 0;">
                 <a href="<?php echo base_url(); ?>" target="_blank">
-                    <img src="<?php echo ASSETS. "img/logo.png"; ?>" alt="Logo Event Stack"/> 
+                    <img src="<?php echo ASSETS. "img/logo-with-text-putih.png"; ?>" alt="Logo Event Stack"/> 
                 </a>
             </td>
         </tr>
@@ -22,7 +22,7 @@
                 <h1>SUCCESS ORDER</h1>
                 <?php } ?>
 
-                <p>Terimakasih <?php echo $data->member; ?><br/>telah melakukan pembelian tiket di Event Stack</p>
+                <p>Terimakasih <?php echo $data->member; ?><br/>telah bertransaksi di KiniWedding</p>
                 <h3 style="color: #DDD35D; font-size: 24px;">
                     #<?php echo $data->sales_order_no; ?><br/>
                 </h3>
@@ -36,7 +36,7 @@
                 <?php if($data->status_order!=1 && $data->payment_method=="bank_transfer"){ ?>
                 <div><span style="color: #FFA000; margin-top: 20px; display: block;">Segera Lalukan Pembayaran Sebelum <br/><?php echo date('d M Y',strtotime ($expiry_time,strtotime($data->created_at)));?> pukul <?php echo date('H:i',strtotime ($expiry_time,strtotime($data->created_at)));?> WIB</span></div>
                 <?php }else if($data->status_order!=1 && $data->payment_method=="manual_transfer"){ ?>
-                <div><span style="color: #FFA000; margin-top: 20px; display: block;">Segera Lalukan Pembayaran.<br> Jika kamu sudah melakukan pembayaran namun dalam waktu 1x24 jam kamu belum mandapatkan E-Ticket, silahkan hubungi penyelengga event (Stack Creator)</span></div>
+                <div><span style="color: #FFA000; margin-top: 20px; display: block;">Segera Lalukan Pembayaran.<br> Jika kamu sudah melakukan pembayaran namun dalam waktu 1x24 jam pembayaran kamu belum terkonfirmasi silahkan hubungi admin di nomor 0898-3024-016</span></div>
                 <?php } ?>
                 <div style="border-bottom: 1px solid #CCC; margin: 20px 0;"></div>
 
@@ -75,27 +75,21 @@
                             <div>
                                 <div style="position: relative; margin: 0 0 20px; border-radius: 10px; padding: 20px">   
                                     <div style="margin: 5px 0; font-size: 20px; margin: 0px 0 15px; font-weight:bold;">
-                                        <?php echo $row->title; ?>
+                                        <?php echo $row->name; ?>
                                     </div> 
                                     <div style="position: relative; display: flex">
                                         <div style="flex: 0 0 25%; position: relative;">
-                                            <img style="border-radius: 10px; width: 100%; " src="<?php echo str_replace("medium", "small", $row->cover); ?>" alt="<?php echo $row->title; ?>"/>
+                                            <img style="border-radius: 10px; width: 100%; " src="<?php echo str_replace("medium", "small", $row->cover); ?>" alt="<?php echo $row->name; ?>"/>
                                         </div>
                                         <div style="flex: 0 0 75%; width: 100%;">
                                             <div style="padding: 0 0 0 20px;">
-                                                <div style="margin: 5px 0; font-size: 16px; margin: 0px 0 5px; text-align:left;">
-                                                    <?php echo $row->speaker; ?>
-                                                </div>
-                                                <div style="text-align:left; font-weight: normal; font-size: 14px; color: #666;"><?php echo isset($row->start_date)?convert_date($row->start_date,$row->end_date):''; ?></div>
-                                                <div>
-                                                    <span style="background:#CCC; margin-top: 10px; display: block; font-size: 15px; color: #333; border: none;  border-radius: 10px; padding: 10px 20px;"> 
-                                                        <?php echo rupiah($row->price); ?> x <?php echo $row->quantity; ?>
-                                                        </span>
-                                                </div>
-                                                <div style="padding: 20px 0 0; text-align: right;">
-                                                    Total
-                                                    <span style=" display: inline-block; padding: 0; font-size: 18px; font-weight: 700"><?php echo rupiah($row->quantity * $row->price); ?></span>
-                                                </div>
+                                                <span style="background:#CCC; margin-top: 10px; display: block; font-size: 15px; color: #333; border: none;  border-radius: 10px; padding: 10px 20px;"> 
+                                                    <?php echo rupiah($row->price); ?> x <?php echo $row->quantity; ?>
+                                                </span>
+                                            </div>
+                                            <div style="padding: 20px 0 0; text-align: right;">
+                                                Total
+                                                <span style=" display: inline-block; padding: 0; font-size: 18px; font-weight: 700"><?php echo rupiah($row->quantity * $row->price); ?></span>
                                             </div>
                                         </div>
                                     </div>
@@ -107,10 +101,13 @@
                 </div>
 
                 <br/>
-                <p>Jika anda mengikuti event online seperti webinar, workshop online, dan lain-lain, Link event sewaktu-waktu dapat berubah, jika link event berubah harap hubungi penyelenggara event (Stack Creator)</p>
+                <p>Jika kamu telah menyelesaikan pembayaran silahkan lengkapi data undangan pernikahan kamu melalui link berikut<br><br>
+                <a href="<?php echo base_url(); ?>member/pesanan-saya/lengkapi-data/<?php echo encrypt_decrypt('encrypt',$data->id); ?>" target="_blank"><?php echo base_url(); ?>member/pesanan-saya/lengkapi-data/<?php echo encrypt_decrypt('encrypt',$data->id); ?></a>
+
+                </p>
                 <br/>
                 <p><b>Terima Kasih</b></p>
-                <p><b>Event Stack</b></p>
+                <p><b>KiniWedding</b></p>
 
             </td>
         </tr>
@@ -120,23 +117,23 @@
                 <table align="center" cellpadding="0" cellspacing="0" >
                     <tr>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://facebook.com/eventstack.id" target="_blank">
+                            <a href="https://facebook.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-fb.jpg" alt="logo facebook"/>
                             </a>
                         </td>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://twitter.com/eventstackid" target="_blank">
+                            <a href="https://twitter.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-tw.jpg" alt="logo twitter"/>
                             </a>
                         </td>
                         <td align="center" bgcolor="#0C0B21" style="padding: 0px 10px">
-                            <a href="https://www.instagram.com/eventstack.id" target="_blank">
+                            <a href="https://www.instagram.com/kiniwedding" target="_blank">
                                 <img src="<?php echo ASSETS; ?>img/icon-ig.jpg" alt="logo instagram"/>
                             </a>
                         </td>
                     </tr>
                 </table>
-                <p class="copyright">CopyRight 2020 <a href="<?php echo base_url(); ?>">eventstack.id</a>. All Rights Reserved.</p>
+                <p class="copyright">CopyRight 2021 <a href="<?php echo base_url(); ?>">kiniwedding.com</a>. All Rights Reserved.</p>
             </td>
         </tr>
     </table>

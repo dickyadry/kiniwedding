@@ -362,9 +362,9 @@ class SalesOrderController extends MY_Controller{
             
         $product = $this->product_model->find($data['datas'][0]->product_id);
 
-        // $this->_sendEmailPaymentSuccess($id);
+        $this->_sendEmailPaymentSuccess($id);
         // $this->_sendEmailTicket($id);
-        // $this->_sendWaTicket($id,$product->link);
+        $this->_sendWaTicket($id,$product->link);
 
         $json['status'] = 'success';
         echo json_encode($json);
