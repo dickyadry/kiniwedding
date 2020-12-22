@@ -237,7 +237,7 @@
 	
 	
 	// CountDown Js
-	var deadline = 'November 1 2022 11:59:00 GMT-0400';
+	var deadline = document.getElementById('date_deadline').innerHTML;
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );
