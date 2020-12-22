@@ -47,10 +47,10 @@
                     <div class="payment__status">
 
                         <div class="payment__status__title">Transaksi Berhasil</div>
-                        <p>Terima kasih telah memesan tiket di Event Stack.</p>
+                        <p>Terima kasih telah melakukan transaksi di KiniWedding.</p>
 
                         <div class="payment__status__img">
-                            <img src="<?php echo ASSETS; ?>img/icon-complete.png" style="max-width: 300px;">
+                            <img src="<?php echo ASSETS; ?>img/logo-hitam.png" style="max-width: 143px;">
                         </div>
 
                     </div>
@@ -129,8 +129,7 @@
                 <div class="payment__status__box">
 
                     <div class="form__footer payment__footer">
-                        Segera lakukan Pembayaran. <br>
-                        Jika kamu sudah melakukan pembayaran namun dalam waktu 1x24 jam kamu belum mandapatkan E-Ticket, silahkan hubungi penyelengga event (Stack Creator)
+                        Segera Lalukan Pembayaran.<br> Jika kamu sudah melakukan pembayaran namun dalam waktu 1x24 jam pembayaran kamu belum terkonfirmasi silahkan hubungi admin di nomor 0898-3024-016
                         <br><br>
                     </div>
 
@@ -160,6 +159,10 @@
 
                 </div>
                 <?php } ?>
+                <br>
+                <p>Jika kamu telah menyelesaikan pembayaran silahkan lengkapi data undangan pernikahan kamu melalui link berikut<br>
+                <a style="color: #FFA000;" href="<?php echo base_url(); ?>member/pesanan-saya/lengkapi-data/<?php echo encrypt_decrypt('encrypt',$data->id); ?>" target="_blank"><?php echo base_url(); ?>member/pesanan-saya/lengkapi-data/<?php echo encrypt_decrypt('encrypt',$data->id); ?></a>
+                <br>
                 <br>
                 <div class="form__submit payment__submit clearfix">
                     <div class="col-xs-12">

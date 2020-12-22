@@ -132,17 +132,17 @@ class CartController extends MY_Controller {
             );
             $this->sales_order_model->update($sales_order_data,$id);
 
-            // $this->_sendEmailCompleteOrder($id);
+            $this->_sendEmailCompleteOrder($id);
             // $this->_sendEmailNotification($id);
-            // $this->_sendWaNotification($id,$transaksi_id,$this->input_data);
+            $this->_sendWaNotification($id,$transaksi_id,$this->input_data);
 
         }else{
 
-            // $this->_sendEmailCompleteOrder($id);
+            $this->_sendEmailCompleteOrder($id);
             // $this->_sendEmailNotification($id);
             // $this->_sendEmailTicket($id);
             // $this->_sendWaTicket($id,$product->link);
-            // $this->_sendWaNotification($id,$transaksi_id);
+            $this->_sendWaNotification($id,$transaksi_id);
             
         }
 

@@ -571,8 +571,8 @@ button {
 header {}
 
 .header-top-area {
-    border-bottom: 4px solid #ddd35d;
-    background: #000;
+    border-bottom: 1px solid #ddd35d;
+    background: #17203D;
     padding: 0;
 }
 
@@ -1139,7 +1139,7 @@ header {}
 .top-movie-carousel {}
 
 .single-top-movie {
-    border:1px solid #ccc;
+    /*border:1px dotted #17203d;*/
     /*border-radius: 5px;*/
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
@@ -1309,8 +1309,9 @@ header {}
     right: 0;
     text-align: center;
     z-index: 8;
-    /*background: #FC9B00;*/
-    /*border:1px solid #333;*/
+    /*background: #333;*/
+    border:1px solid #ebebeb;
+    border-top:0px solid #ebebeb;
     min-height: 200px;
 }
 

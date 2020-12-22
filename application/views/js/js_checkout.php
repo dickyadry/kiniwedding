@@ -87,6 +87,9 @@
             if(payment_type==""){
                 msg = 'Silahkan pilih metode pembayaran';
                 status_data = false;
+            }else if(payment_type=="manual_transfer" && (bukti_transfer=="" || bukti_transfer=="")){
+                msg = 'Silhakan upload bukti pembayaran';
+                status_data = false;
             }   
         }
 

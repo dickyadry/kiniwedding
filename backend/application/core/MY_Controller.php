@@ -142,6 +142,100 @@ class MY_Controller extends CI_Controller {
         }
         return $pattern;
     }
+
+    public function _sendEmailPaymentSuccess($id="") {
+
+        $this->member_model = new GeneralModel("member");
+        $this->sales_order_model = new GeneralModel("sales_order");
+        $this->sales_order_detail_model = new GeneralModel("sales_order_detail");
+        
+        $this->load->library('email');
+
+        $sales_order = $this->sales_order_model->find($id);
+        $member = $this->member_model->find($sales_order->member_id);
+        $sales_order->member = $member->name;
+        
+        $data['data'] = $sales_order;
+        $this->email->set_newline("\r\n");
+        $this->email->to($member->email);
+        $this->email->from('support@eventstack.id', 'KiniWedding');
+
+        $message = $this->load->view("contents/email_payment_success", $data,true);
+        $this->email->subject($sales_order->sales_order_no);
+        $this->email->message($message);
+
+        if ($this->email->send()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function _sendWaTicket($id="",$link="") {
+
+        $this->member_model = new GeneralModel("member");
+        $this->sales_order_model = new GeneralModel("sales_order");
+        $this->sales_order_detail_model = new GeneralModel("sales_order_detail");
+
+        $sales_order = $this->sales_order_model->find($id);
+
+        $query = $this->sales_order_detail_model->source();
+        $query->where('sales_order_id',$id);
+        $sales_order_detail = $query->get()->result();
+        
+        $member = $this->member_model->find($sales_order->member_id);
+        if ($member->phone=="" || $member->phone==" " || $member->phone==null) {
+            return true;
+        }
+
+        $link = base_url().'member/pesanan-saya/lengkapi-data/'. encrypt_decrypt('encrypt',$sales_order->id);
+
+        $msg = "*NOTIFIKASI:*\n\nSelamat pembayaran kamu sebesar ".$sales_order->grand_total." untuk pembayaran dengan kode pemesanan ".$sales_order->sales_order_no." telah kami terima\n\nSilahkan lanjutkan ketahap lengkapi data undangan pernikahan pada link berikut:\n\n".$link."\n\nTerimakasih,\n*Admin KiniWedding*.\n\n------------------------------------------------\n_Informasi dalam pesan ini digenerate dan dikirim otomatis oleh Sistem KiniWedding. Mohon untuk tidak membalas pesan ini karena tidak akan direspon oleh sistem, jika ada pertanyaan lebih lanjut dapat hubungi nomor berikut 0898-3024-016._";
+
+        $ip_ssh      = '150.107.142.35';
+        $username    = 'nodejs';
+        $password    = '<?phpopen?>';
+        $remote_host = 'localhost';
+        $path        = '/send_message';
+
+        $connection = ssh2_connect($ip_ssh, 22);
+
+        $addr = gethostbyname($remote_host);
+
+        if (ssh2_auth_password($connection,$username, $password)) {
+            if ($tunnel = ssh2_tunnel($connection, $addr, 4000)) {
+                
+                $params = array();
+                $params['phone'] = $member->phone;
+                $params['msg'] = $msg;
+                $params = json_encode($params);
+
+                $content = $params;
+                $request  = "POST $path HTTP/1.1\r\n";
+                $request .= "Host: $remote_host\r\n";
+                // $request .= "Referer: yourClass (v.".version() .")\r\n";
+                $request .= "accept: application/json\r\n";
+                $request .= "Content-type: application/json\r\n";
+                $request .= "Content-Length: ".strlen($content)."\r\n";
+                $request .= "Connection: Close\r\n\r\n";
+                $request .= "$content";
+
+                fwrite($tunnel, $request);
+                $result = '';
+
+                while (!feof($tunnel)) {
+                    $result .= fgets($tunnel);
+                }
+
+                return true;
+            } else {
+                return true;
+            }
+        } else {
+            return true;
+        }
+
+    }
 }
 
 ?>
