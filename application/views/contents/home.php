@@ -79,7 +79,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Product Terpopuler</h2>
+                    <h2>Produk Terpopuler</h2>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Product Terbaru</h2>
+                    <h2>Produk Terbaru</h2>
                 </div>
             </div>
         </div>
