@@ -39,71 +39,70 @@ $(document).on('ready', function() {
 });
 
 function buku_tamu() {
+    var param = {
+        'nama':$('#nama').val(),
+        'status':$('#status_hadir').val(),
+        'pesan':$('#pesan').val(),
+    };
 
-        var param = {
-            'nama':$('#nama').val(),
-            'status':$('#status').val(),
-            'pesan':$('#pesan').val(),
-        };
+    if($('#nama').val()=="" || $('#nama').val()==" "){
+        Swal.fire(
+          'Oopps!',
+          'Nama harus diisi',
+          'error'
+        );
+        return false;
+    }else if($('#status_hadir').val()=="" || $('#status_hadir').val()==" "){
+        Swal.fire(
+          'Oopps!',
+          'Status harus diisi',
+          'error'
+        );
+        return false;
+    }else if($('#pesan').val()=="" || $('#pesan').val()==" "){
 
-        if($('#nama').val()=="" || $('#nama').val()==" "){
-            Swal.fire(
-              'Oopps!',
-              'Nama harus diisi',
-              'error'
-            );
-            return false;
-        }else if($('#status').val()=="" || $('#status').val()==" "){
-            Swal.fire(
-              'Oopps!',
-              'Status harus diisi',
-              'error'
-            );
-            return false;
-        }else if($('#pesan').val()=="" || $('#pesan').val()==" "){
-
-            Swal.fire(
-              'Oopps!',
-              'Pesan arus diisi',
-              'error'
-            );
-            return false;
-        }
-
-        $.ajax({
-            type: "POST",
-            url: '<?php echo base_url(); ?>inv/buku-tamu/<?php echo encrypt_decrypt('encrypt',$sales_order_id); ?>',
-            data: JSON.stringify(param),
-            contentType: "application/json",
-            dataType: "json",
-            success: function(result){
-                
-                $('#nama').val('')
-                $('#status').val('')
-                $('#pesan').val('')
-                
-                if(result.status == 'success'){ 
-
-                    Swal.fire(
-                      'Success',
-                      'Data Berhasil disimpan',
-                      'success'
-                    );
-                    return false; 
-
-                }else{ 
-
-                    Swal.fire(
-                      'Oopps!',
-                      'Gagal Menyimpan Data',
-                      'error'
-                    );
-                    return false;
-                } 
-
-            }
-        }); 
+        Swal.fire(
+          'Oopps!',
+          'Pesan arus diisi',
+          'error'
+        );
+        return false;
     }
+
+    $.ajax({
+        type: "POST",
+        url: '<?php echo base_url(); ?>inv/buku-tamu/<?php echo encrypt_decrypt('encrypt',$sales_order_id); ?>',
+        data: JSON.stringify(param),
+        contentType: "application/json",
+        dataType: "json",
+        success: function(result){
+            
+            $('#nama').val('')
+            $('#status_hadir').val('')
+            $('#pesan').val('')
+            
+            if(result.status == 'success'){ 
+
+                Swal.fire(
+                  'Success',
+                  'Data Berhasil disimpan',
+                  'success'
+                );
+                return false; 
+
+            }else{ 
+
+                Swal.fire(
+                  'Oopps!',
+                  'Gagal Menyimpan Data',
+                  'error'
+                );
+                return false;
+            } 
+
+        }
+    });
+}
 
     var x = document.getElementById("myAudio");
     var audio = 1;

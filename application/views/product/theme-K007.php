@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css"/>
 	<!-- favicon links -->
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 <script src='http://www.webstrot.com/google_analytics_auto.js'></script></head>
 <body>
 	<!-- preloader Start -->
@@ -64,7 +67,7 @@
 			</div>
 			<div class="wd_single_index_menu_down">
 				<ul>
-					<li><a href="#" onclick="goTo('pasangan')" id="headbottom"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+					<li><a href="javascript:void(0);" onclick="goTo('pasangan')" id="headbottom"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -123,7 +126,7 @@
 									<p><?php echo $tempat_resepsi; ?></p>
 								</div>
 								<div class="wd_btn wd_single_index_menu_rsvp">
-									<a href="#" onclick="goTo('buku-tamu')">rsvp</a>
+									<a href="javascript:void(0);" onclick="goTo('buku-tamu')">rsvp</a>
 								</div>
 							</div>
 						</div>
@@ -232,26 +235,26 @@
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<div class="wd_event_infobox">
 							<h2>Akad Nikah</h2>
-							<h1><?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</h1>
+							<h1><?php echo hari($tanggal_akad); ?>, <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</h1>
 							<span><?php echo $tempat_akad; ?></span>
 							<div class="clearfix"></div>
-							<a href="#"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/map.png" alt="Map" class="img-responsive"></a>
+							<a href="javascript:void(0);"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/map.png" alt="Map" class="img-responsive"></a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
 						<div class="wd_event_infobox">
 							<h2>Resepsi Pernikahan</h2>
-							<h1><?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</h1>
+							<h1><?php echo hari($tanggal_resepsi); ?>, <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</h1>
 							<span><?php echo $tempat_resepsi; ?></span>
 							<div class="clearfix"></div>
-							<a href="#"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/map.png" alt="Map" class="img-responsive"></a>
+							<a href="javascript:void(0);"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/map.png" alt="Map" class="img-responsive"></a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-pull-4 col-md-pull-4 col-sm-pull-0">
 						<div class="wd_event_infobox">
 							<img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/event_img.gif" alt="Event Image">
 							<div class="wd_btn wd_single_index_menu_rsvp">
-								<a href="#" onclick="goTo('buku-tamu')">rsvp</a>
+								<a href="javascript:void(0);" onclick="goTo('buku-tamu')">rsvp</a>
 							</div>
 						</div>
 					</div>
@@ -267,7 +270,7 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="wd_heading wow fadeInDown" data-wow-delay="0.3s">
-							<h4>Jenny & Mark</h4>
+							<h4><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h4>
 							<h1>memorable photo gallery</h1>
 							<img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/content/heading.png" alt="Heading" class="img-responsive">
 						</div>
@@ -440,10 +443,10 @@
 								<form>
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<label>Nama :</label>
-	                                    <input type="text" name="nama" placeholder="Nama*" id="nama" class="require form-control">
+	                                    <input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control">
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<select name="status" class="form-control">
+										<select name="status" class="form-control" id="status_hadir">
 											<option value="">Apakah Kamu akan Hadir?</option>
 	                                        <option>Ya, Saya Akan hadir</option>
 	                                        <option>Ya, Mungkin Saya akan hadir</option>
@@ -451,7 +454,7 @@
 										</select>
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	                                    <textarea class="require form-control" name="pesan" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
+	                                    <textarea class="form-control" name="pesan" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<div class="response"></div>
