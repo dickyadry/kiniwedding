@@ -164,7 +164,7 @@
 	    var dd = e.getDate();
 	    var mm = e.getMonth() + 1;
 	    var y = e.getFullYear();
-	    var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
+	    var futureFormattedDate = document.getElementById('date_deadline').innerHTML;
 	    return futureFormattedDate;
 	}
 
