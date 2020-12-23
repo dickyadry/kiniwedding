@@ -143,8 +143,6 @@
 </div>
 <!-- top-movie-area-end -->
 
-
-
 <script type="text/javascript">
     function link(link) {
         window.location.href = link;
