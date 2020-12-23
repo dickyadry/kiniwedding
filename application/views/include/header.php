@@ -42,7 +42,7 @@
                                     <a href="<?php echo base_url(); ?>product">Produk</a>
                                 </li>
                                 <li <?php if($segment=="page" && $segment2=="contact"){?> class="active" <?php } ?>>
-                                    <a href="<?php echo base_url(); ?>page/contact">Contact</a>
+                                    <a href="<?php echo base_url(); ?>page/contact">Kontak</a>
                                 </li>
                             </ul>
                         </nav>

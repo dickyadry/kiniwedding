@@ -120,7 +120,7 @@ class WebController extends MY_Controller {
 	public function product(){
 
 		$data = array();
-		$data["title_page"] = "Event Stack";
+		$data["title_page"] = "KiniWedding";
 		$today = date('Y-m-d');
 
 		$limit = 9;
@@ -295,7 +295,7 @@ class WebController extends MY_Controller {
 	public function kolaborasi()
 	{
 
-		$data["title_page"] = "Event Stack";
+		$data["title_page"] = "KiniWedding";
 
 		$c = $this->load->view("contents/kolaborasi", $data, true);
 		$js = $this->load->view("js/js_detail", "", true);
@@ -305,7 +305,7 @@ class WebController extends MY_Controller {
 	public function narasumber()
 	{
 
-		$data["title_page"] = "Event Stack";
+		$data["title_page"] = "KiniWedding";
 
 		$c = $this->load->view("contents/narasumber", $data, true);
 		$js = $this->load->view("js/js_detail", "", true);
@@ -425,7 +425,7 @@ class WebController extends MY_Controller {
  //        $subject ="Aktivasi member";
  //        $this->email->set_newline("\r\n");
  //        $this->email->to($data_member["email"]);
- //        $this->email->from('admin@evenstack.id', 'EVENT STACK');
+ //        $this->email->from('admin@evenstack.id', 'KiniWedding');
 
  //        $data['data'] = $data_member;
  //        $message = $this->load->view("contents/email_template_aktivasi", $data);
@@ -454,7 +454,7 @@ class WebController extends MY_Controller {
   //       $subject ="Perubahan Password";
   //       $this->email->set_newline("\r\n");
   //       $this->email->to($email);
-  //       $this->email->from('admin@evenstack.id', 'EVENT STACK');
+  //       $this->email->from('admin@evenstack.id', 'KiniWedding');
 
   //       $data['token'] = $token;
   //       $message = $this->load->view("contents/email_template_lupa_password", $data);
@@ -481,7 +481,7 @@ class WebController extends MY_Controller {
  //        $subject ="Perubahan Password";
  //        $this->email->set_newline("\r\n");
  //        $this->email->to($email);
- //        $this->email->from('admin@evenstack.id', 'EVENT STACK');
+ //        $this->email->from('admin@evenstack.id', 'KiniWedding');
 
  //        $data['token'] = $token;
  //        $message = $this->load->view("contents/email_template_success_ubah_password", $data);
@@ -525,7 +525,7 @@ class WebController extends MY_Controller {
  //        $data['data'] = $sales_order;
  //        $this->email->set_newline("\r\n");
  //        $this->email->to($this->userpubliclog["email"]);
- //        $this->email->from('admin@evenstack.id', 'EVENT STACK');
+ //        $this->email->from('admin@evenstack.id', 'KiniWedding');
 
  //        $message = $this->load->view("contents/email_template", $data);
  //        // $this->email->subject($sales_order->sales_order_no);
@@ -554,7 +554,7 @@ class WebController extends MY_Controller {
  //        $data['data'] = $sales_order;
  //        $this->email->set_newline("\r\n");
  //        $this->email->to($this->userpubliclog["email"]);
- //        $this->email->from('admin@evenstack.id', 'EVENT STACK');
+ //        $this->email->from('admin@evenstack.id', 'KiniWedding');
 
  //        $message = $this->load->view("contents/email_payment_success", $data);
  //        // $this->email->subject($sales_order->sales_order_no);
@@ -576,7 +576,7 @@ class WebController extends MY_Controller {
     //     $data['msg'] = 'asd';
     //     $this->email->set_newline("\r\n");
     //     $this->email->to($this->userpubliclog["email"]);
-    //     $this->email->from('admin@evenstack.id', 'EVENT STACK');
+    //     $this->email->from('admin@evenstack.id', 'KiniWedding');
 
     //     $message = $this->load->view("contents/email_link", $data);
     //     // $this->email->subject($sales_order->sales_order_no);

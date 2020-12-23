@@ -22,14 +22,14 @@
                             <?php } ?>
                     </div>
                     <div class="sort-show">
-                        <form method="GET" action="" name="form_order">
+   <!--                      <form method="GET" action="" name="form_order">
                             <i class="fas fa-long-arrow-alt-up"></i>
                             <i class="fas fa-long-arrow-alt-down"></i>
                             <select name="order_by" onchange="selectOrder()">
                                 <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Terbaru'){?> selected <?php } ?>>Terbaru</option>
                                 <option <?php if(isset($_GET['order_by']) && $_GET['order_by']=='Terpopuler'){?> selected <?php } ?>>Terpopuler</option>
                             </select>
-                        </form>
+                        </form> -->
                     </div>
 
                     <div class="pages">
@@ -49,21 +49,22 @@
                                 <?php if(count($datas)>0){ ?>
                                 <?php foreach ($datas as $key => $value) { ?>
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                     <div class="single-top-movie" onclick='link("<?php echo base_url(); ?>event/<?php echo $value->code; ?>")'>
+                                     <div class="single-top-movie" onclick='link("<?php echo base_url(); ?>product/<?php echo $value->code; ?>")'>
                                         <div class="img" >
-                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
+                                            <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>">
                                                 <img src="<?php echo $value->cover; ?>" alt="<?php echo str_replace('"',"`", $value->name); ?>">
                                             </a>
                                         </div>
                                         <span class="view-counter"><?php echo $value->code; ?></span>
                                         <div class="content">
                                             <h2 class="name">
-                                                <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><?php echo $value->name; ?></a>
+                                                <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><?php echo $value->name; ?></a>
                                             </h2>
                                             <br>
                                             <div class="price clearfix"><?php echo $value->category_name; ?></div>
                                             <p class="date"><?php echo isset($value->price)?rupiah($value->price):''; ?></p>
-                                            <a href="<?php echo base_url(); ?>event/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
+                                            <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
+                                            <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Demo</p></a>
                                         </div>
                                     </div>
                                 </div>

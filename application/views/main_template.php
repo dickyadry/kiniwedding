@@ -111,7 +111,8 @@
   </style>
 
   <script data-ad-client="ca-pub-9219118163808816" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
   </head>
 
   <body>
@@ -125,6 +126,8 @@
     <div class="full-loader hidden">
       <div class="loader" style="margin: auto;"></div> 
     </div>
+    
+    <div class="elfsight-app-0f691803-1777-47c0-9922-8b607a776fd1"></div>
     
       <?php echo $header; ?>
 

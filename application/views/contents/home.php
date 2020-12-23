@@ -64,7 +64,7 @@
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
                         <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
                         <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Detail</p></a>
-                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Demo</p></a>
+                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Demo</p></a>
                     </div>
                 </div>
             <?php } ?>
@@ -99,7 +99,7 @@
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
                         <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
                         <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
-                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Demo</p></a>
+                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Demo</p></a>
                     </div>
                 </div>
             <?php } ?>
@@ -134,7 +134,7 @@
                         <div class="price clearfix"><?php echo $value->category_name; ?></div>
                         <p class="date"><?php echo (isset($value->price) && $value->price>0)?rupiah($value->price):'GRATIS'; ?></p>
                         <a href="<?php echo base_url(); ?>product/<?php echo $value->code; ?>" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Detail</p></a>
-                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->title); ?>"><p class="duration">Demo</p></a>
+                        <a href="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$value->id); ?>" target="_blank" title="<?php echo str_replace('"',"`", $value->name); ?>"><p class="duration">Demo</p></a>
                     </div>
                 </div>
             <?php } ?>

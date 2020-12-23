@@ -3860,7 +3860,6 @@ body.home-3 a:hover {
 .details {}
 
 .details-movie {
-    /*border-right: 1px solid #252438;*/
     float: left;
     margin: 0 40px 14px 0;
     /*overflow: auto;*/
@@ -3872,6 +3871,7 @@ body.home-3 a:hover {
     /*width: 268px;*/
     width: 468px;
     display: table;
+    border: 1px solid #f2f2f2;
 }
 
 
@@ -4228,7 +4228,7 @@ body.home-3 a:hover {
 .grid-menu .pages ul li:last-child a {
     background: #0c0b21 none repeat scroll 0 0;
     border-color: #333333;
-    color: #000;
+    color: #fff;
 }
 
 .grid-menu .pages ul li:first-child a {}
@@ -4237,9 +4237,10 @@ body.home-3 a:hover {
 
 .grid-menu .pages ul li a:hover,
 .grid-menu .pages ul li a.active {
-    background: #ddd35d none repeat scroll 0 0;
-    border-color: #ddd35d;
-    color: #fff
+    background: #f2f2f2 none repeat scroll 0 0;
+    /*border-color: #ddd35d;*/
+    border: 1px solid #f2f2f2;
+    color: #000;
 }
 
 .grid-movies .single-top-movie {
