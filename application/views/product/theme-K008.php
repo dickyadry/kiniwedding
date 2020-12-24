@@ -572,6 +572,4 @@
 
 
     </body>
-
-<!-- Mirrored from www.webstrot.com/html/wedding/05_winter_wedding/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 05:46:51 GMT -->
 </html>

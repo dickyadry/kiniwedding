@@ -457,7 +457,4 @@
     <?php echo $js; ?>
 
 </body>
-
-
-<!-- Mirrored from www.designesia.com/themes/lovus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 06:25:28 GMT -->
 </html>

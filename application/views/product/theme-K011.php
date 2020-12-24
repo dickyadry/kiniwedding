@@ -529,6 +529,4 @@
 
         <?php echo $js; ?>
 	</body>
-
-<!-- Mirrored from demo.regediter.com/arlin-landing/arlin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 06:26:26 GMT -->
 </html>

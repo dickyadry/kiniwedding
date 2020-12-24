@@ -380,6 +380,4 @@
     <?php echo $js; ?>
 
 </body>
-
-<!-- Mirrored from html.themexriver.com/true-love/style-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 07:35:25 GMT -->
 </html>
