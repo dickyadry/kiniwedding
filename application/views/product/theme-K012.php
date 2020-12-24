@@ -549,20 +549,6 @@
 			</div>
 		</section>
 
-		<!-- Our Divider -->
-		<section class="ulockd-video parallax ulockd_bgi2 overlay-tc75" data-stellar-background-ratio="0.3">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="video-button text-center">
-							<a class="mfp-iframe mfp-youtube color-white fz60" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/https://www.youtube.com/watch?time_continue=18&amp;v=teLhLLlhfzc" title="About Our Company"><span class="flaticon-play-button"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-
 		<!-- Our RSVP -->
 		<section class="ulockd-rsvp ulockd_bgi3 parallax buku-tamu" data-stellar-background-ratio="0.3">
 			<div class="container">
