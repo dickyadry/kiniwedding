@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from html.themexriver.com/true-love/style-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 07:34:22 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
