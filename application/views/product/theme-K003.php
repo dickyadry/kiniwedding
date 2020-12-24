@@ -82,7 +82,7 @@
     <section onclick="playAudio()" type="button" id="over-lay">
 
     	<div class="box-start">
-	        <!-- <a href='#' class="text-start" onclick="stopScrolling()">Silahkan klik dimanapun untuk mulai membuka website</a> -->q
+	        <!-- <a href='#' class="text-start" onclick="stopScrolling()">Silahkan klik dimanapun untuk mulai membuka website</a> -->
 	    </div>
 
         <div class="gla_invitation_container">
