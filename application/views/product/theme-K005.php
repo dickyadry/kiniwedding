@@ -1,7 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 02:35:51 GMT -->
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">

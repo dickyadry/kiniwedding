@@ -202,6 +202,7 @@
 
     /* ----- FLIP CLOCK ----- */
     function flip_Clock() {
+        var get_date = document.getElementById('date_deadline').innerHTML;
         var clock;    
         var clock;
         clock = $('.clock').FlipClock({
@@ -214,7 +215,7 @@
             }
         });
                 
-        clock.setTime(8220880);
+        clock.setTime(get_date);
         clock.setCountdown(true);
         clock.start();
     }

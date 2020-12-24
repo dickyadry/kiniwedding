@@ -491,6 +491,4 @@
         <?php echo $js; ?>
 
     </body>
-
-<!-- Mirrored from www.webstrot.com/html/wedding/01_arabic_wedding/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 05:47:15 GMT -->
 </html>
