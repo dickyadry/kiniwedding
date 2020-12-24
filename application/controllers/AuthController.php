@@ -378,7 +378,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $id;
 			$name = $paramData['name'];
-			$organization = $paramData['organization'];
+			// $organization = $paramData['organization'];
 			$email = $paramData['email'];
 			$phone = "";
 			$icon = null;
@@ -389,7 +389,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $member->id;
 			$name = $member->name;
-			$organization = $member->organization;
+			// $organization = $member->organization;
 			$email = $member->email;
 			$phone = $member->phone;
 			$icon = $member->icon;
@@ -407,7 +407,7 @@ class AuthController extends MY_Controller {
 			"member_id" => $member_id,
 			"login" =>true,
 			"name" => $name,
-			"organization" => $rganization,
+			// "organization" => $rganization,
 			"email" => strtolower($email),
 			"phone" => $phone,
 			"icon" => $icon,
@@ -503,7 +503,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $id;
 			$name = $paramData['name'];
-			$organization = $paramData['organization'];
+			// $organization = $paramData['organization'];
 			$email = $paramData['email'];
 			$phone = "";
 			$icon = null;
@@ -514,7 +514,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $member->id;
 			$name = $member->name;
-			$organization = $member->organization;
+			// $organization = $member->organization;
 			$email = $member->email;
 			$phone = $member->phone;
 			$icon = $member->icon;
@@ -532,7 +532,7 @@ class AuthController extends MY_Controller {
 			"member_id" => $member_id,
 			"login" =>true,
 			"name" => $name,
-			"organization" => $rganization,
+			// "organization" => $rganization,
 			"email" => strtolower($email),
 			"phone" => $phone,
 			"icon" => $icon,
@@ -559,7 +559,7 @@ class AuthController extends MY_Controller {
     			"username" => $paramData['email'],
     			"email" => $paramData['email'],
     			"name" => $paramData['first_name'] . ' ' . $paramData['last_name'],
-    			"organization" => $paramData['first_name'] . ' ' . $paramData['last_name'],
+    			// "organization" => $paramData['first_name'] . ' ' . $paramData['last_name'],
     		);
     		$id = $this->member_model->insert($insert);
 
@@ -575,7 +575,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $id;
 			$name = $paramData['first_name'] . ' ' . $paramData['last_name'];
-			$organization = $paramData['first_name'] . ' ' . $paramData['last_name'];
+			// $organization = $paramData['first_name'] . ' ' . $paramData['last_name'];
 			$email = $paramData['email'];
 			$phone = "";
 			$icon = null;
@@ -586,7 +586,7 @@ class AuthController extends MY_Controller {
 
     		$member_id = $member->id;
 			$name = $member->name;
-			$organization = $member->organization;
+			// $organization = $member->organization;
 			$email = $member->email;
 			$phone = $member->phone;
 			$icon = $member->icon;
@@ -604,7 +604,7 @@ class AuthController extends MY_Controller {
 			"member_id" => $member_id,
 			"login" =>true,
 			"name" => $name,
-			"organization" => $organization,
+			// "organization" => $organization,
 			"email" => strtolower($email),
 			"phone" => $phone,
 			"icon" => $icon,

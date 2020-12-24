@@ -26,7 +26,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <div class="logo">
                         <a href="<?php echo base_url(); ?>">
-                            <img src="<?php echo ASSETS; ?>img/logo-with-text-putih" alt="">
+                            <img src="<?php echo ASSETS; ?>img/logo-with-text-putih.png" alt="">
                         </a>
                     </div>
                 </div>

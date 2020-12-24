@@ -16,7 +16,7 @@
     <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
     <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
     <meta name="author" content="kiniwedding.com">
-    <meta name="google-signin-client_id" content="361252480770-hh4a48rho35utt3fa8imn0g5muadqme6.apps.googleusercontent.com"> <!-- PROD -->
+    <meta name="google-signin-client_id" content="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"> <!-- PROD -->
 
     <?php if(isset($detail)){ ?>
       <?php if($type=="detail"){ ?>
@@ -135,7 +135,7 @@
 
       
     <div id="g_id_onload"
-        data-client_id="361252480770-hh4a48rho35utt3fa8imn0g5muadqme6.apps.googleusercontent.com"
+        data-client_id="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"
         data-login_uri="<?php echo base_url("login-using-google"); ?>"
         data-provider="google"
         data-scope="public_profile,email,openid" 
@@ -307,7 +307,7 @@
         // FB JavaScript SDK configuration and setup
         FB.init({
           // appId      : '978645215924977', // FB App ID DEV
-          appId      : '597752600925275', // FB App ID PROD
+          appId      : '387871355645473', // FB App ID PROD
           cookie     : true,  // enable cookies to allow the server to access the session
           xfbml      : true,  // parse social plugins on this page
           version    : 'v3.2' // use graph api version 2.8
