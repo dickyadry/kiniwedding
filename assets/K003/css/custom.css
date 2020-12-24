@@ -63,7 +63,7 @@
     cursor: pointer;
     z-index: 999999999999999999999999999999999999999999999;
     /* display: none; */
-    padding-top: 352px;
+    /*padding-top: 352px;*/
 }
 
 .tapfp {
@@ -259,6 +259,70 @@
 }
 
 .box-stop-scrolling a {
+    color: #FFF;
+}
+
+
+/* ------------------------------- */
+.box-start {
+/*  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  text-align: center;*/
+  position: relative;
+  display: block;
+  width: 100%;
+  /*z-index: 999;*/
+  /*bottom: 15px;*/
+  /*padding: 0 10px;*/
+
+}
+
+.text-start {
+  background-color: rgba(255, 109, 109, 0.7);
+  height: 45px;
+  line-height: 45px;
+  border: 2px solid #FF6D6D;
+  border-radius: 45px;
+  text-align: center;
+  z-index: 999;
+  bottom: 15px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+@media (max-width: 991px) {
+  .text-start {
+    /*width: 35px;*/
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
+.text-start:hover {
+  background-color: #FF6D6D;
+}
+
+.text-start i {
+  font-size: 18px;
+  font-size: 1.2rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.box-start a {
     color: #FFF;
 }
 

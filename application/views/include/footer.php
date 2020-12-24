@@ -4,8 +4,8 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="footer__subtitle"><a href="<?php echo base_url('page/about') ?>" class="footer__link">About Us</a></div>
                 <div class="footer__subtitle"><a href="<?php echo base_url('page/contact') ?>" class="footer__link">Contact Us</a></div>
-                <div class="footer__subtitle"><a href="<?php echo base_url('page/faq') ?>" class="footer__link">FAQ</a></div>
-                <div class="footer__subtitle"><a href="<?php echo base_url('panduan') ?>" class="footer__link">Panduan</a></div>
+                <!-- <div class="footer__subtitle"><a href="<?php echo base_url('page/faq') ?>" class="footer__link">FAQ</a></div> -->
+                <!-- <div class="footer__subtitle"><a href="<?php echo base_url('panduan') ?>" class="footer__link">Panduan</a></div> -->
             <!--     <p class="footer__paragraph">Gedung KOMPAS GRAMEDIA </br>
                     Jl. Panjang 8A, Kebon Jeruk</br>
                     Jakarta Barat, 11530, Indonesia</br>

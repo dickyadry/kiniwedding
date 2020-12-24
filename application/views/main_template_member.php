@@ -3,11 +3,11 @@
 	<head>
 	
 	<!-- Google Tag Manager -->
-<!--     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MDT222X');</script> -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
@@ -142,17 +142,16 @@
 		<div class="full-loader hidden">
 			<div class="loader" style="margin: auto;"></div> 
 		</div>
-		<!-- Google Tag Manager (noscript) -->
-<!-- 	    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDT222X"
-	    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-	    <!-- End Google Tag Manager (noscript) -->
-	    <!-- TOP MENU START -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXZ8CKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	    
 		<!-- Navbar -->
 		<div class="navbar navbar-inverse" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="<?php echo base_url(); ?>">
-					<img src="<?php echo ASSETS; ?>img/logo-with-text-putih" alt="" style="max-width: 150px; margin-top: -5px;">
+					<img src="<?php echo ASSETS; ?>img/logo-with-text-putih.png" alt="" style="max-width: 150px; margin-top: -7px;">
 					<a></a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons">
 						<span class="sr-only">Toggle navbar</span>

@@ -85,9 +85,9 @@ $route['cart/set-order'] = 'CartController/setorder';
 $route['cart/upload-bukti-transfer'] = "FrontEndController/bukti_transfer_upload";
 
 $route['page/services'] = 'StaticPageController/services';
-$route['page/panduan'] = 'StaticPageController/panduan';
+// $route['page/panduan'] = 'StaticPageController/panduan';
 $route['page/about'] = 'StaticPageController/about';
-$route['page/faq'] = 'StaticPageController/faq';
+// $route['page/faq'] = 'StaticPageController/faq';
 $route['page/contact'] = 'StaticPageController/contact';
 
 $route['payment/notification/(:any)'] = "PaymentController/notification/$1";
@@ -114,15 +114,15 @@ $route['login-with-facebook'] = 'AuthController/login_facebook/$1';
 $route['member/upload-icon'] = "FrontEndController/icon_upload";
 
 ######## PANDUAN ###########
-$route['panduan'] = "PanduanController/registrasi";
-$route['panduan/registrasi'] = "PanduanController/registrasi";
-$route['panduan/buat-event'] = "PanduanController/buat_event";
-$route['panduan/pesan-tiket'] = "PanduanController/pesan_tiket";
-$route['panduan/formulir-data-tambahan'] = "PanduanController/formulir_data_tambahan";
-$route['panduan/persingkat-link'] = "PanduanController/persingkat_link";
-$route['panduan/multiple-form'] = "PanduanController/multiple_form";
-$route['panduan/data-peserta'] = "PanduanController/data_peserta";
-$route['panduan/esertifikat'] = "PanduanController/esertifikat";
+// $route['panduan'] = "PanduanController/registrasi";
+// $route['panduan/registrasi'] = "PanduanController/registrasi";
+// $route['panduan/buat-event'] = "PanduanController/buat_event";
+// $route['panduan/pesan-tiket'] = "PanduanController/pesan_tiket";
+// $route['panduan/formulir-data-tambahan'] = "PanduanController/formulir_data_tambahan";
+// $route['panduan/persingkat-link'] = "PanduanController/persingkat_link";
+// $route['panduan/multiple-form'] = "PanduanController/multiple_form";
+// $route['panduan/data-peserta'] = "PanduanController/data_peserta";
+// $route['panduan/esertifikat'] = "PanduanController/esertifikat";
 
 ######## WEDDING INVITATION ###########
 $route['inv/buku-tamu/(:any)'] = 'WeddingController/buku_tamu/$1';
