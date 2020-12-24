@@ -496,7 +496,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 justify-content-center">
-						<p><a href="https://kiniwedding.com" target="_blank">kiniwedding.com &copy; Copyright 2021, All Rights Reserved.</p>
+						<p><a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a> &copy; Copyright 2021, All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>
