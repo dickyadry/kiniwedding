@@ -338,7 +338,7 @@
 	</section> <!-- .the-heart-paper-effect-bg END -->
 	
 	<!-- The Heart You Are Attending -->
-	<section class="the-heart-you-are-attending-section section-padding" id="the-heart-attending">
+	<section class="the-heart-you-are-attending-section section-padding buku-tamu" id="the-heart-attending">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12">
