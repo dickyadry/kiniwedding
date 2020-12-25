@@ -93,6 +93,7 @@ if($('.jarallax').length>0) {
 6.THE HEART SLIDER JS
 ------------------------------------------------------------*/
 if($('.the-heart-slider').length>0) {
+  var urass = document.getElementById('urass').innerHTML;
 
 $('.the-heart-slider').owlCarousel({
     // rtl:true,
@@ -105,8 +106,8 @@ $('.the-heart-slider').owlCarousel({
 	autoplayTimeout:4000,
 	animateOut: 'fadeOut',
   	animateIn: 'fadeIn',
-    navText: ["<img src='img/slidernav-left.png' alt='Slider Nav' />",
-      "<img src='img/slidernav-right.png' alt='Slider Nav' />"],
+    navText: ["<img src='"+urass+"img/slidernav-left.png' alt='Slider Nav' />",
+      "<img src='"+urass+"img/slidernav-right.png' alt='Slider Nav' />"],
     navigation: true,
 
 });
@@ -268,16 +269,21 @@ if($('.wow').length > 0) {
 	new WOW().init();
 }
 
-
+var tanggal = document.getElementById('tanggal').innerHTML;
+var bulan = document.getElementById('bulan').innerHTML;
+var tahun = document.getElementById('tahun').innerHTML;
+var jam = document.getElementById('jam').innerHTML;
+var menit = document.getElementById('menit').innerHTML;
+var detik = document.getElementById('detik').innerHTML;
 if($('#heart_countdown').length > 0) {
   $('#heart_countdown').countDown({
     targetDate: {
-      'day':    12,
-      'month':  3,
-      'year':   2018,
-      'hour':   11,
-      'min':    13,
-      'sec':    0
+      'day':    tanggal,
+      'month':  bulan,
+      'year':   tahun,
+      'hour':   jam,
+      'min':    menit,
+      'sec':    detik
     },
     omitWeeks: true
   });
