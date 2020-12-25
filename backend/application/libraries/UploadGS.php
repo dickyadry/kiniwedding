@@ -53,6 +53,31 @@ class UploadGS{
 	    // is it succeed ?
 	    return $storageObject != null;
 	}
+
+	public function deleteFile($cloudPath) {
+	    // $this->privateKeyFileContent = $GLOBALS['privateKeyFileContent'];
+	    // connect to Google Cloud Storage using private key as authentication
+	    try {
+	        $storage = new StorageClient([
+	            'keyFile' => json_decode($this->privateKeyFileContent, true)
+	        ]);
+	    } catch (Exception $e) {
+	        // maybe invalid private key ?
+	        print $e;
+	        return false;
+	    }
+	 
+	    // set which bucket to work in
+	    try {
+	    	$bucket = $storage->bucket($this->bucketName);
+		    $object = $bucket->object($cloudPath);
+		    return $object->delete();
+	    } catch(Exception $e){
+	    	
+		    return "error";
+	    }
+	    
+	}
 	 
 	public function getFileInfo($cloudPath) {
 	    // $this->privateKeyFileContent = $GLOBALS['privateKeyFileContent'];
@@ -71,6 +96,24 @@ class UploadGS{
 	    $bucket = $storage->bucket($this->bucketName);
 	    $object = $bucket->object($cloudPath);
 	    return $object->info();
+	}
+
+	public function getFile($cloudPath) {
+	    // $this->privateKeyFileContent = $GLOBALS['privateKeyFileContent'];
+	    // connect to Google Cloud Storage using private key as authentication
+	    try {
+	        $storage = new StorageClient([
+	            'keyFile' => json_decode($this->privateKeyFileContent, true)
+	        ]);
+	    } catch (Exception $e) {
+	        // maybe invalid private key ?
+	        print $e;
+	        return false;
+	    }
+	 
+	    $storage->registerStreamWrapper();
+	    $contents = file_get_contents('gs://'.$this->bucketName.'/'.$cloudPath.'');
+	    return $contents;
 	}
 
 	//this (listFiles) method not used in this example but you may use according to your need 

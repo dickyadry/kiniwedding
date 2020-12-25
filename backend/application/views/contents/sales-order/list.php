@@ -71,11 +71,14 @@
                     <td scope="col"><?php echo $value->payment_time; ?></td>
                     <td style="text-align: center;"><?php if($value->bukti_transfer!=null){?><a href="<?php echo $value->bukti_transfer ?>" class="btn btn-icon btn-success" target="_blank"><i class="icon-eye4"></i></a><?php } ?></td>
                     <td align="center">
-                        <a href="<?php echo base_url() . "sales-order/view/" . encrypt_decrypt('encrypt',$value->id);?>">
+
+                        <?php if($value->link_web!=""){ ?>
+                        <a href="https://kiniwedding.com/inv/<?php echo $value->link_web; ?>" target="_blank">
                             <button type="button" class="btn btn-warning btn-icon">
                                 <i class="icon-eye6"></i>
                             </button>
                         </a>
+                        <?php } ?>
                         <a href="<?php echo base_url() . "sales-order/product-images/" . encrypt_decrypt('encrypt',$value->id);?>">
                             <button type="button" class="btn btn-warning btn-icon">
                                 <i class="icon-images"></i>

@@ -22,48 +22,6 @@
 		<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet" media="screen">
 		<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
-		<style type="text/css">
-			/*Invitations*/
-			.gla_invitation_i {
-				width: 525px;
-				height: 743px;
-				-webkit-background-size: cover;
-				background-size: cover;
-				position: relative;
-				left: 50%;
-				transform: translateY(0) translateX(-50%);
-				border-radius: 20px;
-				overflow: hidden;
-				text-align: center;
-				padding: 120px 120px;
-				color: #000;
-				-webkit-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
-			  -moz-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
-			  box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
-			  -webkit-transition: all 0.3s;
-			  -o-transition: all 0.3s;
-			  transition: all 0.3s;
-			}
-				.gla_invitation_i:hover {
-					-webkit-box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
-			    -moz-box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
-			    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
-			    transform:translateY(-10px) translateX(-50%);
-				}
-			.gla_invitation_i h2 {
-				font-size: 40px;
-				line-height: 30px;
-				font-family: 'Lobster';
-			}
-			.gla_invitation_container {
-				padding: 30px 0;
-			}
-			.gla_invitation_container h2 {
-				margin-bottom: 20px;
-			}
-		</style>
-
-
 	</head>
 <body>
 	
@@ -79,11 +37,7 @@
     </div> -->
 
     <!-- Content -->
-    <section onclick="playAudio()" type="button" id="over-lay">
-
-    	<div class="box-start">
-	        <!-- <a href='#' class="text-start" onclick="stopScrolling()">Silahkan klik dimanapun untuk mulai membuka website</a> -->
-	    </div>
+    <section onclick="playAudio()" type="button" id="over-lay" style='background-image: url("<?php echo base_url(); ?>assets/K004/images/wedding_m/sweet-ice-cream-photography-87191.jpg")'>
 
         <div class="gla_invitation_container">
             <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>assets/K004/images/invitations/inv_i/back4.jpg")'>
@@ -95,7 +49,7 @@
                 <h4><?php echo $tempat_resepsi; ?></p></h4>
                 <br>
                 <div class="box-start">
-			        <a href='#' class="text-start" onclick="stopScrolling()">Masuk</a>
+			        <a href='#' class="text-start">Masuk</a>
 			    </div>
 
                 
@@ -456,7 +410,7 @@
 		</div> <!-- /.footer_top -->
 
 		<!-- .footer_bottom -->
-		<div class="footer_bottom">
+		<div class="footer_bottom finish">
 			<p>&copy; Copyright 2021, Made with love by <a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a></p>
 		</div> <!-- /.footer_bottom -->
 	</footer> <!-- /footer -->

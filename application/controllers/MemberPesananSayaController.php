@@ -19,6 +19,7 @@ class MemberPesananSayaController extends MY_Controller {
 		$this->sales_order_model = new GeneralModel("sales_order");
 		$this->sales_order_detail_model = new GeneralModel("sales_order_detail");
 		$this->sales_order_form_model = new GeneralModel("sales_order_form");
+		$this->sales_order_images_model = new GeneralModel("sales_order_images");
 
 	}
 
@@ -223,6 +224,7 @@ class MemberPesananSayaController extends MY_Controller {
 				$this->load_layout_member($c,$js);
 
 			}
+
 		}else{
 			redirect("404");
 		}
@@ -279,6 +281,58 @@ class MemberPesananSayaController extends MY_Controller {
 			$this->sales_order_form_model->insert($param_data);
 
 		}
+
+		$data = $this->sales_order_form_model->find($id,'sales_order_id');
+		$sales_order = $this->sales_order_model->find($id);
+		$sales_order_detail = $this->sales_order_detail_model->find($id,'sales_order_id');
+		$product = $this->product_model->find($sales_order_detail->product_id);
+		
+		$query = $this->buku_tamu_model->source();
+		$query->where('sales_order_id',$id);
+		$query->order_by('id','DESC');
+		$data->buku_tamu = $query->get()->result();
+
+		$query = $this->sales_order_images_model->source();
+		$query->where('sales_order_id',$id);
+		$query->where('type','SLIDER');
+		$query->order_by('order','ASC');
+		$data->slider = $query->get()->result();
+
+		$query = $this->sales_order_images_model->source();
+		$query->where('sales_order_id',$id);
+		$query->where('type','GALERI');
+		$query->order_by('order','ASC');
+		$data->galeri = $query->get()->result();
+
+		$query = $this->sales_order_images_model->source();
+		$query->where('sales_order_id',$id);
+		$query->where('type','PENGANTIN');
+		$query->order_by('order','ASC');
+		$data->pengantin = $query->get()->result();
+
+		$query = $this->sales_order_images_model->source();
+		$query->where('sales_order_id',$id);
+		$query->where('type','BACKGROUND');
+		$query->order_by('order','ASC');
+		$data->background = $query->get()->result();
+
+		$query = $this->sales_order_images_model->source();
+		$query->where('sales_order_id',$id);
+		$query->where('type','LAINNYA');
+		$query->order_by('order','ASC');
+		$data->lainnya = $query->get()->result();
+
+		$uploadPath = APPPATH . '../public/images_'.$id.'.json';
+		$json_data = json_encode($sales_order_form);
+		file_put_contents($uploadPath, $json_data);
+
+		$uploadGS = new uploadGS();
+    	$cloudPath = 'data_invitation/'.$id.'.json';
+		$fileContent = file_get_contents($uploadPath);
+		$uploadGS->deleteFile($cloudPath);
+		$isSucceed = $uploadGS->uploadFile($fileContent, $cloudPath);
+
+		unlink($uploadPath);
 
 		$this->session->set_flashdata("success", "Data berhasil disimpan");
 		redirect(base_url('member/pesanan-saya'));

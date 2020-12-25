@@ -51,7 +51,9 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -80,7 +82,7 @@
         /* Safari 7.0+ */
         display: flex;
         align-items: center;
-        padding-top: 0px;
+        padding: 15px 10px;
     }
 }
 /*--------------------------------------------------------------
@@ -433,3 +435,69 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/*Invitations*/
+      .gla_invitation_i {
+        width: 525px;
+        height: 743px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        left: 50%;
+        transform: translateY(0) translateX(-50%);
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        padding: 120px 120px;
+        color: #000;
+        -webkit-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+        .gla_invitation_i:hover {
+          -webkit-box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+          -moz-box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+          box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+          transform:translateY(-10px) translateX(-50%);
+        }
+      .gla_invitation_i h2 {
+        font-size: 40px;
+        line-height: 30px;
+        font-family: 'Lobster';
+      }
+      .gla_invitation_container {
+        padding: 30px 0;
+      }
+      .gla_invitation_container h2 {
+        margin-bottom: 20px;
+      }
+    @media screen and (max-width: 769px) {
+        .gla_invitation_i {
+        width: 100%;
+        height: 743px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        left: 50%;
+        transform: translateY(0) translateX(-50%);
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        padding: 30px 30px;
+        color: #000;
+        -webkit-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      .gla_invitation_i img{
+        width: 60%;
+        margin-top: 70px;
+      }
+    }
