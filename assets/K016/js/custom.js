@@ -27,16 +27,22 @@
   // mobile Menu area
 
   // coming count down clock
+  var tanggal = document.getElementById('tanggal').innerHTML;
+  var bulan = document.getElementById('bulan').innerHTML;
+  var tahun = document.getElementById('tahun').innerHTML;
+  var jam = document.getElementById('jam').innerHTML;
+  var menit = document.getElementById('menit').innerHTML;
+  var detik = document.getElementById('detik').innerHTML;
   var countDown =  $('#event-count');
   if(countDown.length){
     countDown.countDown({
       targetDate: {
-        'day'   : 15,
-        'month' : 2,
-        'year'  : 2028,
-        'hour'  : 23,
-        'min'   : 59,
-        'sec'   : 59
+        'day'   : tanggal,
+        'month' : bulan,
+        'year'  : tahun,
+        'hour'  : jam,
+        'min'   : menit,
+        'sec'   : detik
       },
       omitWeeks: true
     });
