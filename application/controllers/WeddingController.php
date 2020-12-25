@@ -20,65 +20,56 @@ class WeddingController extends MY_Controller {
 	}
 
 	public function wedding($param="dicky-dan-ricka"){
+	
+		$data = $this->sales_order_form_model->find($param,'link_web');
+		if(isset($data->id) && $data->status=="PUBLISH"){
 
-		$uploadPath ="https://storage.googleapis.com/eventstack-storage/data_invitation/0.json";
-		if (!file_get_contents($uploadPath)) {
-
-			// $data = $this->sales_order_form_model->find($param,'link_web');
-			// $sales_order = $this->sales_order_model->find($data->sales_order_id);
-			// $sales_order_detail = $this->sales_order_detail_model->find($data->sales_order_id,'sales_order_id');
-			// $product = $this->product_model->find($sales_order_detail->product_id);
+			$sales_order = $this->sales_order_model->find($data->sales_order_id);
+			$sales_order_detail = $this->sales_order_detail_model->find($data->sales_order_id,'sales_order_id');
+			$product = $this->product_model->find($sales_order_detail->product_id);
 			
-			// $query = $this->buku_tamu_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->order_by('id','DESC');
-			// $data->buku_tamu = $query->get()->result();
+			$query = $this->buku_tamu_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->order_by('id','DESC');
+			$data->buku_tamu = $query->get()->result();
 
-			// $query = $this->sales_order_images_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->where('type','SLIDER');
-			// $query->order_by('order','ASC');
-			// $data->slider = $query->get()->result();
+			$query = $this->sales_order_images_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->where('type','SLIDER');
+			$query->order_by('order','ASC');
+			$data->slider = $query->get()->result();
 
-			// $query = $this->sales_order_images_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->where('type','GALERI');
-			// $query->order_by('order','ASC');
-			// $data->galeri = $query->get()->result();
+			$query = $this->sales_order_images_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->where('type','GALERI');
+			$query->order_by('order','ASC');
+			$data->galeri = $query->get()->result();
 
-			// $query = $this->sales_order_images_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->where('type','PENGANTIN');
-			// $query->order_by('order','ASC');
-			// $data->pengantin = $query->get()->result();
+			$query = $this->sales_order_images_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->where('type','PENGANTIN');
+			$query->order_by('order','ASC');
+			$data->pengantin = $query->get()->result();
 
-			// $query = $this->sales_order_images_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->where('type','BACKGROUND');
-			// $query->order_by('order','ASC');
-			// $data->background = $query->get()->result();
+			$query = $this->sales_order_images_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->where('type','BACKGROUND');
+			$query->order_by('order','ASC');
+			$data->background = $query->get()->result();
 
-			// $query = $this->sales_order_images_model->source();
-			// $query->where('sales_order_id',$data->sales_order_id);
-			// $query->where('type','LAINNYA');
-			// $query->order_by('order','ASC');
-			// $data->lainnya = $query->get()->result();
+			$query = $this->sales_order_images_model->source();
+			$query->where('sales_order_id',$data->sales_order_id);
+			$query->where('type','LAINNYA');
+			$query->order_by('order','ASC');
+			$data->lainnya = $query->get()->result();
 
-	  		redirect("404");
+			$data->js = $this->load->view("js/product/js_custom_".$data->product->code, $data, true);
+		    $this->load->view("product/theme-".$data->product->code, $data);
 
-		} else {
+		}else{
 
-			$sales_order_form = file_get_contents($uploadPath);
-			$data = json_decode($sales_order_form);
-			if(isset($data->product)){
-				$data->js = $this->load->view("js/product/js_custom_".$data->product->code, $data, true);
-			}else{
-				redirect("404");
-			}
-
+			redirect(base_url('404'));
 		}
-
-	    $this->load->view("product/theme-".$data->product->code, $data);
 		
 
 	}

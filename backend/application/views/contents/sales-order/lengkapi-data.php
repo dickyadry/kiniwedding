@@ -334,6 +334,16 @@
                                         <i><b>Contoh:</b>Dan diantara tanda-tanda kekuasaanNya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikanNya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir (QS. Ar. Ruum — (30):21)
                                     </div>
 
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select class="form-control" name="status">
+                                            <option <?php if(isset($data->status) && $data->status=="PENDING"){?> selected <?php } ?>>PENDING</option>
+                                            <option <?php if(isset($data->status) && $data->status=="PUBLISH"){?> selected <?php } ?>>PUBLISH</option>
+                                        </select>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>

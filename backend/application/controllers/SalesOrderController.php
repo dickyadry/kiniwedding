@@ -200,79 +200,15 @@ class SalesOrderController extends MY_Controller{
 		
 		if(isset($sales_order_form->id)){
 
-			$sales_order_detail = $this->sales_order_detail_model->find($id,'sales_order_id');
-			$product = $this->product_model->find($sales_order_detail->product_id);
-
-			$param_data['product_code'] = $product->code;
-
 			$this->sales_order_form_model->update($param_data,$id,'sales_order_id');
 
 		}else{
 
-			$sales_order_detail = $this->sales_order_detail_model->find($id,'sales_order_id');
-			$product = $this->product_model->find($sales_order_detail->product_id);
-
 			$param_data['sales_order_id'] = $id;
-			$param_data['product_code'] = $product->code;
 			$param_data['member_id'] = $this->userData['member_id'];
 			$id = $this->sales_order_form_model->insert($param_data);
 
 		}
-
-		$data = $this->sales_order_form_model->find(0);
-		$product = $this->product_model->find($id);
-		$data->product = $product;
-
-		$query = $this->buku_tamu_model->source();
-		$query->where('sales_order_id',0);
-		$query->order_by('id','DESC');
-		$query->limit(0,10);
-		$data->buku_tamu = $query->get()->result();
-
-		$query = $this->product_images_model->source();
-		$query->select('*, sample_image as image');
-		$query->where('product_id',$id);
-		$query->where('type','SLIDER');
-		$query->order_by('order','ASC');
-		$data->slider = $query->get()->result();
-		
-		$query = $this->product_images_model->source();
-		$query->select('*, sample_image as image');
-		$query->where('product_id',$id);
-		$query->where('type','GALERI');
-		$query->order_by('order','ASC');
-		$data->galeri = $query->get()->result();
-
-		$query = $this->product_images_model->source();
-		$query->select('*, sample_image as image');
-		$query->where('product_id',$id);
-		$query->where('type','PENGANTIN');
-		$query->order_by('order','ASC');
-		$data->pengantin = $query->get()->result();
-
-		$query = $this->product_images_model->source();
-		$query->select('*, sample_image as image');
-		$query->where('product_id',$id);
-		$query->where('type','BACKGROUND');
-		$query->order_by('order','ASC');
-		$data->background = $query->get()->result();
-
-		$query = $this->product_images_model->source();
-		$query->select('*, sample_image as image');
-		$query->where('product_id',$id);
-		$query->where('type','LAINNYA');
-		$query->order_by('order','ASC');
-		$data->lainnya = $query->get()->result();
-
-		$uploadPath = APPPATH . '../public/images_'.$param_data['link_web'].'.json';
-		$json_data = json_encode($data);
-		file_put_contents($uploadPath, $json_data);
-
-		$uploadGS = new uploadGS();
-    	$cloudPath = 'data_invitation/'.$param_data['link_web'].'.json';
-		$fileContent = file_get_contents($uploadPath);
-		$uploadGS->deleteFile($cloudPath);
-		$isSucceed = $uploadGS->uploadFile($fileContent, $cloudPath);
 
 		$this->session->set_flashdata("success", "Data berhasil disimpan");
 		redirect(base_url('sales-order'));
