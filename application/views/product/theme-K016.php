@@ -738,7 +738,4 @@
     <?php echo $js; ?>
 
 </body>
-
-
-<!-- Mirrored from andit.co/projects/html/pair/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 07:54:54 GMT -->
 </html>
