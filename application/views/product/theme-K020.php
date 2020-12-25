@@ -34,8 +34,8 @@
     <!-- Main Styles -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/styles.css" rel="stylesheet">
     <!-- /Main Styles -->
-    <!-- >> /CSS
-============================================================================== -->
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -53,58 +53,57 @@
 <!-- Header
 ================================================== -->
 <header id="masthead" class="site-header" >    
-        <!-- Main header -->
-        <div class="container">     
-            <!-- Navbar Header -->
-            <div class="row">
+    <!-- Main header -->
+    <div class="container">     
+        <!-- Navbar Header -->
+        <div class="row">
 
-                <!-- Main Navigation -->
-                <div class="col-xs-12">
+            <!-- Main Navigation -->
+            <div class="col-xs-12">
 
-                <nav class="navbar navbar-default" > 
+            <nav class="navbar navbar-default" > 
 
-                        <!-- Brand and toggle get grouped for better mobile display --> 
-                        <div class="navbar-header"> 
-                            <!-- Mobile Menu Button -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-                                <span class="sr-only">Toggle navigation</span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                            </button> 
-                            <!-- /Mobile Menu Button -->
+                    <!-- Brand and toggle get grouped for better mobile display --> 
+                    <div class="navbar-header"> 
+                        <!-- Mobile Menu Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                            <span class="sr-only">Toggle navigation</span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                        </button> 
+                        <!-- /Mobile Menu Button -->
 
-                            <!-- Logo -->
-                            <div class="header-logo">
-                                <p class="site-title">
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/index.html" rel="home">Anna &amp; James</a>
-                                </p>                                
-                            </div> 
-                            <!-- /logo -->
+                        <!-- Logo -->
+                        <div class="header-logo">
+                            <p class="site-title">
+                                <a href="#slideshow" rel="home"><?php echo $nama_panggilan_pengantin_pria; ?> &amp; <?php echo $nama_panggilan_pengantin_wanita; ?></a>
+                            </p>                                
                         </div> 
-                        <!-- / Brand and toggle --> 
+                        <!-- /logo -->
+                    </div> 
+                    <!-- / Brand and toggle --> 
 
-                        <!-- Navigation --> 
-                        <div class="collapse navbar-collapse"> 
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a title="Story" href="#wedding-bio">About Us</a></li>
-                                <li><a title="Story" href="#story">Story</a></li>
-                                <li><a title="Story" href="#special-events">Ceremony</a></li>
-                                <li><a title="Story" href="#gallery">Gallery</a></li>
-                                <li><a title="Story" href="#gifts">Gifts</a></li>
-                                <li><a title="Story" href="#rsvp">RSVP</a></li>
-                            </ul>                           
-                        </div>                      
-                        <!-- /navigation -->
-                    </nav>
-                </div>
-                <!-- Main Navigation -->    
+                    <!-- Navigation --> 
+                    <div class="collapse navbar-collapse"> 
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a title="Story" href="#wedding-bio">About Us</a></li>
+                            <li><a title="Story" href="#story">Story</a></li>
+                            <li><a title="Story" href="#special-events">Ceremony</a></li>
+                            <li><a title="Story" href="#gallery">Gallery</a></li>
+                            <li><a title="Story" href="#rsvp">RSVP</a></li>
+                        </ul>                           
+                    </div>                      
+                    <!-- /navigation -->
+                </nav>
+            </div>
+            <!-- Main Navigation -->    
 
-            </div> 
-            <!-- /Navbar Header -->  
-        </div>
-        <!-- /Main header -->
-    </header>
+        </div> 
+        <!-- /Navbar Header -->  
+    </div>
+    <!-- /Main header -->
+</header>
 <!-- / Header
 ================================================== -->
 
@@ -114,14 +113,15 @@
     <div id="primary" class="">
 
         <!-- SECTION: Slideshow -->
-        <div class="section-slideshow" id="slideshow">
-             <div class="owl-carousel main-carousel owl-theme">
+        <div class="section-slideshow pal" id="slideshow">
+            <div class="owl-carousel main-carousel owl-theme">
                 <!-- Slide -->
                 <div class="featured-slide slide bg-cover viewport" style="background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/home-banner-slide1.jpg');">
                     <div class="slide-inner">
                         <div class="slide-icon active"></div>
-                        <h1 class="slide-title active">Anna &amp; James</h1>
-                        <p class="slide-text active">Will be the happiest couple in the world in:</p>
+                        <h1 class="slide-title active"><?php echo $nama_panggilan_pengantin_pria; ?> &amp; <?php echo $nama_panggilan_pengantin_wanita; ?></h1>
+                        <p class="slide-text active">Akan Menikah dalam:</p>
+                        <span id="date_deadline" hidden><?php echo date("Y/m/d H:i:s", strtotime($tanggal_resepsi)); ?></span>
                         <div class="slide-extra">
                             <!-- countdown (edit date on main.js file)-->
                             <div class="bearr-countdown-wrapper">
@@ -142,10 +142,10 @@
                 <!-- Section Title -->
                 <div class="title-section-wrapper">
                     <!-- Title -->
-                    <h2 class="title-section">She and He</h2>
+                    <h2 class="title-section">Kami yang Berbahagia</h2>
                     <!-- /title -->
                     <!-- Text -->
-                    <p class="text-section">Consectetur adipiscing elit. Inteiro odio urna, vestíbulo elementum magna vel erat sagittis</p>
+                    <p class="text-section">Mempelai Wanita & Pria</p>
                     <!-- /text -->
                 </div>
                 <!-- /Section Title -->
@@ -159,12 +159,11 @@
                             <figure class="wedding-bio-image"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/about-item-img.jpg" alt="" class="responsive-image"></figure>
                             <!-- / Picture -->
                             <div class="wedding-bio-content">
-                                <!-- name -->
-                                <h2 class="heading wedding-bio-title"><span>ANNA</span>BRAVERICK</h2>
-                                <!-- /Name -->
+                                <h3>MEMPELAI WANITA</h3>
+                                <h2 class="heading wedding-bio-title"><span><?php echo $nama_pengantin_wanita; ?></span></h2>
                                 <!-- Description -->
                                 <div class="wedding-bio-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio urna, maximus bibendum pulvinar eu, molestie eu arcu. Vestibulum elementum magna vel erat sagittis egestas. Vestibulum aliquam, ex eu vulputate porta.</p>
+                                    <p>Anak ke-<?php echo $pengantin_wanita_anank_ke; ?> dari <?php echo "Bapak " . $nama_ayah_pengantin_wanita . ' & Ibu ' . $nama_ibu_pengantin_wanita ; ?></p>
                                 </div>
                                 <!-- /Description -->
                             </div>
@@ -176,9 +175,10 @@
                         <div class="wedding-bio-item wedding-bio-item-groom">
                             <figure class="wedding-bio-image"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/about-item-img2.jpg" alt="" class="responsive-image"></figure>
                             <div class="wedding-bio-content">
-                                <h2 class="heading wedding-bio-title"><span>JAMES</span>MCFILTH</h2>
+                                <h3>MEMPELAI PRIA</h3>
+                                <h2 class="heading wedding-bio-title"><span><?php echo $nama_pengantin_pria; ?></span></h2>
                                 <div class="wedding-bio-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio urna, maximus bibendum pulvinar eu, molestie eu arcu. Vestibulum elementum magna vel erat sagittis egestas. Vestibulum aliquam, ex eu vulputate porta.</p>
+                                    <p>Anak ke-<?php echo $pengantin_pria_anank_ke; ?> dari <?php echo "Bapak " . $nama_ayah_pengantin_pria . ' & Ibu ' . $nama_ibu_pengantin_pria ; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,6 @@
                 </div>
                 <!-- /Wedding Bio -->
             </div>
-            
         </div>
         <!-- /SECTION: Wedding Bio -->
 
@@ -201,11 +200,8 @@
                         <div class="slide">
                             <div class="testimonial-item">
                                 <blockquote>
-                                    <!-- TEstimonial Text -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur elit.Nullam scelerisque sodales nisi, turpis.</p>
-                                    <!-- /Testimonial Text -->
                                     <!-- Testimonial Author -->
-                                    <footer><cite>Lauren Yotta</cite></footer>
+                                    <footer><cite><?php echo $kata_mutiara; ?></cite></footer>
                                     <!-- /Testimonial Author -->
                                 </blockquote>
                             </div>
@@ -215,11 +211,8 @@
                         <div class="slide">
                             <div class="testimonial-item">
                                 <blockquote>
-                                    <!-- TEstimonial Text -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur elit.Nullam scelerisque sodales nisi, turpis.</p>
-                                    <!-- /Testimonial Text -->
                                     <!-- Testimonial Author -->
-                                    <footer><cite>Karen Aiello</cite></footer>
+                                    <footer><cite><?php echo $kata_mutiara; ?></cite></footer>
                                     <!-- /Testimonial Author -->
                                 </blockquote>
                             </div>
@@ -235,14 +228,13 @@
         <!-- SECTION: Our Story -->
         <div class="section section-our-story" id="story">
             <div class="container">
-
                 <!-- Section Title -->
                 <div class="title-section-wrapper">
                     <!-- Title -->
                     <h2 class="title-section">Our Story</h2>
                     <!-- /title -->
                     <!-- Text -->
-                    <p class="text-section">Consectetur adipiscing elit. Inteiro odio urna, vestíbulo elementum magna vel erat sagittis</p>
+                    <p class="text-section">Sekilas moment-moment penting disaat pertama kali kita bertemu sampai akhirnya kita akan menuju moment puncak dari kisah ini</p>
                     <!-- /text -->
                 </div>
                 <!-- /Section Title -->
@@ -259,9 +251,9 @@
                             <!-- /image -->
                             <!-- content -->
                             <div class="story-item-content">
-                                <h2 class="story-item-title">HE MADE THE FIRST STEP!</h2>
+                                <h2 class="story-item-title">Pertemuan Pertama</h2>
                                 <div class="story-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis diam at iaculis pharetra. Nulla facilisi. Sed aliquet aliquam dolor ut ultricies. Cras elit orci, egestas sit amet nisi sed, euismod efficitur lacus. Proin dictum enim nunc, sit amet rhoncus nisl accumsan sit amet. Suspendisse potenti. Donec erat augue, scelerisque ac justo dictum, viverra aliquam est.</p>
+                                    <p><?php echo $resume_pertemuan_pertama; ?></p>
                                 </div>
                             </div>
                             <!-- /content -->
@@ -271,7 +263,7 @@
                     <!-- Item Date -->
                     <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
                         <div class="story-date">
-                            <div class="story-time">May 19, 2014</div>
+                            <div class="story-time"><?php echo tanggal_resepsi($tanggal_pertemuan_pertama); ?></div>
                         </div>
                     </div>
                     <!-- /item date -->
@@ -290,9 +282,9 @@
                             <!-- /Item image -->
                             <!-- Item Content -->
                             <div class="story-item-content">
-                                <h2 class="story-item-title">PLANNING OUR TRIP</h2>
+                                <h2 class="story-item-title">Kencan Pertama Kita</h2>
                                 <div class="story-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis diam at iaculis pharetra. Nulla facilisi. Sed aliquet aliquam dolor ut ultricies. Cras elit orci, egestas sit amet nisi sed, euismod efficitur lacus. Proin dictum enim nunc, sit amet rhoncus nisl accumsan sit amet. Suspendisse potenti. Donec erat augue, scelerisque ac justo dictum, viverra aliquam est.</p>
+                                    <p><?php echo $resume_kencan_pertama; ?></p>
                                 </div>
                             </div>
                             <!-- /Item Content -->
@@ -302,7 +294,7 @@
                     <!-- item date -->
                     <div class="col-sm-6 story-date-wrap story-date-wrap-alt col-sm-pull-6 " data-match-height="StoryItem">
                         <div class="story-date">
-                            <div class="story-time">February 02, 2015</div>
+                            <div class="story-time"><?php echo tanggal_resepsi($tanggal_kencan_pertama); ?></div>
                         </div>
                     </div>
                     <!-- /item date -->
@@ -321,9 +313,9 @@
                             <!-- /image -->
                             <!-- content -->
                             <div class="story-item-content">
-                                <h2 class="story-item-title">OUR BEAUTIFUL BRIDESMAIDS</h2>
+                                <h2 class="story-item-title">Lamaran</h2>
                                 <div class="story-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis diam at iaculis pharetra. Nulla facilisi. Sed aliquet aliquam dolor ut ultricies. Cras elit orci, egestas sit amet nisi sed, euismod efficitur lacus. Proin dictum enim nunc, sit amet rhoncus nisl accumsan sit amet. Suspendisse potenti. Donec erat augue, scelerisque ac justo dictum, viverra aliquam est.</p>
+                                    <p><?php echo $resemu_lamaran; ?></p>
                                 </div>
                             </div>
                             <!-- /content -->
@@ -333,13 +325,43 @@
                     <!-- Item Date -->
                     <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
                         <div class="story-date">
-                            <div class="story-time">August 30, 2016</div>
+                            <div class="story-time"><?php echo tanggal_resepsi($tanggal_lamaran); ?></div>
                         </div>
                     </div>
                     <!-- /item date -->
                 </div>
-                <!-- /Timeline item -->               
+                <!-- /Timeline item -->
 
+                <!-- Timeline Item -->
+                <div class="row story-wrap ">
+                    <!-- /Item description -->
+                    <div class="col-sm-6 col-sm-push-6 " data-match-height="StoryItem">
+                        <div class="story-item story-item-alt  ">
+                            <!-- Item Image -->
+                            <div class="story-item-img">
+                                <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/story-img2.jpg" alt="" class="responsive-image">
+                            </div>
+                            <!-- /Item image -->
+                            <!-- Item Content -->
+                            <div class="story-item-content">
+                                <h2 class="story-item-title">Hari yang Berbahagia Bagi Kami</h2>
+                                <div class="story-text">
+                                    <p><?php echo $resume_akad; ?></p>
+                                </div>
+                            </div>
+                            <!-- /Item Content -->
+                        </div>
+                    </div>
+                    <!-- /Item description -->
+                    <!-- item date -->
+                    <div class="col-sm-6 story-date-wrap story-date-wrap-alt col-sm-pull-6 " data-match-height="StoryItem">
+                        <div class="story-date">
+                            <div class="story-time"><?php echo tanggal_resepsi($tanggal_akad_story); ?></div>
+                        </div>
+                    </div>
+                    <!-- /item date -->
+                </div>
+                <!-- /Timeline Item -->
             </div>
         </div>
         <!-- /SECTION: Our Story -->
@@ -347,18 +369,11 @@
         <!-- SECTION: Events -->
         <div class="section with-dark-bg section-events" id="special-events" style="background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/special-event-bg.jpg');">
             <div class="container">
-
                 <!-- Section Title -->
                 <div class="title-section-wrapper">
-                    <!-- Title -->
-                    <h2 class="title-section">OUR SPECIAL EVENTS</h2>
-                    <!-- /title -->
-                    <!-- Text -->
-                    <p class="text-section">Consectetur adipiscing elit. Inteiro odio urna, vestíbulo elementum magna vel erat sagittis</p>
-                    <!-- /text -->
+                    <h2 class="title-section">AKAD & RESEPSI</h2>
                 </div>
                 <!-- /Section Title -->
-
                 <!-- row -->
                 <div class="row">
                     <!-- col -->
@@ -366,18 +381,18 @@
                         <!-- Event Item -->
                         <div class="events-reminder-item">
                             <header>
-                                <h3 class="events-item-heading">MAIN CEREMONY</h3>
+                                <h3 class="events-item-heading">AKAD NIKAH</h3>
                             </header>
                             <div class="events-item-content">
                                 <ul>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content">16:00 PM</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content"><?php echo pukul($tanggal_akad); ?> WIB</span>
                                     </li>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content">Saturday 12 - July 2016</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content"><?php echo hari($tanggal_akad); ?>, <?php echo tanggal_resepsi($tanggal_akad); ?></span>
                                     </li>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address">Amentel Avenue 343 - NY</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address"><?php echo $tempat_akad; ?></span>
                                     </li>
                                 </ul>
                             </div>
@@ -390,18 +405,18 @@
                         <!-- Event Item -->
                         <div class="events-reminder-item">
                             <header>
-                                <h3 class="events-item-heading">WEDDING PARTY</h3>
+                                <h3 class="events-item-heading">RESEPSI PERNIKAHAN</h3>
                             </header>
                             <div class="events-item-content">
                                 <ul>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content">16:00 PM</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content"><?php echo pukul($tanggal_resepsi); ?> WIB</span>
                                     </li>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content">Saturday 12 - July 2016</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content"><?php echo hari($tanggal_resepsi); ?>, <?php echo tanggal_resepsi($tanggal_resepsi); ?></span>
                                     </li>
                                     <li>
-                                        <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address">Amentel Avenue 343 - NY</span>
+                                        <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address"><?php echo $tempat_resepsi; ?></span>
                                     </li>
                                 </ul>
                             </div>
@@ -411,364 +426,96 @@
                     <!-- /col -->
                 </div>
                 <!-- /row -->
-
-
             </div>
-           
         </div>
         <!-- / SECTION: Events -->
 
         <!-- Gallery -->
         <div class="section section-gallery" id="gallery">
-            
             <!-- Section Title -->
             <div class="title-section-wrapper">
                 <!-- Title -->
                 <h2 class="title-section">Gallery</h2>
                 <!-- /title -->
                 <!-- Text -->
-                <p class="text-section">Consectetur adipiscing elit. Inteiro odio urna, vestíbulo elementum magna vel erat sagittis</p>
+                <p class="text-section">Sekilas moment-moment penting disaat pertama kali kita bertemu sampai akhirnya kita akan menuju moment puncak dari kisah ini</p>
                 <!-- /text -->
             </div>
             <!-- /Section Title -->
 
             <!-- Gallery Images -->
             <div class="gallery-images row">
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg" alt="Gallery Image"></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img5.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img5.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img1.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img1.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg" alt="Gallery Image"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+                    <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg" alt="Gallery Image"></a></div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img5.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img5.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img1.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img1.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img7.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img2.jpg" alt="Gallery Image"></a></div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-                <div class="bearr-gallery-item"><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/gallery-img8.jpg" alt="Gallery Image"></a></div>
-            </div>            
-        </div>
             <!-- /Gallery Images -->
         </div>
         <!-- /Gallery -->
-
-        <!-- Gift List -->
-        <div class="section section-gift-list" id="gifts">
-            
-            <div class="container">
-                
-                <!-- Section Title -->
-                <div class="title-section-wrapper">
-                    <!-- Title -->
-                    <h2 class="title-section">Gift List</h2>
-                    <!-- /title -->
-                    <!-- Text -->
-                    <p class="text-section">Consectetur adipiscing elit. Inteiro odio urna, vestíbulo elementum magna vel erat sagittis</p>
-                    <!-- /text -->
-                </div>
-                <!-- /Section Title -->
-
-                <!-- Gift list -->
-                <div class="owl-carousel-wrapper clients-carousel-wrapper">
-                    <div class="owl-carousel clients-carousel common-carousel special-carousel owl-theme owl-loaded">
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client1.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/http://themebear.co/" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client2.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client3.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                  
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client4.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client1.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/http://themebear.co/" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client2.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client3.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                  
-                        <!-- item -->
-                        <div class="slide">
-                            <div class="client-item text-center">
-                                <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/client4.png" alt="Client Logo"></a>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                                
-                    </div>
-                </div>
-                <!-- /Gift list -->
-
-            </div>
-
-        </div>
-        <!-- /Gift List -->
-
-        <!-- Blog -->
-        <div class="section section-blog with-bg" id="blog">
-            <div class="container">
-
-                <!-- Section Title -->
-                <div class="title-section-wrapper">
-                    <!-- Title -->
-                    <h2 class="title-section">Our Blog</h2>
-                    <!-- /title -->
-                </div>
-                <!-- /Section Title -->
-
-                <!-- Blogroll  -->
-                <div class="owl-carousel-wrapper blogroll-carousel-wrapper">
-                    <div class="owl-carousel blogroll-carousel owl-theme owl-loaded">
-                        <!-- item -->
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-3.jpg)"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Getting nervous each day, can’t wait for the big day</h3>
-                                    <p>Shabby chic try-hard kombucha intelligentsia, typewriter microdosing +1 iPhone ennui farm-to-table dreamcatcher authentic. Kogi pabst mumblecore, VHS thundercats heirloom poutine yuccie skateboard photo booth food truck readymade microdosing. Ethical slow-carb keffiyeh mlkshk waistcoat 3 wolf moon. Leggings beard photo booth, normcore asymmetrical yr slow-carb cold-pressed. Plaid flexitarian squid, affogato chillwave post-ironic vice. Retro taxidermy cardigan, […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img2.jpg)"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">He popped the question</h3>
-                                    <p>Williamsburg keytar +1, taxidermy dreamcatcher scenester chillwave aesthetic meditation cardigan godard. Four loko farm-to-table vegan, vinyl direct trade craft beer synth actually letterpress fingerstache four dollar toast shabby chic hella wayfarers squid. Shabby chic YOLO microdosing brooklyn retro, before they sold out chartreuse quinoa beard forage truffaut sartorial wolf cred. Slow-carb mustache try-hard kitsch small […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-        
-                        <!-- item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Big day is almost here</h3>
-                                    <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&nbsp;Selfies iPhone Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko. Meh synth Schlitz, tempor duis […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item --> 
-
-                        <!-- item -->
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img7.jpg)"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Planning our trip</h3>
-                                    <p>Photo shoot in Paris 2015 (image post format).</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- Item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Post Format: Quote</h3>
-                                    <p>It always seems impossible until its done.</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- Item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/img8.jpg')"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">He made the first step!</h3>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Tips for your wedding photos [Vídeo Post Format]</h3>
-                                    <p>ousled truffaut ugh, cornhole meh lumbersexual williamsburg. Gluten-free yr neutra chicharrones sustainable, messenger bag cornhole artisan deep v pour-over wolf microdosing tofu mustache banh mi. Knausgaard ramps drinking vinegar, schlitz roof party pork belly yuccie fap. Ramps intelligentsia small batch bespoke viral bicycle rights. Fingerstache neutra disrupt, banjo scenester art party tofu XOXO etsy.</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/img9.jpg')"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">Wedding photos from the beach</h3>
-                                    <p>8-bit asymmetrical wolf, squid street art vinyl tofu shoreditch iPhone shabby chic. Shoreditch knausgaard sartorial bushwick twee. Keytar biodiesel migas narwhal, artisan fixie swag microdosing. Try-hard DIY vice, post-ironic church-key poutine cornhole art party flannel swag. Sartorial venmo tofu, salvia etsy mlkshk small batch helvetica. Sustainable flexitarian you probably haven’t heard of them chillwave post-ironic, […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->                                
-                        <div class="blog-item">
-                            <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html">
-                                <figure class="blog-item-img blog-item-img-cover" style=" background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/img10.jpg')"></figure>
-                            </a>
-                            <div class="blog-content">
-                                <article class="post">
-                                    <h3 class="heading">The Beauty of the Childhood</h3>
-                                    <p>DIY banjo cardigan farm-to-table. DIY quinoa keffiyeh, meditation craft beer hoodie roof party synth locavore church-key heirloom gentrify. Lo-fi blue bottle everyday carry +1 cardigan, single-origin coffee crucifix four loko swag tacos locavore paleo mumblecore readymade. Ennui blue bottle VHS pickled kogi poutine, everyday carry venmo retro butcher migas kickstarter try-hard hella. Crucifix put a […]</p>
-                                    <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/single.html" class="primary-btn">See More</a>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- /item -->
-
-                    </div>
-                </div>
-                <!-- /Blogroll -->
-
-            </div>
-        </div>
-        <!-- /Blog -->
  
         <!-- RSVP -->
         <div class="section section-contact bg-cover with-dark-bg" id="rsvp" style="background-image: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/contact-bg.jpg');">
             <div class="container">
-                
                 <!-- Section Title -->
                 <div class="title-section-wrapper">
                     <!-- Title -->
-                    <h2 class="title-section">Come and Celebrate With Us</h2>
+                    <h2 class="title-section">Apakah Kamu Akan Hadir?</h2>
                     <!-- /title -->
                     <!-- Text -->
-                    <p class="text-section">Come and celebrate with us! Please complete the form below and confirm your presence</p>
+                    <p class="text-section">Besar harapan kami, kamu bisa datang ke acara pernikankan kami untuk sekedar memberikan upacapan selamat dan do'a.</p>
                     <!-- /text -->
                 </div>
                 <!-- /Section Title -->
 
                 <!-- Form -->
-                <form class="form row rsvp" id="contactForm">
+                <form class="form row rsvp">
                     <!-- Form Group -->
-                    <div class="col-sm-6 form-group">
-                       <label>Name</label>
-                        <input type="text" class="form-control required" id="name" name="name" required/>
-                        <!-- Form Group -->
-                    </div>
-                    <!-- Form Group -->
-
-                    <!-- Form Group -->
-                    <div class="col-sm-6 form-group">
-                        <label>Email</label>
-                        <input type="email" class="form-control required" id="email" name="email" required />
-                    </div>
-                    <!-- Form Group -->
-
-                    <!-- Form Group -->
-                    <div class="col-sm-6 form-group">
-                       <label>Which events are you attending?</label>
-                        <input type="text" class="form-control required" name="events" id="events" required/>
-                    </div>
-                    <!-- Form Group -->
-                    
-                    <!-- Form Group -->
-                    <div class="col-sm-6 form-group">
-                       <label>How many guests are you bringing?</label>
-                        <input type="text" class="form-control required" id="guests" name="guests" required/>
+                    <div class="col-sm-12 form-group">
+                        <input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control">
                     </div>
                     <!-- Form Group -->
 
                     <!-- Form Group -->
                     <div class="col-sm-12 form-group">
-                       <label>Additional Information</label>
-                        <textarea class="form-control required" id="message" name="message" required></textarea>
+                        <select name="status" class="form-control" id="status">
+                            <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
+                            <option>Ya, Saya Akan hadir</option>
+                            <option>Ya, Mungkin Saya akan hadir</option>
+                            <option>Maaf Seperti Saya Belum bisa hadir</option>
+                        </select>
                     </div>
                     <!-- Form Group -->
 
                     <!-- Form Group -->
                     <div class="col-sm-12 form-group">
-                        <button type="submit" class="primary-btn with-bg">SUBMIT!</button>
+                        <textarea class="form-control" name="pesan" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
+                    </div>
+                    <!-- Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="col-sm-12 form-group">
+                        <button type="button" onclick="buku_tamu()" class="primary-btn with-bg">SUBMIT!</button>
                     </div>
                     <!-- Form Group -->
                 </form>
@@ -793,24 +540,9 @@
                 <div class="col-sm-8">
                     <!-- Site Info -->
                     <div class="site-quote">
-                        <p>“Ideas are the beginning points of all fortunes” - <small>Napoleon Hill</small></p>
+                        <p><a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a> &copy; Copyright 2021, All Rights Reserved.</p>
                     </div>
                     <!-- /Site info -->
-                </div>
-                <!-- /col -->
-                <!-- col -->
-                <div class="col-sm-4">
-                    <!-- social icons -->
-                    <div class="social-icons footer-social-icons">
-                        <ul class="social-icons-list text-right">
-                            <li><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- /social icons -->    
                 </div>
                 <!-- /col -->
             </div>
@@ -825,39 +557,6 @@
 <!-- Back to Top Button -->
 <div id="back-to-top" class="back-to-top back-to-top-hide"><i class="fa fa-angle-up"></i></div>
 <!-- /Back to Top Button -->
-
-<!-- Contact Form - Ajax Messages
-========================================================= -->
-<!-- Form Sucess -->
-<div class="form-result modal-wrap" id="contactSuccess">
-  <div class="modal-bg"></div>
-  <div class="modal-content">
-    <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
-    <p>Your message has been sent to us.</p>
-  </div>
-</div>
-<!-- /Form Sucess -->
-<!-- form-error -->
-<div class="form-result modal-wrap" id="contactError">
-  <div class="modal-bg"></div>
-  <div class="modal-content">
-    <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
-    <p>There was an error sending your message.</p>
-  </div>
-</div>
-<!-- /form-error -->
-<!-- form-sending -->
-<div class="form-result modal-wrap" id="contactWait">
-  <div class="modal-bg"></div>
-  <div class="modal-content">  
-    <div class="modal-loader"></div> 
-    <p>Sending Message, please wait...</p>
-  </div>
-</div>
-<!-- /form-sending -->
-<!-- / Contact Form - Ajax Messages
-========================================================= -->
-
 
 <!-- >> JS
 ============================================================================== -->
@@ -883,18 +582,6 @@
 <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/jquery.matchHeight-min.js"></script>
 <!-- Main Scripts -->
 <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/main.js"></script>
-
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/html5shiv.js"></script>
-<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/respond.min.js"></script>
-<![endif]-->
-<!-- >> /JS
-============================================================================= -->
+<?php echo $js; ?>
 </body>
-
-
-<!-- Mirrored from themes.themebear.co/html-templates/amore/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 08:23:28 GMT -->
 </html>

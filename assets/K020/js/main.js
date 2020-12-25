@@ -128,7 +128,8 @@
         });    
 
         //=====>  Countdown (Edit this with your own date)  <====
-        $("#bearr-countdown-item").countdown( "2017/02/22 15:10:56" , function (event) {
+        var get_date = document.getElementById('date_deadline').innerHTML;
+        $("#bearr-countdown-item").countdown( get_date , function (event) {
             var $this = $(this).html(event.strftime('' + '<div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Days </span></div> ' + '<div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Hours </span></div>' + '<div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutes </span></div>' + '<div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Seconds </span></div>'));
         });
 
