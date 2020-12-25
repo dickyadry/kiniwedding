@@ -10,7 +10,10 @@ $(document).ready(function(){
 
   var winWidth = $(window).width(), winHeight = $(window).height(), resizeTimer;
 
-  var weddDay = new Date(2022, 6, 10);// YYYY, M, D -- no leading zeros
+  var tanggal = document.getElementById('tanggal').innerHTML;
+  var bulan = document.getElementById('bulan').innerHTML;
+  var tahun = document.getElementById('tahun').innerHTML;
+  var weddDay = new Date(tahun, bulan, tanggal);// YYYY, M, D -- no leading zeros
   $('#default-countdown').countdown({until: weddDay, format: 'YOD'});
 
   $('.blocking').hide();// Hide fixed nav on load
