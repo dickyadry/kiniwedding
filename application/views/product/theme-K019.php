@@ -10,14 +10,56 @@
   <meta name="description" content="">
    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
+   <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/foundation.min.css" />
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css" />
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/app.css" />
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/vendor/jqueryb8ff.js?ver=1.12.4"></script>
   <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
   <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+
 </head>
 <body class="home">
+
+  <!-- start preloader -->
+  <div id="preloader">
+      <div id="box-preloader">
+          <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+      </div>
+  </div>
+  <!-- end preloader --> 
+
+  <!-- Content -->
+  <section onclick="playAudio()" type="button" id="over-lay">
+      <div class="gla_invitation_container">
+          <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K002.png")'>
+              <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+              <br><br>
+              <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+              <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+              <h4><?php echo $tempat_resepsi; ?></h4>
+              <br>
+              <div class="box-start">
+                  <a href='#' class="text-start">Masuk</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Content End -->
+
+  <div class="box-stop-scrolling">
+      <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+  </div>
+
+  <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+  <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+  <audio loop id="myAudio">
+      <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+  </audio>
+  
   <div id="page" class="site">
   	<a class="skip-link screen-reader-text" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#content">Skip to content</a>
     <header id="masthead" class="site-header" style="background: url('<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/couple-hero-img.jpg') center top no-repeat; background-size: cover;">

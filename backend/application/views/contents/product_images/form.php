@@ -23,6 +23,26 @@ if(isset($data->id)){
                     <i id="alert-type" class="icon icon-warning form-control-feedback hidden"></i>
                 </div>
             </div>
+            <div class="form-group" id="group-desktop">
+                <label class="col-sm-2 control-label">Untuk Desktop</label>
+                <div class="col-sm-10">
+                    <select name="desktop" id="desktop" class="form-control">
+                        <option value="1" <?php if(isset($data->desktop) && $data->desktop==1){?> selected <?php } ?>>YA</option>
+                        <option value="0" <?php if(isset($data->desktop) && $data->desktop==0){?> selected <?php } ?>>TIDAK</option>
+                    </select>
+                    <i id="alert-type" class="icon icon-warning form-control-feedback hidden"></i>
+                </div>
+            </div>
+            <div class="form-group" id="group-mobile">
+                <label class="col-sm-2 control-label">Untuk Mobile</label>
+                <div class="col-sm-10">
+                    <select name="mobile" id="mobile" class="form-control">
+                        <option value="1" <?php if(isset($data->mobile) && $data->mobile==1){?> selected <?php } ?>>YA</option>
+                        <option value="0" <?php if(isset($data->mobile) && $data->mobile==0){?> selected <?php } ?>>TIDAK</option>
+                    </select>
+                    <i id="alert-type" class="icon icon-warning form-control-feedback hidden"></i>
+                </div>
+            </div>
             <div class="form-group" id="group-caption">
                 <label class="col-sm-2 control-label">Caption</label>
                 <div class="col-sm-10">

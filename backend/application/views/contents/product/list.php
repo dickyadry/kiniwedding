@@ -39,7 +39,7 @@
                     <th>Kode</th>
                     <th>Nama</th>
                     <th>Harga</th>
-                    <th width="15%" class="text-center">Action</th>
+                    <th width="20%" class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>

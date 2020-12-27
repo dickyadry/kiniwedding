@@ -25,21 +25,55 @@
 		<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
+		<!-- Favicon and Touch Icons -->
+    	<link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css">
+		<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
 		<link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
 	    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
 	</head>
 	<body>
-		<!-- Page Loader Animation -->
-		<div id="loader">
-			<div class="container loader-img-holder text-center">
-				<img class="img-fluid" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/loader.svg" alt="">
-			</div>
-		</div>		
-		<!-- Page Loader Animation End-->
+
+		<!-- start preloader -->
+        <div id="preloader">
+            <div id="box-preloader">
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+            </div>
+        </div>
+        <!-- end preloader --> 
+
+        <!-- Content -->
+	    <section onclick="playAudio()" type="button" id="over-lay">
+	        <div class="gla_invitation_container">
+	            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-ping.png")'>
+	                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+	                <br><br>
+	                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+	                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+	                <h4><?php echo $tempat_resepsi; ?></h4>
+	                <br>
+	                <div class="box-start">
+	                    <a href='#' class="text-start">Masuk</a>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    <!-- Content End -->
+
+	    <div class="box-stop-scrolling">
+	        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+	    </div>
+
+	    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+	    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+	    <audio loop id="myAudio">
+	        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+	    </audio>
 
 		<!-- slider Section -->
 		<section id="slider" class="paling-atas">
@@ -492,7 +526,7 @@
 		<!-- Footer RSVP End -->
 
 		<!-- Footer Bottom -->
-		<div id="footer-bottom">
+		<div id="footer-bottom" class="finish">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 justify-content-center">
@@ -503,11 +537,6 @@
 		</div>
 		<!-- Footer Bottom End -->
 		
-		<!-- Scroll Up -->
-		<div class="scrollup">
-			<i class="fa fa-angle-up" aria-hidden="true"></i>
-		</div>
-		<!-- Scroll Up End -->
 
 		<!-- Frameworks -->
 		<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/jquery/jquery-3.2.1.min.js"></script>

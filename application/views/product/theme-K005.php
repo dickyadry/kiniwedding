@@ -41,12 +41,23 @@
 
 <body id="home">
 
-    <div onclick="playAudio()" type="button" id="over-lay">
-        <div style="margin:0 auto;">
-            <div class="tapfp">TAP TO CONTINUE</div>
-            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K005.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></p></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- Content End -->
 
     <div class="box-stop-scrolling">
         <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
@@ -65,10 +76,10 @@
         <!-- start preloader -->
         <div class="preloader">
             <div class="inner">
-                <span class="icon"><i class="fi flaticon-two"></i></span>
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
             </div>
         </div>
-        <!-- end preloader -->
+
 
 
         <!-- start of hero -->
@@ -76,7 +87,7 @@
             <div class="hero-slider hero-slider-s1">
                 <?php foreach ($slider as $key => $value) { ?>
                 <div class="slide-item">
-                    <img src="<?php echo str_replace('thumbs/', '', $value->image); ?>" alt class="slider-bg">
+                    <img src="<?php echo show_images( $value->image); ?>" alt class="slider-bg">
                 </div>
                 <?php } ?>
             </div>
@@ -160,7 +171,7 @@
                         <div class="gb groom">
                             <div class="img-holder wow fadeInLeftSlow">
                                 <?php if(isset($pengantin[0]->image)){?>
-                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>" alt>
+                                <img src="<?php echo show_images($pengantin[0]->image); ?>" alt>
                                 <?php } ?>
                             </div>
                             <div class="details">
@@ -187,7 +198,7 @@
                             </div>
                             <div class="img-holder wow fadeInRightSlow">
                                 <?php if(isset($pengantin[1]->image)){?>
-                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>" alt>
+                                <img src="<?php echo show_images($pengantin[1]->image); ?>" alt>
                                 <?php } ?>
                             </div>
                         </div>
@@ -244,7 +255,7 @@
                                 <div class="col col-md-6">
                                     <div class="img-holder">
                                         <?php if(isset($lainnya[0]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>" alt class="img img-responsive">
+                                            <img src="<?php echo show_images($lainnya[0]->image); ?>" alt class="img img-responsive">
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -253,7 +264,7 @@
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text">
                                         <?php if(isset($lainnya[1]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[1]->image); ?>" alt class="img img-responsive">
+                                            <img src="<?php echo show_images($lainnya[1]->image); ?>" alt class="img img-responsive">
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -282,7 +293,7 @@
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text">
                                         <?php if(isset($lainnya[2]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[2]->image); ?>" alt class="img img-responsive">
+                                            <img src="<?php echo show_images($lainnya[2]->image); ?>" alt class="img img-responsive">
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -291,7 +302,7 @@
                                 <div class="col col-md-6">
                                     <div class="img-holder video-holder">
                                         <?php if(isset($lainnya[3]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[3]->image); ?>" alt class="img img-responsive">
+                                            <img src="<?php echo show_images($lainnya[3]->image); ?>" alt class="img img-responsive">
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -345,7 +356,7 @@
                         <div class="event">
                             <div class="img-holder">
                                 <?php if(isset($lainnya[4]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$lainnya[4]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($lainnya[4]->image); ?>" alt class="img img-responsive">
                                 <?php } ?>
                             </div>
                             <div class="details">
@@ -363,7 +374,7 @@
                         <div class="event">
                             <div class="img-holder">
                                 <?php if(isset($lainnya[5]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$lainnya[5]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($lainnya[5]->image); ?>" alt class="img img-responsive">
                                 <?php } ?>
                             </div>
                             <div class="details">
@@ -401,8 +412,8 @@
                         <div class="gallery-container gallery-fancybox masonry-gallery">
                             <?php foreach ($galeri as $key => $value) { ?>
                             <div class="grid wedding">
-                                <a href="<?php echo str_replace('thumbs/', '',$value->image); ?>" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="<?php echo str_replace('thumbs/', '',$value->image); ?>" alt class="img img-responsive">
+                                <a href="<?php echo show_images($value->image); ?>" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="<?php echo show_images($value->image); ?>" alt class="img img-responsive">
                                 </a>
                             </div>
                             <?php } ?>

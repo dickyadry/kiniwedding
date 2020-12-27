@@ -188,12 +188,12 @@
 /*--------------------------
 10. scrollUp
 ---------------------------- */	
-	$.scrollUp({
-        scrollText: '<i class="fas fa-arrow-up"></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    });
+	// $.scrollUp({
+ //        scrollText: '<i class="fas fa-arrow-up"></i>',
+ //        easingType: 'linear',
+ //        scrollSpeed: 900,
+ //        animation: 'fade'
+ //    });
 
 
 			

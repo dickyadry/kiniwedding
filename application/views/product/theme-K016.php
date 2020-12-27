@@ -11,47 +11,69 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 
-    <!-- Font Awesome for this template -->
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Flat Icon for this template -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/wedding-icon-font/flaticon.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playball&amp;display=swap" rel="stylesheet">
 
-    <!-- Owl carousel 2 css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.theme.default.min.css">
-
-    <!-- Veno Box Css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/venobox.css" type="text/css" media="screen" />
-
-    <!-- Animate Css-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.min.css">
-
-    <!-- Mean Menu/Mobile Menu Css-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/meanmenu.min.css">
-
-    <!-- Preloader Css-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/fakeLoader.min.css">
-
-    <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+
 </head>
 
 <body>
 
-    <!-- Preloader -->
-    <div class="fakeLoader"></div>
-    <!-- Preloader -->
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_red.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
 
     <!--Main Menu/ Mobile Menu Section-->
     <section class="menu-section-area">
@@ -676,7 +698,7 @@
     <!-- MAP Area End -->
 
     <!-- Footer Start -->
-    <footer class="footer">
+    <footer class="footer finish">
         <!-- Footer Bottom Area Start-->
         <div class="footer-bottom-area">
             <div class="container">
@@ -695,44 +717,20 @@
     </footer>
     <!-- Footer End -->
 
-    <!--=======================================
-        All Jquery Script link
-    ===========================================-->
-
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/jquery/popper.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- ==== Plugin JavaScript ==== -->
-
-    <!-- jQuery owl carousel -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/owl.carousel.min.js"></script>
-
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!--  Counter Down JavaScript-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.lwtCountdown-1.0.js"></script>
-
-    <!--VenoBox Script-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/venobox.min.js"></script>
-
-    <!-- Include Shuffle Plugins -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/shuffle.min.js"></script>
-
-    <!-- Shuffle Custom JS -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/shuffle-custom.js"></script>
-
-    <!--WOW JS Script-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/wow.min.js"></script>
-
-    <!--Mean Menu/Mobile Menu Script-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.meanmenu.min.js"></script>
-
-    <!-- Preloader -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/fakeLoader.min.js"></script>
-
-    <!-- Custom scripts for this template -->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/custom.js"></script>
 
     <?php echo $js; ?>

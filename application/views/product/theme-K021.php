@@ -7,103 +7,76 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- favicon
-    ============================================ -->        
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
-           
-    <!-- Bootstrap CSS
-    ============================================ -->        
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css">
-    
-    <!-- Nivo slider CSS
-    ============================================ -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/lib/custom-slider/css/nivo-slider.css" media="screen" />   
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/lib/custom-slider/css/preview.css" media="screen" />
-    
-    <!-- Fontawsome CSS
-    ============================================ -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/font-awesome.min.css">
-    
-    <!-- material iconic CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/material-design-iconic-font.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/material-design-iconic-font.min.css">
-    
-    <!-- PI Icons CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/Pe-icon-7-stroke.css">
-            
-    <!-- owl.carousel CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.carousel.css">
-    
-    <!-- jquery-ui CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery-ui.css">
-    
-    <!-- meanmenu CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/meanmenu.min.css">
-    
-    <!-- animate CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.css">
-    
-    <!-- Slick CSS
-    ============================================ -->    
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/slick.css">
-    
-    <!-- Venobox CSS
-    ============================================ -->    
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/venobox.css">
-      
-    <!-- Circle Chart CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.circliful.css">
-      
-    <!-- Animate headline CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate-heading.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/reset.css">
-    
-    <!-- Video CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.mb.YTPlayer.css">
-    
-    <!-- style CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/style.css">
-    
-    <!-- Responsive CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css">
-      
-    <!-- Customizer CSS
-    ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style-customizer.css">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" data-style="styles" rel="stylesheet">
-    
-    <!-- Modernizr JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
 </head>
 <body>
-    <!-- Pre Loader
-    ============================================ -->
-    <div class="preloader">
-        <div class="loading-center">
-            <div class="loading-center-absolute">
-                <div class="object object_one"></div>
-                <div class="object object_two"></div>
-                <div class="object object_three"></div>
-            </div>
+    
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
         </div>
     </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-pink.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
+
     <div class="wrapper">
-        <!-- header start -->
         <header class="main-header-area four sticker">
             <div class="main-header-area ptb-5">
                 <div class="container-fluid">
@@ -130,19 +103,16 @@
                         </div>            
                         <div class="col-lg-2 col-md-2 col-sm-6 hidden-xs">
                             <div class="rsvp pull-right">
-                                <!--Start of Bar-->
                                 <div class="account-usd">
                                     <ul>
                                         <li><a href="javascript:void(0);" onclick="goTo('buku-tamu')" class="btn1">Rsvp</a></li>
                                     </ul>
                                 </div>  
-                                <!--End of Bar--> 
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>
-            <!-- Mobile Menu Area start -->
             <div class="mobile-menu-area">
                 <div class="container">
                     <div class="row">
@@ -163,10 +133,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu Area end -->          
         </header>
-        <!-- header end -->
-        <!-- slider start -->
         <div class="slider-wrap three five paling-atas">
             <div class="preview-2">
                 <div id="nivoslider" class="slides"> 
@@ -203,8 +170,6 @@
                 </div>
             </div>
         </div>        
-        <!-- slider end -->
-        <!-- schedule start -->
         <div class="schedule-four fix ptb-100 buku-tamu">
             <div class="container">
                 <div class="row">
@@ -256,8 +221,6 @@
                 </div>
             </div>
         </div>
-        <!-- schedule end -->
-        <!-- groom-bride start -->
         <div class="groom-bride-area fix pasangan">
             <div class="groom-pic-container">
                 <a href="javascript:void(0);" class="groom-pic" style="background-image: url(<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/banner/15.jpg)"></a> 
@@ -276,8 +239,6 @@
                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" class="groom-pic" style="background-image: url(<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/banner/16.jpg)"></a> 
             </div>
         </div>
-        <!-- groom-bride end -->
-        <!-- our-story start -->
         <div class="our-story-area four ptb-100 kisah-kita">
             <div class="container">
                 <div class="row">
@@ -360,8 +321,6 @@
                 </div>
             </div>
         </div>
-        <!-- our-story end -->
-        <!-- party start -->
         <div class="party-area pb-95 fix tanggal-event">
             <div class="party-left pull-left">
                 <div class="party-left-content text-center ptb-240">
@@ -378,8 +337,6 @@
                 </div>
             </div>
         </div>
-        <!-- party end -->
-        <!-- gallery area start -->
         <div class="gallery-area four galeri">
             <div class="container">
                 <div class="row">
@@ -431,8 +388,6 @@
                 </div>
             </div>
         </div>
-        <!-- gallery area end -->
-        <!-- footer start -->
         <footer>
             <div class="footer-area four text-center pt-100 pb-140">
                 <div class="container">
@@ -459,79 +414,33 @@
                 </div>
             </div>
         </footer>
-        <!-- footer end -->
     </div>   
-    <!-- jquery
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/bootstrap.min.js"></script>     
-    <!-- meanmenu JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.meanmenu.js"></script>
-    <!-- wow JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/wow.min.js"></script>
-    <!-- owl.carousel JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/owl.carousel.min.js"></script>
-    <!-- counterdown JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.countdown.min.js"></script>
-    <!-- scrollUp JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.scrollUp.min.js"></script>
-    <!-- Counter up js
-    ============================================ -->  
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.counterup.min.js"></script>               
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/waypoints.min.js"></script> 
-    <!-- Video Player JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.mb.YTPlayer.js"></script>
-    <!-- AJax Chimp JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.ajaxchimp.min.js"></script>
-    <!-- price slider JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery-price-slider.js"></script> 
-    <!-- elevator JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.elevateZoom-3.0.8.min.js"></script> 
-    <!-- plugins JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/plugins.js"></script>
-    <!-- Nevo Slider js
-    ============================================ -->         
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/lib/custom-slider/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/lib/custom-slider/home.js"></script>   
-    <!-- Slick js
-    ============================================ -->         
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/slick.min.js"></script> 
-    <!--Circle chart js-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.circliful.min.js"></script>  
-    <!--Venobox js-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/venobox.min.js"></script>       
-    <!-- Mix It Up JS
-    ============================================ -->        
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.mixitup.js"></script>  
-    <!-- textillate js
-    ============================================ -->         
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.textillate.js"></script>              
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.lettering.js"></script>  
-    <!-- animated headline js
-    ============================================ -->         
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/animate-heading.js"></script>  
-    <!-- ajax js
-    ============================================ -->         
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/ajax-mail.js"></script> 
-    <!-- customizer js
-    ============================================ -->         
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/style-customizer.js"></script>       
-    <!--particles js-->
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/particles.min.js"></script>              
-    <!-- main JS
-    ============================================ -->    
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/main.js"></script>
 
     <?php echo $js; ?>

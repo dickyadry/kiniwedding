@@ -13,9 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/https://fonts.googleapis.com/css?family=Great+Vibes%7CRoboto:100,300,400,700,900" rel="stylesheet">
 
-
-	<!-- All Style Sheet Start -->
-
+	<link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.theme.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.transitions.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.carousel.min.css">
@@ -25,21 +23,55 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.css"/>
 
-	<!-- All Style Sheet End -->
-
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/style.css">
-
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css">
 
 	<link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+
 </head>
 
 <body class="the-heart-default-body">
-	<!-- The Heart Body Start -->
-	<!-- Preloder -->
-	<div id="prelaoder"></div>
-	<!-- The Heart main Menu -->
+	
+	<!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-purple.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_pu.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
+        
 	<header class="the-heart-menu-and-logo-section" id="the-heart-menu">
 		<div class="container">
 			<div class="row">
@@ -440,7 +472,7 @@
 	</section>
 	
 	<!-- The Heart Footer Section -->
-	<footer class="the-heart-footer-section jarallax" id="the-heart-footer" style="background-image: url(img/footer-bg.png);">
+	<footer class="the-heart-footer-section jarallax finish" id="the-heart-footer" style="background-image: url(img/footer-bg.png);">
 		<div class="container">
 			<div class="the-heart-tbl">
 				<div class="the-heart-tbl-c">
@@ -448,6 +480,9 @@
 						<div class="wow fadeInUp" data-wow-duration="2s">
 							<h2>Terima Kasih</h2>
 						</div>
+						<div class="auto-container">
+		                    <div class="copyright">2021 &copy; <a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a> All Rights Reserved.</div>
+		                </div>
 					</div> <!-- .the-heart-footer-content END -->
 				</div> <!-- .the-heart-tbl-c END -->
 			</div> <!-- .the-heart-tbl END -->

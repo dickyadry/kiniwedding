@@ -3,7 +3,10 @@
 //////////////////////////////////////////////////////////
 ///////////////// 4. code for Background Slider /////////
 ////////////////////////////////////////////////////////
-
+jQuery(window).on('load', function() {
+    jQuery("#status").fadeOut();
+    jQuery("#preloader").delay(350).fadeOut("slow");
+});
 
 $(document).on('ready', function() { 
   

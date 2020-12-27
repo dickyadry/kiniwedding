@@ -1,5 +1,9 @@
 <script type="text/javascript">
 
+jQuery(window).on('load', function() {
+    jQuery("#status").fadeOut();
+    jQuery("#preloader").delay(350).fadeOut("slow");
+});
 //////////////////////////////////////////////////////////
 ///////////////// 4. code for Background Slider /////////
 ////////////////////////////////////////////////////////

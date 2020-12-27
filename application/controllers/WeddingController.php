@@ -6,6 +6,7 @@ class WeddingController extends MY_Controller {
 	public function __construct(){
 		parent::__construct();
 		
+		$this->load->library('user_agent');
 		$this->load->library("uploadGS");
 		$this->bucketName = "eventstack-storage";
 
@@ -27,33 +28,55 @@ class WeddingController extends MY_Controller {
 			$sales_order = $this->sales_order_model->find($data->sales_order_id);
 			$sales_order_detail = $this->sales_order_detail_model->find($data->sales_order_id,'sales_order_id');
 			$product = $this->product_model->find($sales_order_detail->product_id);
+			$data->product = $product;
 			
 			$query = $this->buku_tamu_model->source();
 			$query->where('sales_order_id',$data->sales_order_id);
+			$query->limit(10);
 			$query->order_by('id','DESC');
 			$data->buku_tamu = $query->get()->result();
 
 			$query = $this->sales_order_images_model->source();
 			$query->where('sales_order_id',$data->sales_order_id);
 			$query->where('type','SLIDER');
+			if ($this->agent->is_mobile()){
+				$query->where('mobile',1);
+			}else{
+				$query->where('desktop',1);	
+			}
 			$query->order_by('order','ASC');
 			$data->slider = $query->get()->result();
 
 			$query = $this->sales_order_images_model->source();
 			$query->where('sales_order_id',$data->sales_order_id);
 			$query->where('type','GALERI');
+			if ($this->agent->is_mobile()){
+				$query->where('mobile',1);
+			}else{
+				$query->where('desktop',1);	
+			}
 			$query->order_by('order','ASC');
 			$data->galeri = $query->get()->result();
 
 			$query = $this->sales_order_images_model->source();
 			$query->where('sales_order_id',$data->sales_order_id);
 			$query->where('type','PENGANTIN');
+			if ($this->agent->is_mobile()){
+				$query->where('mobile',1);
+			}else{
+				$query->where('desktop',1);	
+			}
 			$query->order_by('order','ASC');
 			$data->pengantin = $query->get()->result();
 
 			$query = $this->sales_order_images_model->source();
 			$query->where('sales_order_id',$data->sales_order_id);
 			$query->where('type','BACKGROUND');
+			if ($this->agent->is_mobile()){
+				$query->where('mobile',1);
+			}else{
+				$query->where('desktop',1);	
+			}
 			$query->order_by('order','ASC');
 			$data->background = $query->get()->result();
 
@@ -86,13 +109,18 @@ class WeddingController extends MY_Controller {
 		$query = $this->buku_tamu_model->source();
 		$query->where('sales_order_id',0);
 		$query->order_by('id','DESC');
-		$query->limit(0,10);
+		$query->limit(10);
 		$data->buku_tamu = $query->get()->result();
 
 		$query = $this->product_images_model->source();
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
 		$query->where('type','SLIDER');
+		if ($this->agent->is_mobile()){
+			$query->where('mobile',1);
+		}else{
+			$query->where('desktop',1);	
+		}
 		$query->order_by('order','ASC');
 		$data->slider = $query->get()->result();
 		
@@ -100,6 +128,11 @@ class WeddingController extends MY_Controller {
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
 		$query->where('type','GALERI');
+		if ($this->agent->is_mobile()){
+			$query->where('mobile',1);
+		}else{
+			$query->where('desktop',1);	
+		}
 		$query->order_by('order','ASC');
 		$data->galeri = $query->get()->result();
 
@@ -107,6 +140,11 @@ class WeddingController extends MY_Controller {
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
 		$query->where('type','PENGANTIN');
+		if ($this->agent->is_mobile()){
+			$query->where('mobile',1);
+		}else{
+			$query->where('desktop',1);	
+		}
 		$query->order_by('order','ASC');
 		$data->pengantin = $query->get()->result();
 
@@ -114,6 +152,11 @@ class WeddingController extends MY_Controller {
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
 		$query->where('type','BACKGROUND');
+		if ($this->agent->is_mobile()){
+			$query->where('mobile',1);
+		}else{
+			$query->where('desktop',1);	
+		}
 		$query->order_by('order','ASC');
 		$data->background = $query->get()->result();
 
@@ -121,6 +164,11 @@ class WeddingController extends MY_Controller {
 		$query->select('*, sample_image as image');
 		$query->where('product_id',$id);
 		$query->where('type','LAINNYA');
+		if ($this->agent->is_mobile()){
+			$query->where('mobile',1);
+		}else{
+			$query->where('desktop',1);	
+		}
 		$query->order_by('order','ASC');
 		$data->lainnya = $query->get()->result();
 

@@ -1,5 +1,10 @@
 <script type="text/javascript">
 
+    jQuery(window).on('load', function() {
+        jQuery("#status").fadeOut();
+        jQuery("#preloader").delay(350).fadeOut("slow");
+    });
+
     var x = document.getElementById("myAudio");
     var audio = 1;
     var xAudio = 1;

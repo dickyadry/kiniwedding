@@ -178,12 +178,12 @@
 /*--------------------------
 11. scrollUp
 ---------------------------- */	
-	$.scrollUp({
-        scrollText: '<i class="fas fa-angle-up"></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    }); 
+	// $.scrollUp({
+ //        scrollText: '<i class="fas fa-angle-up"></i>',
+ //        easingType: 'linear',
+ //        scrollSpeed: 900,
+ //        animation: 'fade'
+ //    }); 
 
 // Contact Form Submition
 	function checkRequire(formId , targetResp){

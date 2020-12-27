@@ -42,12 +42,23 @@
 
 <body id="home">
 
-    <div onclick="playAudio()" type="button" id="over-lay">
-        <div style="margin:0 auto;">
-            <div class="tapfp">TAP TO CONTINUE</div>
-            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K002.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></p></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- Content End -->
 
     <div class="box-stop-scrolling">
         <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
@@ -63,18 +74,13 @@
     <!-- start page-wrapper -->
     <div class="page-wrapper">
 
-
-        <!-- Preloader -->
-        <div class="preloader">
-            <div class="middle">
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-heart"></i>
+        <!-- start preloader -->
+        <div id="preloader">
+            <div id="box-preloader">
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
             </div>
         </div>
         <!-- end preloader --> 
-
 
         <!-- Start header -->
         <header id="header">
@@ -117,7 +123,7 @@
         <section class="hero hero-slider-wrapper">
             <div class="hero-slider">
                 <?php foreach ($slider as $key => $value) { ?>
-                <div class="slide"><img src="<?php echo str_replace('thumbs/', '', $value->image); ?>" alt></div>
+                <div class="slide"><img src="<?php echo show_images($value->image); ?>" alt></div>
                 <?php } ?>
             </div>
 
@@ -191,7 +197,7 @@
                     <div class="col col-md-4 col-sm-5 wow fadeInLeftSlow" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div class="pic">
                             <?php if(isset($pengantin[0]->image)){?>
-                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>" class="img img-responsive" alt>
+                                <img src="<?php echo show_images($pengantin[0]->image); ?>" class="img img-responsive" alt>
                             <?php } ?>
                         </div>
                     </div>
@@ -235,7 +241,7 @@
                     <div class="col col-md-4 col-md-push-8 col-sm-5 col-sm-push-7 wow fadeInRightSlow" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div class="pic">
                             <?php if(isset($pengantin[1]->image)){?>
-                                <img src="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>" class="img img-responsive" alt>
+                                <img src="<?php echo show_images($pengantin[1]->image); ?>" class="img img-responsive" alt>
                             <?php } ?>
                         </div>
                     </div>
@@ -325,7 +331,7 @@
                                     <div role="tabpanel" class="row tab-pane fade in active" id="first-meet">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
                                             <?php if(isset($lainnya[0]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>" class="img img-responsive" alt>
+                                            <img src="<?php echo show_images($lainnya[0]->image); ?>" class="img img-responsive" alt>
                                             <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
@@ -338,7 +344,7 @@
                                     <div role="tabpanel" class="row tab-pane fade" id="first-date">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
                                             <?php if(isset($lainnya[1]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[1]->image); ?>" class="img img-responsive" alt>
+                                            <img src="<?php echo show_images($lainnya[1]->image); ?>" class="img img-responsive" alt>
                                             <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
@@ -351,7 +357,7 @@
                                     <div role="tabpanel" class="row tab-pane fade" id="proposal">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
                                             <?php if(isset($lainnya[2]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[2]->image); ?>" class="img img-responsive" alt>
+                                            <img src="<?php echo show_images($lainnya[2]->image); ?>" class="img img-responsive" alt>
                                             <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
@@ -364,7 +370,7 @@
                                     <div role="tabpanel" class="row tab-pane fade" id="engagement">
                                         <div class="col col-lg-6 col-md-4 col-sm-5">
                                             <?php if(isset($lainnya[3]->image)){?>
-                                            <img src="<?php echo str_replace('thumbs/', '',$lainnya[3]->image); ?>" class="img img-responsive" alt>
+                                            <img src="<?php echo show_images($lainnya[3]->image); ?>" class="img img-responsive" alt>
                                             <?php } ?>
                                         </div>
                                         <div class="col col-lg-6 col-md-8 col-sm-7 story-details">
@@ -381,7 +387,7 @@
                     <div class="col col-lg-4">
                         <div class="pic-holder">
                             <?php if(isset($lainnya[4]->image)){?>
-                                <img src="<?php echo str_replace('thumbs/', '',$lainnya[4]->image); ?>" class="img img-responsive" alt>
+                                <img src="<?php echo show_images($lainnya[4]->image); ?>" class="img img-responsive" alt>
                             <?php } ?>
                             <h3>And, We’re Getting Married</h3>
                         </div>
@@ -443,7 +449,7 @@
 
         <!-- start of bquotes -->
         <?php $background_quotes = isset($background[1]->image)?$background[1]->image:''; ?>
-        <section class="bquotes" style='background: url("<?php echo str_replace('thumbs/', '',$background_quotes); ?>") center center/cover no-repeat fixed;'>
+        <section class="bquotes" style='background: url("<?php echo show_images($background_quotes); ?>") center center/cover no-repeat fixed;'>
             <h2 class="hidden">Wishes</h2>
             <div class="container">
                 <div class="row">
@@ -480,7 +486,7 @@
                     <?php foreach ($galeri as $key => $value) { ?>
                     <div class="col col-md-3 col-xs-6 wow fadeIn">
                         <div class="box">
-                            <a href="<?php echo str_replace('thumbs/', '',$value->image); ?>" class="fancybox" data-fancybox-group="gallery">
+                            <a href="<?php echo show_images($value->image); ?>" class="fancybox" data-fancybox-group="gallery">
                                 <img src="<?php echo $value->image; ?>" class="img img-responsive" alt>
                                 <div class="fade-icon">
                                     <span class="icon"><i class="fa fa-search"></i></span>
@@ -592,7 +598,7 @@
 
         <!-- start footer -->
         <?php $background_footer = isset($background[0]->image)?$background[0]->image:''; ?>
-        <footer class="section-padding finish" style='background: url("<?php echo str_replace('thumbs/', '',$background_footer); ?>") center center/cover no-repeat fixed;'>
+        <footer class="section-padding finish" style='background: url("<?php echo show_images($background_footer); ?>") center center/cover no-repeat fixed;'>
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">

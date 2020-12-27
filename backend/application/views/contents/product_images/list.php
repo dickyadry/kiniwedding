@@ -39,6 +39,8 @@
                     <th>Width</th>
                     <th>Height</th>
                     <th>Order</th>
+                    <th>Desktop</th>
+                    <th>Mobile</th>
                     <th>Sample</th>
                     <th width="15%" class="text-center">Action</th>
                 </tr>
@@ -51,6 +53,8 @@
                     <td><?php echo $value->width; ?></td>
                     <td><?php echo $value->height; ?></td>
                     <td><?php echo $value->order; ?></td>
+                    <td><?php echo $value->desktop; ?></td>
+                    <td><?php echo $value->mobile; ?></td>
                     <td width="5%">
                         <?php if($value->sample_image!=null){?>
                             <img src="<?php echo $value->sample_image;?>">

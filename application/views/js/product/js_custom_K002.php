@@ -1,4 +1,10 @@
 <script type="text/javascript">
+
+jQuery(window).on('load', function() {
+    jQuery("#status").fadeOut();
+    jQuery("#preloader").delay(350).fadeOut("slow");
+});
+
 /*------------------------------------------
     = BIGDAY COUNTDOWN
 -------------------------------------------*/

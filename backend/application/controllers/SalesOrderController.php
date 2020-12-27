@@ -347,6 +347,8 @@ class SalesOrderController extends MY_Controller{
 				'width'=>$product_images->width,
 				'height'=>$product_images->height,
 				'order'=>$product_images->order,
+				'desktop'=>$product_images->desktop,
+				'mobile'=>$product_images->mobile,
 				'image'=>$param_data['image'],
 				'file_name'=>$param_data['file_name']
 			);

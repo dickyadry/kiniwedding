@@ -25,24 +25,19 @@
 	</head>
 <body>
 	
-	<!-- .preloader -->
-    <div class="preloader"></div> 
-    <!-- /.preloader -->
-<!-- 
-    <div onclick="playAudio()" type="button" id="over-lay">
-        <div style="margin:0 auto;">
-            <div class="tapfp">TAP TO CONTINUE</div>
-            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+	<!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
         </div>
-    </div> -->
+    </div>
+    <!-- end preloader --> 
 
     <!-- Content -->
-    <section onclick="playAudio()" type="button" id="over-lay" style='background-image: url("<?php echo base_url(); ?>assets/K004/images/wedding_m/sweet-ice-cream-photography-87191.jpg")'>
-
+    <section onclick="playAudio()" type="button" id="over-lay">
         <div class="gla_invitation_container">
-            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>assets/K004/images/invitations/inv_i/back4.jpg")'>
-                
-                <p><img src="<?php echo base_url(); ?>assets/K004/images/invitations/inv_i/save_the_date_red.gif" alt="" height="240" width="250"></p>
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
+                <p><img src="<?php echo base_url(); ?>assets/K004/images/invitations/inv_i/save_the_date_bl.gif" alt=""></p>
                 <br><br>
                 <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
                 <h4><?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
@@ -51,12 +46,8 @@
                 <div class="box-start">
 			        <a href='#' class="text-start">Masuk</a>
 			    </div>
-
-                
-
             </div>
         </div>
-
     </section>
     <!-- Content End -->
 
@@ -150,7 +141,7 @@
 				<!-- .single_groom -->
 				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 single_groom col-lg-push-1 col-md-push-1 wow slideInLeft" data-animation-duration="3s" data-animation-delay="1s">
 					<?php if(isset($pengantin[0]->image)){?>
-                    <img src="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>" alt="Groom image">
+                    <img src="<?php echo show_images($pengantin[0]->image); ?>" alt="Groom image">
                     <?php } ?>
 
 					<div class="info-box">
@@ -163,7 +154,7 @@
 				<!-- .single_bride -->
 				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 single_bride col-lg-offset-1 col-md-offset-1 wow slideInRight"  data-animation-duration="3s" data-animation-delay="2s">
 					<?php if(isset($pengantin[1]->image)){?>
-                    <img src="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>" alt="Bride image">
+                    <img src="<?php echo show_images($pengantin[1]->image); ?>" alt="Bride image">
                     <?php } ?>
 					<div class="info-box">
 						<h2><?php echo $nama_pengantin_wanita; ?></h2>
@@ -178,7 +169,7 @@
 
 	<!-- #qoute -->
 	<?php $background_qoute = isset($background[0]->image)?$background[0]->image:''; ?>
-	<section id="qoute" style='background: url("<?php echo str_replace('thumbs/', '',$background_qoute); ?>") center center no-repeat;'>
+	<section id="qoute" style='background: url("<?php echo show_images($background_qoute); ?>") center center no-repeat;'>
 		<div class="overlay">
 			<div class="container">
 				<div class="row wow slideInLeft">
@@ -253,7 +244,7 @@
 
 	<!-- #rsvp -->
 	<?php $background_rsvp = isset($background[1]->image)?$background[1]->image:''; ?>
-	<section id="rsvp" style='background: url("<?php echo str_replace('thumbs/', '',$background_rsvp); ?>") center center no-repeat;'>
+	<section id="rsvp" style='background: url("<?php echo show_images($background_rsvp); ?>") center center no-repeat;'>
 		<div class="overlay">
 			<div class="container">
 				<div class="row">
@@ -332,8 +323,8 @@
 			<div class="row-fluid">
 				<ul class="clearfix">
 					<?php foreach ($galeri as $key => $value) { ?>
-					<li><a data-gal="prettyPhoto" href="<?php echo str_replace('thumbs/', '',$value->image); ?>">
-						<img src="<?php echo str_replace('thumbs/', '',$value->image); ?>" alt="kiniwedding">
+					<li><a data-gal="prettyPhoto" href="<?php echo show_images($value->image); ?>">
+						<img src="<?php echo show_images($value->image); ?>" alt="kiniwedding">
 						<span class="overlay"></span>
 					</a></li>	
 					<?php } ?>				
@@ -366,7 +357,7 @@
 				<!-- .single_groom -->
 				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 single_groom col-lg-push-1 col-md-push-1 wow slideInLeft" data-animation-duration="3s" data-animation-delay="1s">
 					<?php if(isset($lainnya[0]->image)){?>
-                    <img src="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>" alt="Lokasi Akad Nikah">
+                    <img src="<?php echo show_images($lainnya[0]->image); ?>" alt="Lokasi Akad Nikah">
                     <?php } ?>
 
 					<div class="info-box">
@@ -379,7 +370,7 @@
 				<!-- .single_bride -->
 				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 single_bride col-lg-offset-1 col-md-offset-1 wow slideInRight"  data-animation-duration="3s" data-animation-delay="2s">
 					<?php if(isset($lainnya[1]->image)){?>
-                    <img src="<?php echo str_replace('thumbs/', '',$lainnya[1]->image); ?>" alt="Lokasi Resepsi">
+                    <img src="<?php echo show_images($lainnya[1]->image); ?>" alt="Lokasi Resepsi">
                     <?php } ?>
 					<div class="info-box">
 						<h2>Resepsi</h2>

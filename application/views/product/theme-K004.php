@@ -32,12 +32,31 @@
 
 <body class="gla_middle_titles">
 
-    <div onclick="playAudio()" type="button" id="over-lay">
-        <div style="margin:0 auto;">
-            <div class="tapfp">TAP TO CONTINUE</div>
-            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
         </div>
     </div>
+    <!-- end preloader --> 
+        
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K004.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></p></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
 
     <div class="box-stop-scrolling">
         <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
@@ -125,7 +144,7 @@
 
     <!-- Slider -->
     <?php $background_slide = isset($background[0]->image)?$background[0]->image:''; ?>
-    <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="<?php echo str_replace('thumbs/', '',$background_slide); ?>" data-stellar-background-ratio="0.2">
+    <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="<?php echo show_images($background_slide); ?>" data-stellar-background-ratio="0.2">
         <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
         <div class="container">
             <!-- Slider Texts -->
@@ -154,7 +173,7 @@
 
         <!-- section -->
         <?php $background_pengantin = isset($background[1]->image)?$background[1]->image:''; ?>
-        <section class="gla_section gla_image_bck gla_fixed pasangn" data-stellar-background-ratio="0.2" data-image="<?php echo str_replace('thumbs/', '',$background_pengantin); ?>">
+        <section class="gla_section gla_image_bck gla_fixed pasangn" data-stellar-background-ratio="0.2" data-image="<?php echo show_images($background_pengantin); ?>">
             <div class="container">
                 <div class="row gla_auto_height">
                     <div class="col-md-6 col-md-push-6 gla_image_bck" data-color="#eee">
@@ -164,7 +183,7 @@
                         </div>
                     </div>
                     <?php if(isset($pengantin[0]->image)){?>
-                    <div class="col-md-6 col-md-pull-6 gla_image_bck" data-image="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>">
+                    <div class="col-md-6 col-md-pull-6 gla_image_bck" data-image="<?php echo show_images($pengantin[0]->image); ?>">
                     <?php } ?>
                     </div>
                     <div class="col-md-6 gla_image_bck" data-color="#eee">
@@ -175,7 +194,7 @@
                         
                     </div>
                     <?php if(isset($pengantin[1]->image)){?>
-                    <div class="col-md-6 gla_image_bck" data-image="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>">
+                    <div class="col-md-6 gla_image_bck" data-image="<?php echo show_images($pengantin[1]->image); ?>">
                     <?php } ?>
                     </div>
                 </div>
@@ -185,7 +204,7 @@
 
         <!-- section -->
         <?php $background_date = isset($background[2]->image)?$background[2]->image:''; ?>
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt hari-perayaan" data-stellar-background-ratio="0.2" data-image="<?php echo str_replace('thumbs/', '',$background_date); ?>">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt hari-perayaan" data-stellar-background-ratio="0.2" data-image="<?php echo show_images($background_date); ?>">
             <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
             <div class="container text-center">
                 <p><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/animations/save_gold.gif" height="280" alt=""></p>
@@ -204,7 +223,7 @@
                 <div class="row text-center">
                     <div class="col-md-6 gla_round_block">
                         <?php if(isset($lainnya[0]->image)){?>
-                        <div class="gla_round_im gla_image_bck" data-image="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>"></div>
+                        <div class="gla_round_im gla_image_bck" data-image="<?php echo show_images($lainnya[0]->image); ?>"></div>
                         <?php } ?>
                         <h3>Akad Nikah</h3>
                         <p><?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</span><br>
@@ -213,7 +232,7 @@
                     </div>
                     <div class="col-md-6 gla_round_block">
                         <?php if(isset($lainnya[1]->image)){?>
-                        <div class="gla_round_im gla_image_bck" data-image="<?php echo str_replace('thumbs/', '',$lainnya[1]->image); ?>"></div>
+                        <div class="gla_round_im gla_image_bck" data-image="<?php echo show_images($lainnya[1]->image); ?>"></div>
                         <?php } ?>
                         <h3>Resepsi</h3>
                         <p><?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</span><br>
@@ -227,7 +246,7 @@
 
         <!-- section -->
         <?php $background_rsvp = isset($background[3]->image)?$background[3]->image:''; ?>
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt buku-tamu" data-stellar-background-ratio="0.2" data-image="<?php echo str_replace('thumbs/', '',$background_rsvp); ?>">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt buku-tamu" data-stellar-background-ratio="0.2" data-image="<?php echo show_images($background_rsvp); ?>">
             <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
             <div class="container text-center">
                 <p><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/animations/rsvp_gold.gif" height="200" alt=""></p>
@@ -265,7 +284,7 @@
 
         <!-- section -->
         <?php $background_4 = isset($background[4]->image)?$background[4]->image:''; ?>
-        <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.2" data-image="<?php echo str_replace('thumbs/', '',$background_4); ?>">
+        <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.2" data-image="<?php echo show_images($background_4); ?>">
 
             <!-- Over -->
             <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
@@ -304,8 +323,8 @@
                     <?php foreach ($galeri as $key => $value) { ?>
                     <div class="col-sm-4 gla_anim_box grid-item engagement">
                         <div class="gla_shop_item">
-                            <a href="<?php echo str_replace('thumbs/', '',$value->image); ?>" class="lightbox">
-                                <img src="<?php echo str_replace('thumbs/', '',$value->image); ?>" alt="">
+                            <a href="<?php echo show_images($value->image); ?>" class="lightbox">
+                                <img src="<?php echo show_images($value->image); ?>" alt="">
                             </a>
                         </div>
                     </div>
@@ -317,7 +336,7 @@
 
         <!-- section -->
         <?php $background_5 = isset($background[5]->image)?$background[5]->image:''; ?>
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt finish" data-stellar-background-ratio="0.8" data-image="<?php echo str_replace('thumbs/', '',$background_5); ?>">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt finish" data-stellar-background-ratio="0.8" data-image="<?php echo show_images($background_5); ?>">
             <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
             <div class="container text-center">
                 <p><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/animations/thanks_gold.gif" height="143" alt=""></p>

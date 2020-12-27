@@ -606,6 +606,19 @@ function initial($fullname){
 
 }
 
+function show_images($images){
+
+    $ci =& get_instance(); 
+    $ci->load->library('user_agent');
+    if ($ci->agent->is_mobile()){
+        $result = $images;
+    }else{
+        $result = str_replace('thumbs/', '', $images);
+        // $result = $images;
+    }
+    return $result;
+}
+
 function encrypt_decrypt($action, $string) {
     $output = false;
     $encrypt_method = "AES-256-CBC";

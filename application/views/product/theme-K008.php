@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+
     <style type="text/css">
         .rspv-area .rspv-con:after{
             background: none;
@@ -30,10 +33,40 @@
 </head>
     <body>
 
-		<div id="preloader">
-			<div id="status"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/preloader.gif" id="preloader_image" alt="loader">
-			</div>
-		</div>
+        <!-- Content -->
+        <section onclick="playAudio()" type="button" id="over-lay">
+            <div class="gla_invitation_container">
+                <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
+                    <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_red.gif" alt=""></p>
+                    <br><br>
+                    <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                    <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                    <h4><?php echo $tempat_resepsi; ?></p></h4>
+                    <br>
+                    <div class="box-start">
+                        <a href='#' class="text-start">Masuk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content End -->
+
+        <div class="box-stop-scrolling">
+            <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+        </div>
+
+        <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+        <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+        <audio loop id="myAudio">
+            <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+        </audio>
+
+        <div id="preloader">
+            <div id="status">
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+            </div>
+        </div>
 
         <!--Header area start here-->
         <header id="sticky">
@@ -521,7 +554,7 @@
         <!--Testimonial area End here-->
         <!--Footer wrapper start here-->
         <footer>
-            <div class="container">
+            <div class="container finish">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="foo-logo">

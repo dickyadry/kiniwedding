@@ -22,17 +22,54 @@
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-    <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/http://maps.googleapis.com/maps/api/js"></script>
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
-    <div class="site-loder">
-        <div class="heart"></div>
-    </div> <!-- end of site-loder -->
+    
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_red.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
 
     <header id="home" class="paling-atas">
         <nav class="navbar" id="nav">
@@ -350,8 +387,13 @@
         </div> <!-- end of container -->
     </section> <!-- end of rsvp -->
 
+    <section class="map">
+        <h2 class="hidden">Map</h2>
+        <div id="googleMap-1"></div> <!-- google map -->
+    </section> <!-- end of map -->
+    
     <footer>
-        <div class="row">
+        <div class="row finish">
             <h2><?php echo $nama_panggilan_pengantin_pria; ?> &amp; <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
             <span class="date"><?php echo tanggal_resepsi($tanggal_resepsi); ?> </span>
         </div>

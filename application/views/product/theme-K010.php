@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.countdown.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animsition.min.css" type="text/css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bg.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/color.css" type="text/css" id="colors">
+
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
@@ -28,12 +32,47 @@
 
 <body id="homepage">
 
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K004.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></p></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
+
     <div id="wrapper">
 
         <!-- header begin -->
         <header>
-
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -208,13 +247,26 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-quote" aria-label="section-quote-1" class="text-light" data-stellar-background-ratio=".2">
+            <section id="section-quote" aria-label="section-quote-1" class="text-light" data-stellar-background-ratio=".2" data-bgcolor="#f8578d">
                 <div class="container">
                     <div class="row wow fadeInUp">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12">
                             <blockquote class="very-big text-light wow fadeIn">
-                                <span><?php echo $kata_mutiara; ?></span>
+                                <?php echo $kata_mutiara; ?>
                             </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco"><span class="id-color">Time Left Until Event</span></h2>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="spacer-double"></div>
+                            <div id="defaultCountdown" class="wow fadeIn"></div>
+                            <div class="spacer-single"></div>
                         </div>
                     </div>
                 </div>
@@ -304,6 +356,127 @@
                 </div>
             </section>
             <!-- section close -->
+
+
+            <!-- content begin -->
+            <div id="content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>Our Story</span></h2>
+                            <h2 data-wow-delay=".2s">Kisah Kita</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <ul class="timeline">
+                        <li class="wow fadeInUp">
+                            <div class="timeline-badge"><i class="fa fa-heart"></i></div>
+                            <div class="timeline-panel">
+
+                                <div class="picframe img-rounded mb20">
+                                    <a class="image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/1.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/1.jpg" class="img-responsive img-rounded" alt="">
+                                </div>
+
+                                <div class="timeline-heading">
+                                    <h4>1 July 2019</h4>
+                                    <h3 class="mt0">How We Meet</h3>
+                                    <div class="tiny-border"></div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
+                                        filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis
+                                        mé pra quem é amistosis quis leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted wow fadeInUp">
+                            <div class="timeline-badge"><i class="fa fa-heart"></i></div>
+                            <div class="timeline-panel">
+                                <div class="picframe img-rounded mb20">
+                                    <a class="image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/2.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/2.jpg" class="img-responsive img-rounded" alt="">
+                                </div>
+
+                                <div class="timeline-heading">
+                                    <h4>1 July 2019</h4>
+                                    <h3 class="mt0">The First Date</h3>
+                                    <div class="tiny-border"></div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                        vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <div class="timeline-badge"><i class="fa fa-heart"></i></div>
+                            <div class="timeline-panel">
+                                <div class="picframe img-rounded mb20">
+                                    <a class="image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/3.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/3.jpg" class="img-responsive img-rounded" alt="">
+                                </div>
+
+                                <div class="timeline-heading">
+                                    <h4>1 July 2019</h4>
+                                    <h3 class="mt0">The Proposal</h3>
+                                    <div class="tiny-border"></div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                        vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted wow fadeInUp">
+                            <div class="timeline-badge"><i class="fa fa-heart"></i></div>
+                            <div class="timeline-panel">
+                                <div class="picframe img-rounded mb20">
+                                    <a class="image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/4.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/story/4.jpg" class="img-responsive img-rounded" alt="">
+                                </div>
+
+                                <div class="timeline-heading">
+                                    <h4>1 July 2019</h4>
+                                    <h3 class="mt0">We Are Engaged</h3>
+                                    <div class="tiny-border"></div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
+                                        filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis
+                                        mé pra quem é amistosis quis leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
 
             <section id="section-gallery">
                 <div class="container">
@@ -413,7 +586,7 @@
                 </div>
             </div>
 
-            <div class="subfooter">
+            <div class="subfooter finish">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-md-12">
@@ -425,15 +598,7 @@
         </footer>
         <!-- footer close -->
 
-        <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#" id="back-to-top"></a>
-        <div id="preloader">
-            <div class="preloader1"></div>
-        </div>
     </div>
-	
-	<audio loop="loop" autoplay="autoplay">
-		<source src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/music/Feels%20Like%20a%20Wedding%20Day.mp3" type="audio/mpeg" />
-	</audio>
 
     <!-- Javascript Files
     ================================================== -->

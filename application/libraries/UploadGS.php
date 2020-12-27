@@ -43,7 +43,7 @@ class UploadGS{
 	    // upload/replace file 
 	    $storageObject = $bucket->upload(
 	            $fileContent,
-	            ['name' => $cloudPath]
+	            ['name' => $cloudPath, 'enable_cache' => false]
 	            // if $cloudPath is existed then will be overwrite without confirmation
 	            // NOTE: 
 	            // a. do not put prefix '/', '/' is a separate folder name  !!
@@ -52,6 +52,31 @@ class UploadGS{
 	 
 	    // is it succeed ?
 	    return $storageObject != null;
+	}
+
+	public function uploadFileNew($fileContent, $cloudPath) {
+	    // $this->privateKeyFileContent = $GLOBALS['privateKeyFileContent'];
+	    // connect to Google Cloud Storage using private key as authentication
+	    try {
+	        $storage = new StorageClient([
+	            'keyFile' => json_decode($this->privateKeyFileContent, true)
+	        ]);
+	    } catch (Exception $e) {
+	        // maybe invalid private key ?
+	        print $e;
+	        return false;
+	    }
+	 
+		$storage->registerStreamWrapper();
+		$text = "Contained text: ".date("Y-m-d H:i:s")."\n";
+
+		$options = ['gs' => ['acl' => 'public-read']];
+		$context = stream_context_create($options);
+		$filepath = "gs://".$this->bucketName."/test.txt";
+		$test = file_put_contents($filepath, $text, 0, $context);
+
+		print_r($test);
+
 	}
 
 	public function deleteFile($cloudPath) {
@@ -110,7 +135,17 @@ class UploadGS{
 	        print $e;
 	        return false;
 	    }
-	 
+	 	
+	 	$options = [
+		    'gs' => [
+		        'enable_cache' => true,
+		        'enable_optimistic_cache' => true,
+		        'read_cache_expiry_seconds' => 300,
+		    ]
+		];
+		$context = stream_context_create($options);
+
+
 	    $storage->registerStreamWrapper();
 	    $contents = file_get_contents('gs://'.$this->bucketName.'/'.$cloudPath.'');
 	    return $contents;

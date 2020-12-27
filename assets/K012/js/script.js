@@ -214,7 +214,8 @@
                 }
             }
         });
-                
+
+        get_date = parseInt(get_date);
         clock.setTime(get_date);
         clock.setCountdown(true);
         clock.start();

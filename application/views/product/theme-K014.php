@@ -11,7 +11,9 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
-    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/themify-icons.css" rel="stylesheet">
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+    
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flaticon.css" rel="stylesheet">
 
@@ -33,27 +35,55 @@
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css" rel="stylesheet">
 
+
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
 
 </head>
 
 <body id="home">
 
+    <!-- start preloader -->
+    <div id="preloader">
+        <div id="box-preloader">
+            <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <!-- end preloader --> 
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K001.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <div class="box-stop-scrolling">
+        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+    </div>
+
+    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+    <audio loop id="myAudio">
+        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+    </audio>
+
     <!-- start page-wrapper -->
     <div class="page-wrapper">
-
-        <!-- prealoader area start -->
-        <div id="preloader">
-            <div class="spiner"></div>
-        </div>
-        <!-- prealoader area end -->
 
         <!-- Start header -->
         <header class="site-header header-style-1">
@@ -488,34 +518,19 @@
         <!-- rsvp-area end -->
 
         <!-- start site-footer -->
-        <footer class="site-footer">
+        <footer class="site-footer finish">
             <div class="container">
                 <div class="row">
                     <div class="text">
                         <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
                         <p>Thank you</p>
                     </div>
-
-                    <div class="back-to-top">
-                        <a href="#" class="back-to-top-btn"><span><i class="ti-arrow-up"></i></span></a>
-                    </div>
                 </div>
             </div> <!-- end container -->
         </footer>
         <!-- end site-footer -->
-        <!-- strat music-box -->
-        <div class="music-box">
-            <button class="music-box-toggle-btn">
-                <i class="ti-music-alt"></i>
-            </button>
-            <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102137206&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            </div>
-        </div>
-        <!-- end music box -->
     </div>
     <!-- end of page-wrapper -->
-
 
 
     <!-- All JavaScript files

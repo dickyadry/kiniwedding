@@ -231,8 +231,8 @@ class ProductImagesController extends MY_Controller {
 					$fileContent = file_get_contents($path_images_crop);
 					$isSucceed = $uploadGS->uploadFile($fileContent, $cloudPath);
 					if($isSucceed == true) {
-
-			            $result_resize = $this->resize($name,300);
+						
+			            $result_resize = $this->resize($name,414);
 						if($result_resize['status']=='success'){
 
 							$path_images_resize = $result_resize['thumbPath'];

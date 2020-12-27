@@ -5,20 +5,61 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css">
 	<title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
 	<meta name="description" content="">
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css">
+
+	<!-- Favicon and Touch Icons -->
+	<link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div id="preloader" class="preloader">
-			<div id="pre" class="preloader_container"><div class="preloader_disabler btn btn-default">Disable Preloader</div></div>
-		</div>
+
+		<!-- start preloader -->
+        <div id="preloader">
+            <div id="box-preloader">
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
+            </div>
+        </div>
+        <!-- end preloader --> 
+
+        <!-- Content -->
+	    <section onclick="playAudio()" type="button" id="over-lay">
+	        <div class="gla_invitation_container">
+	            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-ping.png")'>
+	                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+	                <br><br>
+	                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+	                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+	                <h4><?php echo $tempat_resepsi; ?></h4>
+	                <br>
+	                <div class="box-start">
+	                    <a href='#' class="text-start">Masuk</a>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    <!-- Content End -->
+
+	    <div class="box-stop-scrolling">
+	        <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
+	    </div>
+
+	    <a href='#' class="musik play" onclick="togleAudio()"><i class="ti-music"></i></a>
+	    <a href='#' class="musik pause" onclick="togleAudio()"><i class="ti-control-pause"></i></a>
+
+	    <audio loop id="myAudio">
+	        <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
+	    </audio>
+
 		<!-- Header Styles -->
 		<header class="header-nav transparent">
 			<div class="container">
@@ -174,7 +215,6 @@
 								$sekarang = time();
 
 								$sisa = $tanggal - $sekarang;
-								echo $sisa;
 							?>
                             <span id="date_deadline" hidden><?php echo $sisa; ?></span>
 
@@ -593,7 +633,7 @@
 		</section>
 
 		<!-- Our Footer -->
-		<section class="ulockd-footers bgc-overlay-white8 ulockd_bgi4">
+		<section class="ulockd-footers bgc-overlay-white8 ulockd_bgi4 finish">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -613,7 +653,6 @@
 			</div>
 		</section>
 
-		<a class="scrollToHome ulockd-bgthm" href="javascript:void(0);"><i class="fa fa-home"></i></a>
 	</div>
 	<!-- Wrapper End -->
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery-1.12.4.js"></script>

@@ -32,12 +32,24 @@
 
 <body>
 
-    <div onclick="playAudio()" type="button" id="over-lay">
-        <div style="margin:0 auto;">
-            <div class="tapfp">TAP TO CONTINUE</div>
-            <div style="text-align:center">Use Chrome browser to make your website look perfect</div>
+
+    <!-- Content -->
+    <section onclick="playAudio()" type="button" id="over-lay">
+        <div class="gla_invitation_container">
+            <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K001.png")'>
+                <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_bl.gif" alt=""></p>
+                <br><br>
+                <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                <h4><?php echo tanggal_resepsi($tanggal_resepsi); ?></h4><br>
+                <h4><?php echo $tempat_resepsi; ?></p></h4>
+                <br>
+                <div class="box-start">
+                    <a href='#' class="text-start">Masuk</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- Content End -->
 
     <div class="box-stop-scrolling">
         <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
@@ -54,12 +66,9 @@
     <div class="page-wrapper flower-fixed-body">
 
         <!-- start preloader -->
-        <div class="preloader">
-            <div class="middle">
-                <i class="fi flaticon-favorite-heart-button"></i>
-                <i class="fi flaticon-favorite-heart-button"></i>
-                <i class="fi flaticon-favorite-heart-button"></i>
-                <i class="fi flaticon-favorite-heart-button"></i>
+        <div id="preloader">
+            <div id="box-preloader">
+                <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
             </div>
         </div>
         <!-- end preloader --> 
@@ -150,7 +159,7 @@
 
                     <?php foreach ($slider as $key => $value) { ?>
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="<?php echo str_replace('thumbs/', '', $value->image); ?>"></div> 
+                        <div class="slide-inner slide-bg-image" data-background="<?php echo show_images($value->image); ?>"></div> 
                     </div> 
                     <?php } ?>
                 </div>
@@ -204,7 +213,7 @@
                             <div class="couple-row clearfix">
                                 <div class="img-holder">
                                     <?php if(isset($pengantin[0]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$pengantin[0]->image); ?>" alt>
+                                    <img src="<?php echo show_images($pengantin[0]->image); ?>" alt>
                                     <?php } ?>
                                 </div>
                                 <div class="details">
@@ -225,7 +234,7 @@
                                 </div>
                                 <div class="img-holder">
                                     <?php if(isset($pengantin[0]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$pengantin[1]->image); ?>" alt>
+                                    <img src="<?php echo show_images($pengantin[1]->image); ?>" alt>
                                     <?php } ?>
                                 </div>
                             </div>
@@ -320,7 +329,7 @@
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-1.png" class="fancybox" data-fancybox-group="gall-1">
 
                                     <?php if(isset($galeri[0]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[0]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[0]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
 
                                 </a>
@@ -328,42 +337,42 @@
                             <div class="grid grid-item">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-2.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[1]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[1]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[1]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
                             <div class="grid grid-item">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-3.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[2]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[2]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[2]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
                             <div class="grid grid-item">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-4.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[3]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[3]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[3]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
                             <div class="grid grid-item width2">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-5.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[4]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[4]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[4]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
                             <div class="grid grid-item width2">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-6.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[5]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[5]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[5]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
                             <div class="grid grid-item width2">
                                 <a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/img-7.png" class="fancybox" data-fancybox-group="gall-1">
                                     <?php if(isset($galeri[6]->image)){?>
-                                    <img src="<?php echo str_replace('thumbs/', '',$galeri[6]->image); ?>" alt class="img img-responsive">
+                                    <img src="<?php echo show_images($galeri[6]->image); ?>" alt class="img img-responsive">
                                     <?php } ?>
                                 </a>
                             </div>
@@ -427,7 +436,7 @@
         <!-- start event-section -->
         <section class="event-section section-padding p-t-0 akad">
             <?php $background = isset($background[0]->image)?$background[0]->image:''; ?>
-            <div class="top-area" style="background: url('<?php echo str_replace('thumbs/', '',$background); ?>') center center/cover no-repeat local;">
+            <div class="top-area" style="background: url('<?php echo show_images($background); ?>') center center/cover no-repeat local;">
                 <h2>Perayaan Cinta Kita</h2>
                 <p class="date"><?php echo hari($tanggal_akad); ?>, <?php echo tanggal_resepsi($tanggal_akad); ?></p>
             </div>
@@ -494,7 +503,7 @@
             <div class="inner">
                 <div class="couple-pic">
                     <?php if(isset($lainnya[0]->image)){ ?>
-                        <img src="<?php echo str_replace('thumbs/', '',$lainnya[0]->image); ?>" alt>
+                        <img src="<?php echo show_images($lainnya[0]->image); ?>" alt>
                     <?php } ?>
                 </div>
                 <h2>Terimakasih</h2>
