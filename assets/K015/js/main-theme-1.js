@@ -255,7 +255,8 @@
 
 
 	// Update the count down every 1 second
-	var countDownDate = new Date("01 16, 2021 09:00:00").getTime();
+	var get_date = document.getElementById('date_deadline').innerHTML;
+	var countDownDate = new Date(get_date).getTime();
 	var x = setInterval(function () {
 
 		// Get todays date and time
