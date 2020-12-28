@@ -80,7 +80,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg  fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="logo"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -100,7 +100,7 @@
 
         <!-- Mobile Menu Start -->
         <nav class="mobile_menu hidden d-none">
-            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img class="mobile-logo" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/logo.png" alt="Wedding"></a>
+            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img class="mobile-logo" src="<?php echo ASSETS . "img/general-logo.png";?>" alt="Wedding"></a>
             <ul class="nav navbar-nav navbar-right menu">
                 <li class="nav-item active"><a class="nav-link" href="javascript:void(0);" onclick="goTo('paling-atas')">>Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="goTo('pasangan')">Bride & Groom</a></li>

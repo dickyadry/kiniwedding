@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-9">
                         <div class="logo-area">
-                            <a href="index.html"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/logo/logo.png" alt=""/></a>
+                            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12 hidden-xs">
@@ -558,7 +558,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="foo-logo">
-                            <a href="index.html"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/logo/logo2.png" alt=""/></a>
+                            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-8">

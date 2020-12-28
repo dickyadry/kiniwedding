@@ -72,8 +72,8 @@
 			                    <i class="fa fa-bars"></i>
 			                </button>
 			                <a class="navbar-brand ulockd-main-logo2" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#brand">
-			                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/header-logo.png" class="logo logo-display hidden-md" alt="header-logo.png">
-			                    <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/header-logo2.png" class="logo logo-scrolled" alt="">
+			                    <img src="<?php echo ASSETS . "img/general-logo.png";?>" class="logo logo-display hidden-md" alt="header-logo.png">
+			                    <img src="<?php echo ASSETS . "img/general-logo.png";?>" class="logo logo-scrolled" alt="">
 			                </a>
 			            </div>
 			            <!-- End Header Navigation -->

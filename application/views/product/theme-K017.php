@@ -66,7 +66,7 @@
             	<div class="auto-container clearfix">
                     <div class="outer-box">
                         <div class="logo">
-                            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img class="img-responsive" src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/logo.png" alt="garnen-help" height="50px;"></a>
+                            <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img class="img-responsive" src="<?php echo ASSETS . "img/general-logo.png";?>" alt="garnen-help" height="50px;"></a>
                         </div>
                         <nav class="main-menu">
                             <div class="navbar-header">

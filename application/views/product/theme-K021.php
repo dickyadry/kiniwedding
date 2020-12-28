@@ -83,7 +83,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="logo pull-left">
-                                <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/logo/5.png" alt="Bride"></a>
+                                <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="Bride" style="height:52px;"></a>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
@@ -395,7 +395,7 @@
                         <div class="col-md-12">
                             <div class="footer-content">
                                 <div class="footer-logo pb-45">
-                                    <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/logo/6.png" alt="bride"></a>
+                                    <a href="javascript:void(0);" onclick="goTo('paling-atas')"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="bride"></a>
                                 </div>
                                 <div class="footer-menu text-uppercase">
                                     <nav>

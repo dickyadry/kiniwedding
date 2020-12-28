@@ -77,8 +77,8 @@
 			<div class="row">
 				<div class="col-md-2 col-sm-2 col-xs-12">
 					<div class="the-heart-logo">
-						<a href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/#">
-							<img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/img/logo.png" alt="The Heart Logo">
+						<a href="javascript:void(0);" onclick="goTo('paling-atas')">
+							<img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="The Heart Logo">
 						</a>
 					</div>
 				</div>
