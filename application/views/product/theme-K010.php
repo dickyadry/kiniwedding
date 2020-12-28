@@ -359,7 +359,7 @@
 
 
             <!-- content begin -->
-            <div id="content">
+            <div id="content" class="kisah-kita">
 
                 <div class="container">
                     <div class="row">
@@ -474,7 +474,7 @@
 
             </div>
 
-            <section id="section-gallery">
+            <section id="section-gallery" class="galeri">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">

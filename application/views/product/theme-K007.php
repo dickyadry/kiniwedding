@@ -536,7 +536,7 @@
 		<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 		<div class="col-md-12">
 			<div class="wd_footer_section">
-				<img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="Logo" class="img-responsive">
+				<img src="<?php echo ASSETS . "img/general-logo-putih.png";?>" alt="Logo" class="img-responsive">
 				<p>@ Copyright 2021 All Rights Reserved. By <a href="https://kiniwedding.com" target="_blank">kiniwedding.com</a></p>
 			</div>
 		</div>

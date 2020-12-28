@@ -480,7 +480,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="foo-logo">
-                            <a href="javascript:void(0);"><img src="<?php echo ASSETS . "img/general-logo.png";?>" alt=""/></a>
+                            <a href="javascript:void(0);"><img src="<?php echo ASSETS . "img/general-logo-putih.png";?>" alt="" /></a>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-8">

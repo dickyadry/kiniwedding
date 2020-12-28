@@ -9,39 +9,6 @@ jQuery(window).on('load', function() {
 ////////////////////////////////////////////////////////
 
 
-$(document).on('ready', function() { 
-  
-    //pretty photo activator
-    $("a[data-gal^='prettyPhoto']").prettyPhoto();    
-
-    // var i =0; 
-    // var images = [
-    //     // add your image url here
-    //     '../../assets/K003/images/slider/slide-1.jpg',
-    //     '../../assets/K003/images/slider/slide-2.jpg',
-    //     '../../assets/K003/images/slider/slide-3.jpg',
-    // ];
-
-    var i =0; 
-    var images = [];
-    <?php foreach ($slider as $key => $value) { ?>
-        images.push("<?php echo str_replace('thumbs/', '', $value->image); ?>");
-    <?php } ?>
-
-    // grabing the container of slider
-    var image = $('#slider');
-    //Change image at regular intervals
-    setInterval(function(){   
-        image.fadeOut(500, function () {
-            image.css('background-image', 'url(' + images [i++] +')');
-            image.fadeIn(500);
-        });
-        if(i == images.length)
-        i = 0;
-    }, 6000);   
-
-});
-
 function buku_tamu() {
 
         var param = {
@@ -140,7 +107,7 @@ function buku_tamu() {
         });
     });
 
-    function goTo(param) {
+    function goTo(param) { alert($('.'+param).offset().top);
         $("html,body").animate({
             scrollTop: parseInt($('.'+param).offset().top)
         }, 700);
