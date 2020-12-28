@@ -414,7 +414,7 @@
   background-color: rgba(240, 118, 119, 0.7);
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #F07677;
   border-radius: 45px;
   text-align: center;
   z-index: 999;
@@ -438,7 +438,7 @@
 }
 
 .stop-scrolling:hover {
-  background-color: #AA9A45;
+  background-color: #F07677;
 }
 
 .stop-scrolling i {
@@ -465,7 +465,7 @@
   width: 45px;
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #F07677;
   border-radius: 45px;
   text-align: center;
   display: none;
@@ -489,12 +489,12 @@
 }
 
 .back-to-top:hover {
-  background-color: #AA9A45;
+  background-color: #F07677;
 }
 
 .back-to-top i {
   font-size: 18px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -526,7 +526,7 @@
   width: 45px;
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #F07677;
   border-radius: 45px;
   text-align: center;
   /*display: none;*/
@@ -550,12 +550,12 @@
 }
 
 .musik:hover {
-  background-color: #AA9A45;
+  background-color: #F07677;
 }
 
 .musik i {
   font-size: 18px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
   position: absolute;
   left: 50%;

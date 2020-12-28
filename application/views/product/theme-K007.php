@@ -27,6 +27,9 @@
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 	<script src='http://www.webstrot.com/google_analytics_auto.js'></script></head>
 
+	<!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+
 <body>
 	<!-- preloader Start -->
 	<div id="preloader">
@@ -71,7 +74,7 @@
 			<div class="wd_header_wrapper wd_single_index_menu">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="wd_logo">
-						<img src="<?php echo ASSETS . "img/wedding-black.jpeg";?>" alt="Logo" title="Logo" class="img-responsive" style="height:100px;">
+						<img src="<?php echo ASSETS . "img/general-logo.png";?>" alt="Logo" title="Logo" class="img-responsive" style="height:60px;">
 						<button class="wd_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 					</div>
 				</div>
