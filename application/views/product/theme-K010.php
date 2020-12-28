@@ -386,15 +386,13 @@
                                 </div>
 
                                 <div class="timeline-heading">
-                                    <h4>1 July 2019</h4>
-                                    <h3 class="mt0">How We Meet</h3>
+                                    <h4><?php echo tanggal_resepsi($tanggal_pertemuan_pertama); ?></h4>
+                                    <h3 class="mt0">Pertemuan Pertama</h3>
                                     <div class="tiny-border"></div>
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-                                        filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis
-                                        mé pra quem é amistosis quis leo.
+                                        <?php echo $resume_pertemuan_pertama; ?>
                                     </p>
                                 </div>
                             </div>
@@ -412,14 +410,14 @@
                                 </div>
 
                                 <div class="timeline-heading">
-                                    <h4>1 July 2019</h4>
-                                    <h3 class="mt0">The First Date</h3>
+                                    <h4><?php echo tanggal_resepsi($tanggal_kencan_pertama); ?></h4>
+                                    <h3 class="mt0">Kencan Pertama Kita</h3>
                                     <div class="tiny-border"></div>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
-                                        vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                                    <p>
+                                        <?php echo $resume_kencan_pertama; ?>
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -436,14 +434,14 @@
                                 </div>
 
                                 <div class="timeline-heading">
-                                    <h4>1 July 2019</h4>
-                                    <h3 class="mt0">The Proposal</h3>
+                                    <h4><?php echo tanggal_resepsi($tanggal_lamaran); ?></h4>
+                                    <h3 class="mt0">Lamaran</h3>
                                     <div class="tiny-border"></div>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
-                                        vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                                    <p>
+                                        <?php echo $resemu_lamaran; ?>
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -460,15 +458,13 @@
                                 </div>
 
                                 <div class="timeline-heading">
-                                    <h4>1 July 2019</h4>
-                                    <h3 class="mt0">We Are Engaged</h3>
+                                    <h4><?php echo tanggal_resepsi($tanggal_akad_story); ?></h4>
+                                    <h3 class="mt0">Hari yang Berbahagia Bagi Kami</h3>
                                     <div class="tiny-border"></div>
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-                                        filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis
-                                        mé pra quem é amistosis quis leo.
+                                        <?php echo $resume_akad; ?>
                                     </p>
                                 </div>
                             </div>
