@@ -47,9 +47,11 @@ function buku_tamu() {
 
         var param = {
             'nama':$('#nama').val(),
-            'status':$('#status').val(),
+            'status':$('#status2').val(),
             'pesan':$('#pesan').val(),
         };
+
+        console.log($('#status2').val());
 
         if($('#nama').val()=="" || $('#nama').val()==" "){
             Swal.fire(
@@ -58,7 +60,7 @@ function buku_tamu() {
               'error'
             );
             return false;
-        }else if($('#status').val()=="" || $('#status').val()==" "){
+        }else if($('#status2').val()=="" || $('#status2').val()==" " || $('#status2').val()==null){
             Swal.fire(
               'Oopps!',
               'Status harus diisi',
@@ -84,7 +86,7 @@ function buku_tamu() {
             success: function(result){
                 
                 $('#nama').val('')
-                $('#status').val('')
+                $('#status2').val('')
                 $('#pesan').val('')
                 
                 if(result.status == 'success'){ 

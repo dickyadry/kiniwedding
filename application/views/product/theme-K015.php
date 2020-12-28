@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="id-ID" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
@@ -10,9 +9,9 @@
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tanggal 16 Desember 2020" />
-    <meta name="keywords" content="Lisa Aisyah, Robert Muhammad, undngan, limstudio, undngan-digital" />
-    <meta name="author" content="limstudio.site" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
@@ -61,7 +60,7 @@
         <!-- end preloader --> 
 
         <!-- Content -->
-        <section onclick="playAudio()" type="button" id="over-lay">
+       <!--  <section onclick="playAudio()" type="button" id="over-lay">
             <div class="gla_invitation_container">
                 <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
                     <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_red.gif" alt=""></p>
@@ -75,10 +74,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Content End -->
 
-        <div class="box-stop-scrolling">
+        <!-- <div class="box-stop-scrolling">
             <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
         </div>
 
@@ -87,14 +86,14 @@
 
         <audio loop id="myAudio">
             <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
-        </audio>
+        </audio> -->
 
         <header role="banner" id="qbootstrap-header">
             <div class="container">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                        <a class="navbar-brand" href="index.html">Wedding</a>
+                        <a class="navbar-brand" href="#" data-nav-section="home">Wedding</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -121,8 +120,8 @@
                                 <div class="animate-box svg-sm colored">
                                     <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/004-nature.svg" class="svg" alt="">
                                     <h1 class="holder"><span>The Wedding of</span></h1>
-                                    <h2>Lisa &amp; Robert</h2>
-                                    <p>16.12.2020</p>
+                                    <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
+                                    <p><?php echo tanggal_resepsi($tanggal_resepsi); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -135,27 +134,28 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 animate-box">
                         <div class="col-md-12 text-center section-heading svg-sm colored">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="">
                             <h2 class="bismi">Bismillahirrrahmanirrahim</h2>
-                            <p>Dan diantara tanda-tanda kekuasaanNya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikanNya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir</p>
-                            <p><strong>QS. Ar. Ruum &mdash; (30):21 </strong></p>
+                            <p><?php echo $kata_mutiara; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/bridesmaid-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                            <h3>Lisa Aisyah</h3>
-                            <span>Pengantin Wanita</span>
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/bridesmaid-4.jpg" class="img-responsive" alt="">
+                            <h3><?php echo $nama_pengantin_wanita; ?></h3>
+                            <span>Mempelai Wanita</span>
+                            <p>Anak ke-<?php echo $pengantin_wanita_anank_ke; ?> dari <?php echo "Bapak " . $nama_ayah_pengantin_wanita . ' & Ibu ' . $nama_ibu_pengantin_wanita ; ?></p>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-2 nopadding">
-                            <h2 class="amp-center"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/003-luxury.svg" class="svg img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></h2>
+                            <h2 class="amp-center"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/003-luxury.svg" class="svg img-responsive" alt=""></h2>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/groom-men-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                            <h3>Robert Muhammad</h3>
-                            <span>Pengantin pria</span>
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/groom-men-1.jpg" class="img-responsive" alt="">
+                            <h3><?php echo $nama_pengantin_wanita; ?></h3>
+                            <span>Mempelai Pria</span>
+                            <p>Anak ke-<?php echo $pengantin_pria_anank_ke; ?> dari <?php echo "Bapak " . $nama_ayah_pengantin_pria . ' & Ibu ' . $nama_ibu_pengantin_pria ; ?></p>
                         </div>
                     </div>
                 </div>
@@ -168,9 +168,10 @@
                 <div class="container">
                     <div class="row animate-box">
                         <div class="col-md-12 section-heading text-center svg-sm colored">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
                             <h2 class="">The Wedding Day</h2>
-                            <span class="datewed">Rabu, 16 Desember 2020</span>
+                            <span class="datewed"><?php echo tanggal_resepsi($tanggal_resepsi); ?></span>
+                            <span id="date_deadline" hidden><?php echo date("m d, Y H:i:s", strtotime($tanggal_resepsi)); ?></span>
                         </div>
                     </div>
                     <div class="row animate-box">
@@ -191,7 +192,7 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="col-md-12 text-center section-heading svg-sm colored">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="">
                             <h2>Akad Nikah &amp; Resepsi</h2>
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1 subtext">
@@ -217,19 +218,19 @@
                                     <div class="col-md-5 col-md-pull-1">
                                         <div class="date">
                                             <i class="icon-calendar"></i>
-                                            <span>Rabu</span>
-                                            <span>16 Desember 2020</span>
+                                            <span><?php echo hari($tanggal_akad); ?></span>
+                                            <span><?php echo tanggal_resepsi($tanggal_akad); ?></span>
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-md-pull-1">
                                         <div class="date">
                                             <i class="icon-clock2"></i>
-                                            <span>09:00 WIB</span>
-                                            <span>11:00 WIB</span>
+                                            <span><?php echo pukul($tanggal_akad); ?> WIB</span>
+                                            <span>Selesai</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p>Gedung Arafah Leuwiliang - Bogor</p>
+                                <p><?php echo $tempat_akad; ?></p>
                             </div>
                         </div>
                     </div>
@@ -248,19 +249,19 @@
                                     <div class="col-md-5 col-md-pull-1">
                                         <div class="date">
                                             <i class="icon-calendar"></i>
-                                            <span>Rabu</span>
-                                            <span>16 Desember 2020</span>
+                                            <span><?php echo hari($tanggal_resepsi); ?></span>
+                                            <span><?php echo tanggal_resepsi($tanggal_resepsi); ?></span>
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-md-pull-1">
                                         <div class="date">
                                             <i class="icon-clock2"></i>
-                                            <span>11:00 WIB</span>
-                                            <span>17:00 WIB</span>
+                                            <span><?php echo pukul($tanggal_resepsi); ?> WIB</span>
+                                            <span>Selesai</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p>Gedung Arafah Leuwiliang - Bogor</p>
+                                <p><?php echo $tempat_resepsi; ?></p>
                             </div>
                         </div>
                     </div>
@@ -272,11 +273,11 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="col-md-12 text-center section-heading svg-sm colored">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="">
                             <h2>Lokasi Akad &amp; Resepsi</h2>
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1 subtext">
-                                    <h3>Gedung Arafah Leuwiliang - Bogor</h3>
+                                    <h3><?php echo $tempat_resepsi; ?></h3>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +285,7 @@
                 </div>
                 <div class="row row-bottom-padded-md">
                     <div class="col-md-12 text-center animate-box">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d809.5302113790536!2d106.6260501029082!3d-6.567875736495278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.5679073!2d106.6260107!5e0!3m2!1sid!2sid!4v1596552944575!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.672778464467!2d89.55846281543346!3d22.814585729793365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901c9481c799%3A0x92f932dd6112f8ff!2sHotel+Sheraton+Buliding%2C+29+Khan+Jahan+Ali+Rd%2C+Khulna!5e0!3m2!1sen!2sbd!4v1558933503904!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -294,32 +295,32 @@
             <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-12 section-heading text-center svg-sm colored">
-                        <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                        <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
                         <h2 class="">RSVP</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 animate-box">
                         <div class="box-testimony">
-                            <form id="rsvp-form" class="form form-inline" method="post">
+                            <form>
                                 <div class="row">
                                     <div class="form-group col col-sm-3">
                                     </div>
                                     <div class="form-group col col-sm-6">
                                         <div class="row">
                                             <div class="form-group col col-sm-12">
-                                                <input type="text" class="form-control" name="nama" placeholder="Nama*"  id="nama" required style="width: 100%; margin: 10px; background: #FFF;">
+                                                <input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control" style="width: 100%; margin: 10px; background: #FFF;">
                                             </div>
                                             <div class="form-group col col-sm-12">
                                                 <select class="form-control" name="status2" id="status2" style="width: 100%;  margin: 10px; background: #FFF;">
-                                                    <option value="">Apakah Kamu akan Hadir?</option>
+                                                    <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
                                                     <option>Ya, Saya Akan hadir</option>
                                                     <option>Ya, Mungkin Saya akan hadir</option>
                                                     <option>Maaf Seperti Saya Belum bisa hadir</option>
                                                 </select>
                                             </div>      
                                             <div class="form-group col col-sm-12">
-                                                <textarea style="width: 100%;  margin: 10px; background: #FFF;" name="notes" class="form-control" placeholder="Silahkan ucapkan sesuatu*" id="pesan"></textarea>
+                                                <textarea class="form-control" name="pesan" placeholder="Silahkan ucapkan sesuatu*" id="pesan" style="width: 100%;  margin: 10px; background: #FFF;"></textarea>
                                             </div>      
                                             <div class="form-group col col-sm-12">
                                                 <button style="margin: 10px; width: 100%; background: #FF847C;" type="button" class="btn btn-default theme-btn" onclick="buku_tamu()">Send</button>
@@ -338,38 +339,33 @@
             <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-12 section-heading text-center svg-sm colored">
-                        <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                        <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
                         <h2 class="">Sweet Messages</h2>
                     </div>
                 </div>
                 <div class="row">
+                    <?php
+                        if (!empty($buku_tamu)) {
+                            $i = 0;
+                            foreach ($buku_tamu as $key => $value) {
+                                if ($i <= 2) {
+                                
+                    ?>
                     <div class="col-md-4 animate-box">
                         <div class="box-testimony ">
                             <blockquote>
                                 <span class="quote"><span><i class="icon-quote-left"></i></span></span>
-                                <p>&ldquo; Selamat menikah kakakku tersayang. Kini kamu sudah menjadi seorang imam rumah tangga. Selamat mengemban amanah dan tanggung jawab besar untuk istrimu dan anak-anakmu kelak. &rdquo;</p>
+                                <p>&ldquo; <?php echo $value->pesan; ?> &rdquo;</p>
                             </blockquote>
-                            <p class="author">Riska</p>
+                            <p class="author"><?php echo $value->nama; ?>; <?php echo $value->status; ?></p>
                         </div>
                     </div>
-                    <div class="col-md-4 animate-box">
-                        <div class="box-testimony ">
-                            <blockquote>
-                                <span class="quote"><span><i class="icon-quote-left"></i></span></span>
-                                <p>&ldquo; Ini adalah awal perjalan cinta kalian yang sesungguhnya, membangun cinta dalam satu atap berdua mengarungi samudra kehidupan. Semoga jadi keluarga yang sejahtera, penuh puas cita dan dianugrahi keturunan yang mampu membanggakan ke-2 orang tua, Amin. selamat menempuh hidup baru. &rdquo;</p>
-                            </blockquote>
-                            <p class="author">Bagong</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 animate-box">
-                        <div class="box-testimony ">
-                            <blockquote>
-                                <span class="quote"><span><i class="icon-quote-left"></i></span></span>
-                                <p>&ldquo; Selamat menempuh jalan hidup barumu dengan seseorang yang telah dianugerahkan Allah Swt. Semoga rahmat Allah Swt. senantiasa tercurah kepada kalian dan menjadikan kalian semakin bahagia. Semoga pintu-pintu rezeki senantiasa dibukakan untuk kalian. &rdquo;</p>
-                            </blockquote>
-                            <p class="author">Anhar</p>
-                        </div>
-                    </div>
+                    <?php
+                                    $i++;
+                                }
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -378,11 +374,11 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="col-md-12 text-center section-heading svg-sm colored">
-                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                            <h2>Our Selfie Photos</h2>
+                            <img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/flaticon/svg/005-two.svg" class="svg" alt="">
+                            <h2><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></h2>
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1 subtext">
-                                    <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                                    <h3>Momen Kebahagian Kami yang Sempat Kami Abadikan</h3>
                                 </div>
                             </div>
                         </div>
@@ -393,26 +389,26 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="gallery animate-box">
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/4.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/5.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/4.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/4.jpg" class="img-responsive" alt=""></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/5.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/5.jpg" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="gallery animate-box">
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/6.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/6.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/6.jpg" class="img-responsive" alt=""></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/7.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/7.jpg" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="gallery animate-box">
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/8.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/9.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/9.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/8.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/8.jpg" class="img-responsive" alt=""></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/9.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/9.jpg" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="gallery animate-box">
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/10.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/10.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/11.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/11.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/10.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/10.jpg" class="img-responsive" alt=""></a>
+                            <a class="gallery-img image-popup image-popup" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/11.jpg"><img src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/gallery/11.jpg" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -440,10 +436,6 @@
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.magnific-popup.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/magnific-popup-options.js"></script>
     <script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/main-theme-1.js"></script>
-
-    <script type="text/javascript">
-        var countDownDate = new Date("12 16, 2020 09:00:00").getTime();
-    </script>
 
     <?php echo $js; ?>
 
