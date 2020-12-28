@@ -60,7 +60,7 @@
         <!-- end preloader --> 
 
         <!-- Content -->
-       <!--  <section onclick="playAudio()" type="button" id="over-lay">
+       <section onclick="playAudio()" type="button" id="over-lay">
             <div class="gla_invitation_container">
                 <div class="gla_invitation_i gla_invitation_ii gla_image_bck" style='background-image: url("<?php echo base_url(); ?>public/starter_images/flower-K003.png")'>
                     <p><img src="<?php echo base_url(); ?>public/starter_images/save_the_date_red.gif" alt=""></p>
@@ -74,10 +74,10 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Content End -->
 
-        <!-- <div class="box-stop-scrolling">
+        <div class="box-stop-scrolling">
             <a href='#' class="stop-scrolling" onclick="stopScrolling()">Berhenti Menggulir Halaman</a>
         </div>
 
@@ -86,7 +86,7 @@
 
         <audio loop id="myAudio">
             <source src="<?php echo base_url(); ?>assets/audio/<?php echo $lagu; ?>" type="audio/mpeg">
-        </audio> -->
+        </audio>
 
         <header role="banner" id="qbootstrap-header">
             <div class="container">
