@@ -2,23 +2,30 @@
 <html dir="ltr" lang="en">
 
 <head>
-<title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
-<meta name="description" content="">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
+    <!-- End Google Tag Manager -->
+    <title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/revolution-slider.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flipclock.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/revolution-slider.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flipclock.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
 
-<link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap-margin-padding.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
-<script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap-margin-padding.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css">
 </head>
 
 <body>

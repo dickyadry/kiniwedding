@@ -1,31 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
+    <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
-<link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
+    <!-- Favicon and Touch Icons -->
+    <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
 
-<!-- Favicon and Touch Icons -->
-<link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
+    <!-- Library CSS -->
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_library.css" rel="stylesheet">
 
-<!-- Library CSS -->
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_library.css" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/themify-icons.css" rel="stylesheet">
 
-<!-- Icons CSS -->
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/themify-icons.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_style.css" rel="stylesheet">
 
-<!-- Theme CSS -->
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
+    <!-- Other Fonts -->
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/marsha/stylesheet.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
-<!-- Other Fonts -->
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/marsha/stylesheet.css" rel="stylesheet">
-<link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
-
-<link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
-<script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
 </head>
 
