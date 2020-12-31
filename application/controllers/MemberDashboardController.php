@@ -18,7 +18,7 @@ class MemberDashboardController extends MY_Controller {
 		$today = date('Y-m-d');
 
 		$data = array();
-		$data["title_page"] = "Dashboard | " . "Event Stack";
+		$data["title_page"] = "Dashboard | " . "KiniWedding";
 		$data["title"] = "Dashboard";
 		$data["title_small"] = "Dashboard page layout";
 

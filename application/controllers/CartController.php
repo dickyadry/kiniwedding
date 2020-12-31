@@ -195,7 +195,7 @@ class CartController extends MY_Controller {
 
                 $data['member'] = $this->member_model->find($sales_order->member_id);
 
-                $data["title_page"] = "Complete Order | " . "Event Stack";
+                $data["title_page"] = "Complete Order | " . "KiniWedding";
 
                 $this->load->view("contents/completepayment", $data);
 
@@ -276,7 +276,7 @@ class CartController extends MY_Controller {
                 $transaction = array(
                     'external_id' => $transaksi_id,
                     'bank_code' => 'BNI',
-                    'name' => "EVENTSTACK",
+                    'name' => "KiniWedding",
                     'is_closed' => true,
                     'expected_amount' => (int)$param_data["grand_total"],
                     // 'virtual_account_number'=>'8808354700172725',

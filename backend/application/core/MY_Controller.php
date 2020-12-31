@@ -158,7 +158,7 @@ class MY_Controller extends CI_Controller {
         $data['data'] = $sales_order;
         $this->email->set_newline("\r\n");
         $this->email->to($member->email);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $message = $this->load->view("contents/email_payment_success", $data,true);
         $this->email->subject($sales_order->sales_order_no);

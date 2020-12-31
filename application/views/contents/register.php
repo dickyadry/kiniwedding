@@ -45,7 +45,7 @@
                         <input class="login__input" id="phone" type="text" name="phone" size="30" placeholder="No HP" value="<?php echo set_value("phone"); ?>" onkeyup="cekForm('phone')">
                         <span class="warning-label"></span>
                     </div>
-                    <p class="product__termText" style="text-align: left;"><input type="checkbox" name="tos"> Saya telah membaca dan menyetujui <a href="<?php echo site_url("page/services"); ?>" target="_blank">Syarat & Ketentuan </a>Event Stack</p>
+                    <p class="product__termText" style="text-align: left;"><input type="checkbox" name="tos"> Saya telah membaca dan menyetujui <a href="<?php echo site_url("page/services"); ?>" target="_blank">Syarat & Ketentuan </a>KiniWedding</p>
                 </div>
                 <br>
                 <div class="login__form">

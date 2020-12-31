@@ -26,7 +26,7 @@ class MemberController extends MY_Controller {
 
 	public function change_password(){
 
-		$data["title_page"] = "Ubah Password | " . "Event Stack";
+		$data["title_page"] = "Ubah Password | " . "KiniWedding";
 		$data["title"] = "Ubah Password";
 		$data["title_small"] = "Change password page layout";
 
@@ -72,7 +72,7 @@ class MemberController extends MY_Controller {
 		$this->cek_user_session();
 		
 		$data = array();
-		$data["title_page"] = "Profil | " . "Event Stack";
+		$data["title_page"] = "Profil | " . "KiniWedding";
 		$data["title"] = "Profil";
 		$data["title_small"] = "Profile page layout";
 

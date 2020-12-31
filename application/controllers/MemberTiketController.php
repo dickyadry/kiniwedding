@@ -31,7 +31,7 @@ class MemberTiketController extends MY_Controller {
 
 		$today = date('Y-m-d');
 
-		$data["title_page"] = "Tiket Saya | " . "Event Stack";
+		$data["title_page"] = "Tiket Saya | " . "KiniWedding";
 		$data["title"] = "Tiket Saya";
 		$data["title_small"] = "My ticket page layout";
 
@@ -42,7 +42,7 @@ class MemberTiketController extends MY_Controller {
 		$start = isset($this->input_data['page'])?(($page-1)*$limit):0;
 
 		$data = array();
-		$data["title_page"] = "Event Stack";
+		$data["title_page"] = "KiniWedding";
 		$data["title"] = "Event Saya";
 		$data["title_small"] = "My event page layout";
 

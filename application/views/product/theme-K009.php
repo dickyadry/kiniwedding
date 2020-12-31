@@ -21,7 +21,7 @@
     <meta name="google-signin-client_id" content="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"> <!-- PROD -->
 
     <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
-    <meta content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" itemprop="url" />
+    <meta content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$sales_order_id); ?>" itemprop="url" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
     <meta name="apple-mobile-web-app-title" content="kiniwedding">
@@ -38,7 +38,7 @@
     <meta property="og:site_name" content="kiniwedding" />
     <meta name="ROBOTS" content="NOODP, NOYDIR" />
     <meta property="og:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
-    <meta property="og:url" content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" />
+    <meta property="og:url" content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$sales_order_id); ?>" />
     <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-share.png" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="400" />

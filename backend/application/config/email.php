@@ -12,8 +12,10 @@
         $config['protocol'] = "smtp";
         $config['smtp_host'] = "ssl://smtp.googlemail.com";
         $config['smtp_port'] = 465;
-        $config['smtp_user'] = "eventstack25@gmail.com"; 
-        $config['smtp_pass'] = "admineventstack!@#$";
+/*        $config['smtp_user'] = "eventstack25@gmail.com"; 
+        $config['smtp_pass'] = "admineventstack!@#$";*/
+        $config['smtp_user'] = "kiniwedding2021@gmail.com"; 
+        $config['smtp_pass'] = "k1n1w3dd1n9";
         $config['mailtype'] = "html";
         $config['charset'] = 'iso-8859-1';
         $config['crlf'] = "\r\n";

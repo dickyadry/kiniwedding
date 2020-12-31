@@ -28,7 +28,7 @@ class AuthController extends MY_Controller {
 	public function login(){
 
 		$dara = array();
-		$data["title_page"] = "Login | " . "Event Stack";
+		$data["title_page"] = "Login | " . "KiniWedding";
 
 		$memberlog = $this->session->userdata('userpubliclog');
 		if(!empty($memberlog)){
@@ -122,7 +122,7 @@ class AuthController extends MY_Controller {
 	public function register(){
 
 		$data = array();
-		$data["title_page"] = "Daftar | " . "Event Stack";
+		$data["title_page"] = "Daftar | " . "KiniWedding";
 
 		$this->load->helper('recaptchalib');
 
@@ -210,7 +210,7 @@ class AuthController extends MY_Controller {
 	public function forgot(){
 
 		$data = array();
-		$data["title_page"] = "Lupa Password | " . "Event Stack";
+		$data["title_page"] = "Lupa Password | " . "KiniWedding";
 
         $this->load->library('recaptcha');
 
@@ -234,7 +234,7 @@ class AuthController extends MY_Controller {
 						redirect("forgot");
 					}
 					else{
-						$this->session->set_flashdata("error", "Email ini belum memiliki akun di Event Stack." );
+						$this->session->set_flashdata("error", "Email ini belum memiliki akun di KiniWedding." );
 						redirect("forgot");
 					}
 
@@ -304,7 +304,7 @@ class AuthController extends MY_Controller {
 		}
 		
 		$data["request"] = $token;
-		$data["title_page"] = "Ubah Password | " . "Event Stack";
+		$data["title_page"] = "Ubah Password | " . "KiniWedding";
 
 		$c = $this->load->view("contents/ubah_password", $data, true);
 		$this->load_layout($c);

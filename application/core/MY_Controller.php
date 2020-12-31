@@ -273,7 +273,7 @@ class MY_Controller extends CI_Controller {
             $subject ="Perubahan Password";
             $this->email->set_newline("\r\n");
             $this->email->to($email);
-            $this->email->from('support@eventstack.id', 'KiniWedding');
+            $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
             $data['token'] = $token;
             $message = $this->load->view("contents/email_template_lupa_password", $data,true);
@@ -299,7 +299,7 @@ class MY_Controller extends CI_Controller {
             $subject ="Perubahan Password";
             $this->email->set_newline("\r\n");
             $this->email->to($email);
-            $this->email->from('support@eventstack.id', 'KiniWedding');
+            $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
             $message = $this->load->view("contents/email_template_success_ubah_password");
 
@@ -324,7 +324,7 @@ class MY_Controller extends CI_Controller {
         $subject ="Aktivasi member";
         $this->email->set_newline("\r\n");
         $this->email->to($data_member["email"]);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $data['data'] = $data_member;
         $message = $this->load->view("contents/email_template_aktivasi", $data,true);
@@ -375,7 +375,7 @@ class MY_Controller extends CI_Controller {
 
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $message = $this->load->view("contents/email_template", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -470,7 +470,7 @@ class MY_Controller extends CI_Controller {
 
             $this->email->set_newline("\r\n");
             $this->email->to($value->email);
-            $this->email->from('support@eventstack.id', 'KiniWedding');
+            $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
             $message = $this->load->view("contents/email_ticket", $data,true);
             $this->email->subject("E-Ticket");
@@ -503,7 +503,7 @@ class MY_Controller extends CI_Controller {
 
         $this->email->set_newline("\r\n");
         $this->email->to($member->email);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $message = $this->load->view("contents/email_notification", $data,true);
         $this->email->subject("Notification");
@@ -532,7 +532,7 @@ class MY_Controller extends CI_Controller {
         $data['data'] = $sales_order;
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $message = $this->load->view("contents/email_payment_success", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -565,7 +565,7 @@ class MY_Controller extends CI_Controller {
         $data['data'] = $sales_order;
         $this->email->set_newline("\r\n");
         $this->email->to($this->userpubliclog["email"]);
-        $this->email->from('support@eventstack.id', 'KiniWedding');
+        $this->email->from('support@kiniwedding.com', 'KiniWedding');
 
         $message = $this->load->view("contents/email_template", $data,true);
         $this->email->subject($sales_order->sales_order_no);
@@ -600,7 +600,7 @@ class MY_Controller extends CI_Controller {
     //     }
 
     //     $link = "Silahkna kunjungi link berikut untuk melihat detail data\n".base_url()."member/event/data-peserta/".encrypt_decrypt('encrypt',$data->id);
-    //     $msg = "Pemberitahuan, telah melakukan registrasi melalui KiniWedding (www.eventstack.id) untuk mengikuti event ".$data->title." dengan biodata sebagai berikut:\n\n".$data_peserta.$link;
+    //     $msg = "Pemberitahuan, telah melakukan registrasi melalui KiniWedding (www.kiniwedding.com) untuk mengikuti event ".$data->title." dengan biodata sebagai berikut:\n\n".$data_peserta.$link;
 
     //     $params = array();
     //     $params['phone'] = $member->phone;
