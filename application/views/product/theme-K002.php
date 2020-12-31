@@ -9,36 +9,65 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
     <!-- End Google Tag Manager -->
-    <!-- Meta Tags -->
+    
+    <!-- META DATA -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sweetheart - Responsive Wedding Template">
-    <meta name="keywords" content="wedding,events,ceremony,couple,pear,love">
-    <meta name="author" content="AStheme">
+    <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="author" content="kiniwedding.com">
+    <meta name="google-signin-client_id" content="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"> <!-- PROD -->
 
-    <!-- Page Title -->
+    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
+    <meta content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" itemprop="url" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
+    <meta name="apple-mobile-web-app-title" content="kiniwedding">
+
+    <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-share.png" sizes="152x152">
+    <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-share.png">
+    <meta name="msapplication-TitleColor" content="#000">
+    <meta name="theme-color" content="#71C2EA">
+    <link rel="amphtml" href="https://kiniwedding.com">
+    <meta name="adx:sections" content="read" /> 
+
+    <meta property="og:type" content="product" />
+    <meta property="fb:app_id" content="387871355645473" />
+    <meta property="og:site_name" content="kiniwedding" />
+    <meta name="ROBOTS" content="NOODP, NOYDIR" />
+    <meta property="og:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta property="og:url" content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" />
+    <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:type" content="webminar" />
+    <meta property="og:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+
+    <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="articleSection" content="Webinar" />
+
+    <meta name="twitter:site" content="@kiniwedding.com" />
+    <meta name="twitter:creator" content="@kiniwedding.com" />
+    <meta name="twitter:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta name="twitter:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+    <!-- END META DATA -->
+
     <title> <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?> </title>
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
-
-
-    <!-- Favicon and Touch Icons -->
     <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
-
-    <!-- Icon fonts -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flaticon.css" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Plugins for this template -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.carousel.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.theme.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.transitions.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.fancybox.css" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
@@ -48,6 +77,11 @@
 </head>
 
 <body id="home">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXZ8CKX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Content -->
     <section onclick="playAudio()" type="button" id="over-lay">
@@ -443,14 +477,14 @@
                                 <div class="main-ceromony">
                                     <h3>Akad Nikah</h3>
                                     <ul>
-                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</li>
+                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> <?php echo $timezone_akad; ?></li>
                                         <li><i class="fa fa-location-arrow"></i> <?php echo $tempat_akad; ?></li>
                                     </ul>
                                 </div>
                                 <div class="reception">
                                     <h3>Resepsi Pernikahan</h3>
                                     <ul>
-                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</li>
+                                        <li><i class="fa fa-calendar"></i> <?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> <?php echo $timezone_resepsi; ?></li>
                                         <li><i class="fa fa-location-arrow"></i> <?php echo $tempat_resepsi; ?></li>
                                     </ul>
                                 </div>

@@ -52,7 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <?php if($type=="detail"){ ?>
 
       <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
-      <meta content="http//www.kiniwedding.com/" itemprop="url" />
+      <meta content="<?php echo base_url(); ?>product/<?php echo $detail->code; ?>" itemprop="url" />
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
       <meta name="apple-mobile-web-app-title" content="kiniwedding">
@@ -75,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="400" />
       <meta property="og:type" content="webminar" />
-      <meta property="og:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
+      <meta property="og:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
 
       <meta itemprop="image" content="<?php echo $detail->cover; ?>" />
       <meta name="twitter:image:src" content="<?php echo $detail->cover; ?>" />
@@ -86,7 +86,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="twitter:site" content="@kiniwedding.com" />
       <meta name="twitter:creator" content="@kiniwedding.com" />
       <meta name="twitter:title" content="Design Wedding Invitation By KiniWedding" />
-      <meta name="twitter:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
+      <meta name="twitter:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
 
     <?php }}else{ ?>
 
@@ -96,8 +96,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
       <meta name="apple-mobile-web-app-title" content="kiniwedding">
 
-      <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-hitam.png" sizes="152x152">
-      <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-hitam.png">
+      <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-share.png" sizes="152x152">
+      <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-share.png">
       <meta name="msapplication-TitleColor" content="#000">
       <meta name="theme-color" content="#71C2EA">
       <link rel="amphtml" href="https://kiniwedding.com">
@@ -109,15 +109,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="ROBOTS" content="NOODP, NOYDIR" />
       <meta property="og:title" content="Design Wedding Invitation By KiniWedding" />
       <meta property="og:url" content="https://kiniwedding.com" />
-      <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
+      <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-share.png" />
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="400" />
       <meta property="og:type" content="webminar" />
-      <meta property="og:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
+      <meta property="og:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
 
-      <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
-      <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
+      <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+      <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-share.png" />
       <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
       <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
       <meta itemprop="articleSection" content="Webinar" />
@@ -125,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="twitter:site" content="@kiniwedding.com" />
       <meta name="twitter:creator" content="@kiniwedding.com" />
       <meta name="twitter:title" content="Design Wedding Invitation By KiniWedding" />
-      <meta name="twitter:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
+      <meta name="twitter:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
 
     <?php } ?>
 
