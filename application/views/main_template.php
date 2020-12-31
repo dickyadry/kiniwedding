@@ -97,10 +97,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="apple-mobile-web-app-title" content="kiniwedding">
 
       <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-hitam.png" sizes="152x152">
-      <meta name="msapplication-TitleImage" content="<?php echo str_replace("medium", "small", $detail->cover); ?>">
+      <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-hitam.png">
       <meta name="msapplication-TitleColor" content="#000">
       <meta name="theme-color" content="#71C2EA">
-      <link rel="amphtml" href="<?php echo base_url(); ?>product/<?php echo $detail->code; ?>">
+      <link rel="amphtml" href="https://kiniwedding.com">
       <meta name="adx:sections" content="read" /> 
 
       <meta property="og:type" content="product" />
@@ -117,7 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta property="og:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
 
       <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
-      <meta name="twitter:image:src" content="<?php echo $detail->cover; ?>" />
+      <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
       <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
       <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
       <meta itemprop="articleSection" content="Webinar" />
