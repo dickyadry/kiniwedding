@@ -8,25 +8,61 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
     <!-- End Google Tag Manager -->
-    <!-- Meta Tags -->
+    
+    <!-- META DATA -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="author" content="kiniwedding.com">
+    <meta name="google-signin-client_id" content="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"> <!-- PROD -->
+
+    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
+    <meta content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" itemprop="url" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
+    <meta name="apple-mobile-web-app-title" content="kiniwedding">
+
+    <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-share.png" sizes="152x152">
+    <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-share.png">
+    <meta name="msapplication-TitleColor" content="#000">
+    <meta name="theme-color" content="#71C2EA">
+    <link rel="amphtml" href="https://kiniwedding.com">
+    <meta name="adx:sections" content="read" /> 
+
+    <meta property="og:type" content="product" />
+    <meta property="fb:app_id" content="387871355645473" />
+    <meta property="og:site_name" content="kiniwedding" />
+    <meta name="ROBOTS" content="NOODP, NOYDIR" />
+    <meta property="og:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta property="og:url" content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" />
+    <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:type" content="webminar" />
+    <meta property="og:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+
+    <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="articleSection" content="Webinar" />
+
+    <meta name="twitter:site" content="@kiniwedding.com" />
+    <meta name="twitter:creator" content="@kiniwedding.com" />
+    <meta name="twitter:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta name="twitter:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+    <!-- END META DATA -->
 
     <title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
-
-    <!-- Icon fonts -->
+    
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/flaticon.css" rel="stylesheet">
-
-    <!-- Favicon and Touch Icons -->
     <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Plugins for this template -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/animate.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.carousel.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.theme.css" rel="stylesheet">
@@ -35,18 +71,19 @@
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/owl.transitions.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/jquery.fancybox.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/style.css" rel="stylesheet">
-
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="<?php echo ASSETS; ?>node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
 </head>
 
 <body id="home">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXZ8CKX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Content -->
     <section onclick="playAudio()" type="button" id="over-lay">
@@ -370,7 +407,7 @@
                                 <h3>Akad NIkah</h3>
                                 <ul>
                                     <li><i class="fa fa-map-marker"></i> <?php echo $tempat_akad; ?></li>
-                                    <li><i class="fa fa-clock-o"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</b> <br><?php echo $tempat_akad; ?></li>
+                                    <li><i class="fa fa-clock-o"></i> <?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> <?php echo $timezone_akad; ?></b> <br><?php echo $tempat_akad; ?></li>
                                 </ul>
                                 <p>Besar harapan kami bapak/ibu.saudara/i biha hadir keacara kami</p>
                                 <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
@@ -388,7 +425,7 @@
                                 <h3>Wedding party</h3>
                                 <ul>
                                     <li><i class="fa fa-map-marker"></i><?php echo $tempat_resepsi; ?></li>
-                                    <li><i class="fa fa-clock-o"></i> <?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</li>
+                                    <li><i class="fa fa-clock-o"></i> <?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> <?php echo $timezone_resepsi; ?></li>
                                 </ul>
                                 <p>Besar harapan kami bapak/ibu.saudara/i biha hadir keacara kami</p>
                                 <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0160484383277!2d144.99053291585201!3d-37.81309307975254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642ef89a7e023%3A0xb1353055e38c1ab8!2sNew+York+Tomato+Cafe!5e0!3m2!1sbn!2sbd!4v1503743893919">

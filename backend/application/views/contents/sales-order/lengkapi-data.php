@@ -220,11 +220,21 @@
                             <div class="tab-content with-padding">
                                 <div class="tab-pane fade in active" id="justified-tab1">
                                     <div class="row">
-                                        <div class="col-md-12 col-xs-12">
+                                        <div class="col-md-6 col-xs-12">
                                             <div class="form-group" id="group-tanggal_akad">
                                                 <label>Tanggal Akad Nikah<span class="label_danger">*</span></label>
                                                 <input type="text" class="datetime-tanggal_akad form-control" value="<?php echo isset($data->tanggal_akad)?$data->tanggal_akad:''; ?>" name="tanggal_akad" id="tanggal_pertemuan_pertama" onkeyup="cekForm('tanggal_akad')">
                                                 <i id="alert-tanggal_akad" class="icon icon-warning form-control-feedback hidden"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="form-group" id="group-tanggal_akad">
+                                                <label>Zona Waktu<span class="label_danger">*</span></label>
+                                                <select class="form-control" name="timezone_akad" id="timezone_akad">
+                                                    <option <?php if(isset($data->timezone_akad) && $data->timezone_akad=='WIB'){?> selected <?php } ?>>WIB</option>
+                                                    <option <?php if(isset($data->timezone_akad) && $data->timezone_akad=='WITA'){?> selected <?php } ?>>WITA</option>
+                                                    <option <?php if(isset($data->timezone_akad) && $data->timezone_akad=='WIT'){?> selected <?php } ?>>WIT</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -249,11 +259,21 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 col-xs-12">
+                                        <div class="col-md-6 col-xs-12">
                                             <div class="form-group" id="group-tanggal_resepsi">
                                                 <label>Tanggal Resepsi<span class="label_danger">*</span></label>
                                                 <input type="text" class="datetime-tanggal_resepsi form-control" value="<?php echo isset($data->tanggal_resepsi)?$data->tanggal_resepsi:''; ?>" name="tanggal_resepsi" id="tanggal_resepsi" onkeyup="cekForm('tanggal_resepsi')">
                                                 <i id="alert-tanggal_resepsi" class="icon icon-warning form-control-feedback hidden"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="form-group" id="group-timezone_resepsi">
+                                                <label>Zona Waktu<span class="label_danger">*</span></label>
+                                                <select class="form-control" name="timezone_resepsi" id="timezone_resepsi">
+                                                    <option <?php if(isset($data->timezone_resepsi) && $data->timezone_resepsi=='WIB'){?> selected <?php } ?>>WIB</option>
+                                                    <option <?php if(isset($data->timezone_resepsi) && $data->timezone_resepsi=='WITA'){?> selected <?php } ?>>WITA</option>
+                                                    <option <?php if(isset($data->timezone_resepsi) && $data->timezone_resepsi=='WIT'){?> selected <?php } ?>>WIT</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -332,6 +352,11 @@
                                         <label>Kata Mutiara</label>
                                         <textarea class="form-control" value="<?php echo isset($data->kata_mutiara)?$data->kata_mutiara:''; ?>" name="kata_mutiara" id="kata_mutiara"><?php echo isset($data->kata_mutiara)?$data->kata_mutiara:''; ?></textarea>
                                         <i><b>Contoh:</b>Dan diantara tanda-tanda kekuasaanNya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikanNya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir (QS. Ar. Ruum — (30):21)
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Perbedaan Waktu</label>
+                                        <input type="text" name="gmt_diff" value="<?php echo isset($data->gmt_diff)?$data->gmt_diff:''?>" class="form-control" value="https://kiniwedding.com/inv/">
                                     </div>
 
                                     <div class="form-group">

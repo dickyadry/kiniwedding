@@ -8,26 +8,62 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WXZ8CKX');</script>
     <!-- End Google Tag Manager -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="keywords" content="kiniwedding, Undangan, Undangan Webiste, Undangan Web, Undangan Modern, Undangan Kekinian, Webiste, Undangan online">
+    <meta name="author" content="kiniwedding.com">
+    <meta name="google-signin-client_id" content="1023361726892-jscjefkqf2ktg5fgv11d68qbdpbv445e.apps.googleusercontent.com"> <!-- PROD -->
+
+    <meta name="thumbnailUrl" content="<?php echo ASSETS . "img/logo.png";?>" itemprop="thumbnailUrl" />
+    <meta content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" itemprop="url" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
+    <meta name="apple-mobile-web-app-title" content="kiniwedding">
+
+    <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-share.png" sizes="152x152">
+    <meta name="msapplication-TitleImage" content="<?php echo ASSETS; ?>img/logo-share.png">
+    <meta name="msapplication-TitleColor" content="#000">
+    <meta name="theme-color" content="#71C2EA">
+    <link rel="amphtml" href="https://kiniwedding.com">
+    <meta name="adx:sections" content="read" /> 
+
+    <meta property="og:type" content="product" />
+    <meta property="fb:app_id" content="387871355645473" />
+    <meta property="og:site_name" content="kiniwedding" />
+    <meta name="ROBOTS" content="NOODP, NOYDIR" />
+    <meta property="og:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta property="og:url" content="<?php echo base_url(); ?>product/demo/<?php echo encrypt_decrypt('encrypt',$detail->sales_order_id); ?>" />
+    <meta property="og:image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:type" content="webminar" />
+    <meta property="og:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+
+    <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta name="twitter:image:src" content="<?php echo ASSETS; ?>img/logo-share.png" />
+    <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
+    <meta itemprop="articleSection" content="Webinar" />
+
+    <meta name="twitter:site" content="@kiniwedding.com" />
+    <meta name="twitter:creator" content="@kiniwedding.com" />
+    <meta name="twitter:title" content="Design Wedding Invitation <?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?>" />
+    <meta name="twitter:description" content="Undangan Digital KiniWedding, Desain Responsive, Trendi dan Modern. Undangan Website, Undangan Tanpa Kertas" />
+    <!-- END META DATA -->
+
     <title><?php echo $nama_panggilan_pengantin_pria; ?> & <?php echo $nama_panggilan_pengantin_wanita; ?></title>
     <link rel="shortcut icon" href="<?php echo ASSETS . "img/logo-only-hitam.png";?>">
 
-    <!-- Favicon and Touch Icons -->
     <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
-
-    <!-- Library CSS -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_library.css" rel="stylesheet">
-
-    <!-- Icons CSS -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/themify-icons.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/glanz_style.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
-
-    <!-- Other Fonts -->
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/fonts/marsha/stylesheet.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/css/custom.css" rel="stylesheet">
 
@@ -38,6 +74,11 @@
 
 
 <body class="gla_middle_titles">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXZ8CKX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- start preloader -->
     <div id="preloader">
@@ -233,7 +274,7 @@
                         <div class="gla_round_im gla_image_bck" data-image="<?php echo show_images($lainnya[0]->image); ?>"></div>
                         <?php } ?>
                         <h3>Akad Nikah</h3>
-                        <p><?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> WIB</span><br>
+                        <p><?php echo hari($tanggal_akad); ?> <?php echo tanggal_resepsi($tanggal_akad); ?> pukul <?php echo pukul($tanggal_akad); ?> <?php echo $timezone_akad; ?></span><br>
                         <?php echo $tempat_akad ?><br><br>
                         <a href="#" class="btn">View Map</a>
                     </div>
@@ -242,7 +283,7 @@
                         <div class="gla_round_im gla_image_bck" data-image="<?php echo show_images($lainnya[1]->image); ?>"></div>
                         <?php } ?>
                         <h3>Resepsi</h3>
-                        <p><?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> WIB</span><br>
+                        <p><?php echo hari($tanggal_resepsi); ?> <?php echo tanggal_resepsi($tanggal_resepsi); ?> pukul <?php echo pukul($tanggal_resepsi); ?> <?php echo $timezone_resepsi; ?></span><br>
                         <?php echo $tempat_resepsi ?><br><br>
                         <a href="#" class="btn">View Map</a>
                     </div>
