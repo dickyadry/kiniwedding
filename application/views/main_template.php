@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="apple-mobile-web-app-status-bar-style" content="#71C2EA">
       <meta name="apple-mobile-web-app-title" content="kiniwedding">
 
-      <link rel="apple-touch-icon" href="<?php echo str_replace("medium", "small", $detail->cover); ?>" sizes="152x152">
+      <link rel="apple-touch-icon" href="<?php echo ASSETS; ?>img/logo-hitam.png" sizes="152x152">
       <meta name="msapplication-TitleImage" content="<?php echo str_replace("medium", "small", $detail->cover); ?>">
       <meta name="msapplication-TitleColor" content="#000">
       <meta name="theme-color" content="#71C2EA">
@@ -161,7 +161,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta property="og:type" content="webminar" />
       <meta property="og:description" content="Undangan Digital KiniWedding, desain responsive, trendi dan modern." />
 
-      <meta itemprop="image" content="<?php echo $detail->cover; ?>" />
+      <meta itemprop="image" content="<?php echo ASSETS; ?>img/logo-hitam.png" />
       <meta name="twitter:image:src" content="<?php echo $detail->cover; ?>" />
       <meta itemprop="dateModified" content="<?php echo date('Y-m-d H:i:s'); ?>" />
       <meta itemprop="datePublished" content="<?php echo date('Y-m-d H:i:s'); ?>" />
