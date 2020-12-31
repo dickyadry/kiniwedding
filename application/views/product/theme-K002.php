@@ -81,6 +81,18 @@
     <!-- start page-wrapper -->
     <div class="page-wrapper">
 
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="middle">
+         <!--        <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i> -->
+            </div>
+        </div>
+        <!-- end preloader --> 
+
         <!-- start preloader -->
         <div id="preloader">
             <div id="box-preloader">
@@ -88,6 +100,7 @@
             </div>
         </div>
         <!-- end preloader --> 
+
 
         <!-- Start header -->
         <header id="header">
@@ -536,7 +549,7 @@
                                         <input type="text" class="form-control" name="nama" placeholder="Nama*"  id="nama" required>
                                     </div>
                                     <div class="form-group col col-sm-6">
-                                        <select class="form-control" name="status" id="status">
+                                        <select class="form-control" name="status" id="status2">
                                             <option value="">Apakah Kamu akan Hadir?</option>
                                             <option>Ya, Saya Akan hadir</option>
                                             <option>Ya, Mungkin Saya akan hadir</option>

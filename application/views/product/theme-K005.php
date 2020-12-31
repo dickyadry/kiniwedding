@@ -434,7 +434,7 @@
 
 
         <!-- start rsvp-section -->
-        <section class="rsvp-section section-padding parallax" data-bg-image="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/rsvp-bg.jpg" data-speed="7" id="rsvp">
+        <section class="rsvp-section section-padding parallax" data-bg-image="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/images/footer-bg.jpg" data-speed="7" id="rsvp">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -453,7 +453,7 @@
                                 <input type="text" name="nama" placeholder="Nama*" id="nama" required class="form-control">
                             </div>
                             <div class="col col-sm-12">
-                                <select class="form-control" name="status"  id="status">
+                                <select class="form-control" name="status"  id="status2">
                                     <option value="" disabled selected>Apakah kamu akan hadir?</option>
                                     <option>Ya, Saya Akan hadir</option>
                                     <option>Ya, Mungkin Saya akan hadir</option>
@@ -516,7 +516,7 @@
 
 
         <!-- start footer -->
-        <footer class="site-footer finish">
+        <footer class="site-footer finish" style="background: url("../images/footer-bg.jpg") center center/cover no-repeat local;">
             <div class="back-to-top">
                 <a href="#" class="back-to-top-btn"><span><i class="fi flaticon-cupid"></i></span></a>
             </div>

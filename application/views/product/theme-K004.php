@@ -267,7 +267,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <label>Apakah kamu akan hadir?</label>
-                                    <select class="form-control form-opacity" name="status" id="status">
+                                    <select class="form-control form-opacity" name="status" id="status2">
                                         <option value="">Apakah Kamu akan Hadir?</option>
                                         <option>Ya, Saya Akan hadir</option>
                                         <option>Ya, Mungkin Saya akan hadir</option>

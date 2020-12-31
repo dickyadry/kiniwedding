@@ -260,7 +260,7 @@
 						<h2>SIGN YOUR RSVP</h2>
 						<form class="contact-form" method="post" action="#">
 							<p><input type="text" class="form-control" name="nama" placeholder="Nama*" id="nama" required></p>
-							<select class="form-control" name="status" id="status">
+							<select class="form-control" name="status" id="status2">
                                 <option value="">Apakah Kamu akan Hadir?</option>
                                 <option>Ya, Saya Akan hadir</option>
                                 <option>Ya, Mungkin Saya akan hadir</option>
@@ -417,7 +417,7 @@
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery-2.1.3.min.js"></script> <!-- jquery -->
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/bootstrap.min.js"></script> <!-- bootstrap -->
 	<script src="<?php echo base_url(); ?>assets/K002/js/jquery-plugin-collection.js"></script>
-	<script src="http://maps.google.com/maps/api/js?sensor=true"></script><!-- Map Api -->
+	<script src="https://maps.google.com/maps/api/js?sensor=true"></script><!-- Map Api -->
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/gmaps.js"></script>  <!-- Gmap JS -->
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/countdown.js"></script>  <!-- Countdown JS -->
 	<script src="<?php echo base_url(); ?>assets/<?php echo $product->code; ?>/js/jquery.prettyPhoto.js"></script> <!-- Pretty Photo js -->

@@ -212,7 +212,7 @@
                                     <h3 class="text-capitalize">Apakah kamu akan hadir?</h3>
                                     <form class="plr-50">
                                         <input type="text" name="nama" placeholder="Nama*" id="nama"><br>
-                                        <select class="form-control" name="status" id="status">
+                                        <select class="form-control" name="status" id="status2">
                                             <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
                                             <option>Ya, Saya Akan hadir</option>
                                             <option>Ya, Mungkin Saya akan hadir</option>

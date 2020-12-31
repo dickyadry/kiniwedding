@@ -400,7 +400,7 @@
 					<div class="the-heart-attending-form">
 						<form>
 							<input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control">
-							<select name="status" class="form-control" id="status" style="width: 100%;">
+							<select name="status" class="form-control" id="status2" style="width: 100%;">
 	                            <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
 	                            <option>Ya, Saya Akan hadir</option>
 	                            <option>Ya, Mungkin Saya akan hadir</option>

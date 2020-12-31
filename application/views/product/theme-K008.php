@@ -70,7 +70,7 @@
         </audio>
 
         <div id="preloader">
-            <div id="status">
+            <div id="status2">
                 <img src="<?php echo base_url(); ?>assets/img/preloader.gif" id="preloader_image" alt="loader">
             </div>
         </div>

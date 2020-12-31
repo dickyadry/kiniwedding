@@ -501,15 +501,15 @@
 						<div class="form-group col-md-12">
 							<input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control">
 						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-12">
-							<select name="status" class="form-control" id="status">
-                                <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
-                                <option>Ya, Saya Akan hadir</option>
-                                <option>Ya, Mungkin Saya akan hadir</option>
-                                <option>Maaf Seperti Saya Belum bisa hadir</option>
-                            </select>
+						<div class="row">
+							<div class="form-group col-md-12">
+								<select name="status" class="form-control" id="status2">
+                                    <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
+                                    <option>Ya, Saya Akan hadir</option>
+                                    <option>Ya, Mungkin Saya akan hadir</option>
+                                    <option>Maaf Seperti Saya Belum bisa hadir</option>
+                                </select>
+							</div>
 						</div>
 					</div>
 					<div class="row">

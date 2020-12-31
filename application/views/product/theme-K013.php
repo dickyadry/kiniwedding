@@ -375,7 +375,7 @@
                             <input type="text" name="nama" placeholder="Nama*" id="nama" class="form-control">
                         </div>
                         <div class="form-group col col-sm-12">
-                            <select name="status" class="form-control" id="status">
+                            <select name="status" class="form-control" id="status2">
                                 <option value="" disabled selected>Apakah Kamu akan Hadir?</option>
                                 <option>Ya, Saya Akan hadir</option>
                                 <option>Ya, Mungkin Saya akan hadir</option>

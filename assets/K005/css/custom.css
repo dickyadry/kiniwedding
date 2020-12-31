@@ -266,7 +266,7 @@
 
 .text-start i {
   font-size: 18px;
-  font-size: 1.2rem;
+  font-size: 1.1.2rem;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -302,7 +302,7 @@
 }
 
 .testimonials-section:before {
-  background-color: #f1edea;
+  /*background-color: #f1edea;*/
   content: "";
   width: 100%;
   height: 60%;
@@ -343,6 +343,10 @@
   box-shadow: 0px 13px 24.65px 4.35px rgba(0, 0, 0, 0.07);
 }
 
+.testimonials-section .quote p{
+  color: #5E9A8E;
+}
+
 @media (max-width: 767px) {
   .testimonials-section .quote {
     padding: 30px 25px;
@@ -377,22 +381,25 @@
 
 .testimonials-section .client-info h5 {
   font-size: 18px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: normal;
   margin: 0 0 0;
-  padding: 1em 0 0.3em;
+  padding: 0.1em 0 0.3em;
+  /*margin-top: -70px !important;*/
+  color: #000;
 }
+
 
 @media (max-width: 767px) {
   .testimonials-section .client-info h5 {
     font-size: 16px;
-    font-size: 1.2rem;
+    font-size: 1.1.2rem;
   }
 }
 
 .testimonials-section .client-info p {
   font-size: 14px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 0;
   line-height: 1.7em;
 }
@@ -411,10 +418,10 @@
 }
 
 .stop-scrolling {
-  background-color: rgba(170, 154, 69, 0.7);
+  background-color: rgba(92, 147, 137, 0.7);
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #5C9389;
   border-radius: 45px;
   text-align: center;
   z-index: 999;
@@ -438,12 +445,12 @@
 }
 
 .stop-scrolling:hover {
-  background-color: #AA9A45;
+  background-color: #5C9389;
 }
 
 .stop-scrolling i {
   font-size: 18px;
-  font-size: 1.2rem;
+  font-size: 1.1.2rem;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -461,11 +468,11 @@
 
 /*** back to top **/
 .back-to-top {
-  background-color: rgba(170, 154, 69, 0.7);
+  background-color: rgba(92, 147, 137, 0.7);
   width: 45px;
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #5C9389;
   border-radius: 45px;
   text-align: center;
   display: none;
@@ -489,12 +496,12 @@
 }
 
 .back-to-top:hover {
-  background-color: #AA9A45;
+  background-color: #5C9389;
 }
 
 .back-to-top i {
   font-size: 18px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -522,11 +529,11 @@
 
 /*** back to top **/
 .musik {
-  background-color: rgba(170, 154, 69, 0.7);
+  background-color: rgba(92, 147, 137, 0.7);
   width: 45px;
   height: 45px;
   line-height: 45px;
-  border: 2px solid #AA9A45;
+  border: 2px solid #5C9389;
   border-radius: 45px;
   text-align: center;
   /*display: none;*/
@@ -550,12 +557,12 @@
 }
 
 .musik:hover {
-  background-color: #AA9A45;
+  background-color: #5C9389;
 }
 
 .musik i {
   font-size: 18px;
-  font-size: 2rem;
+  font-size: 1.1.2rem;
   color: #fff;
   position: absolute;
   left: 50%;

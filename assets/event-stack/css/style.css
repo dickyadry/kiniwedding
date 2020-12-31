@@ -1395,13 +1395,13 @@ header {}
 
 .single-top-movie .content .date {
     line-height: 18px;
-    margin: 0 0 -38px;
+    margin: 0 0 27px;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
 .single-top-movie:hover .content .date {
-    margin: 0 0 27px;
+    /*margin: 0 0 27px;*/
 }
 
 .single-top-movie .content .duration {
@@ -1410,23 +1410,24 @@ header {}
     display: inline-block;
     font-weight: 300;
     padding: 3px 30px;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
     -webkit-transform-origin: center bottom 0;
     transform-origin: center bottom 0;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    color: #ddd35d;
+    color: #FFF;
+    background: #ddd35d;
 }
 
 .single-top-movie:hover .content .duration {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    /*-webkit-transform: scaleY(1);
+    transform: scaleY(1);*/
 }
 
 .single-top-movie .content .duration:hover {
-    color: #FFF;
-    background: #ddd35d;
+    color: #ddd35d;
+    background: #FFF;
 }
 
 .top-movie-carousel .owl-nav {
